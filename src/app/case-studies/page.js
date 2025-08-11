@@ -1,11 +1,12 @@
 'use client'
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ChevronRight, Users, TrendingUp, Award, Eye } from 'lucide-react';
+import { ChevronRight, Users, TrendingUp, Award, Eye, Download, ArrowLeft } from 'lucide-react';
 
 const CaseStudiesPage = () => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState('industry');
+  const [selectedService, setSelectedService] = useState(null);
 
   const industryStudies = [
     {
@@ -14,7 +15,8 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Revolutionizing patient care through digital transformation',
       results: '150% increase in patient engagement',
-      color: 'from-slate-700 to-slate-800'
+      color: 'from-slate-700 to-slate-800',
+      pdfUrl: '/pdfs/case-studies/by-industry/Healthcare_Oasis-Fertility.pdf'
     },
     {
       id: 'fashion-beauty',
@@ -22,7 +24,7 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Boosting brand visibility in competitive beauty market',
       results: '300% growth in online sales',
-      color: 'from-purple-600 to-purple-700'
+      color: 'from-purple-600 to-purple-700',
     },
     {
       id: 'ecommerce-retail',
@@ -30,7 +32,8 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Scaling online retail operations for maximum ROI',
       results: '250% revenue increase',
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-blue-600 to-blue-700',
+      pdfUrl: '/pdfs/case-studies/by-industry/Ecommerce_Nakshikathaa.pdf'
     },
     {
       id: 'it-technology',
@@ -38,7 +41,8 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Driving innovation in tech startup ecosystem',
       results: '400% user acquisition',
-      color: 'from-emerald-600 to-emerald-700'
+      color: 'from-emerald-600 to-emerald-700',
+      pdfUrl: '/pdfs/case-studies/by-industry/IT & Technology_Orchasp Limited.pdf'
     },
     {
       id: 'entertainment',
@@ -46,7 +50,8 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Amplifying reach for entertainment brands',
       results: '500% social engagement',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-orange-500 to-orange-600',
+      pdfUrl: '/pdfs/case-studies/by-industry/Entertainment_Carawander.pdf'
     },
     {
       id: 'education',
@@ -54,7 +59,8 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Transforming learning experiences digitally',
       results: '200% student enrollment',
-      color: 'from-indigo-600 to-indigo-700'
+      color: 'from-indigo-600 to-indigo-700',
+      pdfUrl: '/pdfs/case-studies/by-industry/Education_ALPA Kids.pdf'
     },
     {
       id: 'real-estate',
@@ -62,7 +68,7 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Modernizing property marketing strategies',
       results: '180% faster sales',
-      color: 'from-teal-600 to-teal-700'
+      color: 'from-teal-600 to-teal-700',
     },
     {
       id: 'events',
@@ -70,7 +76,7 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Creating memorable event experiences',
       results: '300% attendance boost',
-      color: 'from-pink-500 to-pink-600'
+      color: 'from-pink-500 to-pink-600',
     },
     {
       id: 'others',
@@ -78,133 +84,355 @@ const CaseStudiesPage = () => {
       image: '/api/placeholder/400/300',
       description: 'Diverse solutions for unique challenges',
       results: 'Custom success metrics',
-      color: 'from-gray-600 to-gray-700'
+      color: 'from-gray-600 to-gray-700',
+      pdfUrl: '/pdfs/case-studies/by-industry/Others_Home Healthcare Services Company.pdf'
     }
   ];
 
   const processStudies = [
     {
       id: 'seo',
-      title: 'SEO',
+      serviceKey: 'seo',
+      title: 'SEO Optimization',
       image: '/api/placeholder/600/400',
-      description: 'Dominating search rankings with strategic optimization',
+      description: 'With targeted SEO efforts, CountryOven witnessed sustained traffic growth and 100% keyword visibility in 12 months.',
       results: '400% organic traffic growth',
-      color: 'from-slate-700 to-slate-800'
+      color: 'from-slate-700 to-slate-800',
+      pdfUrl: '/pdfs/case-studies/by-service/SEO_Country Oven.pdf'
     },
     {
       id: 'ppc',
-      title: 'Pay Per Click Advertising',
+      serviceKey: 'google-ads',
+      title: 'Paid Advertising',
       image: '/api/placeholder/600/400',
-      description: 'Maximizing ROI through targeted advertising campaigns',
+      description: 'With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn’t need a big budget. ',
       results: '250% conversion rate improvement',
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-blue-600 to-blue-700',
+      pdfUrl: '/pdfs/case-studies/by-service/PPC_IPI India Pvt. Ltd.pdf'
     },
     {
       id: 'smm',
+      serviceKey: 'social-media-marketing',
       title: 'Social Media Marketing',
       image: '/api/placeholder/600/400',
       description: 'Building communities and driving engagement',
       results: '600% follower growth',
-      color: 'from-purple-600 to-purple-700'
-    },
-    {
-      id: 'content',
-      title: 'Content Marketing',
-      image: '/api/placeholder/600/400',
-      description: 'Crafting compelling narratives that convert',
-      results: '300% lead generation increase',
-      color: 'from-emerald-600 to-emerald-700'
+      color: 'from-purple-600 to-purple-700',
+      pdfUrl: '/pdfs/case-studies/by-service/Social Media_Luxury Car Dealership.pdf'
     }
   ];
 
   const handleCaseStudyClick = (studyId) => {
     // Navigate to individual case study page
-    router.push(`/case-studies/${studyId}`);
+    router.push(`case-studies/${studyId}`);
   };
 
-  const CaseStudyCard = ({ study, isLarge = false }) => (
-    <div 
-      className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100 ${isLarge ? 'h-96' : 'h-72'}`}
-      onClick={() => handleCaseStudyClick(study.id)}
+  const handleServiceClick = (serviceKey) => {
+    setSelectedService(serviceKey);
+  };
+
+  const handleBackToServices = () => {
+    setSelectedService(null);
+  };
+
+  const handleDownloadPDF = async (pdfUrl, title, event) => {
+    event.stopPropagation();
+
+    try {
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = `${title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-case-study.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+      alert('Error downloading PDF. Please try again.');
+    }
+  };
+
+  const CaseStudyCard = ({ study, isLarge = false, isServiceCard = false }) => (
+    <div
+      className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100`}
+      onClick={() => isServiceCard ? handleServiceClick(study.serviceKey) : handleCaseStudyClick(study.id)}
     >
-      <div className={`absolute inset-0 bg-gradient-to-br ${study.color} opacity-90`}></div>
-      <div 
+      <div className={`absolute inset-0 bg-[#910c28]`}></div>
+      {/* <div 
         className="absolute inset-0 bg-cover bg-center opacity-20 group-hover:opacity-40 transition-opacity duration-500"
         style={{ backgroundImage: `url(${study.image})` }}
-      ></div>
-      
-      <div className="relative h-full flex flex-col justify-between p-6 text-white">
-        <div>
+      ></div> */}
+
+      <div className="relative flex flex-col p-6 text-white">
+        <div className='mb-4'>
           <div className="flex items-center justify-between mb-4">
             <Award className="w-6 h-6 opacity-80" />
             <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
           </div>
-          
-          <h3 className={`font-bold mb-3 group-hover:text-yellow-200 transition-colors duration-300 ${isLarge ? 'text-2xl' : 'text-xl'}`}>
+
+          <h3 className={`font-bold mb-3 transition-colors duration-300 ${isLarge ? 'text-2xl' : 'text-xl'}`}>
             {study.title}
           </h3>
-          
+
           <p className={`text-white/90 mb-4 ${isLarge ? 'text-base' : 'text-sm'}`}>
             {study.description}
           </p>
         </div>
-        
-        <div className="space-y-2">
+
+        <div className="space-y-3">
           <div className="flex items-center space-x-2">
             <TrendingUp className="w-4 h-4" />
             <span className="text-sm font-medium">{study.results}</span>
           </div>
-          
-          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 text-sm font-medium">
-            <Eye className="w-4 h-4" />
-            <span>View Case Study</span>
+
+          <div className="flex space-x-2">
+            <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 text-sm font-medium flex-1">
+              <Eye className="w-4 h-4" />
+              <span>View Case Study</span>
+            </div>
+
+            {study.pdfUrl && !isServiceCard && <button
+              onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
+              className="inline-flex items-center space-x-2 bg-[#9a0c28]/80 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-[#9a0c28] transition-all duration-300 text-sm font-medium"
+              title={`Download ${study.title} Case Study PDF`}
+            >
+              <Download className="w-4 h-4" />
+              <span className="hidden sm:inline">PDF</span>
+            </button>}
           </div>
         </div>
       </div>
     </div>
   );
 
-  const TabButton = ({ id, label, isActive, onClick }) => (
-    <button
-      onClick={() => onClick(id)}
-      className={`px-6 py-3 font-semibold rounded-lg transition-all duration-300 ${
-        isActive
-          ? 'bg-gradient-to-r from-[#9a0c28] to-[#b91c47] text-white shadow-lg'
-          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-      }`}
-    >
-      {label}
-    </button>
-  );
+  const getServiceTitle = () => {
+    switch (selectedService) {
+      case 'seo': return 'SEO Optimization';
+      case 'google-ads': return 'Paid Advertising';
+      case 'social-media-marketing': return 'Social Media Marketing';
+      default: return 'Case Studies';
+    }
+  };
+
+  const getRelevantStudies = () => {
+    const allCaseStudies = [
+      {
+        id: 'seo',
+        slug: 'seo-cake-company',
+        title: 'Baking Up Success: How SEO Helped CountryOven Climb the Ranks',
+        image: '/api/placeholder/600/400',
+        description: 'With targeted SEO efforts, CountryOven witnessed sustained traffic growth and 100% keyword visibility in 12 months.',
+        results: 'Overall Score 4.0',
+        pdfUrl: '/pdfs/case-studies/seo/SEO_1.pdf',
+        client: 'CountryOven.com',
+        industry: 'Bakery & E-commerce',
+        duration: 'Feb. 2015 - Ongoing',
+        investment: '$5,000 to $10,000 per month'
+      },
+      {
+        id: 'seo',
+        slug: 'seo-caravan-rental',
+        title: 'On the Road to Success: How SEO Fueled Carawander’s Journey',
+        image: '/api/placeholder/600/400',
+        description: 'With consistent SEO efforts, ShootOrder helped Carawander boost web-driven sales and profits by over 40% since 2021.',
+        results: 'Overall Score 5.0',
+        pdfUrl: '/pdfs/case-studies/seo/SEO_2.pdf',
+        client: 'Caravan Adventures Ltd',
+        industry: 'Travel & Tourism',
+        duration: 'Jan. 2020 - Ongoing',
+        investment: '$10,000 to $25,000 per month'
+      },
+      {
+        id: 'seo',
+        slug: 'seo-travel-company',
+        title: "Driven by Search: How SEO Accelerated a Travel Brand's Growth",
+        image: '/api/placeholder/600/400',
+        description: 'Targeted SEO strategies helped a Dubai-based travel company boost lead generation and grow its business. ',
+        results: 'Overall Score 4.0',
+        pdfUrl: '/pdfs/case-studies/seo/SEO_3.pdf',
+        client: 'Global Travel Solutions',
+        industry: 'Travel & Tourism',
+        duration: 'Mar. 2019 - Dec. 2022',
+        investment: '$15,000 to $30,000 per month'
+      },
+      {
+        id: 'google-ads',
+        slug: 'ppc-edtech-company',
+       title: 'Creative Content That Clicks: Social Success for an EHR Platform',
+        image: '/api/placeholder/600/400',
+        description: 'With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn’t need a big budget. ',
+        results: 'Overall Score 5.0',
+        pdfUrl: '/pdfs/case-studies/google-ads/PPC_1.pdf',
+        client: 'IPI India Pvt. Ltd',
+        industry: 'Education Technology',
+        duration: 'Aug. 2020 - Mar. 2023',
+        investment: '$25,000 to $50,000 per month'
+      },
+      {
+        id: 'google-ads',
+        slug: 'ppc-fertility-provider',
+        title: 'How ShootOrder Boosted ROI for Oasis Fertility',
+        image: '/api/placeholder/600/400',
+        description: 'By streamlining AD campaigns, ShootOrder helped Oasis Fertility cut cost-per-lead and boost returns—delivering consistent, cost-effective performance. ',
+        results: 'Overall Score 4.5',
+        pdfUrl: '/pdfs/case-studies/google-ads/PPC_2.pdf',
+        client: 'Advanced Fertility Center',
+        industry: 'Healthcare',
+        duration: 'Jun. 2021 - Ongoing',
+        investment: '$8,000 to $15,000 per month'
+      },
+      {
+        id: 'google-ads',
+        slug: 'ppc-health-wellness',
+        title: 'Powering IPI Growth with Precision PPC',
+        image: '/api/placeholder/600/400',
+        description: 'ShootOrder’s paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.',
+        results: 'Overall Score 4.0',
+        pdfUrl: '/pdfs/case-studies/google-ads/PPC_3.pdf',
+        client: 'Wellness Plus Solutions',
+        industry: 'Health & Wellness',
+        duration: 'Jan. 2022 - Ongoing',
+        investment: '$12,000 to $20,000 per month'
+      },
+      {
+        id: 'social-media-marketing',
+        slug: 'smm-luxury-car-brand',
+        title: 'How Strategic Social Media Marketing Fueled a Luxury Car Brand',
+        image: '/api/placeholder/600/400',
+        description: 'With tailored campaigns and consistent engagement, ShootOrder elevated digital visibility and lead generation across key social platforms.',
+        results: 'Overall Score 4.5',
+        pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_1.pdf',
+        client: 'Elite Motors Group',
+        industry: 'Automotive - Luxury',
+        duration: 'Sep. 2020 - Ongoing',
+        investment: '$20,000 to $35,000 per month'
+      },
+      {
+        id: 'social-media-marketing',
+        slug: 'smm-auto-dealership',
+        title: 'Driving Digital: How ShootOrder Steered Online Growth for an Auto Brand',
+        image: '/api/placeholder/600/400',
+        description: 'By managing SEO, PPC, and Google assets, ShootOrder helped generate 20% of all vehicle bookings through digital platforms.',
+        results: 'Overall Score 5.0',
+        pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_2.pdf',
+        client: 'Metro Auto Sales',
+        industry: 'Automotive',
+        duration: 'May 2021 - Ongoing',
+        investment: '$15,000 to $25,000 per month'
+      },
+      {
+        id: 'social-media-marketing',
+        slug: 'smm-it-services',
+       title: 'Creative Content That Clicks: Social Success for an EHR Platform',
+        image: '/api/placeholder/600/400',
+        description: 'With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp’s healthcare tech across Facebook, Instagram, and LinkedIn. ',
+        results: 'Overall Score 4.0',
+        pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_3.pdf',
+        client: 'TechFlow Solutions',
+        industry: 'Information Technology',
+        duration: 'Nov. 2021 - Ongoing',
+        investment: '$8,000 to $18,000 per month'
+      }
+    ];
+
+    return allCaseStudies.filter(study => study.id === selectedService);
+  };
+
+  const ServiceCaseStudyCard = ({ study, index }) => {
+    const handleCaseStudyClick = (studySlug) => {
+      router.push(`/case-studies/${studySlug}`);
+    };
+
+    return (
+      <div key={index}
+        className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100"
+        onClick={() => handleCaseStudyClick(study.slug)}
+      >
+        <div className={`absolute inset-0 bg-white opacity-90`}></div>
+
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20 group-hover:opacity-40 transition-opacity duration-500"
+          style={{ backgroundImage: `url(${study.image})` }}
+        ></div>
+
+        <div className="relative h-full flex flex-col p-6 text-black">
+          <div className='mb-4'>
+            <div className="flex items-center justify-between mb-4">
+              <Award className="w-6 h-6 opacity-80 text-[#9a0c28]" />
+              <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-[#9a0c28]" />
+            </div>
+
+            <h3 className="text-xl font-bold mb-3 group-hover:text-[#9a0c28] transition-colors duration-300">
+              {study.title}
+            </h3>
+
+            <p className="text-gray-700 mb-4 text-sm">
+              {study.description}
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <div className="flex items-center space-x-2">
+              <TrendingUp className="w-4 h-4 text-[#9a0c28]" />
+              <span className="text-sm font-medium">{study.results}</span>
+            </div>
+
+            <div className="flex space-x-2">
+              <div className="inline-flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200 transition-all duration-300 text-sm font-medium flex-1">
+                <Eye className="w-4 h-4" />
+                <span>View Case Study</span>
+              </div>
+
+              {study.pdfUrl && <button
+                onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
+                className="inline-flex items-center space-x-2 bg-[#9a0c28] px-4 py-2 rounded-lg hover:bg-[#b91c47] transition-all duration-300 text-sm font-medium text-white"
+                title={`Download ${study.title} Case Study PDF`}
+              >
+                <Download className="w-4 h-4" />
+                <span className="hidden sm:inline">PDF</span>
+              </button>}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-slate-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#9a0c28]/20 to-[#b91c47]/20"></div>
-        <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
+      <div
+        className="relative text-white mt-20"
+        style={{
+          backgroundImage: "url('/images/CaseStudies/Case study banner.webp')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-[#9a0c28]/20 to-[#b91c47]/20"></div> */}
+
         <div className="relative !max-w-7xl mx-auto px-4 py-32">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-red-200 bg-clip-text text-transparent">
               Our Success Stories
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Discover how we&apos;ve transformed businesses across industries with innovative digital solutions
+              Discover How We&apos;ve Transformed Businesses Across Industries With Innovative Digital Solutions
             </p>
             <div className="flex items-center justify-center space-x-8 text-gray-300">
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <Users className="w-6 h-6 text-[#9a0c28]" />
-                <span className="text-lg">300+ Clients</span>
+                <Users className="w-6 h-6 text-white" />
+                <span className="text-lg">50+ Retainership</span>
               </div>
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <Award className="w-6 h-6 text-[#9a0c28]" />
+                <Award className="w-6 h-6 text-white" />
                 <span className="text-lg">92% Client Retention Rate</span>
               </div>
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <TrendingUp className="w-6 h-6 text-[#9a0c28]" />
-                <span className="text-lg">300% Avg Growth</span>
+                <TrendingUp className="w-6 h-6 text-white" />
+                <span className="text-lg">12+ Years of Experience</span>
               </div>
             </div>
           </div>
@@ -215,51 +443,53 @@ const CaseStudiesPage = () => {
       <div className="!max-w-7xl mx-auto px-4 py-16">
         {/* Tab Navigation */}
         <div className="flex justify-center mb-12">
-          <div className="flex space-x-4 bg-white p-2 rounded-xl shadow-lg border border-gray-200">
-            <TabButton
-              id="industry"
-              label="By Industry"
-              isActive={activeTab === 'industry'}
-              onClick={setActiveTab}
-            />
-            <TabButton
-              id="process"
-              label="By Service"
-              isActive={activeTab === 'process'}
-              onClick={setActiveTab}
-            />
-          </div>
+          <h2 className='text-5xl font-semibold'>Case Study</h2>
         </div>
 
         {/* Content */}
-        {activeTab === 'industry' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {industryStudies.map((study) => (
-              <CaseStudyCard key={study.id} study={study} />
+        {!selectedService ? (
+          // Show main service cards
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {processStudies.map((study) => (
+              <CaseStudyCard key={study.id} study={study} isLarge={true} isServiceCard={true} />
             ))}
           </div>
-        )}
-
-        {activeTab === 'process' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {processStudies.map((study) => (
-              <CaseStudyCard key={study.id} study={study} isLarge={true} />
-            ))}
+        ) : (
+          // Show case study cards for selected service
+          <div>
+            <div className="flex items-center mb-10">
+              <button
+                onClick={handleBackToServices}
+                className="flex items-center space-x-2 text-[#9a0c28] hover:text-[#b91c47] transition-colors duration-300 mr-6 px-4 py-2 rounded-lg cursor-pointer"
+              >
+                <ArrowLeft className="w-6 h-6" />
+                <span className="text-lg font-medium">Back to Services</span>
+              </button>
+              <h2 className='font-bold text-4xl text-gray-800'>{getServiceTitle()} Case Studies</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {getRelevantStudies().map((study, index) => (
+                <ServiceCaseStudyCard key={study.slug} study={study} index={index} />
+              ))}
+            </div>
           </div>
         )}
       </div>
 
       {/* CTA Section */}
-      <div className="relative bg-gradient-to-r from-gray-800 via-slate-700 to-gray-800 text-white py-16">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#9a0c28]/30 to-[#b91c47]/30"></div>
+      <div className="relative bg-[#f0f0f1]  text-white py-16">
+        <div className="absolute inset-0 "></div>
         <div className="relative !max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-6 text-black">
             Ready to Create Your Success Story?
           </h2>
-          <p className="text-xl mb-8 text-gray-300">
+          <p className="text-xl mb-8 text-gray-800">
             Let&apos;s discuss how we can help transform your business with proven strategies and innovative solutions.
           </p>
-          <button className="bg-gradient-to-r from-[#9a0c28] to-[#b91c47] text-white px-8 py-4 rounded-lg font-semibold hover:from-[#b91c47] hover:to-[#9a0c28] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <button
+            className="cursor-pointer bg-gradient-to-r from-[#9a0c28] to-[#b91c47] text-white px-8 py-4 rounded-lg font-semibold hover:from-[#b91c47] hover:to-[#9a0c28] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            onClick={() => router.push('/contact-us')}
+          >
             Start Your Project Today
           </button>
         </div>
@@ -267,5 +497,7 @@ const CaseStudiesPage = () => {
     </div>
   );
 };
+
+
 
 export default CaseStudiesPage;

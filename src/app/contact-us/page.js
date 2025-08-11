@@ -51,7 +51,7 @@ export default function ContactUs() {
             </p>
             <div className="text-white space-y-4">
               <p className="flex items-center gap-2">
-                <FaPhoneAlt /> 1-855-217-4637
+                <FaPhoneAlt /> +91-630-392-1512
               </p>
               <p className="flex items-center gap-2">
                 <FiMail /> info@shootorder.com

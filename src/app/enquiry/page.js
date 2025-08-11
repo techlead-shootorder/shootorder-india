@@ -39,8 +39,8 @@ export default function EnquiryPage() {
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Phone",
-      value: "1-855-217-4637",
-      link: "tel:1-855-217-4637",
+      value: "+91-630-392-1512",
+      link: "tel:+916303921512",
     },
     {
       icon: <Mail className="w-5 h-5" />,

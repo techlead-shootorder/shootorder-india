@@ -8,6 +8,7 @@ import WhyChooseSection from "@/components/about-us/WhyChooseUsSection";
 import Blogs from "@/components/Blogs/Blogs";
 import PartnerCarousel from "@/components/Home/Partners/OurPartners";
 import ClutchWidget from "@/components/Home/CompanyInfo/ClutchWidget";
+import CaseStudyComponent from "@/components/CaseStudies/CaseStudyComponent";
 import WhyTrustUs from "@/components/Home/Partners/WhyTrustUs";
 
 export async function generateStaticParams() {
@@ -53,6 +54,9 @@ export default async function ServicePage({ params }) {
       </section>
 
       <ClutchWidget />
+
+       {/* <WhyTrustUs /> */}
+      <CaseStudyComponent service={params.slug}/>
 
       <WhyTrustUs />
       <section>

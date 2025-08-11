@@ -468,7 +468,7 @@ export default function Banner() {
       <div
         className="banner-background-image absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: "url('/images/background/banner-red.webp')",
+          backgroundImage: "url('/images/background/home-bg2.png')",
           backgroundSize: isMobile ? "inherit" : "cover", // Changed to cover for mobile
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",

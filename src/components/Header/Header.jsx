@@ -496,14 +496,14 @@ export default function Header() {
         {/* Desktop CTA Section */}
         <div className="hidden lg:flex items-center gap-6">
           <a
-            href="tel:1-855-217-4637"
+            href="tel:+916303921512"
             className="flex items-center gap-2 text-gray-700 hover:text-[#9a0c28] transition-all duration-200 font-medium group"
           >
             <div className="p-2 rounded-full bg-[#9a0c28]/10 group-hover:bg-[#9a0c28] transition-all duration-200">
               <FaPhoneAlt className="text-[#9a0c28] group-hover:text-white text-sm" />
             </div>
             <span className="group-hover:scale-105 transition-transform">
-              1-855-217-4637
+              +91-630-392-1512
             </span>
           </a>
 

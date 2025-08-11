@@ -1,14 +1,37 @@
 "use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, {useState, useRef } from "react";
 import ServiceModal from "../Modal/ServiceModal";
 import { motion, useScroll, useTransform } from "framer-motion";
+import PopupModal from "@/components/Modal/PopupModal";
 
 const BannerForServices = ({ imageUrl, subheading, heading }) => {
+  console.log("image url of service banner", imageUrl)
   const modalRef = useRef();
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const openPopup = (e) => {
+    // Create ripple effect
+    const ripple = document.createElement('div');
+    const rect = e.target.getBoundingClientRect();
+    ripple.className = 'absolute animate-ripple rounded-full bg-gray-200';
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+    e.target.appendChild(ripple);
+
+    // Remove ripple after animation
+    setTimeout(() => ripple.remove(), 1000);
+
+    // Open popup with slight delay for visual feedback
+    setTimeout(() => setIsPopupOpen(true), 200);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   return (
     <section className="relative w-full min-h-[80vh] overflow-hidden">
@@ -23,12 +46,10 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${
-              imageUrl || "/images/services/banners/seo-banner.jpg"
-            })`,
+            backgroundImage: `url('${imageUrl}')`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" /> */}
       </motion.div>
 
       {/* Floating Elements */}
@@ -55,7 +76,7 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
       >
         <div className="!max-w-5xl mx-auto text-center">
           {/* Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -64,7 +85,7 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
             <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white/90 text-sm">
               Expert Digital Solutions
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Heading */}
           <motion.h1
@@ -96,8 +117,9 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => modalRef.current?.open()}
-              className="bg-[#9a0c28] text-white px-8 py-4 rounded-full font-medium hover:bg-[#7a0920] transition-colors shadow-lg inline-flex items-center justify-center gap-2 group"
+              // onClick={() => modalRef.current?.open()}
+              onClick={openPopup}
+              className="bg-[#9a0c28] cursor-pointer text-white px-8 py-4 rounded-full font-medium hover:bg-[#7a0920] transition-colors shadow-lg inline-flex items-center justify-center gap-2 group"
             >
               Get Started Now
               <motion.span
@@ -114,6 +136,8 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
           </motion.div>
         </div>
       </motion.div>
+
+       <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
 
       <ServiceModal ref={modalRef} />
     </section>
