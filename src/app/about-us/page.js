@@ -6,15 +6,17 @@ import LeaderShipSection from "@/components/about-us/LeadShipSection";
 import WhyChooseSection from "@/components/about-us/WhyChooseUsSection";
 import PartnerCarousel from "@/components/Home/Partners/OurPartners";
 import WhyTrustUs from "@/components/Home/Partners/WhyTrustUs";
+import AboutDescription from "@/components/about-us/AboutDescription";
 import React from "react";
 
 function page() {
   return (
     <>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
+      <AboutDescription/>
       <PartnerCarousel/>
       <TestimonialSection />
-      <LeaderShipSection/>
+      {/* <LeaderShipSection/> */}
       <WhyTrustUs/>
       <WhyChooseSection />
       <FormulaSection/>
