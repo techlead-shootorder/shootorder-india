@@ -221,8 +221,8 @@ const CaseStudyComponent = ({ service }) => {
   );
 
   return (
-    <div className="min-h-screen bg-[#9a0c28]">
-      <div className="!max-w-7xl mx-auto px-4 py-16">
+    <div className=" bg-[#9a0c28]">
+      <div className="!max-w-7xl mx-auto px-4 pt-16 pb-20">
         <h1 className='text-center font-bold text-4xl mb-10 text-white'>Case Studies</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {relevantStudies.map((study, index) => (

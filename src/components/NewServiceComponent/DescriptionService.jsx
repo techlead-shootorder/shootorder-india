@@ -10,11 +10,10 @@ const DescriptionService = () => {
             <div className="services-details-desc mb-8 lg:mb-0 lg:pr-8">
               <h3 className="text-[25px] font-bold mb-4">
                 
-                  Creating Apps That Drive Success
+                  Our Story
               </h3>
-              <div className=" leading-relaxed">
-                
-                   "At Evolzer, we have got you covered when it comes to web development. Whether you are a start-up or an established organization, we are here to make your ideas into reality. Our team of talented designers and developers create responsive and custom web applications, ensuring that your website not only performs well but is also user-friendly. We stay up-to-date with the latest technologies and best industry practices to ensure your website stands out in the competitive digital landscape."
+              <div className=" leading-relaxed">           
+                   ShootOrder | Digital Marketing Agency, a division of Ivent It Solutions Pvt. Ltd., is a privately held digital marketing company in hyderabad, India. From conception we made sure that we set our foot into the massive universe of internet ventures which we knew the best and since then we have been making strides towards creative innovative and strategic benchmarks across the realm of digital marketing, with an adept talent pool and hunger for perfection we have been delivering the best results, bringing new market trends and have bought in more business for all our clients.
               </div>
             </div>
           </div>

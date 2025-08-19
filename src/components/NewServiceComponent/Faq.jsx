@@ -74,7 +74,7 @@ const Faqs = () => {
   const rightFaqs = faq.slice(half);
 
   return (
-    <div id="faq" className="text-black py-10 scroll-mt-28">
+    <div id="faq" className="text-black bg-gray-50 pt-10 pb-16 scroll-mt-28">
       <div className="!max-w-7xl mx-auto">
         {faq.length > 0 && (
           <h3 className="text-center text-3xl font-bold mb-6 text-black">

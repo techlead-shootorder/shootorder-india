@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroService = ({ imageUrl, subheading, heading }) => {
   return (
@@ -13,19 +14,26 @@ const HeroService = ({ imageUrl, subheading, heading }) => {
         objectFit="cover"
         priority
       />
-      <div className="overlay absolute inset-0 bg-black opacity-40"></div>
+      {/* <div className="overlay absolute inset-0 bg-black opacity-40"></div> */}
+      <div className="overlay absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-[]"></div>
+
       <div className="container mx-auto !max-w-7xl relative z-10 h-full flex flex-col justify-center">
         <div className="grid grid-cols-12 items-center !justify-between md:gap-24 !mx-2 md:mx-0">
           <div className="col-span-12 lg:col-span-7 text-center h-full flex flex-col justify-center lg:text-left">
-            
+
 
             <h1 className="text-white !text-[30px] md:!text-[38px] font-bold mb-4 ">
-               {heading}
+              {heading}
             </h1>
-             
-              <p className="text-white max-w-lg text-lg">{subheading}</p>
-           
-            <button className="py-3 px-4 rounded-lg bg-[#9a0c28] text-white hover:shadow-2xl w-fit text-lg font-semibold mt-6 cursor-pointer">Get Started</button>
+
+            <p className="text-white max-w-lg text-lg">{subheading}</p>
+
+            <Link
+              href="/contact-us"
+              className="w-fit bg-[#9a0c28] text-white px-4 py-2 rounded-lg font-semibold transition-colors block text-center mt-8"
+            >
+              Get Started
+            </Link>
           </div>
         </div>
       </div>
