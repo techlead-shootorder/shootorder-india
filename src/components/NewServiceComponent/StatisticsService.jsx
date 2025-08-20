@@ -11,7 +11,7 @@ const StatisticsService = () => {
   return (
     <section
       id="statistics"
-      className="relative z-10 text-white flex items-center py-5 bg-[#9a0c28]"
+      className="relative z-10 text-black flex items-center py-5"
      
     >
       {/* Optimized Image */}
@@ -27,7 +27,7 @@ const StatisticsService = () => {
       </div> */}
 
       <div className="relative z-10 max-w-[1170px] mx-auto px-6 py-12 space-y-12">
-        <h2 className="text-3xl text-center text-white font-bold">
+        <h2 className="text-3xl text-center text-black font-bold">
           We understand your needs and <br /> deliver what works for you.
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -41,8 +41,8 @@ const StatisticsService = () => {
             </div>
             <div className="border-b border-gray-400 mb-6"></div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-white">250+</h3>
-              <p className="text-sm mt-2 text-white">
+              <h3 className="text-4xl font-bold text-black">250+</h3>
+              <p className="text-sm mt-2 text-black">
                 Successfully delivered high-quality projects.
               </p>
             </div>
@@ -58,8 +58,8 @@ const StatisticsService = () => {
             </div>
             <div className="border-b border-gray-400 mb-6"></div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-white">11+</h3>
-              <p className="text-sm mt-2 text-white">
+              <h3 className="text-4xl font-bold text-black">11+</h3>
+              <p className="text-sm mt-2 text-black">
                 Bringing over a decade of experience.
               </p>
             </div>
@@ -75,8 +75,8 @@ const StatisticsService = () => {
             </div>
             <div className="border-b border-gray-400 mb-6"></div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-white">50+</h3>
-              <p className="text-sm mt-2 text-white">
+              <h3 className="text-4xl font-bold text-black">50+</h3>
+              <p className="text-sm mt-2 text-black">
                 Continuously delivering excellence.
               </p>
             </div>
@@ -92,8 +92,8 @@ const StatisticsService = () => {
             </div>
             <div className="border-b border-gray-400 mb-6"></div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold text-white">92%</h3>
-              <p className="text-sm mt-2 text-white">
+              <h3 className="text-4xl font-bold text-black">92%</h3>
+              <p className="text-sm mt-2 text-black">
                 Ensuring client satisfaction and loyalty.
               </p>
             </div>

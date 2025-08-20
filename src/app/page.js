@@ -382,7 +382,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="!bg-[#f8f6ee]">
+        <section className="!bg-gray-50">
           <div className="animate-section" id="service-tabs-section">
             <ServiceTabs />
           </div>
@@ -398,11 +398,13 @@ export default function Home() {
         <div className="!max-w-7xl mx-auto">
           <WhyTrustUs />
         </div>
-
+       
+       <div className="bg-gray-50">
         <ClutchWidget />
+        </div>
 
         {/* Form section */}
-        <section className="!bg-[#f8f6ee] py-10">
+        <section className=" py-10">
           <div className="animate-section !max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="talent-form-section">
             <div className="parallax-bg absolute inset-0 -z-10 w-full">
               <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 bg-gradient-to-tr from-indigo-500/10 to-transparent rounded-full blur-3xl"></div>

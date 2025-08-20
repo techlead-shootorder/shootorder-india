@@ -33,6 +33,48 @@
         "content": "The content on your website which is the major factor in deciding your site ranking on search engines. The content needs to be SEO friendly and appealing at the same time. ShootOrder has a dedicated team to make your content alive."
       }
     ],
+    "faqs": [
+      {
+        "question": "What is SEO and why is it important?",
+        "answer": "SEO (Search Engine Optimization) is the process of improving your website’s visibility on search engines like Google. It helps attract more organic traffic, build credibility, and increase sales or leads."
+      },
+      {
+        "question": "How long does it take to see results from SEO?",
+        "answer": "SEO is a long-term strategy. On average, noticeable results can take 3–6 months depending on your industry, competition, and website quality."
+      },
+      {
+        "question": "What’s the difference between On-page and Off-page SEO?",
+        "answer": "On-page SEO includes optimizations you do on your website, such as content, keywords, and technical fixes. Off-page SEO focuses on external factors like backlinks, social signals, and brand mentions."
+      },
+      {
+        "question": "Do I need SEO if I am already running ads?",
+        "answer": "Yes. Ads bring quick results, but SEO builds long-term organic visibility and credibility. Together, they create a strong digital presence."
+      },
+      {
+        "question": "Will SEO guarantee my website ranks #1 on Google?",
+        "answer": "No one can guarantee #1 rankings because search engines update algorithms frequently. However, with proper strategies, your chances of ranking higher significantly improve."
+      },
+      {
+        "question": "What kind of businesses need SEO?",
+        "answer": "Any business with an online presence—whether e-commerce, service-based, or local businesses—can benefit from SEO to attract customers searching for their products or services."
+      },
+      {
+        "question": "How do you choose the right keywords for my website?",
+        "answer": "We perform detailed keyword research considering search volume, competition, and relevance to your business to target the best keywords for traffic and conversions."
+      },
+      {
+        "question": "Is content important for SEO?",
+        "answer": "Yes, high-quality and optimized content helps your website rank better. Search engines prioritize valuable content that solves users’ queries."
+      },
+      {
+        "question": "Do you also provide local SEO services?",
+        "answer": "Yes, we optimize your business for local searches with Google Business Profile optimization, local citations, and reviews to help you attract nearby customers."
+      },
+      {
+        "question": "How do you measure SEO success?",
+        "answer": "We track metrics like keyword rankings, organic traffic growth, leads, and conversions to measure the effectiveness of SEO campaigns."
+      }
+    ],
     "content": "<p>We build modern, fast, and secure websites that help your business stand out.</p>"
   },
   {
@@ -72,6 +114,48 @@
         "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/coupon.jpg",
         "heading": "Coupon/Scratch Ads",
         "content": "ShootOrder brings you Coupon Ads, a powerful advertising solution that enables businesses to attract and engage customers through enticing discounts and promotions. Our expert team designs visually appealing coupon ads that capture attention and drive conversions. With strategic placement across various platforms, including digital channels and social media, ShootOrder's Coupon Ads ensure maximum visibility and reach. Boost your sales, increase customer loyalty, and achieve a measurable return on investment with ShootOrder's Coupon Ads service. Let us help you create irresistible offers and connect with your target audience effectively."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is Performance Marketing?",
+        "answer": "Performance Marketing is a results-driven digital marketing approach where you pay only for specific actions such as clicks, leads, or conversions."
+      },
+      {
+        "question": "How is Performance Marketing different from traditional advertising?",
+        "answer": "Unlike traditional ads, Performance Marketing is measurable, targeted, and ROI-focused, ensuring you only pay for tangible outcomes."
+      },
+      {
+        "question": "What platforms do you run Performance Marketing campaigns on?",
+        "answer": "We manage campaigns on Google Ads, Meta (Facebook & Instagram), LinkedIn, YouTube, and other ad networks depending on your business goals."
+      },
+      {
+        "question": "Can Performance Marketing work for small businesses?",
+        "answer": "Yes, Performance Marketing is scalable and works well for businesses of all sizes, as budgets can be adjusted to fit specific goals."
+      },
+      {
+        "question": "How do you track the success of campaigns?",
+        "answer": "We track KPIs such as clicks, impressions, cost per lead, return on ad spend (ROAS), and conversions to measure campaign effectiveness."
+      },
+      {
+        "question": "Do you guarantee results with Performance Marketing?",
+        "answer": "While no agency can guarantee exact results, we optimize campaigns with data-driven strategies to maximize ROI and achieve your goals."
+      },
+      {
+        "question": "What industries benefit most from Performance Marketing?",
+        "answer": "E-commerce, SaaS, healthcare, real estate, education, and service-based industries benefit greatly from performance-driven campaigns."
+      },
+      {
+        "question": "How much budget do I need for Performance Marketing?",
+        "answer": "The budget depends on your business goals, industry competition, and target audience. We help you allocate the right budget for maximum results."
+      },
+      {
+        "question": "Do you provide reports on campaign performance?",
+        "answer": "Yes, we provide detailed reports and insights on campaign performance, including traffic, leads, sales, and overall ROI."
+      },
+      {
+        "question": "How fast can I see results from Performance Marketing?",
+        "answer": "Results can be seen within days or weeks depending on campaign setup, industry, and optimization. Paid ads usually deliver quick outcomes."
       }
     ],
     "content": ""
@@ -129,7 +213,48 @@
         "heading": "Advertising",
         "content": "Looking to host an event? Need quick sign-up's, we can reach your targeted audience in a quick time with cost effectiveness. Promote your content on social media with our social media advertising services."
       }
-
+    ],
+    "faqs": [
+      {
+        "question": "What is Social Media Marketing?",
+        "answer": "Social Media Marketing (SMM) is the process of using platforms like Facebook, Instagram, LinkedIn, and Twitter to promote your brand, engage with customers, and drive sales."
+      },
+      {
+        "question": "Why is Social Media Marketing important for my business?",
+        "answer": "It helps build brand awareness, reach new audiences, increase engagement, and drive traffic or sales through targeted campaigns."
+      },
+      {
+        "question": "Which social media platforms should my business focus on?",
+        "answer": "The right platforms depend on your target audience and goals. We analyze your business and suggest the most effective platforms for you."
+      },
+      {
+        "question": "Do you create content as part of Social Media Marketing?",
+        "answer": "Yes, we create scroll-stopping visuals, videos, and posts tailored to your brand voice that connect with your audience."
+      },
+      {
+        "question": "How do you measure success in Social Media Marketing?",
+        "answer": "We track KPIs such as engagement rate, followers growth, reach, website traffic, leads, and conversions."
+      },
+      {
+        "question": "Can Social Media Marketing generate sales?",
+        "answer": "Yes, with the right content strategy and paid campaigns, social media can directly contribute to leads and sales."
+      },
+      {
+        "question": "What’s the difference between organic and paid social media marketing?",
+        "answer": "Organic marketing focuses on free content and engagement, while paid campaigns use ads to reach a larger and targeted audience quickly."
+      },
+      {
+        "question": "How often should my business post on social media?",
+        "answer": "The frequency depends on your audience and platform, but consistency is key. We create a posting schedule tailored to your brand."
+      },
+      {
+        "question": "Do you provide reports for social media performance?",
+        "answer": "Yes, we provide detailed performance reports with insights and recommendations to improve results."
+      },
+      {
+        "question": "How quickly can I see results from Social Media Marketing?",
+        "answer": "Building organic engagement takes time, but paid campaigns can generate quick results. We balance both for sustainable growth."
+      }
     ],
     "content": ""
   },
@@ -172,6 +297,48 @@
         "content": "Blog marketing is an ongoing process. Our team takes care of all aspects of blog management, including publishing new posts, updating old content, and maintaining a consistent publishing schedule. We also keep an eye on the latest trends, industry news, and changes in search engine algorithms to ensure that your blog remains relevant and effective in reaching your target audience."
       }
     ],
+    "faqs": [
+      {
+        "question": "What is Blog Marketing?",
+        "answer": "Blog Marketing is the use of blog content to attract, educate, and engage your audience while driving traffic, leads, and sales for your business."
+      },
+      {
+        "question": "Why does my business need a blog?",
+        "answer": "A blog helps boost SEO rankings, establishes your brand as an authority, drives organic traffic, and nurtures customer trust."
+      },
+      {
+        "question": "How often should we publish blog posts?",
+        "answer": "The frequency depends on your goals and industry. Consistency is key, but typically publishing 4–8 quality blogs per month shows strong results."
+      },
+      {
+        "question": "Do you handle SEO optimization for blogs?",
+        "answer": "Yes, we optimize every blog with the right keywords, meta tags, internal links, and formatting to improve search engine rankings."
+      },
+      {
+        "question": "What type of content do you create for blogs?",
+        "answer": "We create informative, engaging, and SEO-friendly blog posts including guides, case studies, industry insights, and thought leadership articles."
+      },
+      {
+        "question": "Can blogging really generate leads?",
+        "answer": "Yes, blogs attract organic visitors who are actively searching for solutions. With proper CTAs and strategy, they convert into quality leads."
+      },
+      {
+        "question": "How do you promote blog content?",
+        "answer": "We promote blogs through SEO, social media, email marketing, and content distribution platforms to maximize reach and engagement."
+      },
+      {
+        "question": "Do you provide performance reports for blogs?",
+        "answer": "Yes, we track blog performance through metrics like traffic, keyword rankings, engagement, and lead generation."
+      },
+      {
+        "question": "Can you manage existing blogs on my website?",
+        "answer": "Absolutely, we can audit, update, and optimize your existing blog content to improve performance and rankings."
+      },
+      {
+        "question": "How long does it take to see results from blog marketing?",
+        "answer": "Blog marketing is a long-term strategy. Results typically start showing within 3–6 months with consistent publishing and promotion."
+      }
+    ],
     "content": ""
   },
   {
@@ -201,6 +368,48 @@
         "imageUrl": "/images/services/Website Development/Web Application Development.webp",
         "heading": "Web Application Development",
         "content": "\nApplication Development\nUnlock the true potential of your business with ShootOrder's innovative web application development services. From seamless user experiences to scalable solutions, our expert team crafts custom web applications tailored to your unique needs. Drive efficiency, engage users, and stay ahead of the competition with our top-notch development expertise. ShootOrder specialize on LAMP MEAN stacks. API based applications are the part of our web development capabilities. Facebook Apps, Twitter Apps, Google API are some of the API's we excel in and optimize our development."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why is website design important for my business?",
+        "answer": "Your website is often the first impression of your brand. A well-designed site builds trust, improves user experience, and increases conversions."
+      },
+      {
+        "question": "What is the difference between a website and a landing page?",
+        "answer": "A website has multiple pages for different purposes, while a landing page is a single focused page designed to drive a specific action like sign-ups or sales."
+      },
+      {
+        "question": "How do you ensure websites load fast?",
+        "answer": "We use optimized code, compressed images, caching, and modern frameworks to ensure fast loading and smooth performance."
+      },
+      {
+        "question": "Are your websites mobile-friendly?",
+        "answer": "Yes, we design fully responsive websites that adapt seamlessly to mobile, tablet, and desktop screens."
+      },
+      {
+        "question": "Do you provide custom designs or use templates?",
+        "answer": "We offer both. Custom designs for unique branding, and optimized templates for faster delivery depending on your needs."
+      },
+      {
+        "question": "Can you redesign my existing website?",
+        "answer": "Absolutely, we can revamp your current website with a modern design, better user experience, and SEO-friendly structure."
+      },
+      {
+        "question": "Do you also provide landing page design for campaigns?",
+        "answer": "Yes, we create conversion-focused landing pages optimized for ads, product launches, and lead generation campaigns."
+      },
+      {
+        "question": "Will my website be SEO-friendly?",
+        "answer": "Yes, we follow SEO best practices including clean code, optimized structure, and keyword-focused content integration."
+      },
+      {
+        "question": "Do you provide website maintenance after launch?",
+        "answer": "Yes, we offer ongoing support and maintenance to ensure your website remains updated, secure, and high-performing."
+      },
+      {
+        "question": "How long does it take to design a website?",
+        "answer": "The timeline depends on project size and requirements. On average, a standard business website takes 4–6 weeks."
       }
     ],
     "content": ""
@@ -242,6 +451,48 @@
         "imageUrl": "/images/services/Influencer marketing/Performance Measurement and Reporting.webp",
         "heading": "Performance Measurement and Reporting",
         "content": "Transparency and accountability are paramount to our agency. We provide comprehensive reports detailing the performance of influencer campaigns. Our reports include key metrics, such as reach, impressions, engagement rates, conversions, and return on investment (ROI). These insights help us refine future influencer marketing strategies and demonstrate the value generated for your brand."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is Influencer Marketing?",
+        "answer": "Influencer Marketing is a strategy where brands collaborate with influencers to promote products or services to their engaged audience."
+      },
+      {
+        "question": "Why should my business use Influencer Marketing?",
+        "answer": "It builds authentic connections, increases brand visibility, and drives higher engagement compared to traditional advertising."
+      },
+      {
+        "question": "How do you choose the right influencers for my brand?",
+        "answer": "We analyze audience demographics, engagement rates, content style, and relevance to ensure influencers align with your brand’s goals."
+      },
+      {
+        "question": "Do you work with micro and macro influencers?",
+        "answer": "Yes, we collaborate with both micro-influencers for niche targeting and macro-influencers for broader reach, depending on campaign objectives."
+      },
+      {
+        "question": "Can influencer marketing generate sales?",
+        "answer": "Yes, influencer campaigns can directly drive traffic, leads, and sales while also strengthening long-term brand trust."
+      },
+      {
+        "question": "Which platforms do you run influencer campaigns on?",
+        "answer": "We manage influencer campaigns across Instagram, YouTube, TikTok, LinkedIn, and other platforms based on your target audience."
+      },
+      {
+        "question": "How do you measure the success of influencer campaigns?",
+        "answer": "We track KPIs such as engagement rate, reach, conversions, and ROI to measure campaign performance."
+      },
+      {
+        "question": "Is influencer marketing suitable for small businesses?",
+        "answer": "Yes, small businesses benefit from cost-effective collaborations with micro-influencers who drive high trust and engagement."
+      },
+      {
+        "question": "Do you handle contracts and campaign management?",
+        "answer": "Yes, we manage the entire process including influencer outreach, negotiations, contracts, content approvals, and reporting."
+      },
+      {
+        "question": "How long does it take to run an influencer campaign?",
+        "answer": "Campaign timelines vary, but most influencer campaigns can be planned and executed within 2–6 weeks."
       }
     ],
     "content": ""
@@ -449,9 +700,50 @@
         "content": "ShootOrder brings you Coupon Ads, a powerful advertising solution that enables businesses to attract and engage customers through enticing discounts and promotions. Our expert team designs visually appealing coupon ads that capture attention and drive conversions. With strategic placement across various platforms, including digital channels and social media, ShootOrder's Coupon Ads ensure maximum visibility and reach. Boost your sales, increase customer loyalty, and achieve a measurable return on investment with ShootOrder's Coupon Ads service. Let us help you create irresistible offers and connect with your target audience effectively."
       }
     ],
+    "faqs": [
+      {
+        "question": "What is Performance Marketing?",
+        "answer": "Performance Marketing is a results-driven digital marketing approach where you pay only for specific actions such as clicks, leads, or conversions."
+      },
+      {
+        "question": "How is Performance Marketing different from traditional advertising?",
+        "answer": "Unlike traditional ads, Performance Marketing is measurable, targeted, and ROI-focused, ensuring you only pay for tangible outcomes."
+      },
+      {
+        "question": "What platforms do you run Performance Marketing campaigns on?",
+        "answer": "We manage campaigns on Google Ads, Meta (Facebook & Instagram), LinkedIn, YouTube, and other ad networks depending on your business goals."
+      },
+      {
+        "question": "Can Performance Marketing work for small businesses?",
+        "answer": "Yes, Performance Marketing is scalable and works well for businesses of all sizes, as budgets can be adjusted to fit specific goals."
+      },
+      {
+        "question": "How do you track the success of campaigns?",
+        "answer": "We track KPIs such as clicks, impressions, cost per lead, return on ad spend (ROAS), and conversions to measure campaign effectiveness."
+      },
+      {
+        "question": "Do you guarantee results with Performance Marketing?",
+        "answer": "While no agency can guarantee exact results, we optimize campaigns with data-driven strategies to maximize ROI and achieve your goals."
+      },
+      {
+        "question": "What industries benefit most from Performance Marketing?",
+        "answer": "E-commerce, SaaS, healthcare, real estate, education, and service-based industries benefit greatly from performance-driven campaigns."
+      },
+      {
+        "question": "How much budget do I need for Performance Marketing?",
+        "answer": "The budget depends on your business goals, industry competition, and target audience. We help you allocate the right budget for maximum results."
+      },
+      {
+        "question": "Do you provide reports on campaign performance?",
+        "answer": "Yes, we provide detailed reports and insights on campaign performance, including traffic, leads, sales, and overall ROI."
+      },
+      {
+        "question": "How fast can I see results from Performance Marketing?",
+        "answer": "Results can be seen within days or weeks depending on campaign setup, industry, and optimization. Paid ads usually deliver quick outcomes."
+      }
+    ],
     "content": ""
-  }
-  ,
+  },
   {
     "heading": "Digital PR",
     "subheading": "Every click should count; our performance marketing strategies are built to drive measurable results. From laser-targeted ads to conversion-optimized campaigns, we transform your marketing spend into scalable growth and ROI that's measurable.",
@@ -489,6 +781,48 @@
         "imageUrl": "/images/services/Digital PR/Monitoring, Reporting & Media Clipping.webp",
         "heading": "Coupon/Scratch Ads",
         "content": "ShootOrder brings you Coupon Ads, a powerful advertising solution that enables businesses to attract and engage customers through enticing discounts and promotions. Our expert team designs visually appealing coupon ads that capture attention and drive conversions. With strategic placement across various platforms, including digital channels and social media, ShootOrder's Coupon Ads ensure maximum visibility and reach. Boost your sales, increase customer loyalty, and achieve a measurable return on investment with ShootOrder's Coupon Ads service. Let us help you create irresistible offers and connect with your target audience effectively."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is Digital PR?",
+        "answer": "Digital PR is an online marketing strategy that builds brand awareness, credibility, and authority through online publications, influencers, and digital media outlets."
+      },
+      {
+        "question": "How is Digital PR different from traditional PR?",
+        "answer": "Traditional PR focuses on print and offline media, while Digital PR leverages online platforms, blogs, social media, and SEO-driven content to reach a wider audience."
+      },
+      {
+        "question": "Why is Digital PR important for my business?",
+        "answer": "It improves brand visibility, helps build trust with your audience, boosts SEO through backlinks, and positions your brand as an industry leader."
+      },
+      {
+        "question": "Do Digital PR campaigns help with SEO?",
+        "answer": "Yes, Digital PR generates high-quality backlinks from trusted publications, which improve your website’s authority and search engine rankings."
+      },
+      {
+        "question": "What kind of results can I expect from Digital PR?",
+        "answer": "You can expect increased brand mentions, higher website traffic, stronger online reputation, and improved keyword rankings."
+      },
+      {
+        "question": "Can Digital PR help startups and small businesses?",
+        "answer": "Yes, Digital PR helps startups and SMBs gain media coverage, attract investors, and build trust with their target audience."
+      },
+      {
+        "question": "How do you measure the success of a Digital PR campaign?",
+        "answer": "We track metrics like media mentions, backlinks earned, referral traffic, brand sentiment, and overall visibility growth."
+      },
+      {
+        "question": "Do you provide influencer collaborations as part of Digital PR?",
+        "answer": "Yes, we connect your brand with relevant influencers and thought leaders to amplify reach and credibility."
+      },
+      {
+        "question": "How long does it take to see results from Digital PR?",
+        "answer": "Some results like media mentions can be seen quickly, while SEO and reputation benefits usually take 3–6 months."
+      },
+      {
+        "question": "Which industries benefit most from Digital PR?",
+        "answer": "E-commerce, SaaS, healthcare, education, real estate, and consumer brands benefit greatly from Digital PR strategies."
       }
     ],
     "content": ""
@@ -532,6 +866,48 @@
         "content": "Clear, actionable reports featuring KPIs like CTR, CPA, ROAS, CVR, and insights that drive strategic scaling."
       }
     ],
+    "faqs": [
+      {
+        "question": "What is Performance Marketing?",
+        "answer": "Performance Marketing is a results-driven digital marketing approach where you pay only for specific actions such as clicks, leads, or conversions."
+      },
+      {
+        "question": "How is Performance Marketing different from traditional advertising?",
+        "answer": "Unlike traditional ads, Performance Marketing is measurable, targeted, and ROI-focused, ensuring you only pay for tangible outcomes."
+      },
+      {
+        "question": "What platforms do you run Performance Marketing campaigns on?",
+        "answer": "We manage campaigns on Google Ads, Meta (Facebook & Instagram), LinkedIn, YouTube, and other ad networks depending on your business goals."
+      },
+      {
+        "question": "Can Performance Marketing work for small businesses?",
+        "answer": "Yes, Performance Marketing is scalable and works well for businesses of all sizes, as budgets can be adjusted to fit specific goals."
+      },
+      {
+        "question": "How do you track the success of campaigns?",
+        "answer": "We track KPIs such as clicks, impressions, cost per lead, return on ad spend (ROAS), and conversions to measure campaign effectiveness."
+      },
+      {
+        "question": "Do you guarantee results with Performance Marketing?",
+        "answer": "While no agency can guarantee exact results, we optimize campaigns with data-driven strategies to maximize ROI and achieve your goals."
+      },
+      {
+        "question": "What industries benefit most from Performance Marketing?",
+        "answer": "E-commerce, SaaS, healthcare, real estate, education, and service-based industries benefit greatly from performance-driven campaigns."
+      },
+      {
+        "question": "How much budget do I need for Performance Marketing?",
+        "answer": "The budget depends on your business goals, industry competition, and target audience. We help you allocate the right budget for maximum results."
+      },
+      {
+        "question": "Do you provide reports on campaign performance?",
+        "answer": "Yes, we provide detailed reports and insights on campaign performance, including traffic, leads, sales, and overall ROI."
+      },
+      {
+        "question": "How fast can I see results from Performance Marketing?",
+        "answer": "Results can be seen within days or weeks depending on campaign setup, industry, and optimization. Paid ads usually deliver quick outcomes."
+      }
+    ],
     "content": ""
   },
   {
@@ -571,6 +947,48 @@
         "imageUrl": "/images/services/Meta Ads/Reporting & Analytics.webp",
         "heading": "Coupon/Scratch Ads",
         "content": "ShootOrder brings you Coupon Ads, a powerful advertising solution that enables businesses to attract and engage customers through enticing discounts and promotions. Our expert team designs visually appealing coupon ads that capture attention and drive conversions. With strategic placement across various platforms, including digital channels and social media, ShootOrder's Coupon Ads ensure maximum visibility and reach. Boost your sales, increase customer loyalty, and achieve a measurable return on investment with ShootOrder's Coupon Ads service. Let us help you create irresistible offers and connect with your target audience effectively."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are Meta Ads?",
+        "answer": "Meta Ads are paid advertising campaigns run on Facebook, Instagram, Messenger, and Audience Network to reach highly targeted audiences."
+      },
+      {
+        "question": "Why should my business use Meta Ads?",
+        "answer": "Meta Ads help you reach billions of active users, increase brand awareness, generate leads, and drive sales with precise targeting."
+      },
+      {
+        "question": "How do you target the right audience with Meta Ads?",
+        "answer": "We use advanced targeting options like demographics, interests, behaviors, and custom audiences to ensure your ads reach the right people."
+      },
+      {
+        "question": "Can Meta Ads work for small businesses?",
+        "answer": "Yes, Meta Ads are scalable and allow flexible budgeting, making them suitable for businesses of all sizes."
+      },
+      {
+        "question": "What types of ads can be run on Meta platforms?",
+        "answer": "We create carousel ads, video ads, story ads, collection ads, and lead generation ads depending on your business goals."
+      },
+      {
+        "question": "How do you measure the success of Meta Ads?",
+        "answer": "We track key metrics like impressions, clicks, cost per lead, conversions, and return on ad spend (ROAS)."
+      },
+      {
+        "question": "How fast can I see results from Meta Ads?",
+        "answer": "Results can be seen quickly, often within days, depending on your campaign objectives, budget, and competition."
+      },
+      {
+        "question": "Do you provide remarketing with Meta Ads?",
+        "answer": "Yes, we set up remarketing campaigns to re-engage visitors who have interacted with your brand but haven’t yet converted."
+      },
+      {
+        "question": "Can I run both brand awareness and sales campaigns with Meta Ads?",
+        "answer": "Absolutely, Meta Ads can be tailored for awareness, engagement, traffic, lead generation, or direct sales campaigns."
+      },
+      {
+        "question": "Do you provide reports for Meta Ads performance?",
+        "answer": "Yes, we share detailed reports with insights into audience engagement, conversions, and ROI to keep you updated on results."
       }
     ],
     "content": ""
@@ -862,7 +1280,7 @@
     ],
     "content": ""
   },
-   {
+  {
     "heading": "Onsite Engagement Solutions",
     "subheading": "Turn in-person interactions into memorable brand experiences. We design and execute engaging onsite activations that captivate your audience, build brand recall, and drive meaningful connections.",
     "title": "Onsite Engagement Solutions",
@@ -891,12 +1309,12 @@
         "content": "Trained brand representatives, promoters, and hosts who embody your brand values and create positive, lasting impressions."
       },
       {
-       "imageUrl": "/images/services/on-site-engagement/Onsite Engagement Strategy & Planning.webp",
+        "imageUrl": "/images/services/on-site-engagement/Onsite Engagement Strategy & Planning.webp",
         "heading": "Lead Capture & Data Collection",
         "content": "Digital forms, QR codes, and on-the-spot contests to maximize lead collection and real-time engagement tracking."
       },
       {
-       "imageUrl": "/images/services/on-site-engagement/Post-Event Reporting & Analysis.webp",
+        "imageUrl": "/images/services/on-site-engagement/Post-Event Reporting & Analysis.webp",
         "heading": "Post-Event Reporting & Analysis",
         "content": "Detailed engagement reports, lead data summaries, and feedback insights to evaluate event success and plan future strategies."
       }
@@ -917,22 +1335,22 @@
         "content": "Identify business-critical metrics and create a structured approach to track performance effectively."
       },
       {
-       "imageUrl": "/images/services/analytics-dashboard/Custom Dashboard Design.webp",
+        "imageUrl": "/images/services/analytics-dashboard/Custom Dashboard Design.webp",
         "heading": "Custom Dashboard Design",
         "content": "Interactive, visually engaging dashboards built on Power BI, Tableau, Google Data Studio, or custom platforms. "
       },
       {
-       "imageUrl": "/images/services/analytics-dashboard/Multi-Source Data Integration.webp",
+        "imageUrl": "/images/services/analytics-dashboard/Multi-Source Data Integration.webp",
         "heading": "Multi-Source Data Integration",
         "content": "Connect and unify data from CRMs, marketing tools, websites, and internal systems for a single view of performance."
       },
       {
-       "imageUrl": "/images/services/analytics-dashboard/Real-Time Reporting & Automation.webp",
+        "imageUrl": "/images/services/analytics-dashboard/Real-Time Reporting & Automation.webp",
         "heading": "Real-Time Reporting & Automation",
         "content": "Automated data updates and live reporting to reduce manual effort and enable quicker decisions. "
       },
       {
-       "imageUrl": "/images/services/analytics-dashboard/Advanced Analytics & Insights.webp",
+        "imageUrl": "/images/services/analytics-dashboard/Advanced Analytics & Insights.webp",
         "heading": "Advanced Analytics & Insights",
         "content": "Deliver trend analysis, performance forecasting, and actionable business insights."
       },
@@ -968,7 +1386,7 @@
         "content": "Dynamic, real-time dashboards that transform raw data into intuitive visualizations for quick, actionable insights. "
       },
       {
-         "imageUrl": "/images/services/smart-analytics/Cross-Platform Data Integration.webp",
+        "imageUrl": "/images/services/smart-analytics/Cross-Platform Data Integration.webp",
         "heading": "Cross-Platform Data Integration",
         "content": "Aggregate and harmonize data from CRMs, marketing channels, websites, and internal tools into a single, smart analytics system."
       },
@@ -1008,7 +1426,6 @@
         "heading": "Social Media Training",
         "content": "Organic Management (Facebook, Twitter, Instagram...) Online Reputation Care Organic Growth (Likes/Followers) Advance Social Media Marketing"
       }
-     
     ],
     "content": ""
   }

@@ -52,11 +52,22 @@ export default async function ServicePage({ params }) {
             />
             <StatisticsService />
             {/* <ClientsService/> */}
+
+            <div className="bg-gray-50">
             <OurPartners />
+            </div>
+
             <DescriptionService />
+            
+            <div className="bg-gray-50"> 
             <ProcessCovered services={service} />
-            <Faqs />
+            </div>
+
+            <Faqs services={service}/>
+
+            <div className="bg-gray-50">
             <CaseStudyComponent service={params.slug} />
+            </div>
         </div>
     )
 }

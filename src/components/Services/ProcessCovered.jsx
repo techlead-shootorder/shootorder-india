@@ -31,7 +31,7 @@ function ProcessCovered({ services, pageHeading }) {
   if (!services?.features) return null;
 
   return (
-    <div className="min-h-screen bg-white py-20 px-6">
+    <div className="min-h-screen py-20 px-6">
       <div className="!max-w-7xl mx-auto">
         {/* Section Header */}
         <div

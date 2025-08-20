@@ -4,46 +4,13 @@ import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
-const Faqs = () => {
+const Faqs = ( {services} ) => {
   const router = useRouter();
   const pathname = usePathname(); // Get the current path
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Static FAQ data
-  const faq = [
-    {
-      question: "What is your return policy?",
-      answer: "We offer a 30-day return policy for all unused items in their original packaging. Simply contact our customer service team to initiate a return."
-    },
-    {
-      question: "How long does shipping take?",
-      answer: "Standard shipping typically takes 3-5 business days. Express shipping options are available for faster delivery within 1-2 business days."
-    },
-    {
-      question: "Do you offer international shipping?",
-      answer: "Yes, we ship to over 50 countries worldwide. International shipping costs and delivery times vary by destination."
-    },
-    {
-      question: "How can I track my order?",
-      answer: "Once your order ships, you'll receive a tracking number via email. You can use this number to track your package on our website or the carrier's website."
-    },
-    {
-      question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay for secure checkout."
-    },
-    {
-      question: "Can I modify or cancel my order?",
-      answer: "Orders can be modified or cancelled within 1 hour of placement. After that, please contact customer service for assistance."
-    },
-    {
-      question: "Do you offer customer support?",
-      answer: "Yes, our customer support team is available Monday through Friday, 9 AM to 6 PM EST. You can reach us via email, phone, or live chat."
-    },
-    {
-      question: "Are your products eco-friendly?",
-      answer: "We're committed to sustainability and use eco-friendly packaging materials. Many of our products are made from recycled or sustainable materials."
-    }
-  ];
+  if(services?.faqs?.length <= 0) return null;
+
 
   useEffect(() => {
     if (window.location.hash === "#faq") {
@@ -69,14 +36,14 @@ const Faqs = () => {
   };
 
   // Split the FAQs into two columns
-  const half = Math.ceil(faq.length / 2);
-  const leftFaqs = faq.slice(0, half);
-  const rightFaqs = faq.slice(half);
+  const half = Math.ceil(services?.faqs?.length / 2);
+  const leftFaqs = services.faqs.slice(0, half);
+  const rightFaqs = services.faqs.slice(half);
 
   return (
-    <div id="faq" className="text-black bg-gray-50 pt-10 pb-16 scroll-mt-28">
+    <div id="faq" className="text-black pt-10 pb-16 scroll-mt-28">
       <div className="!max-w-7xl mx-auto">
-        {faq.length > 0 && (
+        {services?.faqs && services.faqs.length > 0 && (
           <h3 className="text-center text-3xl font-bold mb-6 text-black">
             Frequently Asked Questions
           </h3>

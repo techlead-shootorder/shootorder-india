@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DescriptionService = () => {
   return (
-    <div className="services-details-area py-20 bg-[#9a0c28] text-white"> 
+    <div className="services-details-area py-20 text-black"> 
       <div className="container mx-auto !max-w-7xl px-4">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Text Section */}
