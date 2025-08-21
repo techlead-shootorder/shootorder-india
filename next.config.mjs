@@ -6,7 +6,7 @@ const nextConfig = {
   
   // Disable image optimization for static export
   images: {
-    unoptimized: true,
+    unoptimized: true
   },
   
   
