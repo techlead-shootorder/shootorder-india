@@ -414,7 +414,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
               {/* Image Section - Left on desktop, Top on mobile */}
-              <div className="w-full lg:w-1/2 order-1 lg:order-1">
+              <div className="w-full h-full lg:w-1/2 order-1 lg:order-1">
                 <ImageSection/>
               </div>
 

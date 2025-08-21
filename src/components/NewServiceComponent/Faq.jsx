@@ -9,7 +9,10 @@ const Faqs = ( {services} ) => {
   const pathname = usePathname(); // Get the current path
   const [openIndex, setOpenIndex] = useState(null);
 
-  if(services?.faqs?.length <= 0) return null;
+    // ✅ Check if services.faqs is a valid non-empty array
+  if (!Array.isArray(services?.faqs) || services.faqs.length === 0) {
+    return null;
+  }
 
 
   useEffect(() => {
