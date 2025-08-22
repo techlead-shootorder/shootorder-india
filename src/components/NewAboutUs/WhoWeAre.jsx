@@ -12,40 +12,15 @@ const WhoWeAre = () => {
         </div>
 
         {/* Main content grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left side - Decorative Pattern */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-30 items-center">
+          {/* Left side - Image */}
           <div className="flex justify-center lg:justify-end relative">
             <div className="relative w-80 h-80 sm:w-96 sm:h-96">
-              {/* Decorative rounded rectangles pattern */}
-              {/* Top left diagonal */}
-              <div className="absolute top-8 left-12 w-20 h-4 bg-teal-400 rounded-full transform -rotate-45"></div>
-              
-              {/* Top center vertical */}
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-4 h-24 bg-teal-400 rounded-full"></div>
-              
-              {/* Top right diagonal */}
-              <div className="absolute top-8 right-12 w-20 h-4 bg-teal-400 rounded-full transform rotate-45"></div>
-              
-              {/* Middle left horizontal */}
-              <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-24 h-4 bg-teal-400 rounded-full"></div>
-              
-              {/* Center dot */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-4 bg-teal-400 rounded-full"></div>
-              
-              {/* Middle right diagonal */}
-              <div className="absolute top-1/2 right-4 transform -translate-y-1/2 rotate-45 w-16 h-4 bg-teal-400 rounded-full"></div>
-              
-              {/* Bottom left horizontal */}
-              <div className="absolute bottom-16 left-8 w-24 h-4 bg-teal-400 rounded-full"></div>
-              
-              {/* Bottom left diagonal */}
-              <div className="absolute bottom-8 left-16 w-16 h-4 bg-teal-400 rounded-full transform rotate-45"></div>
-              
-              {/* Bottom center vertical */}
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-x-4 w-4 h-20 bg-teal-400 rounded-full"></div>
-              
-              {/* Bottom right diagonal */}
-              <div className="absolute bottom-12 right-8 w-20 h-4 bg-teal-400 rounded-full transform -rotate-45"></div>
+              <img 
+                src="/images/about-us/shootorder-logo.svg" 
+                alt="Digital Marketing Team" 
+                className="w-full h-full object-contain rounded-lg"
+              />
             </div>
           </div>
 
@@ -72,7 +47,7 @@ const WhoWeAre = () => {
             <div className="pt-4 flex justify-center">
                 <div className='relative'>
                 <div className='absolute top-[9px] left-[4px] h-8 w-28 bg-yellow-400 rounded-full -z-4'></div>
-              <button className="text-white bg-pink-400 font-medium py-1 px-4 rounded-full text-lg transition-all">
+              <button className="text-white bg-[#9a0c28] font-medium py-1 px-4 rounded-full text-lg transition-all">
                 Let's Talk
               </button>
               </div>

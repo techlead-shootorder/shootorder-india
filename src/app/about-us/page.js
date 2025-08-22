@@ -1,7 +1,7 @@
 
 import FormulaSection from "@/components/about-us/FormulaSection";
 import HomeBanner from "@/components/about-us/HomeBanner";
-import TestimonialSection from "@/components/about-us/TestimonialSection";
+// import TestimonialSection from "@/components/about-us/TestimonialSection";
 import LeaderShipSection from "@/components/about-us/LeadShipSection";
 import WhyChooseSection from "@/components/about-us/WhyChooseUsSection";
 import PartnerCarousel from "@/components/Home/Partners/OurPartners";
@@ -14,6 +14,9 @@ import OurCultureSection from "@/components/NewAboutUs/OurCultureSection";
 import OurFoundersSection from "@/components/NewAboutUs/OurFoundersSection";
 import TeamSliderSection from "@/components/NewAboutUs/TeamSliderSection";
 import TeamShowcase from "@/components/NewAboutUs/TeamShowCase";
+import TestimonialsSection from "@/components/NewAboutUs/TestimonialsSection";
+import ContactFormSection from "@/components/NewAboutUs/ContactSection";
+
 
 function page() {
   return (
@@ -24,15 +27,18 @@ function page() {
       <OurCultureSection/>
       <OurFoundersSection/>
       <TeamSliderSection/>
-      <TeamShowcase/>
-
-      <AboutDescription/>
+      {/* <TeamShowcase/> */}
+      <TestimonialsSection/>
       <PartnerCarousel/>
-      <TestimonialSection />
+      <ContactFormSection/>
+      
+      {/* Old About us component */}
+      {/* <AboutDescription/> */}
+      {/* <TestimonialSection /> */}
       {/* <LeaderShipSection/> */}
-      <WhyTrustUs/>
-      <WhyChooseSection />
-      <FormulaSection/>
+      {/* <WhyTrustUs/> */}
+      {/* <WhyChooseSection /> */}
+      {/* <FormulaSection/> */}
     </>
   );
 }
