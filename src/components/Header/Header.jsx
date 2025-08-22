@@ -228,7 +228,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   {
     name: "Services",
-    href: "#",
+    href: "/services",
     hasMegaMenu: true,
     menuType: "services",
   },
