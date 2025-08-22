@@ -55,14 +55,14 @@ export default async function ServicesPage() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <Link
             href="/admin/services/new"
             className="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors"
           >
             Create New Service
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
