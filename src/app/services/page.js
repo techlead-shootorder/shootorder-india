@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { getAllServices } from '@/lib/services';
 import ServiceHeroSection from '@/components/SeprateServicePage/ServiceHeroSection';
+import ServicePartnerSection from '@/components/SeprateServicePage/ServicePartnerSection';
 
 export const metadata = {
   title: 'All Services | ShootOrder',
@@ -14,6 +15,7 @@ export default async function ServicesPage() {
   return (
     <div>
       <ServiceHeroSection />
+      <ServicePartnerSection />
       <div className="!max-w-7xl mx-auto py-20 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Services</h1>
 

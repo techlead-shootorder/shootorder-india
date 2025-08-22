@@ -47,7 +47,7 @@ const Faqs = ( {services} ) => {
     <div id="faq" className="text-black pt-10 pb-16 scroll-mt-28">
       <div className="!max-w-7xl mx-auto">
         {services?.faqs && services.faqs.length > 0 && (
-          <h3 className="text-center text-3xl font-bold mb-6 text-black">
+          <h3 className="text-center text-3xl font-bold mb-10 text-black">
             Frequently Asked Questions
           </h3>
         )}

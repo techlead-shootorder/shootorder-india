@@ -38,7 +38,7 @@ function ProcessCovered({ services, pageHeading }) {
           className={`text-center mb-16 transition-all duration-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          <h2 className="text-center font-bold text-4xl mb-4">
+          <h2 className="text-center font-bold text-3xl mb-4">
             {pageHeading ? pageHeading : "Our Services"}
           </h2>
 

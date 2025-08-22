@@ -86,14 +86,14 @@ const TestimonialsSection = () => {
                 </div>
 
                 {/* Let's Talk Button */}
-                <div className="pt-4 flex justify-center">
+                {/* <div className="pt-4 flex justify-center">
                     <div className='relative'>
                         <div className='absolute top-[9px] left-[4px] h-8 w-28 bg-yellow-400 rounded-full'></div>
                         <button className="relative z-5 text-white bg-[#9a0c28] font-medium py-1 px-4 rounded-full text-lg transition-all">
                             Let's Talk
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Video Modal */}

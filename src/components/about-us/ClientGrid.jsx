@@ -83,7 +83,7 @@ function ClientGrid({ children }) {
 
         {/* Bottom Row Heading */}
         <div>
-          <h2 className="text-center font-bold text-2xl mb-8">Why Trust Us</h2>
+          <h2 className="text-center font-bold text-3xl mb-8">Why Trust Us</h2>
           <div className="relative">
             <div
               ref={bottomRowRef}

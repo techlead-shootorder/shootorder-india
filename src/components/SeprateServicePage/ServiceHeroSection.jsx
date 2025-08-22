@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ServiceHeroSection = () => {
   return (
-    <section className="bg-[#fffdf4] py-16 px-4 lg:px-8 mt-20">
+    <section className="bg-[#fff3f3] py-16 px-4 lg:px-8 mt-20">
       <div className="!max-w-7xl mx-auto">
 
         <div className="grid lg:grid-cols-2 sm:gap-20 items-center">
@@ -12,7 +12,7 @@ const ServiceHeroSection = () => {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
               Amplifying brands,<br />
               driving engagement,<br />
-              and creating <span className="text-yellow-400">impact</span>
+              and creating <span className="text-[#9a0c28]">impact</span>
             </h1>
             
             {/* Subtext */}
@@ -33,7 +33,7 @@ const ServiceHeroSection = () => {
             </div>
             
             {/* CTA Button */}
-            <button className="bg-blue-950 text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2">
+            <button className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer">
               Check our services
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

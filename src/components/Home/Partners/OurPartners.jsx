@@ -27,7 +27,7 @@ export default function PartnerCarousel() {
 
   return (
     <div className="relative !max-w-7xl mx-auto py-16">
-      <h2 className="text-[30px] font-bold text-center mb-8">Our Partners</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">Our Partners</h2>
 
       {/* Left Arrow */}
       <button

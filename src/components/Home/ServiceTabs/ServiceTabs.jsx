@@ -141,7 +141,7 @@ export default function CombinedServiceFlow() {
       <div className="max-w-7xl mx-auto" style={{ width: "min(1260px, 100%)" }}>
         {/* Header Section - Improved Mobile Spacing */}
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Services</h2>
+          <h2 className="text-3xl font-bold mb-3 md:mb-4">Our Services</h2>
           <p className="text-base md:text-lg text-gray-600 px-2">
             Comprehensive digital solutions for your business growth
           </p>
