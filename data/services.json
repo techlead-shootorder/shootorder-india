@@ -892,5 +892,128 @@
       }
     ],
     "content": ""
+  },
+  {
+    "heading": "Google Business Profile Management That Drives Local Visibility",
+    "subheading": "Your Google Business Profile is the digital storefront of your brand. We help you optimize and manage it to boost visibility, attract local customers, and convert searches into real business opportunities.",
+    "slug": "gbp-management",
+    "title": "Google Business Profile Management That Drives Local Visibility",
+    "description": "Your Google Business Profile is the digital storefront of your brand. We help you optimize and manage it to boost visibility, attract local customers, and convert searches into real business opportunities.",
+    "imageUrl": "/images/services/performance-marketing.jpg",
+    "features": [
+      {
+        "imageUrl": "/images/services/GBP/Profile Setup & Optimization.webp",
+        "heading": "Profile Setup & Optimization",
+        "content": "Complete GBP setup or audit with accurate business details, categories, and keyword optimization to ensure higher local search rankings."
+      },
+      {
+        "imageUrl": "/images/services/GBP/Branding & Visual Enhancement.webp",
+        "heading": "Branding & Visual Enhancement",
+        "content": "Custom images, videos, logos, and cover photos aligned with your brand identity, making your profile visually engaging and trustworthy."
+      },
+      {
+        "imageUrl": "/images/services/GBP/Review & Reputation Management.webp",
+        "heading": "Review & Reputation Management",
+        "content": "Proactive monitoring, response strategies, and review generation campaigns that build credibility and strengthen customer trust."
+      },
+      {
+        "imageUrl": "/images/services/GBP/Post & Offer Management.webp",
+        "heading": "Post & Offer Management",
+        "content": "Regular posting of updates, offers, events, and product highlights to keep your profile fresh, engaging, and SEO-friendly."
+      },
+      {
+        "imageUrl": "/images/services/GBP/Insights & Performance Tracking.webp",
+        "heading": "Insights & Performance Tracking",
+        "content": "In-depth tracking of customer actions (calls, directions, clicks), search visibility, and keyword trends through GBP Insights."
+      },
+      {
+        "imageUrl": "/images/services/GBP/Advanced Integrations & Local SEO.webp",
+        "heading": "Advanced Integrations & Local SEO",
+        "content": "Integration with booking tools, messaging, and local SEO strategies that drive foot traffic, calls, and online inquiries. "
+      }
+    ],
+    "content": ""
+  },
+  {
+    "heading": "Landing Pages That Convert",
+    "subheading": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
+    "slug": "landing-pages",
+    "title": "Landing Pages That Convert ",
+    "description": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
+    "imageUrl": "/images/services/landing-pages/performance-marketing.jpg",
+    "features": [
+      {
+        "imageUrl": "/images/services/landing-pages/Landing Page Strategy & Wireframing.webp",
+        "heading": "Landing Page Strategy & Wireframing",
+        "content": "User flow mapping, content structuring, and wireframe creation focused on clarity, persuasion, and conversion optimization."
+      },
+      {
+        "imageUrl": "/images/services/landing-pages/Custom Design & Brand Integration.webp",
+        "heading": "Custom Design & Brand Integration",
+        "content": "Visually engaging designs with seamless integration of your brand identity — colors, fonts, logos — ensuring brand consistency and high user trust."
+      },
+      {
+        "imageUrl": "/images/services/landing-pages/Responsive Development & Speed Optimization.webp",
+        "heading": "Responsive Development & Speed Optimization",
+        "content": "Mobile-first, fast-loading landing pages are developed on platforms like WordPress, Webflow, or custom code to ensure a smooth user experience across devices."
+      },
+      {
+        "imageUrl": "/images/services/landing-pages/Lead Capture & Integrations.webp",
+        "heading": "Lead Capture & Integrations",
+        "content": "Optimized lead capture forms, CRM integrations (HubSpot, Zoho, Mailchimp), and automated follow-ups to maximize lead generation efficiency."
+      },
+      {
+        "imageUrl": "/images/services/landing-pages/A_B Testing & Performance Optimization.webp",
+        "heading": "A/B Testing & Performance Optimization",
+        "content": "Ongoing split testing of headlines, CTAs, visuals, and forms, backed by analytics to continually improve conversion rates and reduce bounce rates. "
+      },
+      {
+        "imageUrl": "/images/services/landing-pages/Reporting & Analytics Setup.webp",
+        "heading": "Reporting & Analytics Setup",
+        "content": "Google Analytics and conversion tracking setup with clear performance dashboards to track KPIs like conversion rate, session duration, and cost per lead."
+      }
+    ],
+    "content": ""
+  },
+  {
+    "heading": "Meta Ads Agency",
+    "subheading": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
+    "slug": "meta-ads",
+    "title": "Meta Ads Agency",
+    "description": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
+    "imageUrl": "/images/services/meta-ads/meta-ads-banner.webp",
+    "features": [
+      {
+        "imageUrl": "/images/services/meta-ads/Meta Ads Strategy & Planning.webp",
+        "heading": "Meta Ads Strategy & Planning",
+        "content": "Audience research, funnel mapping, competitor analysis, and budget allocation tailored for Meta platforms (Facebook, Instagram)."
+      },
+      {
+        "imageUrl": "/images/services/meta-ads/Creative Design & Ad Copywriting.webp",
+        "heading": "Creative Design & Ad Copywriting",
+        "content": "Creating eye-catching ad creatives and compelling copy tailored to Meta's guidelines to capture attention and drive engagement. "
+      },
+      {
+        "imageUrl": "/images/services/meta-ads/Campaign Setup & Targeting.webp",
+        "heading": "Campaign Setup & Targeting ",
+        "content": "End-to-end ad setup including custom audiences, interest/behavior-based targeting, location-based targeting, and A/B testing."
+      },
+      {
+        "imageUrl": "/images/services/meta-ads/Conversion Tracking & Pixel Integration.webp",
+        "heading": "Conversion Tracking & Pixel Integration",
+        "content": "Installing and managing Meta Pixel, setting up events like Add to Cart, Purchase, or Lead to measure campaign success accurately."
+      },
+      {
+        "imageUrl": "/images/services/meta-ads/Performance Monitoring & Optimization.webp",
+        "heading": "Performance Monitoring & Optimization",
+        "content": "Daily/weekly campaign monitoring, adjusting bids, audiences, creatives, and placements to maximize ROI."
+      },
+      {
+        "imageUrl": "/images/services/meta-ads/Reporting & Analytics.webp",
+        "heading": "Reporting & Analytics ",
+        "content": "Delivering insightful performance reports including KPIs like CTR, ROAS, CPL, and strategic recommendations for scaling."
+      }
+    ],
+    "content": ""
   }
 ]
