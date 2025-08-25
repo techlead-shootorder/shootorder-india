@@ -5,7 +5,7 @@
     "slug": "seo",
     "title": "SEO",
     "description": "If you’re not on Page 1, you’re invisible; that's why our SEO experts make your brand unmissable. We optimize your site for both people and search engines, turning it into a traffic magnet and building real brand value across the internet.",
-    "imageUrl": "/images/services/banners/SEO Banner.webp",
+    "imageUrl": "/images/services/SEO/seo-banner.webp",
     "features": [
       {
         "imageUrl": "/images/services/SEO/Keywords Optimization.webp",
@@ -78,42 +78,42 @@
     "content": "<p>We build modern, fast, and secure websites that help your business stand out.</p>"
   },
   {
-    "heading": "Paid Advertising",
+    "heading": "Google Ads",
     "subheading": "From Google Search to YouTube, Meta, and beyond, paid ads are where attention meets action. We craft performance-driven campaigns that turn ad spend into measurable results.",
     "title": "Performance Marketing",
-    "slug": "advertise",
+    "slug": "google-ads",
     "description": "Introducing our award-winning PPC & Performance Marketing services\nWe handle your performance marketing requirements as if they were our own. With over 50 performance marketing specialists, our paid ads services are growth-driven. Our account strategists bring in a deep understanding of business, with their precise targeting and effective messaging, this combination makes us the best in the market.",
-    "imageUrl": "/images/services/banners/PPC Banner.webp",
+    "imageUrl": "/images/services/google-ads/google-ads-banner.webp",
     "features": [
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/search-engine-advertising-so.jpg",
-        "heading": "Paid Search",
-        "content": "Search Engine Marketing (SEM) or Paid Search Engine Advertising can help your customers find you easily. For an existing market, the best way to generate sales/leads is Search Engine Marketing. ShootOrder leading search marketing agency makes sure to invest your money in right keywords with an extra edge of making your company look different than others yet by managing low cost per click."
+        "imageUrl": "/images/services/google-ads/Strategic Media Planning & Channel Selection.webp",
+        "heading": "Strategic Media Planning & Channel Selection",
+        "content": "Thorough market and audience research, funnel mapping, and media mix planning across Google Ads, Meta, YouTube, LinkedIn, and more."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/display-ads.jpg",
-        "heading": "Paid Display",
-        "content": "Display Advertising on the other hand can build an image of a brand by displaying its products & services on various websites across world wide web. Display Advertisements are much more attractive and appealing to customers as these appear in various formats like Image, Animated Images, Flash, Video etc. Paid display advertising is effective, both as direct response and branding strategy. Youtube advertising is also a major display advertising channel."
+        "imageUrl": "/images/services/google-ads/Ad Creative & Copy Development.webp",
+        "heading": "Ad Creative & Copy Development",
+        "content": "Designing scroll-stopping creatives and conversion-focused ad copy customized per platform to drive clicks and conversions."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/social-media-advertising-so.jpg",
-        "heading": "Paid Social",
-        "content": "Social Media Advertising is targeted on interest based audience. Take leverage out of our social media advertising methods on facebook, linkedin, twitter, pinterest etc... These are mostly in image and video formats."
+        "imageUrl": "/images/services/google-ads/Campaign Setup & Audience Targeting.webp",
+        "heading": "Campaign Setup & Audience Targeting",
+        "content": "Full-funnel campaign buildout with precise targeting: custom audiences, demographics, behavioural signals, intent-based keywords, and"
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/ott.jpg",
-        "heading": "OTT Advertising",
-        "content": "ShootOrder is your trusted partner for OTT Advertising, helping businesses effectively reach their target audience through streaming media platforms. With our expertise in digital advertising, we deliver impactful video, display, and interactive ads on popular OTT platforms, ensuring maximum engagement and measurable results. Reach your customers where they are, and let ShootOrder's OTT Advertising service elevate your brand to new heights in the digital streaming landscape."
+        "imageUrl": "/images/services/google-ads/Conversion Tracking & Tag Integration.webp",
+        "heading": "Conversion Tracking & Tag Integration",
+        "content": "Set up and management of Google Tag Manager, Meta Pixel, GA4, and custom events to measure campaign success across platforms."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/music.jpg",
-        "heading": "Streaming Ads",
-        "content": "ShootOrder is a leading provider of Streaming Ads, empowering businesses to connect with their target audience through the power of streaming media platforms. With our expertise in digital advertising, we create compelling video, display, and interactive ads that seamlessly integrate into popular streaming services. Drive brand awareness, engage viewers, and achieve measurable results with ShootOrder's Streaming Ads service. Let us help you make a lasting impact in the streaming landscape and reach your customers in the most effective way possible."
+        "imageUrl": "/images/services/google-ads/Continuous Optimization & A/B Testing.webp",
+        "heading": "Continuous Optimization & A/B Testing",
+        "content": "Weekly performance reviews to optimize bids, placements, creatives, audiences, and testing strategies for the best results."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/coupon.jpg",
-        "heading": "Coupon/Scratch Ads",
-        "content": "ShootOrder brings you Coupon Ads, a powerful advertising solution that enables businesses to attract and engage customers through enticing discounts and promotions. Our expert team designs visually appealing coupon ads that capture attention and drive conversions. With strategic placement across various platforms, including digital channels and social media, ShootOrder's Coupon Ads ensure maximum visibility and reach. Boost your sales, increase customer loyalty, and achieve a measurable return on investment with ShootOrder's Coupon Ads service. Let us help you create irresistible offers and connect with your target audience effectively."
+        "imageUrl": "/images/services/google-ads/Analytics & Reporting.webp",
+        "heading": "Analytics & Reporting",
+        "content": "Clear, actionable reports featuring KPIs like CTR, CPA, ROAS, CVR, and insights that drive strategic scaling."
       }
     ],
     "faqs": [
@@ -264,35 +264,35 @@
     "title": "Blog Management",
     "slug": "blog-management",
     "description": "Blogs generate 67% more leads for businesses compared to those without a blog. Enhance your online presence and engage your audience with ShootOrder's expert Blog Management & Marketing services. Our skilled team curates compelling content, optimizes SEO, and implements effective promotion strategies to drive traffic, boost conversions, and establish your brand as an industry authority. Maximize the impact of your blog with ShootOrder's comprehensive management and marketing solutions.",
-    "imageUrl": "/images/services/blog-bg.jpg",
+    "imageUrl": "/images/services/blog-managment/blog-managment-banner.webp",
     "features": [
       {
-        "imageUrl": "/images/services/Blog Management/Strategy Development.webp",
+        "imageUrl": "/images/services/blog-managment/Strategy Development.webp",
         "heading": "Strategy Development",
         "content": "Before diving into blog marketing, we take the time to understand your business goals, target audience, and industry landscape. Our team conducts thorough research to identify relevant topics, keywords, and trends that align with your brand's messaging. We then develop a comprehensive blog strategy that outlines the frequency of posting, content types, and promotional tactics"
       },
       {
-        "imageUrl": "/images/services/Blog Management/Content Creation.webp",
+        "imageUrl": "/images/services/blog-managment/Content Creation.webp",
         "heading": "Content Creation",
         "content": "Our talented team of writers and content creators collaborate closely with you to develop engaging and high-quality blog content. We ensure that the content aligns with your brand voice and resonates with your target audience. Whether it's informative articles, how-to guides, industry insights, or thought leadership pieces, we create compelling blog posts that deliver value to your readers."
       },
       {
-        "imageUrl": "/images/services/Blog Management/SEO Optimization.webp",
+        "imageUrl": "/images/services/blog-managment/SEO Optimization.webp",
         "heading": "SEO Optimization",
         "content": "Having great content is just the first step. To maximize the reach and visibility of your blog, we employ advanced search engine optimization (SEO) techniques. We conduct keyword research, optimize meta tags, headers, and URLs, and incorporate relevant internal and external links. By optimizing your blog posts for search engines, we increase the likelihood of ranking higher in search results, driving organic traffic to your website."
       },
       {
-        "imageUrl": "/images/services/Blog Management/Distribution and Promotion.webp",
+        "imageUrl": "/images/services/blog-managment/Distribution and Promotion.webp",
         "heading": "Distribution and Promotion",
         "content": "We believe that great content deserves to be seen. Our blog marketing and management services extend beyond publishing the blog posts on your website. We leverage various distribution channels, including social media platforms, email newsletters, and content syndication networks, to amplify the reach of your blog content. By promoting your blog across multiple channels, we ensure that it reaches a wider audience and drives targeted traffic back to your website."
       },
       {
-        "imageUrl": "/images/services/Blog Management/Performance Tracking and Analytics.webp",
+        "imageUrl": "/images/services/blog-managment/Performance Tracking and Analytics.webp",
         "heading": "Performance Tracking and Analytics",
         "content": "We believe in data-driven decision making. Our team closely monitors the performance of your blog posts using advanced analytics tools. We track key metrics such as website traffic, engagement, social shares, and conversions. By analyzing this data, we gain valuable insights into what's working and what can be improved. We provide regular reports and recommendations to optimize your blog marketing strategy and drive continuous growth."
       },
       {
-        "imageUrl": "/images/services/Blog Management/Ongoing Management and Optimization.webp",
+        "imageUrl": "/images/services/blog-managment/Ongoing Management and Optimization.webp",
         "heading": "Ongoing Management and Optimization",
         "content": "Blog marketing is an ongoing process. Our team takes care of all aspects of blog management, including publishing new posts, updating old content, and maintaining a consistent publishing schedule. We also keep an eye on the latest trends, industry news, and changes in search engine algorithms to ensure that your blog remains relevant and effective in reaching your target audience."
       }
@@ -347,25 +347,25 @@
     "title": "Web Design",
     "slug": "web-design",
     "description": "47% of users expect a webpage to load in 2 seconds or less, and 40% will abandon a website if it takes more than 3 seconds to load. A website is a medium through which SMB's can build their online reputation and use them as a plaform for customer to interact with them. Websites also serves as a medium through which viewers can access information regarding the company.",
-    "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/responsive-web-design-03.jpg",
+    "imageUrl": "/images/services/website-development/website-development-banner.webp",
     "features": [
       {
-        "imageUrl": "/images/services/Website Development/Responsive Web Design.webp",
+        "imageUrl": "/images/services/website-development/Responsive Web Design.webp",
         "heading": "Responsive Web Design",
         "content": "\nRevamp Your Online Presence\nTransform your website into a stunning online showcase with ShootOrder. Our expert designers combine creativity and functionality to craft visually captivating and user-friendly websites that captivate your audience. Enhance your brand image and drive conversions with our top-notch website design services. We make your site appealing & compatible in every device environment with our responsive web design services. Some of the features like Cross Browser Compatibility, SEO, W3C Validation makes your website bug free and always productive."
       },
       {
-        "imageUrl": "/images/services/Website Development/CMS_CRM Implementation.webp",
+        "imageUrl": "/images/services/website-development/CMS_CRM Implementation.webp",
         "heading": "CMS/CRM Implementation",
         "content": "Customized CMS Websites\nUnlock the power of streamlined business operations with ShootOrder, a trusted CMS/CRM implementation company. Maximize efficiency, enhance customer experiences, and achieve seamless data management with our expert solutions. Experience seamless integration and optimized workflows tailored to your business needs today. ShootOrder works on popular CMS/CRM Plaforms like Wordpress, Joomla, HubSpot, Salesforceetc. Features like security, flexible design, customized content management development, SEO etc. gives our client an additional edge to completely control their website."
       },
       {
-        "imageUrl": "/images/services/Website Development/Ecommerce Implementation.webp",
+        "imageUrl": "/images/services/website-development/Ecommerce Implementation.webp",
         "heading": "Ecommerce Implementation",
         "content": "\nBoost Your Ecommerce Success\nStreamline your online business and maximize your ecommerce potential with ShootOrder. As a leading ecommerce implementation company, we offer expert solutions tailored to your unique requirements. From platform integration to user experience optimization, trust ShootOrder to transform your digital store into a thriving online destination for customers. ShootOrder works on major Ecommerce Plaforms like Shopify, Woocommerce, OpenCart etc. Our designed e-commerce websites are 100% responsive, flexible in browsing & equipped with mutiple payment options, SEO, prductive tools & plug-ins. Our mobile compatible Ecommerce Websites can help you grow your business while you are on mobile."
       },
       {
-        "imageUrl": "/images/services/Website Development/Web Application Development.webp",
+        "imageUrl": "/images/services/website-development/Web Application Development.webp",
         "heading": "Web Application Development",
         "content": "\nApplication Development\nUnlock the true potential of your business with ShootOrder's innovative web application development services. From seamless user experiences to scalable solutions, our expert team crafts custom web applications tailored to your unique needs. Drive efficiency, engage users, and stay ahead of the competition with our top-notch development expertise. ShootOrder specialize on LAMP MEAN stacks. API based applications are the part of our web development capabilities. Facebook Apps, Twitter Apps, Google API are some of the API's we excel in and optimize our development."
       }
@@ -420,35 +420,35 @@
     "title": "Influencers Marketing",
     "slug": "influencers-marketing",
     "description": "Influencer campaigns generate $5.20 in earned media value for every dollar spent. Elevate your brand's visibility and reach with ShootOrder, a trusted influencer marketing company. Our expert team connects you with influential personalities in your industry, driving authentic engagement and maximizing your brand's exposure. Leverage the power of influencer partnerships and enhance your online presence today.",
-    "imageUrl": "/images/services/influencers-bg.jpg",
+    "imageUrl": "/images/services/influencer-marketing/influencer-marketing-banner.webp",
     "features": [
       {
-        "imageUrl": "/images/services/Influencer marketing/Strategy Development.webp",
+        "imageUrl": "/images/services/influencer-marketing/Strategy Development.webp",
         "heading": "Strategy Development",
         "content": "We start by gaining a deep understanding of your brand, target audience, and marketing goals. Our team conducts thorough research to identify the right influencers who align with your brand values and have a strong connection with your target audience. We create a comprehensive influencer marketing strategy tailored to your specific objectives."
       },
       {
-        "imageUrl": "/images/services/Influencer marketing/Influencer Identification and Vetting.webp",
+        "imageUrl": "/images/services/influencer-marketing/Influencer Identification and Vetting.webp",
         "heading": "Influencer Identification and Vetting",
         "content": "Our experienced team uses advanced tools and techniques to identify influencers who can amplify your brand message. We consider factors such as audience demographics, engagement rates, content quality, and brand fit. Each influencer is carefully vetted to ensure authenticity, credibility, and alignment with your brand values."
       },
       {
-        "imageUrl": "/images/services/Influencer marketing/Collaboration and Campaign Planning.webp",
+        "imageUrl": "/images/services/influencer-marketing/Collaboration and Campaign Planning.webp",
         "heading": "Collaboration and Campaign Planning",
         "content": "We foster strong relationships with influencers and collaborate with them to develop compelling campaign concepts. Our team works closely with influencers to align their creative ideas with your brand's messaging and objectives. We develop detailed campaign plans, including content formats, posting schedules, and key performance indicators (KPIs)."
       },
       {
-        "imageUrl": "/images/services/Influencer marketing/Content Creation and Management.webp",
+        "imageUrl": "/images/services/influencer-marketing/Content Creation and Management.webp",
         "heading": "Content Creation and Management",
         "content": "Our agency handles the entire content creation process. We provide creative direction to influencers while allowing them the freedom to express their unique style and voice. Our team ensures that all content produced aligns with your brand guidelines, maintains quality standards, and complies with relevant regulations. We manage content calendars, approvals, and revisions to streamline the process."
       },
       {
-        "imageUrl": "/images/services/Influencer marketing/Campaign Execution and Optimization.webp",
+        "imageUrl": "/images/services/influencer-marketing/Campaign Execution and Optimization.webp",
         "heading": "Campaign Execution and Optimization",
         "content": "We monitor influencer campaigns closely, tracking key metrics in real-time. Our team ensures that the content is published on schedule and engages your target audience effectively. We analyze campaign performance regularly and optimize strategies based on the insights gained. This iterative approach allows us to maximize the impact of influencer marketing for your brand."
       },
       {
-        "imageUrl": "/images/services/Influencer marketing/Performance Measurement and Reporting.webp",
+        "imageUrl": "/images/services/influencer-marketing/Performance Measurement and Reporting.webp",
         "heading": "Performance Measurement and Reporting",
         "content": "Transparency and accountability are paramount to our agency. We provide comprehensive reports detailing the performance of influencer campaigns. Our reports include key metrics, such as reach, impressions, engagement rates, conversions, and return on investment (ROI). These insights help us refine future influencer marketing strategies and demonstrate the value generated for your brand."
       }
@@ -544,35 +544,35 @@
     "title": "ORM",
     "slug": "orm",
     "description": "70% of consumers trust online reviews and ratings, making Online Reputation Management (ORM) crucial for businesses. Take control of your online reputation with ShootOrder, the trusted ORM company. Safeguard your brand, manage reviews, and build trust with our comprehensive reputation management solutions. Elevate your online presence and cultivate a positive image in the digital landscape.",
-    "imageUrl": "/images/services/blog-bg.jpg",
+    "imageUrl": "/images/services/ORM/ORM-banner.webp",
     "features": [
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-strategy.png",
+        "imageUrl": "/images/services/ORM/Reputation Monitoring and Analysis.webp",
         "heading": "Reputation Monitoring and Analysis",
         "content": "ShootOrder provides comprehensive monitoring and analysis of your brand's online reputation. They track mentions, reviews, and comments across various online platforms and social media channels. By closely monitoring your online presence, ShootOrder helps you stay informed about your brand's reputation and take proactive measures to address any negative sentiment."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-content.png",
+        "imageUrl": "/images/services/ORM/Review Management.webp",
         "heading": "Review Management",
         "content": "ShootOrder specializes in managing online reviews to ensure a positive brand image. They actively engage with customers, respond to reviews (both positive and negative), and address customer concerns. Their skilled team works to resolve issues, mitigate damage, and turn negative experiences into positive ones, ultimately building trust and credibility for your brand."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-seo.png",
+        "imageUrl": "/images/services/ORM/Content Strategy and Development.webp",
         "heading": "Content Strategy and Development",
         "content": "To enhance your online reputation, ShootOrder assists in crafting a compelling content strategy. They develop high-quality, engaging content that showcases your brand's values, expertise, and unique selling points. Through strategic content creation, ShootOrder aims to improve your brand's visibility, attract positive attention, and position your business as a trusted authority in your industry."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-distribution.png",
+        "imageUrl": "/images/services/ORM/Online Brand Protection.webp",
         "heading": "Online Brand Protection",
         "content": "ShootOrder helps protect your brand from online threats, including reputation attacks, false information, and negative publicity. They employ proactive strategies to identify and address potential risks, ensuring your brand's reputation remains intact. This includes monitoring trademark infringements, addressing false rumors or misinformation, and taking appropriate action to protect your brand's integrity."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-tracking.png",
+        "imageUrl": "/images/services/ORM/Search Engine Result Management.webp",
         "heading": "Search Engine Result Management (SERM)",
         "content": "ShootOrder focuses on managing search engine results related to your brand. They work to optimize positive content, suppress negative search results, and enhance your brand's visibility in search engine rankings. By actively managing search engine results, ShootOrder helps control the narrative surrounding your brand and ensures that potential customers find positive information when searching for your business."
       },
       {
-        "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-optimization.png",
+        "imageUrl": "/images/services/ORM/Online Crisis Management.webp",
         "heading": "Online Crisis Management",
         "content": "In the event of a reputation crisis, ShootOrder offers expert assistance in managing and resolving the situation. They provide swift and effective crisis management strategies to mitigate damage, address public concerns, and restore trust in your brand. ShootOrder's experienced team guides you through challenging times, helping you regain control and protect your brand's reputation."
       }
@@ -667,35 +667,35 @@
     "title": "Digital PR",
     "slug": "digital-pr",
     "description": "Every click should count; our performance marketing strategies are built to drive measurable results. From laser-targeted ads to conversion-optimized campaigns, we transform your marketing spend into scalable growth and ROI that's measurable.",
-    "imageUrl": "/images/services/performance-marketing.jpg",
+    "imageUrl": "/images/services/digital-pr/digital-pr-banner.webp",
     "features": [
       {
-        "imageUrl": "/images/services/Digital PR/Crisis Management & Reputation Repair",
+        "imageUrl": "/images/services/digital-pr/Crisis Management & Reputation Repair.webp",
         "heading": "Paid Search",
         "content": "Search Engine Marketing (SEM) or Paid Search Engine Advertising can help your customers find you easily. For an existing market, the best way to generate sales/leads is Search Engine Marketing. ShootOrder leading search marketing agency makes sure to invest your money in right keywords with an extra edge of making your company look different than others yet by managing low cost per click."
       },
       {
-        "imageUrl": "/images/services/Digital PR/Digital PR Strategy & Planning.webp",
+        "imageUrl": "/images/services/digital-pr/Digital PR Strategy & Planning.webp",
         "heading": "Paid Display",
         "content": "Display Advertising on the other hand can build an image of a brand by displaying its products & services on various websites across world wide web. Display Advertisements are much more attractive and appealing to customers as these appear in various formats like Image, Animated Images, Flash, Video etc. Paid display advertising is effective, both as direct response and branding strategy. Youtube advertising is also a major display advertising channel."
       },
       {
-        "imageUrl": "/images/services/Digital PR/Influencer & Thought Leadership Campaigns.webp",
+        "imageUrl": "/images/services/digital-pr/Influencer & Thought Leadership Campaigns.webp",
         "heading": "Paid Social",
         "content": "Social Media Advertising is targeted on interest based audience. Take leverage out of our social media advertising methods on facebook, linkedin, twitter, pinterest etc... These are mostly in image and video formats."
       },
       {
-        "imageUrl": "/images/services/Digital PR/Link Building with Authority Sites.webp",
+        "imageUrl": "/images/services/digital-pr/Link Building with Authority Sites.webp",
         "heading": "OTT Advertising",
         "content": "ShootOrder is your trusted partner for OTT Advertising, helping businesses effectively reach their target audience through streaming media platforms. With our expertise in digital advertising, we deliver impactful video, display, and interactive ads on popular OTT platforms, ensuring maximum engagement and measurable results. Reach your customers where they are, and let ShootOrder's OTT Advertising service elevate your brand to new heights in the digital streaming landscape."
       },
       {
-        "imageUrl": "/images/services/Digital PR/Media Outreach & Press Coverage.webp",
+        "imageUrl": "/images/services/digital-pr/Media Outreach & Press Coverage.webp",
         "heading": "Streaming Ads",
         "content": "ShootOrder is a leading provider of Streaming Ads, empowering businesses to connect with their target audience through the power of streaming media platforms. With our expertise in digital advertising, we create compelling video, display, and interactive ads that seamlessly integrate into popular streaming services. Drive brand awareness, engage viewers, and achieve measurable results with ShootOrder's Streaming Ads service. Let us help you make a lasting impact in the streaming landscape and reach your customers in the most effective way possible."
       },
       {
-        "imageUrl": "/images/services/Digital PR/Monitoring, Reporting & Media Clipping.webp",
+        "imageUrl": "/images/services/digital-pr/Monitoring, Reporting & Media Clipping.webp",
         "heading": "Coupon/Scratch Ads",
         "content": "ShootOrder brings you Coupon Ads, a powerful advertising solution that enables businesses to attract and engage customers through enticing discounts and promotions. Our expert team designs visually appealing coupon ads that capture attention and drive conversions. With strategic placement across various platforms, including digital channels and social media, ShootOrder's Coupon Ads ensure maximum visibility and reach. Boost your sales, increase customer loyalty, and achieve a measurable return on investment with ShootOrder's Coupon Ads service. Let us help you create irresistible offers and connect with your target audience effectively."
       }
@@ -750,35 +750,35 @@
     "title": "Onsite Engagement Solutions",
     "slug": "on-site-engagement",
     "description": "Turn in-person interactions into memorable brand experiences. We design and execute engaging onsite activations that captivate your audience, build brand recall, and drive meaningful connections.",
-    "imageUrl": "/images/services/performance-marketing.jpg",
+    "imageUrl": "/images/services/onsite-engagment/onsite-engagement-banner.webp",
     "features": [
       {
-        "imageUrl": "/images/services/on-site-engagement/Onsite Engagement Strategy & Planning.webp",
+        "imageUrl": "/images/services/onsite-engagment/Onsite Engagement Strategy & Planning.webp",
         "heading": "Onsite Engagement Strategy & Planning",
         "content": "Custom engagement plans tailored to your event type, corporate meets, product launches, expos, or retail activations, with clear objectives and measurable outcomes."
       },
       {
-        "imageUrl": "/images/services/on-site-engagement/Interactive Booth & Experience Design.webp",
+        "imageUrl": "/images/services/onsite-engagment/Interactive Booth & Experience Design.webp",
         "heading": "Interactive Booth & Experience Design",
         "content": "Creative booth designs, interactive installations, photo booths, and immersive setups that encourage footfall and participation."
       },
       {
-        "imageUrl": "/images/services/on-site-engagement/Live Activations & Gamification.webp",
+        "imageUrl": "/images/services/onsite-engagment/Live Activations & Gamification.webp",
         "heading": "Live Activations & Gamification",
         "content": "Fun, interactive activities such as spin-the-wheel, quizzes, AR/VR experiences, or branded games to engage visitors and collect valuable leads."
       },
       {
-        "imageUrl": "/images/services/on-site-engagement/Brand Ambassadors & Staffing.webp",
+        "imageUrl": "/images/services/onsite-engagment/Brand Ambassadors & Staffing.webp",
         "heading": "Brand Ambassadors & Staffing",
         "content": "Trained brand representatives, promoters, and hosts who embody your brand values and create positive, lasting impressions."
       },
       {
-        "imageUrl": "/images/services/on-site-engagement/Onsite Engagement Strategy & Planning.webp",
+        "imageUrl": "/images/services/onsite-engagment/Onsite Engagement Strategy & Planning.webp",
         "heading": "Lead Capture & Data Collection",
         "content": "Digital forms, QR codes, and on-the-spot contests to maximize lead collection and real-time engagement tracking."
       },
       {
-        "imageUrl": "/images/services/on-site-engagement/Post-Event Reporting & Analysis.webp",
+        "imageUrl": "/images/services/onsite-engagment/Post-Event Reporting & Analysis.webp",
         "heading": "Post-Event Reporting & Analysis",
         "content": "Detailed engagement reports, lead data summaries, and feedback insights to evaluate event success and plan future strategies."
       }
@@ -791,35 +791,35 @@
     "title": "Data Analytics & Dashboard Solutions",
     "slug": "analytics-dashboards",
     "description": "Transform raw data into actionable insights. We help businesses make smarter, faster decisions with customized analytics solutions and interactive dashboards that provide clarity and real-time performance tracking.",
-    "imageUrl": "/images/services/performance-marketing.jpg",
+    "imageUrl": "/images/services/data-analytics-and-dashboard/data-analytics-banner.webp",
     "features": [
       {
-        "imageUrl": "/images/services/analytics-dashboard/KPI Definition & Data Strategy.webp",
+        "imageUrl": "/images/services/data-analytics-and-dashboard/KPI Definition & Data Strategy.webp",
         "heading": "KPI Definition & Data Strategy",
         "content": "Identify business-critical metrics and create a structured approach to track performance effectively."
       },
       {
-        "imageUrl": "/images/services/analytics-dashboard/Custom Dashboard Design.webp",
+        "imageUrl": "/images/services/data-analytics-and-dashboard/Custom Dashboard Design.webp",
         "heading": "Custom Dashboard Design",
         "content": "Interactive, visually engaging dashboards built on Power BI, Tableau, Google Data Studio, or custom platforms. "
       },
       {
-        "imageUrl": "/images/services/analytics-dashboard/Multi-Source Data Integration.webp",
+        "imageUrl": "/images/services/data-analytics-and-dashboard/Multi-Source Data Integration.webp",
         "heading": "Multi-Source Data Integration",
         "content": "Connect and unify data from CRMs, marketing tools, websites, and internal systems for a single view of performance."
       },
       {
-        "imageUrl": "/images/services/analytics-dashboard/Real-Time Reporting & Automation.webp",
+        "imageUrl": "/images/services/data-analytics-and-dashboard/Real-Time Reporting & Automation.webp",
         "heading": "Real-Time Reporting & Automation",
         "content": "Automated data updates and live reporting to reduce manual effort and enable quicker decisions. "
       },
       {
-        "imageUrl": "/images/services/analytics-dashboard/Advanced Analytics & Insights.webp",
+        "imageUrl": "/images/services/data-analytics-and-dashboard/Advanced Analytics & Insights.webp",
         "heading": "Advanced Analytics & Insights",
         "content": "Deliver trend analysis, performance forecasting, and actionable business insights."
       },
       {
-        "imageUrl": "/images/services/analytics-dashboard/Training & Ongoing Support.webp",
+        "imageUrl": "/images/services/data-analytics-and-dashboard/Training & Ongoing Support.webp",
         "heading": "Training & Ongoing Support",
         "content": "Hands-on dashboard training and continuous support to help teams make the most of their data."
       }
@@ -832,7 +832,7 @@
     "title": "Smart Analytics Solutions",
     "slug": "smart-analytics",
     "description": "Unlock the true potential of your data with intelligent analytics. We empower businesses to make proactive, data-driven decisions through AI-powered insights, predictive modeling, and automated reporting that simplify complexity and drive growth.",
-    "imageUrl": "/images/services/performance-marketing.jpg",
+    "imageUrl": "/images/services/smart-analytics/smart-analytics-banner.webp",
     "features": [
       {
         "imageUrl": "/images/services/smart-analytics/Smart Data Strategy & Goal Alignment.webp",
