@@ -107,14 +107,14 @@ function ProcessCovered({ services, pageHeading }) {
             </div>
           ))}
 
-          {services.features.length == 5 && <div style={{ background: "#f6f6f6", padding:"20px" }}
+          {/* {services.features.length == 5 && <div style={{ background: "#f6f6f6", padding:"20px" }}
             className={`group transition-all p-2 duration-600  ${isVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-12"
               }`}
           >
             <div className="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/clLwBtLo27jEENj1c595rykfb5Ynxv9zmh5cLhhrMuEiyCSwR9R84kR0xsFjGTm6LV"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
-          </div>}
+          </div>} */}
 
         </div>
 

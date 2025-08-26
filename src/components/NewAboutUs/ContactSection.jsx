@@ -1,5 +1,7 @@
 'use client'
 import { useState } from 'react';
+import PipeDriveForm from "@/components/Home/PipeDrive/PipeDriveForm";
+
 
 const ContactFormSection = () => {
   const [formData, setFormData] = useState({
@@ -54,8 +56,8 @@ const ContactFormSection = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="flex flex-wrap items-center justify-center gap-4 max-w-5xl mx-auto">
-          {/* Name Input */}
+        {/* <div className="flex flex-wrap items-center justify-center gap-4 max-w-5xl mx-auto">
+         
           <div className="flex-1 min-w-[200px] max-w-[280px]">
             <input
               type="text"
@@ -67,7 +69,7 @@ const ContactFormSection = () => {
             />
           </div>
 
-          {/* Email Input */}
+          
           <div className="flex-1 min-w-[200px] max-w-[280px]">
             <input
               type="email"
@@ -79,7 +81,7 @@ const ContactFormSection = () => {
             />
           </div>
 
-          {/* Phone Input */}
+          
           <div className="flex-1 min-w-[200px] max-w-[280px]">
             <input
               type="tel"
@@ -91,7 +93,7 @@ const ContactFormSection = () => {
             />
           </div>
 
-          {/* Purpose Dropdown */}
+         
           <div className="flex-1 min-w-[200px] max-w-[280px]">
             <select
               name="purpose"
@@ -119,7 +121,7 @@ const ContactFormSection = () => {
           </div>
 
           
-           {/* Let's Talk Button */}
+          
                 <div className="pt-4 flex shrink-0 justify-center">
                     <div className='relative'>
                         <div className='absolute top-[9px] left-[4px] h-8 w-28 bg-yellow-400 rounded-md'></div>
@@ -129,9 +131,15 @@ const ContactFormSection = () => {
                     </div>
                 </div>
           
+        </div> */}
+        <div className="flex justify-center">
+          <div className="bg-white px-4 py-4 sm:px-8 sm:py-4 rounded-lg shadow-lg w-xl">
+
+            <PipeDriveForm />
+          </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

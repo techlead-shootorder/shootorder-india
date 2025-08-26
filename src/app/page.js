@@ -426,7 +426,6 @@ export default function Home() {
                   <PipeDriveForm />
                 </div>
               </div>
-
             </div>
           </div>
         </section>

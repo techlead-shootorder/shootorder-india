@@ -23,7 +23,7 @@ const CaseStudyComponent = ({ service }) => {
     {
       id: 'seo',
       slug: 'seo-caravan-rental',
-      title: 'On the Road to Success: How SEO Fueled Carawander’s Journey',
+      title: "On the Road to Success: How SEO Fueled Carawander's Journey",
       image: '/api/placeholder/600/400',
       description: 'With consistent SEO efforts, ShootOrder helped Carawander boost web-driven sales and profits by over 40% since 2021.',
       results: 'Overall Score 5.0',
@@ -53,7 +53,7 @@ const CaseStudyComponent = ({ service }) => {
       slug: 'ppc-edtech-company',
      title: 'Creative Content That Clicks: Social Success for an EHR Platform',
       image: '/api/placeholder/600/400',
-      description: 'With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn’t need a big budget. ',
+      description: "With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn't need a big budget. ",
       results: 'Overall Score 5.0',
       color: 'from-blue-600 to-blue-700',
       pdfUrl: '/pdfs/case-studies/google-ads/PPC_1.pdf',
@@ -81,7 +81,7 @@ const CaseStudyComponent = ({ service }) => {
       slug: 'ppc-health-wellness',
       title: 'Powering IPI Growth with Precision PPC',
       image: '/api/placeholder/600/400',
-      description: 'ShootOrder’s paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.',
+      description: "ShootOrder's paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.",
       results: 'Overall Score 4.0',
       color: 'from-blue-600 to-blue-700',
       pdfUrl: '/pdfs/case-studies/by-service/PPC_3.pdf',
@@ -123,7 +123,7 @@ const CaseStudyComponent = ({ service }) => {
       slug: 'smm-it-services',
      title: 'Creative Content That Clicks: Social Success for an EHR Platform',
       image: '/api/placeholder/600/400',
-      description: 'With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp’s healthcare tech across Facebook, Instagram, and LinkedIn. ',
+      description: "With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp's healthcare tech across Facebook, Instagram, and LinkedIn. ",
       results: 'Overall Score 4.0',
       color: 'from-purple-600 to-purple-700',
       pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_3.pdf',
@@ -171,49 +171,70 @@ const CaseStudyComponent = ({ service }) => {
       className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100"
       onClick={() => handleCaseStudyClick(study.slug)}
     >
-      <div className={`absolute inset-0 bg-white opacity-90`}></div>
+      {/* Image Section */}
+      <div className="relative h-48 overflow-hidden">
+        <img
+          src={study.image}
+          alt={study.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          onError={(e) => {
+            // Fallback to a gradient background if image fails to load
+            e.target.style.display = 'none';
+            e.target.parentElement.classList.add('bg-gradient-to-br', 'from-gray-100', 'to-gray-200');
+          }}
+        />
+        
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        
+        {/* Award icon overlay */}
+        <div className="absolute top-4 right-4">
+          <Award className="w-6 h-6 text-white drop-shadow-lg opacity-80" />
+        </div>
+      </div>
 
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-20 group-hover:opacity-40 transition-opacity duration-500"
-        style={{ backgroundImage: `url(${study.image})` }}
-      ></div>
-
-      <div className="relative h-full flex flex-col p-6 text-black">
-        <div>
+      {/* Content Section */}
+      <div className="relative flex flex-col p-6 text-black bg-white">
+        <div className="flex-grow">
           <div className="flex items-center justify-between mb-4">
-            <Award className="w-6 h-6 opacity-80" />
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 rounded-full bg-[#9a0c28]"></div>
+              <span className="text-sm text-gray-600 font-medium">{study.industry}</span>
+            </div>
             <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
           </div>
 
-          <h3 className="text-2xl font-bold mb-3 group-hover:text-[#9a0c28] transition-colors duration-300">
+          <h3 className="text-xl font-bold mb-3 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
             {study.title}
           </h3>
 
-          <p className="text-black mb-4 text-base">
+          <p className="text-gray-700 mb-4 text-sm leading-relaxed line-clamp-3">
             {study.description}
           </p>
         </div>
 
-        <div className="space-y-3 mt-4">
+        <div className="space-y-3 mt-auto">
           <div className="flex items-center space-x-2">
-            <TrendingUp className="w-4 h-4" />
-            <span className="text-sm font-medium">{study.results}</span>
+            <TrendingUp className="w-4 h-4 text-[#9a0c28]" />
+            <span className="text-sm font-medium text-gray-800">{study.results}</span>
           </div>
 
           <div className="flex space-x-2">
-            <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 text-sm font-medium flex-1">
+            <div className="inline-flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium flex-1 text-center justify-center">
               <Eye className="w-4 h-4" />
-              <span>View Case Study</span>
+              <span>View Study</span>
             </div>
 
-            {study.pdfUrl && <button
-              onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
-              className="inline-flex items-center space-x-2 bg-[#9a0c28]/80 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-[#9a0c28] transition-all duration-300 text-sm font-medium text-white"
-              title={`Download ${study.title} Case Study PDF`}
-            >
-              <Download className="w-4 h-4" />
-              <span className="hidden sm:inline">PDF</span>
-            </button>}
+            {study.pdfUrl && (
+              <button
+                onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
+                className="inline-flex items-center space-x-2 bg-[#9a0c28] hover:bg-[#7a0a20] px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium text-white"
+                title={`Download ${study.title} Case Study PDF`}
+              >
+                <Download className="w-4 h-4" />
+                <span className="hidden sm:inline">PDF</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -224,7 +245,7 @@ const CaseStudyComponent = ({ service }) => {
     <div className="">
       <div className="!max-w-7xl mx-auto px-4 pt-16 pb-20">
         <h1 className='text-center font-bold text-3xl mb-10 text-black'>Case Studies</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {relevantStudies.map((study, index) => (
             <CaseStudyCard key={study.slug} study={study} index={index} />
           ))}
