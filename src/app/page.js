@@ -18,6 +18,54 @@ import ClutchWidget from "@/components/Home/CompanyInfo/ClutchWidget";
 import PipeDriveForm from "@/components/Home/PipeDrive/PipeDriveForm";
 import ImageSection from "@/components/Home/PipeDrive/ImageSection";
 
+// Skeleton Components
+const HeaderSkeleton = () => (
+  <div className="fixed top-0 left-0 w-full h-20 bg-white/10 backdrop-blur-sm border-b border-white/100 z-50 shadow-xl">
+    <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+      {/* Logo skeleton */}
+      <div className="w-32 h-8 bg-white/20 rounded animate-pulse"></div>
+
+      {/* Navigation skeleton - Desktop */}
+      <div className="hidden md:flex space-x-6">
+        {[1, 2, 3, 4].map((item) => (
+          <div key={item} className="w-16 h-4 bg-white/20 rounded animate-pulse"></div>
+        ))}
+      </div>
+
+      {/* CTA Button skeleton */}
+      <div className="w-20 h-8 bg-white/20 rounded-full animate-pulse"></div>
+    </div>
+  </div>
+);
+
+const BannerSkeleton = () => (
+  <div className="w-full bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 relative overflow-hidden"
+    style={{ minHeight: '100vh', height: '100vh' }}>
+
+    {/* Simple background pattern */}
+    <div className="absolute inset-0 opacity-20">
+      <div className="absolute top-1/3 left-1/3 w-1/2 h-1/2 bg-gradient-to-br from-gray-300/40 to-transparent rounded-full blur-3xl animate-pulse"></div>
+    </div>
+
+    {/* Main content container */}
+    <div className="max-w-7xl mx-auto relative z-10 h-full flex flex-col justify-center items-center px-4 pt-16">
+      <div className="text-center w-full space-y-6 mt-[350px]">
+
+        {/* Simple heading skeleton - one line */}
+        <div className="w-200 max-w-full h-16 mx-auto bg-gray-300 rounded animate-pulse"></div>
+
+        {/* Simple description skeleton */}
+        <div className="w-60 max-w-full h-4 mx-auto bg-gray-300 rounded animate-pulse"></div>
+        <div className="w-100 max-w-full h-4 mx-auto bg-gray-300 rounded animate-pulse"></div>
+        <div className="w-30 max-w-full h-4 mx-auto bg-gray-300 rounded animate-pulse"></div>
+        
+
+        {/* Button skeleton */}
+        <div className="w-32 h-10 mx-auto bg-gray-300 rounded-full animate-pulse mt-10"></div>
+      </div>
+    </div>
+  </div>
+);
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -55,9 +103,10 @@ export default function Home() {
 
         timelineRef.current = loadTl;
 
+        // Animate skeleton fade out instead of slide up
         loadTl.to(".page-loader", {
-          y: "-100%",
-          duration: 1.2,
+          opacity: 0,
+          duration: 0.8,
           ease: "power2.inOut",
         });
 
@@ -76,9 +125,11 @@ export default function Home() {
     if (typeof window !== "undefined") {
       if (document.readyState === "complete") {
         // Use setTimeout to ensure it runs after the component is fully mounted
-        setTimeout(onPageLoad, 0);
+        setTimeout(onPageLoad, 2000); // Show skeleton for 2 seconds minimum
       } else {
-        window.addEventListener("load", loadEventHandler);
+        window.addEventListener("load", () => {
+          setTimeout(loadEventHandler, 2000); // Show skeleton for 2 seconds minimum
+        });
       }
     }
 
@@ -345,10 +396,13 @@ export default function Home() {
 
   return (
     <div className="smooth-scroll-container overflow-hidden">
-      {/* Page Loader */}
-      <div className="page-loader fixed top-0 left-0 w-full h-full bg-black z-50 flex items-center justify-center">
-        <div className="loader-content text-white text-3xl">ShootOrder</div>
-      </div>
+      {/* Skeleton Preloader */}
+      {!isLoaded && (
+        <div className="page-loader fixed top-0 left-0 w-full h-full z-50">
+          <HeaderSkeleton />
+          <BannerSkeleton />
+        </div>
+      )}
 
       <div className="banner-section relative overflow-hidden max-w-7xl mx-auto">
         <div className="banner-background w-full">
@@ -398,9 +452,9 @@ export default function Home() {
         <div className="!max-w-7xl mx-auto">
           <WhyTrustUs />
         </div>
-       
-       <div className="bg-gray-50">
-        <ClutchWidget />
+
+        <div className="bg-gray-50">
+          <ClutchWidget />
         </div>
 
         {/* Form section */}
@@ -415,13 +469,12 @@ export default function Home() {
 
               {/* Image Section - Left on desktop, Top on mobile */}
               <div className="w-full h-full lg:w-1/2 order-1 lg:order-1">
-                <ImageSection/>
+                <ImageSection />
               </div>
 
               {/* Form Section - Right on desktop, Bottom on mobile */}
               <div className="w-full lg:w-1/2 order-2 lg:order-2">
                 <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
-
                   {/* Pipedrive Form */}
                   <PipeDriveForm />
                 </div>
