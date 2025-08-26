@@ -10,27 +10,30 @@ const TestimonialsSection = () => {
             id: 1,
             name: "Ms. Pratima Sinha",
             title: "CEO - Birla Open Minds International School",
-            image: "/api/placeholder/400/400", // Replace with actual image path
-            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_1" // Replace with actual YouTube video ID
+            image: "/api/placeholder/400/400",
+            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_1",
+            platform: "youtube"
         },
         {
             id: 2,
             name: "Ms. Keerthi Reddy",
             title: "Founder - One Roze",
-            image: "/api/placeholder/400/400", // Replace with actual image path
-            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_2" // Replace with actual YouTube video ID
+            image: "/api/placeholder/400/400",
+            videoUrl: "https://www.instagram.com/reel/XXXXXXXXX/",
+            platform: "instagram"
         },
         {
             id: 3,
             name: "Mr. Varun",
             title: "Co-founder - Oye Happy",
-            image: "/api/placeholder/400/400", // Replace with actual image path
-            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_3" // Replace with actual YouTube video ID
+            image: "/api/placeholder/400/400",
+            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_3",
+            platform: "youtube"
         }
     ];
 
-    const openModal = (videoId) => {
-        setSelectedVideo(videoId);
+    const openModal = (testimonial) => {
+        setSelectedVideo(testimonial);
     };
 
     const closeModal = () => {
@@ -64,8 +67,8 @@ const TestimonialsSection = () => {
 
                                     {/* Play Button */}
                                     <button
-                                        onClick={() => openModal(testimonial.videoUrl)}
-                                        className="cursor-pointer absolute bottom-4 right-4 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 group-hover:scale-110"
+                                        onClick={() => openModal(testimonial)}
+                                        className="cursor-pointer absolute bottom-4 right-4 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full py-2.5 px-2 shadow-lg transition-all duration-300 group-hover:scale-110 z-15"
                                     >
                                         <Play className="w-6 h-6 text-gray-700 ml-1" fill="currentColor" />
                                     </button>
@@ -84,40 +87,48 @@ const TestimonialsSection = () => {
                         </div>
                     ))}
                 </div>
-
-                {/* Let's Talk Button */}
-                {/* <div className="pt-4 flex justify-center">
-                    <div className='relative'>
-                        <div className='absolute top-[9px] left-[4px] h-8 w-28 bg-yellow-400 rounded-full'></div>
-                        <button className="relative z-5 text-white bg-[#9a0c28] font-medium py-1 px-4 rounded-full text-lg transition-all">
-                            Let's Talk
-                        </button>
-                    </div>
-                </div> */}
             </div>
 
             {/* Video Modal */}
             {selectedVideo && (
-                <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-                    <div className="relative w-full max-w-4xl bg-white rounded-lg overflow-hidden">
+                <div 
+                    className="fixed inset-0 flex items-center justify-center z-50 p-4"
+                    style={{ backgroundColor: '#00000080' }}
+                    onClick={closeModal}
+                >
+                    <div 
+                        className="relative w-full !max-w-4xl bg-white border border-black rounded-lg overflow-hidden"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         {/* Close Button */}
                         <button
                             onClick={closeModal}
-                            className="absolute top-4 right-4 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all duration-300"
+                            className="absolute top-4 right-4 cursor-pointer z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all duration-300"
                         >
                             <X className="w-6 h-6" />
                         </button>
 
-                        {/* YouTube Embed */}
+                        {/* Conditional Embed */}
                         <div className="relative w-full h-0 pb-[56.25%]">
-                            <iframe
-                                src={`https://www.youtube.com/embed/${selectedVideo}?autoplay=1`}
-                                title="Client Testimonial Video"
-                                className="absolute top-0 left-0 w-full h-full"
-                                frameBorder="0"
-                                allowFullScreen
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            />
+                            {selectedVideo.platform === "youtube" ? (
+                                <iframe
+                                    src={`https://www.youtube.com/embed/${selectedVideo.videoUrl}?autoplay=1`}
+                                    title="Client Testimonial Video"
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    frameBorder="0"
+                                    allowFullScreen
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                />
+                            ) : (
+                                <iframe
+                                    src={`${selectedVideo.videoUrl}embed`}
+                                    title="Instagram Video"
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    frameBorder="0"
+                                    allowTransparency={true}
+                                    allowFullScreen
+                                />
+                            )}
                         </div>
                     </div>
                 </div>
