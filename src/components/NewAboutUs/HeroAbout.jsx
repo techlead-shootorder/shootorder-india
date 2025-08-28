@@ -15,14 +15,13 @@ const HeroAbout = () => {
           <div className="text-center text-white px-4 sm:px-6 md:px-8 !max-w-4xl">
             {/* About Us Heading */}
             <h1 className="text-3xl sm:text-4xl font-light mb-4 sm:mb-6 md:mb-8 tracking-wide">
-              About Us
+              Not Just Any Agency — The Top 3% 
             </h1>
             
             {/* Description Text */}
             <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto">
               <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light leading-relaxed px-2 sm:px-4">
-                Welcome to 8 Views, the destination for the best digital marketing company in 
-                Hyderabad, where digital dreams merge seamlessly with data-driven reality.
+                Google Premier Partner. Smarter strategies. Measurable growth 
               </p>
             </div>
           </div>

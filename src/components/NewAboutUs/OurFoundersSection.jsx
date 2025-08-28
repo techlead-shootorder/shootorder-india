@@ -32,8 +32,7 @@ const OurFoundersSection = () => {
             
             <div className="space-y-6">
               <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-                Unlike most experts in the various industry domains, Rajat Jain doesn’t subscribe to the traditional persona of gaining his expertise through experience or intuition.
-                He nurtures digital marketing efforts of organisations ranging from startups to tip of the tongue brands. He has directed campaigns of brands making baby steps into new domains and corrected courses of established marketing efforts with his digital marketing expertise.
+                Rajat Jain, founder of ShootOrder, takes a unique approach to digital marketing. Instead of relying only on intuition or traditional methods, he focuses on data-driven strategies to help brands grow. From startups to well-known names, he has guided successful campaigns, launched new initiatives, and optimized existing marketing efforts with his expertise. 
               </p>
             </div>
 

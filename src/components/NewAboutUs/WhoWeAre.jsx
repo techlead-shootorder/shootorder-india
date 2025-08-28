@@ -7,7 +7,7 @@ const WhoWeAre = () => {
         {/* Top heading */}
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#9a0c28] mb-8">
-            Best Digital Marketing Company in Hyderabad
+           Among India’s Top 3% Digital Marketing Agencies 
           </h2>
         </div>
 
@@ -32,14 +32,13 @@ const WhoWeAre = () => {
             
             <div className="space-y-6">
               <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-                Imagine eight distinct marketing experts coming together, each 
-                bringing a unique perspective to tackle your business 
-                challenges. That's 8 Views. We don't just observe your brand; 
-                we analyze it through eight specialized lenses of digital 
-                mastery. As the best digital marketing company in Hyderabad, 
-                we offer brand storytelling and conversion optimization to SEO 
-                expertise and captivating video production; bringing every 
-                piece of the digital puzzle under one roof.
+                Proudly recognized as a Google Premier Partner, ShootOrder is a Hyderabad-based agency with a fast-growing presence in the USA. Founded by digital visionary Rajat Jain, the agency has evolved into a trusted growth partner for global brands. 
+              </p>
+              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+                With 12+ years of expertise and 400+ clients worldwide across e-commerce, healthcare, education, automobile, real estate, and lifestyle, ShootOrder delivers end-to-end digital solutions — Performance Marketing, SEO, Social Media, Email, Blogs, Web Design & Landing Pages. 
+              </p>
+              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+                Backed by a 50+ member powerhouse team, ShootOrder blends creativity with analytics to drive measurable growth and market impact.
               </p>
             </div>
 
