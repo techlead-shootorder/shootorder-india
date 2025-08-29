@@ -11,15 +11,15 @@ const TestimonialsSection = () => {
             name: "Ms. Pratima Sinha",
             title: "CEO - Birla Open Minds International School",
             image: "/api/placeholder/400/400",
-            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_1",
-            platform: "youtube"
+            videoUrl: "https://www.instagram.com/p/DN2PfZA0jhZ/",
+            platform: "instagram"
         },
         {
             id: 2,
             name: "Ms. Keerthi Reddy",
             title: "Founder - One Roze",
             image: "/api/placeholder/400/400",
-            videoUrl: "https://www.instagram.com/reel/XXXXXXXXX/",
+            videoUrl: "https://www.instagram.com/p/DMM0K9Vt6KS/",
             platform: "instagram"
         },
         {
@@ -27,8 +27,8 @@ const TestimonialsSection = () => {
             name: "Mr. Varun",
             title: "Co-founder - Oye Happy",
             image: "/api/placeholder/400/400",
-            videoUrl: "YOUR_YOUTUBE_VIDEO_ID_3",
-            platform: "youtube"
+            videoUrl: "https://www.instagram.com/p/DIpxs6GiyPV/",
+            platform: "instagram"
         }
     ];
 
@@ -91,25 +91,26 @@ const TestimonialsSection = () => {
 
             {/* Video Modal */}
             {selectedVideo && (
-                <div 
+                <div
                     className="fixed inset-0 flex items-center justify-center z-50 p-4"
                     style={{ backgroundColor: '#00000080' }}
                     onClick={closeModal}
                 >
-                    <div 
-                        className="relative w-full !max-w-4xl bg-white border border-black rounded-lg overflow-hidden"
+                    {/* Close Button */}
+                    <button
+                        onClick={closeModal}
+                        className="absolute top-4 right-4 cursor-pointer z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all duration-300"
+                    >
+                        <X className="w-6 h-6" />
+                    </button>
+                    <div
+                        className="relative w-full !max-w-3xl h-[90vh] bg-white rounded-lg overflow-hidden"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Close Button */}
-                        <button
-                            onClick={closeModal}
-                            className="absolute top-4 right-4 cursor-pointer z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all duration-300"
-                        >
-                            <X className="w-6 h-6" />
-                        </button>
+
 
                         {/* Conditional Embed */}
-                        <div className="relative w-full h-0 pb-[56.25%]">
+                        <div className="relative w-full h-full pb-[56.25%]">
                             {selectedVideo.platform === "youtube" ? (
                                 <iframe
                                     src={`https://www.youtube.com/embed/${selectedVideo.videoUrl}?autoplay=1`}

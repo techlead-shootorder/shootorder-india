@@ -57,62 +57,42 @@ function ProcessCovered({ services, pageHeading }) {
             const IconComponent = getIconComponent(service.icon);
             
             return (
-              <div
-                key={index}
-                className={`group transition-all duration-600 ${isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-12"
-                  }`}
-                style={{ transitionDelay: `${index * 150}ms` }}
-              >
-                {/* Card */}
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-gray-200 hover:-translate-y-2">
-                  {/* Icon Container */}
-                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-                    <div className="relative z-10 p-8">
-                      <IconComponent 
-                        size={120} 
-                        className="text-[#9a0c28] group-hover:text-[#7a0920] transition-all duration-500 group-hover:scale-110 drop-shadow-lg" 
-                      />
-                    </div>
+             <div
+  key={index}
+  className={`group transition-all duration-600 ${isVisible
+    ? "opacity-100 translate-y-0"
+    : "opacity-0 translate-y-12"
+    }`}
+  style={{ transitionDelay: `${index * 150}ms` }}
+>
+  {/* Clean Service Item */}
+  <div className="relative p-8 hover:bg-gray-50/80 rounded-xl transition-all duration-300 border-l-4 border-transparent hover:border-l-[#9a0c28]">
+    {/* Icon and Content Container */}
+    <div className="flex items-start gap-6">
+      {/* Icon Container */}
+      <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#9a0c28]/10 to-[#9a0c28]/5 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+        <IconComponent 
+          size={32} 
+          className="text-[#9a0c28] group-hover:text-[#7a0920] transition-colors duration-300" 
+        />
+      </div>
 
-                    {/* Subtle overlay on hover */}
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-300"></div>
+      {/* Content */}
+      <div className="flex-1">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#9a0c28] transition-colors duration-300">
+          {service.heading}
+        </h3>
+        
+        <p className="text-gray-600 leading-relaxed">
+          {service.content}
+        </p>
+      </div>
+    </div>
 
-                    {/* Optional decorative background pattern */}
-                    <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#9a0c28] to-transparent"></div>
-
-                    {/* Number badge */}
-                    {/* <div className="absolute top-4 left-4 w-8 h-8 bg-[#9a0c28] text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                      {index + 1}
-                    </div> */}
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#9a0c28] transition-colors duration-300">
-                      {service.heading}
-                    </h3>
-
-                    <p className="text-gray-600 mb-6 leading-relaxed line-clamp-3">
-                      {service.content}
-                    </p>
-
-                    {/* Learn More Button - Smaller Size */}
-                    {/* <button className="inline-flex items-center gap-2 bg-[#9a0c28] text-white px-6 py-2.5 rounded-lg hover:bg-[#7a0920] transition-all duration-300 text-sm font-medium group/btn">
-                      <span>Learn More</span>
-                      <svg 
-                        className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button> */}
-                  </div>
-                </div>
-              </div>
+    {/* Subtle hover effect line */}
+    <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </div>
+</div>
             );
           })}
 
