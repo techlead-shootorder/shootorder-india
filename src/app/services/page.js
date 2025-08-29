@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getAllServices } from '@/lib/services';
 import ServiceHeroSection from '@/components/SeprateServicePage/ServiceHeroSection';
 import ServicePartnerSection from '@/components/SeprateServicePage/ServicePartnerSection';
+import ServiceCategoriesSection from '@/components/SeprateServicePage/ServiceCategoriesSection';
 
 export const metadata = {
   title: 'All Services | ShootOrder',
@@ -15,8 +16,10 @@ export default async function ServicesPage() {
   return (
     <div>
       <ServiceHeroSection />
+      <div className='bg-gray-50'>
       <ServicePartnerSection />
-      <div className="!max-w-7xl mx-auto py-20 px-4">
+      </div>
+      {/* <div className="!max-w-7xl mx-auto py-20 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Services</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -54,16 +57,10 @@ export default async function ServicesPage() {
             </Link>
           ))}
         </div>
+      </div> */}
+      <ServiceCategoriesSection/>
 
-        {/* <div className="mt-16 text-center">
-          <Link
-            href="/admin/services/new"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors"
-          >
-            Create New Service
-          </Link>
-        </div> */}
-      </div>
+
     </div>
   );
 }
