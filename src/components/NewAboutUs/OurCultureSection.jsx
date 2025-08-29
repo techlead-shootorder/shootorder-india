@@ -42,13 +42,11 @@ const OurCultureSection = () => {
                 {/* Content Section */}
                 <div className="absolute bottom-0 text-center text-white space-y-8">
                     <h2 className="text-3xl sm:text-3xl md:text-5xl lg:text-4xl font-light mb-8">
-                        Our Culture: Innovation Meets Impact
+                        Our Culture: Where Creativity Meets Performance 
                     </h2>
                     <div className="max-w-4xl mx-auto">
                         <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed">
-                            At 8 Views, every day starts with the question: "How can we exceed expectations today?"
-                            Our culture thrives on breakthrough ideas, creative problem-solving, and relentless focus
-                            on results that truly matter.
+                            At ShootOrder, imagination isn’t just encouraged, it’s shaped to drive real impact. We blend bold creative ideas with data-driven strategies to deliver measurable performance for every brand we work with. 
                         </p>
                     </div>
                 </div>
