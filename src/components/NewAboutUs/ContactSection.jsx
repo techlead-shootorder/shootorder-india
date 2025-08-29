@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import PipeDriveForm from "@/components/Home/PipeDrive/PipeDriveForm";
+import ImageSection from '../Home/PipeDrive/ImageSection';
 
 
 const ContactFormSection = () => {
@@ -55,89 +56,23 @@ const ContactFormSection = () => {
           </h2>
         </div>
 
-        {/* Contact Form */}
-        {/* <div className="flex flex-wrap items-center justify-center gap-4 max-w-5xl mx-auto">
-         
-          <div className="flex-1 min-w-[200px] max-w-[280px]">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className="w-full px-6 py-4 rounded-lg border-0 text-gray-700 placeholder-gray-500 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 bg-white"
-            />
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+          {/* Image Section - Left on desktop, Top on mobile */}
+          <div className="w-full h-full lg:w-1/2 order-1 lg:order-1">
+            <ImageSection />
           </div>
 
-          
-          <div className="flex-1 min-w-[200px] max-w-[280px]">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleInputChange}
-              className="w-full px-6 py-4 rounded-lg border-0 text-gray-700 placeholder-gray-500 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 bg-white"
-            />
-          </div>
-
-          
-          <div className="flex-1 min-w-[200px] max-w-[280px]">
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone"
-              value={formData.phone}
-              onChange={handleInputChange}
-              className="w-full px-6 py-4 rounded-lg border-0 text-gray-700 placeholder-gray-500 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 bg-white"
-            />
-          </div>
-
-         
-          <div className="flex-1 min-w-[200px] max-w-[280px]">
-            <select
-              name="purpose"
-              value={formData.purpose}
-              onChange={handleInputChange}
-              className="w-full px-6 py-4 rounded-lg border-0 text-gray-700 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 appearance-none bg-white cursor-pointer"
-              style={{
-                backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e")`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right 1.5rem center',
-                backgroundSize: '1rem'
-              }}
-            >
-              {purposeOptions.map((option) => (
-                <option 
-                  key={option.value} 
-                  value={option.value}
-                  disabled={option.value === ''}
-                  className={option.value === '' ? 'text-gray-500' : 'text-gray-700'}
-                >
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          
-          
-                <div className="pt-4 flex shrink-0 justify-center">
-                    <div className='relative'>
-                        <div className='absolute top-[9px] left-[4px] h-8 w-28 bg-yellow-400 rounded-md'></div>
-                        <button className="relative z-5 text-[#9a0c28] bg-white font-medium py-1 px-4 rounded-md text-lg transition-all">
-                            Let's Talk
-                        </button>
-                    </div>
-                </div>
-          
-        </div> */}
-        <div className="flex justify-center">
-          <div className="bg-white px-4 py-4 sm:px-8 sm:py-4 rounded-lg shadow-lg w-xl">
-
-            <PipeDriveForm />
+          {/* Form Section - Right on desktop, Bottom on mobile */}
+          <div className="w-full lg:w-1/2 order-2 lg:order-2">
+            <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+              {/* Pipedrive Form */}
+              <PipeDriveForm />
+            </div>
           </div>
         </div>
+
+
       </div>
     </section >
   );

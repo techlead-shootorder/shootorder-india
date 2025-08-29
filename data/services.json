@@ -10,37 +10,45 @@
       {
         "imageUrl": "/images/services/SEO/Keywords Optimization.webp",
         "heading": "Keywords Optimization",
-        "content": "ShootOrder - SEO Company in USA offers multilevel keyword optimization. Keyword optimization is the seo process where the on page content is optimized to focus on particular keywords so that large number of audience can find your website easily through search engines. Our content writers are well experienced in producing unique, appealing and refreshing content for your website."
+        "content": "ShootOrder - SEO Company in USA offers multilevel keyword optimization. Keyword optimization is the seo process where the on page content is optimized to focus on particular keywords so that large number of audience can find your website easily through search engines. Our content writers are well experienced in producing unique, appealing and refreshing content for your website.",
+        "icon": "Search"
+
       },
       {
         "imageUrl": "/images/services/SEO/Meta Tags Optimization.webp",
         "heading": "Meta Tags Optimization",
-        "content": "Website title, description and other meta tags plays a vital role in site positioning on search engine because these provides the basic information to search engines about its content. ShootOrder optimizes your site's meta tags with high-quality, descriptive text, which is also SEO-friendly."
+        "content": "Website title, description and other meta tags plays a vital role in site positioning on search engine because these provides the basic information to search engines about its content. ShootOrder optimizes your site's meta tags with high-quality, descriptive text, which is also SEO-friendly.",
+        "icon": "Tags"
       },
       {
         "imageUrl": "/images/services/SEO/Rich Mark-ups.webp",
         "heading": "Rich Mark-ups",
-        "content": "Rich Mark-up allows different websites like search engines, social networking sites etc to know about your website content better. We insert some of the major rich markups to your website to gain more traffic from various sources and by showing the relevant content to the users. Ex. Twitter Cards, Google Maps, Schema Markups etc."
+        "content": "Rich Mark-up allows different websites like search engines, social networking sites etc to know about your website content better. We insert some of the major rich markups to your website to gain more traffic from various sources and by showing the relevant content to the users. Ex. Twitter Cards, Google Maps, Schema Markups etc.",
+        "icon": "Code2"
       },
       {
         "imageUrl": "/images/services/SEO/Technical SEO.webp",
         "heading": "Technical SEO",
-        "content": "Site Loading Time or Page Speed is the major concern of all website publishers because you get few seconds to attract your website visitor and if the website doesn't load in the respctive time you lose a potential lead. Our SEO Experts optimize your sites page speed by various compression techniques."
+        "content": "Site Loading Time or Page Speed is the major concern of all website publishers because you get few seconds to attract your website visitor and if the website doesn't load in the respctive time you lose a potential lead. Our SEO Experts optimize your sites page speed by various compression techniques.",
+        "icon": "Settings"
       },
       {
         "imageUrl": "/images/services/SEO/SEO friendly Content Optimization.webp",
         "heading": "Content Optimization",
-        "content": "The content on your website which is the major factor in deciding your site ranking on search engines. The content needs to be SEO friendly and appealing at the same time. ShootOrder has a dedicated team to make your content alive."
+        "content": "The content on your website which is the major factor in deciding your site ranking on search engines. The content needs to be SEO friendly and appealing at the same time. ShootOrder has a dedicated team to make your content alive.",
+        "icon": "FileText"
       },
       {
         "imageUrl": "/images/services/SEO/Local SEO.webp",
         "heading": "Local SEO",
-        "content": "Local SEO helps your business appear in local search results and Google Maps, making it easier for nearby customers to find you. ShootOrder optimizes your Google Business Profile, local citations, and location-based keywords to increase foot traffic and local leads."
+        "content": "Local SEO helps your business appear in local search results and Google Maps, making it easier for nearby customers to find you. ShootOrder optimizes your Google Business Profile, local citations, and location-based keywords to increase foot traffic and local leads.",
+        "icon": "MapPin"
       },
       {
         "imageUrl": "/images/services/SEO/Programmatic SEO.webp",
         "heading": "Programmatic SEO",
-        "content": "Programmatic SEO enables scaling organic traffic by automatically generating large volumes of optimized landing pages targeting long-tail keywords. ShootOrder uses data-driven strategies and automation to help you capture niche audiences and expand your organic reach efficiently."
+        "content": "Programmatic SEO enables scaling organic traffic by automatically generating large volumes of optimized landing pages targeting long-tail keywords. ShootOrder uses data-driven strategies and automation to help you capture niche audiences and expand your organic reach efficiently.",
+        "icon": "Bot"
       }
     ],
     "faqs": [

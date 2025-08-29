@@ -51,30 +51,36 @@ export default async function ServicePage({ params }) {
                 subheading={service.subheading}
                 imageUrl={service.imageUrl}
             />
-            
-            <div className="bg-gray-50">
+
+
             {/* <OurPartners /> */}
-            <ServicePartnerSection/>
+            <ServicePartnerSection />
+
+
+            <div className="bg-gray-50">
+                <StatisticsService />
+                {/* <ClientsService/> */}
             </div>
 
-            <StatisticsService />
-            {/* <ClientsService/> */}
 
-            
 
-            
+
 
             <DescriptionService />
-            
-            <div className="bg-gray-50"> 
-            <ProcessCovered services={service} />
-            </div>
 
-            <Faqs services={service}/>
 
             <div className="bg-gray-50">
-            <CaseStudyComponent service={params.slug} />
+                <ProcessCovered services={service} />
             </div>
+
+
+            <Faqs services={service} />
+
+
+            <div className="bg-gray-50">
+                <CaseStudyComponent service={params.slug} />
+            </div>
+
         </div>
     )
 }
