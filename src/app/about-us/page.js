@@ -16,6 +16,7 @@ import TeamSliderSection from "@/components/NewAboutUs/TeamSliderSection";
 import TeamShowcase from "@/components/NewAboutUs/TeamShowCase";
 import TestimonialsSection from "@/components/NewAboutUs/TestimonialsSection";
 import ContactFormSection from "@/components/NewAboutUs/ContactSection";
+import ServicePartnerSection from "@/components/SeprateServicePage/ServicePartnerSection";
 
 
 function page() {
@@ -29,7 +30,8 @@ function page() {
       <TeamSliderSection/>
       {/* <TeamShowcase/> */}
       <TestimonialsSection/>
-      <PartnerCarousel/>
+      {/* <PartnerCarousel/> */}
+      <ServicePartnerSection/>
       <ContactFormSection/>
       
       {/* Old About us component */}

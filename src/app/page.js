@@ -17,55 +17,10 @@ import WhyTrustUs from "@/components/Home/Partners/WhyTrustUs";
 import ClutchWidget from "@/components/Home/CompanyInfo/ClutchWidget";
 import PipeDriveForm from "@/components/Home/PipeDrive/PipeDriveForm";
 import ImageSection from "@/components/Home/PipeDrive/ImageSection";
+import HeaderSkeleton from "@/components/Skeleton/HeaderSkeleton";
+import HeroBannerSkeleton from "@/components/Skeleton/HeroBannerSkeleton";
+import ServicePartnerSection from "@/components/SeprateServicePage/ServicePartnerSection";
 
-// Skeleton Components
-const HeaderSkeleton = () => (
-  <div className="fixed top-0 left-0 w-full h-20 bg-white/10 backdrop-blur-sm border-b border-white/100 z-50 shadow-xl">
-    <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
-      {/* Logo skeleton */}
-      <div className="w-32 h-8 bg-white/20 rounded animate-pulse"></div>
-
-      {/* Navigation skeleton - Desktop */}
-      <div className="hidden md:flex space-x-6">
-        {[1, 2, 3, 4].map((item) => (
-          <div key={item} className="w-16 h-4 bg-white/20 rounded animate-pulse"></div>
-        ))}
-      </div>
-
-      {/* CTA Button skeleton */}
-      <div className="w-20 h-8 bg-white/20 rounded-full animate-pulse"></div>
-    </div>
-  </div>
-);
-
-const BannerSkeleton = () => (
-  <div className="w-full bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 relative overflow-hidden"
-    style={{ minHeight: '100vh', height: '100vh' }}>
-
-    {/* Simple background pattern */}
-    <div className="absolute inset-0 opacity-20">
-      <div className="absolute top-1/3 left-1/3 w-1/2 h-1/2 bg-gradient-to-br from-gray-300/40 to-transparent rounded-full blur-3xl animate-pulse"></div>
-    </div>
-
-    {/* Main content container */}
-    <div className="max-w-7xl mx-auto relative z-10 h-full flex flex-col justify-center items-center px-4 pt-16">
-      <div className="text-center w-full space-y-6 mt-[350px]">
-
-        {/* Simple heading skeleton - one line */}
-        <div className="w-200 max-w-full h-16 mx-auto bg-gray-300 rounded animate-pulse"></div>
-
-        {/* Simple description skeleton */}
-        <div className="w-60 max-w-full h-4 mx-auto bg-gray-300 rounded animate-pulse"></div>
-        <div className="w-100 max-w-full h-4 mx-auto bg-gray-300 rounded animate-pulse"></div>
-        <div className="w-30 max-w-full h-4 mx-auto bg-gray-300 rounded animate-pulse"></div>
-        
-
-        {/* Button skeleton */}
-        <div className="w-32 h-10 mx-auto bg-gray-300 rounded-full animate-pulse mt-10"></div>
-      </div>
-    </div>
-  </div>
-);
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -400,7 +355,7 @@ export default function Home() {
       {!isLoaded && (
         <div className="page-loader fixed top-0 left-0 w-full h-full z-50">
           <HeaderSkeleton />
-          <BannerSkeleton />
+          <HeroBannerSkeleton />
         </div>
       )}
 
@@ -430,11 +385,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto" id="partners-section">
+        {/* <div className="max-w-7xl mx-auto" id="partners-section">
           <div id="partners-container" className="!max-w-7xl mx-auto">
             <OurPartners />
           </div>
-        </div>
+        </div> */}
 
         <section className="!bg-gray-50">
           <div className="animate-section" id="service-tabs-section">
@@ -450,7 +405,8 @@ export default function Home() {
         </div>
 
         <div className="!max-w-7xl mx-auto">
-          <WhyTrustUs />
+          {/* <WhyTrustUs /> */}
+          <ServicePartnerSection />
         </div>
 
         <div className="bg-gray-50">

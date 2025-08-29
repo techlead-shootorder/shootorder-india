@@ -8,6 +8,7 @@ import DescriptionService from '@/components/NewServiceComponent/DescriptionServ
 import ProcessCovered from '@/components/Services/ProcessCovered';
 import Faqs from '@/components/NewServiceComponent/Faq'
 import CaseStudyComponent from '@/components/CaseStudies/CaseStudyComponent'
+import ServicePartnerSection from "@/components/SeprateServicePage/ServicePartnerSection";
 
 
 export async function generateStaticParams() {
@@ -50,12 +51,18 @@ export default async function ServicePage({ params }) {
                 subheading={service.subheading}
                 imageUrl={service.imageUrl}
             />
+            
+            <div className="bg-gray-50">
+            {/* <OurPartners /> */}
+            <ServicePartnerSection/>
+            </div>
+
             <StatisticsService />
             {/* <ClientsService/> */}
 
-            <div className="bg-gray-50">
-            <OurPartners />
-            </div>
+            
+
+            
 
             <DescriptionService />
             

@@ -28,9 +28,19 @@
         "content": "Site Loading Time or Page Speed is the major concern of all website publishers because you get few seconds to attract your website visitor and if the website doesn't load in the respctive time you lose a potential lead. Our SEO Experts optimize your sites page speed by various compression techniques."
       },
       {
-        "imageUrl": "/images/services/SEO/SEO friendly Content Optimization.webp  ",
+        "imageUrl": "/images/services/SEO/SEO friendly Content Optimization.webp",
         "heading": "Content Optimization",
         "content": "The content on your website which is the major factor in deciding your site ranking on search engines. The content needs to be SEO friendly and appealing at the same time. ShootOrder has a dedicated team to make your content alive."
+      },
+      {
+        "imageUrl": "/images/services/SEO/Local SEO.webp",
+        "heading": "Local SEO",
+        "content": "Local SEO helps your business appear in local search results and Google Maps, making it easier for nearby customers to find you. ShootOrder optimizes your Google Business Profile, local citations, and location-based keywords to increase foot traffic and local leads."
+      },
+      {
+        "imageUrl": "/images/services/SEO/Programmatic SEO.webp",
+        "heading": "Programmatic SEO",
+        "content": "Programmatic SEO enables scaling organic traffic by automatically generating large volumes of optimized landing pages targeting long-tail keywords. ShootOrder uses data-driven strategies and automation to help you capture niche audiences and expand your organic reach efficiently."
       }
     ],
     "faqs": [
