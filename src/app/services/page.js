@@ -1,9 +1,9 @@
 // src/app/services/page.jsx
 import Link from 'next/link';
 import { getAllServices } from '@/lib/services';
-import ServiceHeroSection from '@/components/SeprateServicePage/ServiceHeroSection';
-import ServicePartnerSection from '@/components/SeprateServicePage/ServicePartnerSection';
-import ServiceCategoriesSection from '@/components/SeprateServicePage/ServiceCategoriesSection';
+import ServiceHero from '@/components/SeprateServicePage/StaticServicePage/ServiceHero';
+import ServicePartner from '@/components/SeprateServicePage/StaticServicePage/ServicePartner';
+import ServiceCategories from '@/components/SeprateServicePage/StaticServicePage/ServiceCategories';
 
 export const metadata = {
   title: 'All Services | ShootOrder',
@@ -15,9 +15,9 @@ export default async function ServicesPage() {
 
   return (
     <div>
-      <ServiceHeroSection />
+      <ServiceHero />
       <div className='bg-gray-50'>
-      <ServicePartnerSection />
+      <ServicePartner />
       </div>
       {/* <div className="!max-w-7xl mx-auto py-20 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Services</h1>
@@ -58,7 +58,7 @@ export default async function ServicesPage() {
           ))}
         </div>
       </div> */}
-      <ServiceCategoriesSection/>
+      <ServiceCategories/>
 
 
     </div>

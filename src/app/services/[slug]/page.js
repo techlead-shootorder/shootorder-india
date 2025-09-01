@@ -1,115 +1,77 @@
-// src/app/services/[slug]/page.jsx
-import { notFound } from "next/navigation";
-import { getServiceBySlug, getAllServiceSlugs } from "@/lib/services";
-import BannerSection from "@/components/ReusableSections/BannerSection";
-import BannerForServices from "@/components/Services/BannerForServices";
-import ProcessCovered from "@/components/Services/ProcessCovered";
-import WhyChooseSection from "@/components/about-us/WhyChooseUsSection";
-import ClientGrid from "@/components/about-us/ClientGrid";
-import Testimonials from "@/components/Services/Testimonials";
-import Blogs from "@/components/Blogs/Blogs";
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import ServiceHeroSection from '@/components/SeprateServicePage/ServiceHeroSection';
+import ServicePartnerSection from '@/components/SeprateServicePage/ServicePartnerSection';
+import ServiceCategoriesSection from '@/components/SeprateServicePage/ServiceCategoriesSection';
 
-export async function generateStaticParams() {
-  const slugs = await getAllServiceSlugs();
+const servicesData = {
+  "digital-marketing": {
+    title: "Digital Marketing",
+    slug: "digital-marketing",
+    banner_image: "/images/services/digital-marketing/digital-marketing-hero.png",
+    description: "Grow your online presence with SEO, SEM, and social campaigns.",
+  },
+  "branding": {
+    title: "Branding",
+    slug: "branding",
+    banner_image: "/images/services/branding/branding-hero.png",
+    description: "Build a powerful and lasting brand identity.",
+  },
+  "growth-hacking": {
+    title: "Growth Hacking",
+    slug: "growth-hacking",
+    banner_image: "/images/services/growth-hacking/growth-hacking-hero.png",
+    description: "Scale quickly with innovative growth strategies.",
+  },
+  "marketing-automation": {
+    title: "Marketing Automation",
+    slug: "marketing-automation",
+    banner_image: "/images/services/marketing-automation/marketing-automation-hero.png",
+    description: "Automate workflows and nurture leads effectively.",
+  },
+};
 
-  return slugs.map((slug) => ({
-    slug: slug,
-  }));
-}
-
+// Dynamic metadata generation
 export async function generateMetadata({ params }) {
-  const service = await getServiceBySlug(params.slug);
+  const { slug } = params;
+  const data = servicesData[slug];
 
-  if (!service) {
+  if (!data) {
     return {
-      title: "Service Not Found",
+      title: 'Service Not Found | ShootOrder',
+      description: 'The requested service page could not be found.',
     };
   }
 
   return {
-    title: `${service.title} | ShootOrder Services`,
-    description: service.description,
+    title: `${data.title} Services | ShootOrder`,
+    description: data.description,
   };
 }
 
-export default async function ServicePage({ params }) {
-  const service = await getServiceBySlug(params.slug);
+// Generate static params for all services (optional, for static generation)
+export async function generateStaticParams() {
+  return Object.keys(servicesData).map((slug) => ({
+    slug,
+  }));
+}
 
-  if (!service) {
+export default function Page({ params }) {
+  const { slug } = params;
+  const data = servicesData[slug];
+
+  // Use Next.js notFound() for proper 404 handling
+  if (!data) {
     notFound();
   }
 
-  // return (
-  //   <div className="max-w-7xl mx-auto py-20 px-4">
-  //     <div className="max-w-4xl mx-auto">
-  //       <h1 className="text-3xl md:text-4xl font-bold mb-6">{service.title}</h1>
-
-  //       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-  //         {service.imageUrl && (
-  //           <div className="w-full h-64 overflow-hidden">
-  //             <img
-  //               src={service.imageUrl}
-  //               alt={service.title}
-  //               className="w-full h-full object-cover"
-  //             />
-  //           </div>
-  //         )}
-
-  //         <div className="p-6">
-  //           <div className="prose max-w-none">
-  //             <p className="text-gray-700 mb-6 text-lg">{service.description}</p>
-
-  //             <div className="mt-8">
-  //               <h2 className="text-2xl font-semibold mb-4">What We Offer</h2>
-  //               <ul className="list-disc pl-5 space-y-2">
-  //                 {service.features.map((feature, index) => (
-  //                   <li key={index} className="text-gray-700">{feature}</li>
-  //                 ))}
-  //               </ul>
-  //             </div>
-
-  //             {service.content && (
-  //               <div
-  //                 className="mt-8"
-  //                 dangerouslySetInnerHTML={{ __html: service.content }}
-  //               />
-  //             )}
-
-  //             <div className="mt-10 pt-6 border-t border-gray-200">
-  //               <h3 className="text-xl font-semibold mb-3">Want to learn more?</h3>
-  //               <p className="mb-4">Contact us today to discuss how our {service.title} services can help your business grow.</p>
-  //               <a
-  //                 href="/contact"
-  //                 className="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors"
-  //               >
-  //                 Contact Us
-  //               </a>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
   return (
-    <>
-      <BannerForServices />
-      <ProcessCovered services={service} />
-      <WhyChooseSection />
-      <section className="py-16">
-        <ClientGrid>
-          <h3 className="text-3xl font-semibold mb-4 text-center">
-            Top Brand&apos;s We Have Worked With
-          </h3>
-        </ClientGrid>
-      </section>
-      <section className="bg-[#fffbe7]">
-        <Testimonials/>
-      </section>
-      <section>
-        <Blogs/>
-      </section>
-
-    </>
+    <div>
+      <ServiceHeroSection data={data} />
+      <div className='bg-gray-50'>
+        <ServicePartnerSection />
+      </div>
+      <ServiceCategoriesSection data={data} />
+    </div>
   );
 }

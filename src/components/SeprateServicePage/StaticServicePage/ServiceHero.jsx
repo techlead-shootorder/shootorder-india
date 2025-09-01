@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const ServiceHeroSection = ({data}) => {
+const ServiceHero = () => {
   return (
     <section className="bg-[#fff3f3] py-16 px-4 lg:px-8 mt-20">
       <div className="!max-w-7xl mx-auto">
@@ -73,7 +73,7 @@ const ServiceHeroSection = ({data}) => {
           {/* Right Side - Hero Image */}
           <div className="relative">
             <Image
-              src={data.banner_image}
+              src="/images/services/service-hero-image.webp"
               alt="Content creation showcase with various brand examples"
               width={600}
               height={600}
@@ -89,4 +89,4 @@ const ServiceHeroSection = ({data}) => {
   );
 };
 
-export default ServiceHeroSection;
+export default ServiceHero;
