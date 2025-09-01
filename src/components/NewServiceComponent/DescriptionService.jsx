@@ -22,7 +22,7 @@ const DescriptionService = () => {
             <div className="services-details-image w-full animate__animated animate__fadeInUp">
               <Image
                 src={
-                   "/images/about-us/about.webp"
+                   "/images/our-story.webp"
                 }
                 alt="Web Development Services"
                 layout="responsive"
