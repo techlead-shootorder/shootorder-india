@@ -44,7 +44,7 @@ const ServiceHeroSection = () => {
           {/* Right Side - Hero Image */}
           <div className="relative">
             <Image
-              src="/images/services/service-hero-image.webp"
+              src="/images/services/service-hero.png"
               alt="Content creation showcase with various brand examples"
               width={600}
               height={600}

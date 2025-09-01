@@ -66,9 +66,9 @@ function ProcessCovered({ services, pageHeading }) {
   style={{ transitionDelay: `${index * 150}ms` }}
 >
   {/* Clean Service Item */}
-  <div className="relative p-8 hover:bg-gray-50/80 rounded-xl transition-all duration-300 border-l-4 border-transparent hover:border-l-[#9a0c28]">
+  <div className="relative p-2 sm:p-6 hover:bg-gray-50/80 rounded-xl transition-all duration-300 border-l-4 border-transparent hover:border-l-[#9a0c28]">
     {/* Icon and Content Container */}
-    <div className="flex items-start gap-6">
+    <div className="flex flex-col items-start gap-6">
       {/* Icon Container */}
       <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#9a0c28]/10 to-[#9a0c28]/5 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
         <IconComponent 

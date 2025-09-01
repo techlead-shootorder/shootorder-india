@@ -83,30 +83,57 @@ const serviceCategories = [
     title: "Branding",
     color: "bg-purple-50 border-purple-200 text-purple-700",
     hoverColor: "hover:bg-purple-100",
+    // links: [
+    //   {
+    //     name: "Identity Development",
+    //     href: "/branding/identity",
+    //     description: "Create a unique brand identity that stands out",
+    //   },
+    //   {
+    //     name: "Brand Audit",
+    //     href: "/branding/audit",
+    //     description: "Evaluate your brand's performance and positioning",
+    //   },
+    //   {
+    //     name: "Brand Messaging & Tone of Voice",
+    //     href: "/branding/messaging",
+    //     description: "Develop your authentic brand voice",
+    //   },
+    //   {
+    //     name: "Package & Design",
+    //     href: "/branding/design",
+    //     description: "Stunning visual brand assets and materials",
+    //   },
+    //   {
+    //     name: "Brand Launch & Campaigns",
+    //     href: "/branding/campaigns",
+    //     description: "Launch your brand with impact",
+    //   },
+    // ],
     links: [
       {
         name: "Identity Development",
-        href: "/branding/identity",
+        href: "/identity",
         description: "Create a unique brand identity that stands out",
       },
       {
         name: "Brand Audit",
-        href: "/branding/audit",
+        href: "/audit",
         description: "Evaluate your brand's performance and positioning",
       },
       {
         name: "Brand Messaging & Tone of Voice",
-        href: "/branding/messaging",
+        href: "/messaging",
         description: "Develop your authentic brand voice",
       },
       {
         name: "Package & Design",
-        href: "/branding/design",
+        href: "/design",
         description: "Stunning visual brand assets and materials",
       },
       {
         name: "Brand Launch & Campaigns",
-        href: "/branding/campaigns",
+        href: "/campaigns",
         description: "Launch your brand with impact",
       },
     ],
