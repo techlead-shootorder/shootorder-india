@@ -7,10 +7,10 @@ const ImageSection = () => {
     return (
         <div className="relative h-[813px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-                src="/images/about-us/About US.webp"
+                src="/images/CTA.webp"
                 alt="ShootOrder Office"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
+                className="object-cover  hover:scale-105 transition-transform duration-700"
                 priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
