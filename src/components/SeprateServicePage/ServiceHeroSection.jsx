@@ -22,14 +22,43 @@ const ServiceHeroSection = () => {
             </p>
             
             {/* Partners Image */}
-            <div className="py-4">
+            <div className="py-4 flex items-center gap-2">
               <Image
+                src="/images/clients/b1.jpg"
+                alt="bmw"
+                width={150}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+              <Image
+                src="/images/clients/Travtips.webp"
+                alt="travtips"
+                width={150}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+              <Image
+                src="/images/clients/e1.jpg"
+                alt="bmw"
+                width={150}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+              <Image
+                src="/images/clients/f1.jpg"
+                alt="bmw"
+                width={150}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+             
+              {/* <Image
                 src="/images/services/service-partners-image.webp"
                 alt="Partners - Google Partner, Shopify Partners, Meta Business Partners, Klaviyo Partner"
                 width={500}
                 height={80}
                 className="h-16 w-auto object-contain"
-              />
+              /> */}
             </div>
             
             {/* CTA Button */}
