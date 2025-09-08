@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import ServiceHeroSection from '@/components/SeprateServicePage/ServiceHeroSection';
 import ServicePartnerSection from '@/components/SeprateServicePage/ServicePartnerSection';
 import ServiceCategoriesSection from '@/components/SeprateServicePage/ServiceCategoriesSection';
+import ServiceAboutSection from '@/components/SeprateServicePage/ServiceAboutSection';
+import TestimonialsSection from '@/components/NewAboutUs/TestimonialsSection';
 
 const servicesData = {
   "digital-marketing": {
@@ -71,7 +73,9 @@ export default function Page({ params }) {
       <div className='bg-gray-50'>
         <ServicePartnerSection />
       </div>
+      <ServiceAboutSection />
       <ServiceCategoriesSection data={data} />
+      <TestimonialsSection/>
     </div>
   );
 }

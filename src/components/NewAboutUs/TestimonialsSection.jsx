@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { Play, X } from 'lucide-react';
+import Image from 'next/image';
 
 const TestimonialsSection = () => {
     const [selectedVideo, setSelectedVideo] = useState(null);
@@ -8,26 +9,26 @@ const TestimonialsSection = () => {
     const testimonials = [
         {
             id: 1,
-            name: "Ms. Pratima Sinha",
-            title: "CEO - Birla Open Minds International School",
-            image: "/api/placeholder/400/400",
-            videoUrl: "https://www.instagram.com/p/DN2PfZA0jhZ/",
+            name: "Mr. Sudhakar Jadhav",
+            title: "COO - Oasis Fertility",
+            image: "/images/clients/mr_sudhakar.png",
+            videoUrl: "https://www.instagram.com/p/Cg1Cz60hj8r/",
             platform: "instagram"
         },
         {
             id: 2,
-            name: "Ms. Keerthi Reddy",
-            title: "Founder - One Roze",
-            image: "/api/placeholder/400/400",
-            videoUrl: "https://www.instagram.com/p/DMM0K9Vt6KS/",
+            name: "Dr. Charan Kumar",
+            title: "Founder & Director, Eledent Hospitals",
+            image: "/images/clients/dr_charan_kumar.png",
+            videoUrl: "https://www.instagram.com/p/CgjtsXwhSPm/",
             platform: "instagram"
         },
         {
             id: 3,
-            name: "Mr. Varun",
-            title: "Co-founder - Oye Happy",
-            image: "/api/placeholder/400/400",
-            videoUrl: "https://www.instagram.com/p/DIpxs6GiyPV/",
+            name: "Ms. Deepa Balasubramanian",
+            title: "CEO - Winga",
+            image: "/images/clients/ms_deepa.png",
+            videoUrl: "https://www.instagram.com/p/CgeMp68B8rB/",
             platform: "instagram"
         }
     ];
@@ -59,9 +60,11 @@ const TestimonialsSection = () => {
                         <div key={testimonial.id} className="relative group">
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                                 <div className="relative h-80">
-                                    <img
+                                    <Image
                                         src={testimonial.image}
                                         alt={testimonial.name}
+                                        height={400}
+                                        width={400}
                                         className="w-full h-full object-cover"
                                     />
 
@@ -93,29 +96,28 @@ const TestimonialsSection = () => {
             {selectedVideo && (
                 <div
                     className="fixed inset-0 flex items-center justify-center z-50 p-4"
-                    style={{ backgroundColor: '#00000080' }}
+                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.9)' }}
                     onClick={closeModal}
                 >
                     {/* Close Button */}
                     <button
                         onClick={closeModal}
-                        className="absolute top-4 right-4 cursor-pointer z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all duration-300"
+                        className="absolute top-6 right-6 cursor-pointer z-20 bg-black bg-opacity-70 hover:bg-opacity-90 text-white rounded-full p-3 transition-all duration-300"
                     >
                         <X className="w-6 h-6" />
                     </button>
+                    
                     <div
-                        className="relative w-full !max-w-3xl h-[90vh] bg-white rounded-lg overflow-hidden"
+                        className="relative bg-white rounded-lg overflow-hidden shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     >
-
-
-                        {/* Conditional Embed */}
-                        <div className="relative w-full h-full pb-[56.25%]">
+                        {/* Square Video Container */}
+                        <div className="relative w-[90vw] max-w-[600px] h-[90vw] max-h-[600px] aspect-square">
                             {selectedVideo.platform === "youtube" ? (
                                 <iframe
                                     src={`https://www.youtube.com/embed/${selectedVideo.videoUrl}?autoplay=1`}
                                     title="Client Testimonial Video"
-                                    className="absolute top-0 left-0 w-full h-full"
+                                    className="w-full h-full"
                                     frameBorder="0"
                                     allowFullScreen
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -124,7 +126,7 @@ const TestimonialsSection = () => {
                                 <iframe
                                     src={`${selectedVideo.videoUrl}embed`}
                                     title="Instagram Video"
-                                    className="absolute top-0 left-0 w-full h-full"
+                                    className="w-full h-full"
                                     frameBorder="0"
                                     allowTransparency={true}
                                     allowFullScreen
