@@ -5,6 +5,7 @@ import ServicePartnerSection from '@/components/SeprateServicePage/ServicePartne
 import ServiceCategoriesSection from '@/components/SeprateServicePage/ServiceCategoriesSection';
 import ServiceAboutSection from '@/components/SeprateServicePage/ServiceAboutSection';
 import TestimonialsSection from '@/components/NewAboutUs/TestimonialsSection';
+import StaticCaseStudiesComponent from '@/components/SeprateServicePage/StaticCaseStudiesComponent ';
 
 const servicesData = {
   "digital-marketing": {
@@ -73,9 +74,10 @@ export default function Page({ params }) {
       <div className='bg-gray-50'>
         <ServicePartnerSection />
       </div>
-      <ServiceAboutSection />
+      <ServiceAboutSection data={data}/>
       <ServiceCategoriesSection data={data} />
       <TestimonialsSection/>
+      <StaticCaseStudiesComponent/>
     </div>
   );
 }

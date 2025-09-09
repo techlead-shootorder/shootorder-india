@@ -62,10 +62,6 @@ export default async function ServicePage({ params }) {
                 {/* <ClientsService/> */}
             </div>
 
-
-
-
-
             <DescriptionService />
 
 
