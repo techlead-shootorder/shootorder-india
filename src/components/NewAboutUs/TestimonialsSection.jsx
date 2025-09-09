@@ -112,7 +112,7 @@ const TestimonialsSection = () => {
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Square Video Container */}
-                        <div className="relative w-[90vw] max-w-[600px] h-[90vw] max-h-[600px] aspect-square">
+                        <div className="relative  w-[30vw] h-[80vh]">
                             {selectedVideo.platform === "youtube" ? (
                                 <iframe
                                     src={`https://www.youtube.com/embed/${selectedVideo.videoUrl}?autoplay=1`}
@@ -130,6 +130,7 @@ const TestimonialsSection = () => {
                                     frameBorder="0"
                                     allowTransparency={true}
                                     allowFullScreen
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 />
                             )}
                         </div>
