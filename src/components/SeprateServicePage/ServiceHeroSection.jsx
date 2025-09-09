@@ -36,15 +36,14 @@ const ServiceHeroSection = ({ data }) => {
           <div className="space-y-8">
             {/* Main Heading */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
-              Amplifying brands,<br />
-              driving engagement,<br />
-              and creating <span className="text-[#9a0c28]">impact</span>
+              {data.h1},<br />
+              {data.h2},<br />
+              {data.h3} <span className="text-[#9a0c28]">{data.redText}</span>
             </h1>
 
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-              We are a content-focused social media agency specializing in original,
-              high-engagement content for brands on Meta and LinkedIn.
+             {data.subheading}
             </p>
 
             {/* Partners Image */}
