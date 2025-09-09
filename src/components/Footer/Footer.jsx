@@ -69,13 +69,20 @@ const companyLinks = [
   { name: "Work Flow", href: "/about/work-flow/" },
   { name: "Clients & Testimonials", href: "/about/clients/" },
   { name: "Case Studies", href: "/case-studies/" },
-  { name: "Careers", href: "/careers/" },
   { name: "Training Programs", href: "/training/" },
 ];
+
+const services = [
+  { name: "Digital Marketing", href: "/services/digital-marketing" },
+  { name: "Branding", href: "/services/branding" },
+  { name: "Growth Hacking", href: "/services/growth-hacking" },
+  { name: "Marketing Automation", href: "/services/marketing-automation" }
+]
 
 const contactLinks = [
   { name: "Contact Us", href: "/contact-us/" },
   { name: "Project Enquiry", href: "/enquiry/" },
+  { name: "Careers", href: "/careers/" },
   { name: "Support", href: "/support/" },
 ];
 
@@ -162,7 +169,7 @@ const Footer = () => {
               </div>
 
               {/* Partner Logos */}
-              <div className="flex items-center gap-6 flex-wrap">
+              {/* <div className="flex items-center gap-6 flex-wrap">
                 <Image
                   src="/images/logo/meta.png"
                   alt="Meta Partner"
@@ -187,7 +194,7 @@ const Footer = () => {
                   className="hover:scale-105 transition-transform"
                   style={{ objectFit: "contain" }}
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Right Section - Links */}
@@ -195,7 +202,7 @@ const Footer = () => {
               {/* Mobile: Two columns, Tablet+: Four columns */}
               <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {/* Column 1 - Digital Marketing */}
-                <div>
+                {/* <div>
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
                     Digital Marketing
                   </h3>
@@ -220,10 +227,10 @@ const Footer = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Column 2 - Branding & Growth */}
-                <div>
+                {/* <div>
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
                     Branding
                   </h3>
@@ -255,10 +262,10 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* Column 3 - Marketing Automation & Company */}
-                <div className="col-span-2 md:col-span-1">
+                {/* <div className="col-span-2 md:col-span-1">
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
                     Marketing Automation
                   </h3>
@@ -274,7 +281,30 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
+                </div> */}
 
+                {/* Column - Services */}
+                <div className="col-span-2 md:col-span-1">
+                  <h3 className="text-lg font-semibold mb-6 text-gray-900">
+                    Services
+                  </h3>
+                  <ul className="space-y-3">
+                    {services.map((link) => (
+                      <li key={link.name}>
+                        <Link
+                          href={link.href}
+                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                        >
+                          {link.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+
+                </div>
+
+                {/* Column - Company */}
+                <div className="col-span-2 md:col-span-1">
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
                     Company
                   </h3>
@@ -292,7 +322,7 @@ const Footer = () => {
                   </ul>
                 </div>
 
-                {/* Column 4 - Contact & Quick Links */}
+                {/* Column 4 - Get In Touch */}
                 <div className="col-span-2 md:col-span-1">
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
                     Get In Touch
@@ -310,6 +340,26 @@ const Footer = () => {
                     ))}
                   </ul>
 
+                  {/* <h3 className="text-lg font-semibold mb-6 text-gray-900">
+                    Quick Links
+                  </h3>
+                  <ul className="space-y-3">
+                    {quickLinks.map((link) => (
+                      <li key={link.name}>
+                        <Link
+                          href={link.href}
+                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                        >
+                          {link.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul> */}
+                </div>
+
+
+                {/* Column - Quick Links */}
+                <div className="col-span-2 md:col-span-1">
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
                     Quick Links
                   </h3>
@@ -327,6 +377,37 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+
+
+              <div className="mt-4 sm:mt-[20px]">
+                {/* Partner Logos */}
+                <div className="flex items-center sm:justify-end gap-2 sm:gap-6 flex-wrap sm:mr-16">
+                  <Image
+                    src="/images/logo/meta.png"
+                    alt="Meta Partner"
+                    width={100}
+                    height={30}
+                    className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]  sm:!h-[90px]"
+                    style={{ objectFit: "contain" }}
+                  />
+                  <Image
+                    src="/images/logo/google.png"
+                    alt="Google Partner"
+                    width={90}
+                    height={40}
+                    className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                    style={{ objectFit: "contain" }}
+                  />
+                  <Image
+                    src="/images/logo/hubspot.png"
+                    alt="HubSpot Partner"
+                    width={100}
+                    height={40}
+                    className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]"
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -340,7 +421,6 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} ShootOrder. All rights reserved
               by Shootorder.us
             </p>
-
           </div>
         </div>
       </div>

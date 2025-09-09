@@ -4,8 +4,7 @@ import { ChevronRight, TrendingUp, Award, Eye, Download } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 const StaticCaseStudiesComponent = () => {
-
-    const router = useRouter();
+  const router = useRouter();
 
   const caseStudies = {
     seo: [
@@ -133,10 +132,15 @@ const StaticCaseStudiesComponent = () => {
     ]
   };
 
+  // Combine all case studies into one array
+  const allCaseStudies = [
+    ...caseStudies.seo,
+    ...caseStudies.googleAds,
+    ...caseStudies.socialMedia
+  ];
+
   const handleCaseStudyClick = (studySlug) => {
-    // Navigate to individual case study page
     router.push(`/case-studies/${studySlug}`);
-    // console.log(`Navigate to: /case-studies/${studySlug}`);
   };
 
   const handleDownloadPDF = async (pdfUrl, title, event) => {
@@ -157,7 +161,7 @@ const StaticCaseStudiesComponent = () => {
 
   const CaseStudyCard = ({ study, index }) => (
     <div
-      key={`${study.id}-${index}`}
+      key={`case-study-${index}`}
       className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100"
       onClick={() => handleCaseStudyClick(study.slug)}
     >
@@ -231,64 +235,23 @@ const StaticCaseStudiesComponent = () => {
     </div>
   );
 
-  const SectionHeader = ({ title, description }) => (
-    <div className="text-center mb-12">
-      <h2 className="text-[28px] font-bold text-gray-900 mb-4">{title}</h2>
-      {description && (
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto">{description}</p>
-      )}
-    </div>
-  );
-
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className=" min-h-screen">
       <div className="!max-w-7xl mx-auto px-4 pt-16 pb-20">
         {/* Main Title */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Our Case Studies</h1>
+          <h1 className="text-3xl font-bold text-black mb-4">Our Case Studies</h1>
           <p className="text-gray-600 text-xl max-w-4xl mx-auto">
             Discover how we've helped businesses across industries achieve remarkable growth through strategic digital marketing solutions.
           </p>
         </div>
 
-        {/* SEO Section */}
-        <section className="mb-20">
-          <SectionHeader 
-            title="Search Engine Optimization (SEO)" 
-            description="Organic growth strategies that deliver sustainable results and long-term success."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {caseStudies.seo.map((study, index) => (
-              <CaseStudyCard key={`seo-${index}`} study={study} index={index} />
-            ))}
-          </div>
-        </section>
-
-        {/* Google Ads Section */}
-        <section className="mb-20">
-          <SectionHeader 
-            title="Google Ads & PPC" 
-            description="Performance-driven paid advertising campaigns that maximize ROI and accelerate growth."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {caseStudies.googleAds.map((study, index) => (
-              <CaseStudyCard key={`google-ads-${index}`} study={study} index={index} />
-            ))}
-          </div>
-        </section>
-
-        {/* Social Media Marketing Section */}
-        <section className="mb-20">
-          <SectionHeader 
-            title="Social Media Marketing" 
-            description="Engaging social campaigns that build brand awareness and drive meaningful connections."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {caseStudies.socialMedia.map((study, index) => (
-              <CaseStudyCard key={`social-media-${index}`} study={study} index={index} />
-            ))}
-          </div>
-        </section>
+        {/* All Case Studies Grid - 3x3 layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {allCaseStudies.map((study, index) => (
+            <CaseStudyCard key={`case-study-${index}`} study={study} index={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

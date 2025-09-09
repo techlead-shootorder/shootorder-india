@@ -71,12 +71,19 @@ export default function Page({ params }) {
   return (
     <div>
       <ServiceHeroSection data={data} />
-      <div className='bg-gray-50'>
+      
         <ServicePartnerSection />
-      </div>
+     
+      <div className='bg-gray-50'>
       <ServiceAboutSection data={data}/>
+       </div>
+
       <ServiceCategoriesSection data={data} />
+
+      <div className='bg-gray-50'>
       <TestimonialsSection/>
+      </div>
+      
       <StaticCaseStudiesComponent/>
     </div>
   );

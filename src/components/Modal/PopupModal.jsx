@@ -126,7 +126,7 @@ export default function PopupModal({ isOpen, onClose }) {
           <div className={`transition-opacity duration-500 ${
             isFormLoaded ? 'opacity-100' : 'opacity-0 absolute'
           }`}>
-           <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/5VCnvCTTpciW8EOquxUa6rJouYdCSntaddqtJtsubY8coHqKW1j0JM38jvtMd5efej">
+           <div className="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/5VCnvCTTpciW8EOquxUa6rJouYdCSntaddqtJtsubY8coHqKW1j0JM38jvtMd5efej">
            </div>
           </div>
         </div>
