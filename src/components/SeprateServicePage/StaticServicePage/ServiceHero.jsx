@@ -1,6 +1,31 @@
+'use client';
 import Image from 'next/image';
+import { useState } from 'react';
+import PopupModal from "@/components/Modal/PopupModal";
 
 const ServiceHero = () => {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = (e) => {
+    // Create ripple effect
+    const ripple = document.createElement('div');
+    const rect = e.target.getBoundingClientRect();
+    ripple.className = 'absolute animate-ripple rounded-full bg-gray-200';
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+    e.target.appendChild(ripple);
+
+    // Remove ripple after animation
+    setTimeout(() => ripple.remove(), 1000);
+
+    // Open popup with slight delay for visual feedback
+    setTimeout(() => setIsPopupOpen(true), 200);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
   return (
     <section className="bg-[#fff3f3] py-16 px-4 lg:px-8 mt-20">
       <div className="!max-w-7xl mx-auto">
@@ -14,44 +39,40 @@ const ServiceHero = () => {
               driving engagement,<br />
               and creating <span className="text-[#9a0c28]">impact</span>
             </h1>
-            
+
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-              We are a content-focused social media agency specializing in original, 
+              We are a content-focused social media agency specializing in original,
               high-engagement content for brands on Meta and LinkedIn.
             </p>
-            
+
             {/* Partners Image */}
             <div className="py-4 flex items-center gap-2">
               <Image
-                src="/images/clients/b1.jpg"
-                alt="bmw"
-                width={150}
-                height={80}
-                className="h-16 w-auto object-contain"
+                src="/images/logo/meta.png"
+                alt="Meta Partner"
+                width={100}
+                height={30}
+                className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]  sm:!h-[90px]"
+                style={{ objectFit: "contain" }}
               />
               <Image
-                src="/images/clients/Travtips.webp"
-                alt="travtips"
-                width={150}
-                height={80}
-                className="h-16 w-auto object-contain"
+                src="/images/logo/google.png"
+                alt="Google Partner"
+                width={90}
+                height={40}
+                className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                style={{ objectFit: "contain" }}
               />
               <Image
-                src="/images/clients/e1.jpg"
-                alt="bmw"
-                width={150}
-                height={80}
-                className="h-16 w-auto object-contain"
+                src="/images/logo/hubspot.png"
+                alt="HubSpot Partner"
+                width={100}
+                height={40}
+                className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                style={{ objectFit: "contain" }}
               />
-              <Image
-                src="/images/clients/f1.jpg"
-                alt="bmw"
-                width={150}
-                height={80}
-                className="h-16 w-auto object-contain"
-              />
-             
+
               {/* <Image
                 src="/images/services/service-partners-image.webp"
                 alt="Partners - Google Partner, Shopify Partners, Meta Business Partners, Klaviyo Partner"
@@ -60,16 +81,19 @@ const ServiceHero = () => {
                 className="h-16 w-auto object-contain"
               /> */}
             </div>
-            
+
             {/* CTA Button */}
-            <button className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer">
-              Check our services
+            <button 
+            className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
+            onClick={openPopup}
+            >
+              Contact Us
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
-          
+
           {/* Right Side - Hero Image */}
           <div className="relative">
             <Image
@@ -85,6 +109,7 @@ const ServiceHero = () => {
         </div>
 
       </div>
+      <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
     </section>
   );
 };
