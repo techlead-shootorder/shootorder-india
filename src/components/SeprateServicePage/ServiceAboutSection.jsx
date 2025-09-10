@@ -4,11 +4,11 @@ import Image from "next/image";
 const serviceAboutData = {
   "digital-marketing": {
     heading: "Digital Marketing Excellence",
-    content: "ShootOrder's Digital Marketing division specializes in comprehensive online marketing strategies that drive real results. Our expert team combines SEO, SEM, social media marketing, and content strategy to amplify your brand's digital presence. From increasing organic search visibility to crafting compelling social campaigns, we leverage data-driven insights and cutting-edge tools to maximize your ROI. With years of experience in the digital landscape, we understand what it takes to connect with your target audience and convert prospects into loyal customers."
+    content: "We don’t just run ads, we create conversations. Our digital marketing approach balances creativity with performance to help your brand stand out where it matters most. From SEO to social campaigns, we design strategies that enhance visibility, attract the right audience, and convert clicks into loyal customers."
   },
   "branding": {
     heading: "Brand Identity & Strategy",
-    content: "At ShootOrder, we believe that powerful branding is the foundation of business success. Our branding experts work closely with you to develop a distinctive brand identity that resonates with your target audience and stands out in the marketplace. From logo design and brand guidelines to comprehensive brand strategy and positioning, we create cohesive visual and messaging frameworks that tell your story authentically. We help businesses of all sizes build memorable brands that foster trust, loyalty, and long-term growth."
+    content: "Your brand is more than a logo; it’s the story that people remember. We craft brand identities that spark recognition and build trust. From design to messaging, we shape experiences that connect with your audience on an emotional level and keep your business unforgettable. "
   },
   "growth-hacking": {
     heading: "Growth Hacking Innovation",
@@ -16,7 +16,7 @@ const serviceAboutData = {
   },
   "marketing-automation": {
     heading: "Marketing Automation Solutions",
-    content: "Transform your marketing efficiency with ShootOrder's comprehensive marketing automation services. Our team designs and implements sophisticated automation workflows that nurture leads, engage customers, and drive conversions around the clock. From email marketing sequences and lead scoring systems to personalized customer journeys and behavioral triggers, we create seamless automated experiences that feel personal and relevant. Our marketing automation solutions help businesses scale their marketing efforts, improve customer relationships, and achieve consistent results while saving time and resources."
+    content: "Work smarter, not harder. With data-driven dashboards, automated campaigns, and smart analytics, we help you streamline marketing and make every customer interaction count. Our automation solutions ensure you never miss an opportunity to engage, nurture, and grow."
   }
 };
 
