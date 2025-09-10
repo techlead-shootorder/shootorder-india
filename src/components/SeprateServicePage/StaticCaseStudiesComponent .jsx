@@ -1,10 +1,10 @@
 'use client'
-import React from 'react';
-import { ChevronRight, TrendingUp, Award, Eye, Download } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
+import { ChevronRight, ChevronLeft, TrendingUp, Award, Eye, Download } from 'lucide-react';
 
 const StaticCaseStudiesComponent = () => {
-  const router = useRouter();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(3);
 
   const caseStudies = {
     seo: [
@@ -139,12 +139,48 @@ const StaticCaseStudiesComponent = () => {
     ...caseStudies.socialMedia
   ];
 
+  // Handle responsive items per page
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerPage(1);
+      } else {
+        setItemsPerPage(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Reset currentIndex when itemsPerPage changes
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [itemsPerPage]);
+
+  const totalPages = Math.ceil(allCaseStudies.length / itemsPerPage);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const getCurrentItems = () => {
+    const startIndex = currentIndex * itemsPerPage;
+    return allCaseStudies.slice(startIndex, startIndex + itemsPerPage);
+  };
+
   const handleCaseStudyClick = (studySlug) => {
-    router.push(`/case-studies/${studySlug}`);
+    // router.push(`/case-studies/${studySlug}`);
+    console.log('Navigate to:', studySlug);
   };
 
   const handleDownloadPDF = async (pdfUrl, title, event) => {
-    event.stopPropagation(); // Prevent card click when button is clicked
+    event.stopPropagation();
 
     try {
       const link = document.createElement('a');
@@ -162,7 +198,7 @@ const StaticCaseStudiesComponent = () => {
   const CaseStudyCard = ({ study, index }) => (
     <div
       key={`case-study-${index}`}
-      className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100"
+      className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100 flex-shrink-0 w-full"
       onClick={() => handleCaseStudyClick(study.slug)}
     >
       {/* Image Section */}
@@ -172,16 +208,13 @@ const StaticCaseStudiesComponent = () => {
           alt={study.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           onError={(e) => {
-            // Fallback to a gradient background if image fails to load
             e.target.style.display = 'none';
             e.target.parentElement.classList.add('bg-gradient-to-br', 'from-gray-100', 'to-gray-200');
           }}
         />
         
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         
-        {/* Award icon overlay */}
         <div className="absolute top-4 right-4">
           <Award className="w-6 h-6 text-white drop-shadow-lg opacity-80" />
         </div>
@@ -236,7 +269,7 @@ const StaticCaseStudiesComponent = () => {
   );
 
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       <div className="!max-w-7xl mx-auto px-4 pt-16 pb-20">
         {/* Main Title */}
         <div className="text-center mb-16">
@@ -246,11 +279,74 @@ const StaticCaseStudiesComponent = () => {
           </p>
         </div>
 
-        {/* All Case Studies Grid - 3x3 layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {allCaseStudies.map((study, index) => (
-            <CaseStudyCard key={`case-study-${index}`} study={study} index={index} />
-          ))}
+        {/* Carousel Container */}
+        <div className="relative">
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlide}
+            disabled={currentIndex === 0}
+            className="absolute -left-4 sm:-left-10 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-1.5 sm:p-3 hover:bg-gray-50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed border border-gray-200"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-700" />
+          </button>
+
+          <button
+            onClick={nextSlide}
+            disabled={currentIndex === totalPages - 1}
+            className="absolute -right-4 sm:-right-10 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-1.5 sm:p-3 hover:bg-gray-50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed border border-gray-200"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-700" />
+          </button>
+
+          {/* Carousel Content */}
+          <div className="overflow-hidden rounded-xl">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${currentIndex * 100}%)`,
+              }}
+            >
+              {Array.from({ length: totalPages }).map((_, pageIndex) => {
+                const startIndex = pageIndex * itemsPerPage;
+                const pageItems = allCaseStudies.slice(startIndex, startIndex + itemsPerPage);
+                
+                return (
+                  <div
+                    key={pageIndex}
+                    className={`flex w-full flex-shrink-0 ${
+                      itemsPerPage === 1 ? '' : 'gap-8'
+                    }`}
+                  >
+                    {pageItems.map((study, index) => (
+                      <div
+                        key={`${pageIndex}-${index}`}
+                        className={`${
+                          itemsPerPage === 1 ? 'w-full' : 'w-1/3'
+                        }`}
+                      >
+                        <CaseStudyCard study={study} index={`${pageIndex}-${index}`} />
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center mt-8 space-x-2">
+            {Array.from({ length: totalPages }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentIndex === index
+                    ? 'bg-[#9a0c28] scale-110'
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

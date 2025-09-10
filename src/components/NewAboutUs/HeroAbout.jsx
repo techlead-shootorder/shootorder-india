@@ -5,14 +5,18 @@ const HeroAbout = () => {
   return (
     <div className="relative w-full h-screen mt-4">
       {/* Background Image */}
+      {/* Background Image with Gradient Overlay */}
       <div 
-        className="w-full h-full bg-cover bg-center bg-no-repeat"
+        className="w-full h-full bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `url('/images/about-us/about-team-banner.webp')`
+          backgroundImage: `
+            linear-gradient(178deg, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 1) 100%),
+            url('/images/about-us/about-team-banner.webp')
+          `
         }}
       >
         {/* Black Overlay */}
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
+        {/* <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div> */}
         
         {/* Content positioned at the bottom */}
         <div className="absolute inset-x-0 bottom-0 flex justify-center pb-8 sm:pb-12 md:pb-16 lg:pb-20">

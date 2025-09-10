@@ -3,7 +3,7 @@ import React from 'react';
 const OurFoundersSection = () => {
   return (
     <section className=" py-10 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="!max-w-7xl mx-auto">
         {/* Top heading */}
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-gray-800 mb-8">
@@ -31,7 +31,7 @@ const OurFoundersSection = () => {
             </h3>
             
             <div className="space-y-6">
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+              <p className="text-base sm:text-lg md:text-lg text-gray-700 leading-relaxed font-light">
                 Rajat Jain, founder of ShootOrder, takes a unique approach to digital marketing. Instead of relying only on intuition or traditional methods, he focuses on data-driven strategies to help brands grow. From startups to well-known names, he has guided successful campaigns, launched new initiatives, and optimized existing marketing efforts with his expertise. 
               </p>
             </div>

@@ -27,7 +27,7 @@ function page() {
       <WhoWeAre/>
       <OurCultureSection/>
       <OurFoundersSection/>
-      <TeamSliderSection/>
+      {/* <TeamSliderSection/> */}
       {/* <TeamShowcase/> */}
       <TestimonialsSection/>
       {/* <PartnerCarousel/> */}

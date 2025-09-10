@@ -3,7 +3,7 @@ import React from 'react';
 const WhoWeAre = () => {
   return (
     <section className=" py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="!max-w-7xl mx-auto">
         {/* Top heading */}
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#9a0c28] mb-8">
@@ -30,14 +30,14 @@ const WhoWeAre = () => {
               Who We Are
             </h3>
             
-            <div className="space-y-6">
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+            <div className="space-y-6 text-base sm:text-lg md:text-lg text-gray-700 leading-relaxed font-light">
+              <p className="">
                 Proudly recognized as a Google Premier Partner, ShootOrder is a Hyderabad-based agency with a fast-growing presence in the USA. Founded by digital visionary Rajat Jain, the agency has evolved into a trusted growth partner for global brands. 
               </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+              <p className="">
                 With 12+ years of expertise and 400+ clients worldwide across e-commerce, healthcare, education, automobile, real estate, and lifestyle, ShootOrder delivers end-to-end digital solutions — Performance Marketing, SEO, Social Media, Email, Blogs, Web Design & Landing Pages. 
               </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+              <p className="">
                 Backed by a 50+ member powerhouse team, ShootOrder blends creativity with analytics to drive measurable growth and market impact.
               </p>
             </div>
