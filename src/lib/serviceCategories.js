@@ -31,7 +31,7 @@ export const SERVICE_CATEGORIES = {
       'identity', 
       'audit', 
       'messaging', 
-      'designs', 
+      'design', 
       'campaigns',
     ],
     heroContent: {
@@ -64,7 +64,7 @@ export const SERVICE_CATEGORIES = {
     name: 'Design & Branding',
     description: 'Create compelling visual identities and user experiences',
     services: [
-      'analytics-dashboard', 
+      'analytics-dashboards', 
       'smart-analytics', 
     ],
    heroContent: {
@@ -73,7 +73,7 @@ export const SERVICE_CATEGORIES = {
       h3: 'Decisions that',
       redText: "Win",
       subheading: 'We turn complex data into smart dashboards and analytics that power informed, faster, and smarter marketing moves.',
-      banner_image: '/images/services/marketing-automation/marketing-automation.png'
+      banner_image: '/images/services/marketing-automation/marketing-automation-hero.png'
     }
   }
 };
