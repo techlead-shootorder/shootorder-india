@@ -72,14 +72,14 @@ const DescriptionService = ({ service }) => {
           {/* Image Section */}
           <div className="lg:w-1/2 w-full">
             <div className="services-details-image w-full animate__animated animate__fadeInUp">
-              <Image
-                src={service?.imageUrl}
-                alt={service?.heading}
-                layout="responsive"
-                className="rounded-md"
-                width={549}
-                height={411}
-              />
+              <div className="relative w-full h-96 lg:h-[400px]">
+                <Image
+                  src={service?.imageUrl}
+                  alt={service?.heading}
+                  fill
+                  className="rounded-md object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

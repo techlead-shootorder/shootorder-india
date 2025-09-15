@@ -5,6 +5,31 @@ import Image from "next/image";
 
 const PLACEHOLDER_IMAGE = "https://placehold.co/400x400/e2e8f0/475569?text=Service";
 
+// Define background colors for each service category
+const serviceColors = {
+  "Digital Marketing": [
+    "bg-gradient-to-br from-blue-500 to-blue-600", // SEO & Content
+    "bg-gradient-to-br from-green-500 to-green-600", // Paid Advertising
+    "bg-gradient-to-br from-purple-500 to-purple-600", // Digital PR
+    "bg-gradient-to-br from-pink-500 to-pink-600", // Influencer Marketing
+  ],
+  Branding: [
+    "bg-gradient-to-br from-orange-500 to-orange-600", // Identity Development
+    "bg-gradient-to-br from-red-500 to-red-600", // Brand Audit
+    "bg-gradient-to-br from-indigo-500 to-indigo-600", // Brand Messaging
+    "bg-gradient-to-br from-teal-500 to-teal-600", // Package & Design
+  ],
+  "Growth Hacking": [
+    "bg-gradient-to-br from-cyan-500 to-cyan-600", // Landing Pages
+    "bg-gradient-to-br from-emerald-500 to-emerald-600", // On-site Engagement
+    "bg-gradient-to-br from-violet-500 to-violet-600", // Online Reputation Management
+  ],
+  "Marketing Automation": [
+    "bg-gradient-to-br from-slate-500 to-slate-600", // Data Analytics & Dashboard
+    "bg-gradient-to-br from-rose-500 to-rose-600", // Smart Analytics
+  ],
+};
+
 const servicesData = {
     "Digital Marketing": [
     {
@@ -184,9 +209,9 @@ export default function CombinedServiceFlow() {
                   className="group bg-white border border-gray-200 rounded-xl p-4 md:p-5 hover:shadow-lg hover:border-red-200 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex flex-col md:flex-row md:items-start gap-3">
-                    {/* Image container - Full width on mobile */}
+                    {/* Image container - Full width on mobile with dynamic colors */}
                     <div className="flex-shrink-0 w-full md:w-28">
-                      <div className="aspect-video md:aspect-square rounded-lg overflow-hidden bg-blue-400 flex items-center justify-center">
+                      <div className={`h-[96px] w-full rounded-lg overflow-hidden ${serviceColors[activeTab][idx]} flex items-center justify-center shadow-md`}>
                         {/* <img
                           src={item.image || PLACEHOLDER_IMAGE}
                           alt={item.title}
@@ -195,7 +220,7 @@ export default function CombinedServiceFlow() {
                           loading="lazy"
                         /> */}
 
-                        <p className="text-white text-[10px]">{item?.title}</p>
+                        <p className="text-white text-[16px] p-2 text-center font-medium drop-shadow-sm">{item?.title}</p>
                       </div>
                     </div>
                     
