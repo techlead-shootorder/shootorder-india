@@ -479,7 +479,7 @@ export default function Header() {
             <img
               src="/images/logo/shootorder-logo.svg"
               alt="Logo"
-              className="h-12 w-auto transition-transform hover:scale-105"
+              className="h-18 w-auto transition-transform hover:scale-105"
             />
           </a>
 
