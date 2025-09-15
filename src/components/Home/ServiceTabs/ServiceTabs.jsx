@@ -6,37 +6,7 @@ import Image from "next/image";
 const PLACEHOLDER_IMAGE = "https://placehold.co/400x400/e2e8f0/475569?text=Service";
 
 const servicesData = {
-  Branding: [
-    {
-      title: "Identity Development",
-      desc: "Create a distinctive brand identity that sets you apart from competitors.",
-      image: "/images/so-homepage-services/identity-development.jpg",
-      tags: ["Brand", "Identity", "Design"],
-      href: "/branding/identity",
-    },
-    {
-      title: "Brand Audit",
-      desc: "Comprehensive analysis of your brand's current position and performance.",
-      image: "/images/so-homepage-services/brand-audit.jpg",
-      tags: ["Analysis", "Strategy", "Growth"],
-      href: "/branding/audit",
-    },
-    {
-      title: "Brand Messaging",
-      desc: "Develop a compelling voice that resonates with your audience.",
-      image: "/images/so-homepage-services/brand-messaging.jpg",
-      tags: ["Voice", "Message", "Communication"],
-      href: "/branding/messaging",
-    },
-    {
-      title: "Package & Design",
-      desc: "Create visually stunning brand assets that capture attention.",
-      image: "/images/so-homepage-services/package-and-design.jpg",
-      tags: ["Design", "Visual", "Assets"],
-      href: "/branding/design",
-    },
-  ],
-  "Digital Marketing": [
+    "Digital Marketing": [
     {
       title: "SEO & Content",
       desc: "Drive organic growth through strategic SEO and content marketing.",
@@ -49,7 +19,7 @@ const servicesData = {
       desc: "Targeted campaigns across Google and Meta platforms.",
       image: "/images/so-homepage-services/Performance-Marketing.png",
       tags: ["PPC", "Social", "Ads"],
-      href: "/advertise",
+      href: "/google-ads",
     },
     {
       title: "Digital PR",
@@ -66,30 +36,54 @@ const servicesData = {
       href: "/influencers-marketing",
     },
   ],
+  Branding: [
+    {
+      title: "Identity Development",
+      desc: "Create a distinctive brand identity that sets you apart from competitors.",
+      image: "/images/so-homepage-services/identity-development.jpg",
+      tags: ["Brand", "Identity", "Design"],
+      href: "/identity",
+    },
+    {
+      title: "Brand Audit",
+      desc: "Comprehensive analysis of your brand's current position and performance.",
+      image: "/images/so-homepage-services/brand-audit.jpg",
+      tags: ["Analysis", "Strategy", "Growth"],
+      href: "/audit",
+    },
+    {
+      title: "Brand Messaging",
+      desc: "Develop a compelling voice that resonates with your audience.",
+      image: "/images/so-homepage-services/brand-messaging.jpg",
+      tags: ["Voice", "Message", "Communication"],
+      href: "/messaging",
+    },
+    {
+      title: "Package & Design",
+      desc: "Create visually stunning brand assets that capture attention.",
+      image: "/images/so-homepage-services/package-and-design.jpg",
+      tags: ["Design", "Visual", "Assets"],
+      href: "/design",
+    },
+  ],
+
   "Growth Hacking": [
     {
-      title: "Growth Hacking",
-      desc: "Innovative strategies for rapid and sustainable growth.",
+      title: "Landing Pages",
+      desc: "High converting landing pages that converts quality leads",
       image: "/images/so-homepage-services/growth-hacking.jpg",
       tags: ["Growth", "Strategy", "Innovation"],
-      href: "/growth-hacking",
+      href: "/landing-pages",
     },
     {
-      title: "Marketing Automation",
-      desc: "Streamline and optimize your marketing processes.",
+      title: "On-site Engagement",
+      desc: "Turn in-person interactions into memorable brand experiences. ",
       image: "/images/so-homepage-services/marketing-automation.jpg",
       tags: ["Automation", "Efficiency", "Scale"],
-      href: "/marketing-automation",
+      href: "/on-site-engagement",
     },
     {
-      title: "Analytics & Dashboards",
-      desc: "Data-driven insights for informed decision making.",
-      image: "/images/so-homepage-services/analytics-and-dashboard.jpg",
-      tags: ["Analytics", "Data", "Insights"],
-      href: "/analytics",
-    },
-    {
-      title: "ORM",
+      title: "Online Reputation Managment",
       desc: "Manage and enhance your online reputation.",
       image: "/images/so-homepage-services/orm.jpg",
       tags: ["Reputation", "Management", "Brand"],
@@ -102,14 +96,14 @@ const servicesData = {
       desc: "Transform raw data into actionable insights with custom dashboards for real-time monitoring.",
       image: "https://placehold.co/400x400/3b82f6/ffffff?text=Data+Analytics",
       tags: ["Analytics", "Dashboard", "Data"],
-      href: "/marketing-automation/data-analytics",
+      href: "/analytics-dashboard",
     },
     {
       title: "Smart Analytics",
       desc: "AI-powered analytics to predict trends and optimize performance with intelligent insights.",
       image: "https://placehold.co/400x400/8b5cf6/ffffff?text=Smart+AI",
       tags: ["AI", "Smart", "Prediction"],
-      href: "/marketing-automation/smart-analytics",
+      href: "/smart-analytics",
     },
   ],
 };
@@ -129,7 +123,7 @@ const tabIcons = {
 };
 
 export default function CombinedServiceFlow() {
-  const categories = ["Branding", "Digital Marketing", "Growth Hacking", "Marketing Automation"];
+  const categories = ["Digital Marketing", "Branding", "Growth Hacking", "Marketing Automation"];
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   const handleImageError = (e) => {
@@ -192,14 +186,16 @@ export default function CombinedServiceFlow() {
                   <div className="flex flex-col md:flex-row md:items-start gap-3">
                     {/* Image container - Full width on mobile */}
                     <div className="flex-shrink-0 w-full md:w-28">
-                      <div className="aspect-video md:aspect-square rounded-lg overflow-hidden bg-gray-100">
-                        <img
+                      <div className="aspect-video md:aspect-square rounded-lg overflow-hidden bg-blue-400 flex items-center justify-center">
+                        {/* <img
                           src={item.image || PLACEHOLDER_IMAGE}
                           alt={item.title}
                           className="w-full h-full object-cover"
                           onError={handleImageError}
                           loading="lazy"
-                        />
+                        /> */}
+
+                        <p className="text-white text-[10px]">{item?.title}</p>
                       </div>
                     </div>
                     
