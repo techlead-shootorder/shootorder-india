@@ -80,7 +80,7 @@ export default async function ServicePage({ params }) {
                 {/* <ClientsService/> */}
             </div>
 
-            <DescriptionService />
+            <DescriptionService service={service}/>
 
             <div className="bg-gray-50">
                 <ProcessCovered services={service} />
