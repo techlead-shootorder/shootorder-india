@@ -7,7 +7,7 @@ const ImageSection = () => {
     return (
         <div className="relative h-[813px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-                src="/images/CTA.webp"
+                src="/images/team-photo-vertical.webp"
                 alt="ShootOrder Office"
                 fill
                 className="object-cover  hover:scale-105 transition-transform duration-700"
