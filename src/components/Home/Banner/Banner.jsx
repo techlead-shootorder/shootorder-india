@@ -487,7 +487,7 @@ export default function Banner() {
             <Image
               width={isMobile ? 150 : 240}
               height={isMobile ? 100 : 100}
-              className="mx-auto w-28 h-28 sm:w-16 sm:h-16 md:w-[240px] md:h-auto object-contain"
+              className="mx-auto w-40 h-40 sm:w-16 sm:h-16 md:w-[240px] md:h-auto object-contain"
               src="/images/logo/Google Premier Partner.webp"
               alt="Google Premier Partner"
             />

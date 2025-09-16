@@ -529,7 +529,7 @@ export default function Home() {
               </div>
 
               <div className="w-full lg:w-1/2 order-2 lg:order-2">
-                <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                <div className="bg-white sm:p-8 rounded-lg shadow-lg">
                   {sectionsLoaded.forms ? (
                     <Suspense fallback={<SkeletonLoader />}>
                       <PipeDriveForm />

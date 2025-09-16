@@ -83,7 +83,7 @@ export default function PopupModal({ isOpen, onClose }) {
       ></div>
 
       {/* Modal Content */}
-      <div className={`relative bg-white rounded-lg shadow-xl w-1/3 max-h-[90vh] overflow-hidden transform transition-all duration-300 ${
+      <div className={`relative bg-white rounded-lg shadow-xl w-full sm:w-1/3 max-h-[90vh] overflow-hidden transform transition-all duration-300 ${
         isOpen ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'
       }`}>
         {/* Header */}

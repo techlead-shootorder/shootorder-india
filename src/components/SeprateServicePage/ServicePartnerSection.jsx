@@ -24,7 +24,7 @@ export default function ServicePartnerSection() {
                   alt={`Partner ${(index % partnerLogos.length) + 1}`}
                   width={180}
                   height={150}
-                  className="logo-image"
+                  className="logo-image "
                 />
               </div>
             </div>
