@@ -221,7 +221,7 @@ export default function ContactForm({colorClass}) {
           </div>
 
           <div className="flex justify-center">
-            <Button type="submit" className="rounded-full px-8" variant="black">
+            <Button type="submit" className="rounded-full px-8 py-2 bg-gradient-to-r from-[#9a0c28] to-[#c4102e]">
               Submit
             </Button>
           </div>
