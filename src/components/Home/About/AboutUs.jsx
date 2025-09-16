@@ -8,7 +8,7 @@ export default function AboutUs() {
           {/* Image Section */}
           <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/services/performance-marketing.jpg"
+              src="/images/services/performance-marketing.webp"
               alt="ShootOrder Office"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"

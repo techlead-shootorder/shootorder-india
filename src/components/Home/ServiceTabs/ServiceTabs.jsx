@@ -190,7 +190,7 @@ export default function CombinedServiceFlow() {
             {activeTab === "Digital Marketing" ? (
               <div className="h-full flex items-stretch">
                 <img
-                  src="/images/services/service-flow2.png"
+                  src="/images/services/service-flow2.webp"
                   alt="Service Flow"
                   className="w-full h-full object-cover rounded-lg"
                 />
