@@ -437,7 +437,7 @@ export default function Home() {
           }}
         >
           {/* Intro Section - High Priority */}
-          <div data-section="intro">
+          {/* <div data-section="intro">
             {sectionsLoaded.intro ? (
               <Suspense fallback={<SkeletonLoader />}>
                 <AnimatedIntro />
@@ -447,7 +447,7 @@ export default function Home() {
                 <SkeletonLoader />
               </div>
             )}
-          </div>
+          </div> */}
 
           {/* About Section - High Priority */}
           <div data-section="about">
