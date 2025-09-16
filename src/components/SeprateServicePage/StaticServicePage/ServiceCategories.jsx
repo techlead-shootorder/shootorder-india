@@ -18,6 +18,7 @@ import {
   Megaphone, 
   MessageSquare 
 } from 'lucide-react';
+import Link from 'next/link';
 
 const ServiceCategories = () => {
   const [activeTab, setActiveTab] = useState('owned');
@@ -27,26 +28,31 @@ const ServiceCategories = () => {
       {
         title: 'SEO Optimization',
         description: 'Dominate organic search results',
+        slug: '/seo',
         icon: Search
       },
       {
         title: 'Blog Management',
         description: 'Content that converts and engages',
+        slug: '/blog-management',
         icon: Edit
       },
       {
         title: 'Website Development',
         description: 'High-performance, responsive websites',
+        slug: '/web-design',
         icon: Globe
       },
       {
         title: 'Social Media Marketing',
         description: 'Build your social media presence',
+        slug: '/social-media-marketing',
         icon: Share2
       },
       {
         title: 'GBP Management',
         description: 'Build your social media presence',
+        slug: '/gbp-management',
         icon: Target
       }
     ],
@@ -54,11 +60,13 @@ const ServiceCategories = () => {
       {
         title: 'Google Ads',
         description: 'PPC campaigns that drive results',
+        slug: '/google-ads',
         icon: MousePointer
       },
       {
         title: 'Meta Ads',
         description: 'Effective social media advertising',
+        slug: '/meta-ads',
         icon: Users
       }
     ],
@@ -66,11 +74,13 @@ const ServiceCategories = () => {
       {
         title: 'Digital PR',
         description: 'Build your online presence',
+        slug: '/digital-pr',
         icon: Megaphone
       },
       {
         title: 'Influencer Marketing',
         description: 'Connect with relevant influencers',
+        slug: '/influencers-marketing',
         icon: Users
       }
     ]
@@ -80,26 +90,31 @@ const ServiceCategories = () => {
     {
       title: 'Identity Development',
       description: 'Create a unique brand identity that stands out',
+      slug: '/identity',
       icon: Palette
     },
     {
       title: 'Package & Design',
       description: 'Stunning visual brand assets and materials',
+      slug: '/design',
       icon: PenTool
     },
     {
       title: 'Brand Audit',
       description: 'Evaluate your brand\'s performance and positioning',
+      slug: '/audit',
       icon: Award
     },
     {
       title: 'Brand Launch & Campaigns',
       description: 'Launch your brand with impact',
+      slug: '/campaigns',
       icon: TrendingUp
     },
     {
       title: 'Brand Messaging & Tone of Voice',
       description: 'Develop your authentic brand voice',
+      slug: '/messaging',
       icon: MessageSquare
     }
   ];
@@ -108,16 +123,19 @@ const ServiceCategories = () => {
     {
       title: 'Landing Pages',
       description: 'High-converting landing pages that generate quality leads',
+      slug: '/landing-pages',
       icon: Globe
     },
     {
       title: 'On-site Engagement',
       description: 'Optimize user experience and engagement',
+       slug: '/on-site-engagement',
       icon: MousePointer
     },
     {
       title: 'Online Reputation Management (ORM)',
       description: 'Protect and enhance your online reputation',
+      slug: '/orm',
       icon: Eye
     }
   ];
@@ -126,11 +144,13 @@ const ServiceCategories = () => {
     {
       title: 'Data Analytics & Dashboards',
       description: 'Advanced analytics and comprehensive reporting tools',
+      slug: '/analytics-dashboards',
       icon: BarChart3
     },
     {
       title: 'Smart Analytics',
       description: 'AI-powered insights to stay ahead of competition',
+      slug: '/smart-analytics',
       icon: Brain
     }
   ];
@@ -139,6 +159,7 @@ const ServiceCategories = () => {
     const IconComponent = service.icon;
     
     return (
+      <Link href={service?.slug}>
       <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
         <div className="flex items-start space-x-4">
           <div className="flex-shrink-0">
@@ -156,6 +177,7 @@ const ServiceCategories = () => {
           </div>
         </div>
       </div>
+      </Link>
     );
   };
 
@@ -187,6 +209,7 @@ const ServiceCategories = () => {
               { key: 'paid', label: 'Paid Media' },
               { key: 'earned', label: 'Earned Media' }
             ].map((tab) => (
+            
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
@@ -198,6 +221,7 @@ const ServiceCategories = () => {
               >
                 {tab.label}
               </button>
+              
             ))}
           </div>
         </div>

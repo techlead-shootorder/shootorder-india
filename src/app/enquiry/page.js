@@ -95,7 +95,7 @@ export default function EnquiryPage() {
               "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#9a0c28]/90 to-[#6a0818]/70"></div>
+          <div className="absolute inset-0 bg-black/70"></div>
         </div>
 
         <div className="relative z-10 w-full !max-w-7xl mx-auto px-4 py-20">
@@ -105,11 +105,11 @@ export default function EnquiryPage() {
               <div>
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                   Let&apos;s Start Your
-                  <span className="block bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+                  <span className="block bg-gradient-to-r from-[#9a0c28] to-[#c4102e] bg-clip-text text-transparent">
                     Success Story
                   </span>
                 </h1>
-                <p className="text-xl text-red-100 mb-8 leading-relaxed max-w-lg">
+                <p className="text-xl text-gray-200 mb-8 leading-relaxed max-w-lg">
                   Ready to transform your business? Get in touch with our
                   experts and discover how we can help you achieve your goals.
                 </p>
@@ -120,14 +120,16 @@ export default function EnquiryPage() {
                 {features.map((feature, index) => (
                   <div
                     key={index}
-                    className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4"
+                    className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg flex items-center justify-center text-[#9a0c28]">
+                    {/* <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg flex items-center justify-center text-black"> */}
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-[#9a0c28] to-[#c4102e] rounded-lg flex items-center justify-center text-black">
+
                       {feature.icon}
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">{feature.title}</h3>
-                      <p className="text-red-100 text-sm">
+                      <p className="text-gray-300 text-sm">
                         {feature.description}
                       </p>
                     </div>
