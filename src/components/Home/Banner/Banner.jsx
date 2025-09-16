@@ -484,7 +484,7 @@ export default function Banner() {
         <div className="banner-content text-center w-full flex flex-col justify-center items-center h-full space-y-4 md:space-y-6">
           {/* Google Partner Logo */}
           <div className="flex-shrink-0">
-            <img
+            <Image
               width={isMobile ? 150 : 240}
               height={isMobile ? 100 : 100}
               className="mx-auto w-28 h-28 sm:w-16 sm:h-16 md:w-[240px] md:h-auto object-contain"

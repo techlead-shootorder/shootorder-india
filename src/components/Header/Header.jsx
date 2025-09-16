@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import {
   FaBars,
@@ -476,9 +477,11 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-12">
           <a href="/" className="inline-block">
-            <img
+            <Image
               src="/images/logo/shootorder-logo.svg"
               alt="Logo"
+              height={72}
+              width={200}
               className="h-18 w-auto transition-transform hover:scale-105"
             />
           </a>
