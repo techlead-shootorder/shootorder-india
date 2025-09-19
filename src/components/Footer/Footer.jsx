@@ -69,7 +69,7 @@ const companyLinks = [
   { name: "Work Flow", href: "/about/work-flow/" },
   { name: "Clients & Testimonials", href: "/about/clients/" },
   { name: "Case Studies", href: "/case-studies/" },
-  { name: "Training Programs", href: "/training/" },
+  // { name: "Training Programs", href: "/training/" },
 ];
 
 const services = [
@@ -88,7 +88,7 @@ const contactLinks = [
 
 const quickLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
-  { name: "Terms & Conditions", href: "/terms" },
+  { name: "Terms & Conditions", href: "/tos" },
   { name: "Blogs", href: "/blogs" },
 ];
 
@@ -142,7 +142,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#9a0c28] mt-1" />
+                  <MapPin className="w-16 h-16 text-[#9a0c28] mt-1" />
                   <address className="not-italic text-gray-600">
                     Ivent It Solutions Pvt. Ltd. (ShootOrder)
                     Krishe Sapphire
@@ -418,8 +418,7 @@ const Footer = () => {
         <div className="container mx-auto px-4" style={{ maxWidth: "1280px" }}>
           <div className="py-6 text-center">
             <p className="text-gray-600 text-sm">
-              &copy; {new Date().getFullYear()} ShootOrder. All rights reserved
-              by Shootorder.us
+              &copy; {new Date().getFullYear()} All Rights Reserved - Ivent It Solutions Pvt Ltd
             </p>
           </div>
         </div>

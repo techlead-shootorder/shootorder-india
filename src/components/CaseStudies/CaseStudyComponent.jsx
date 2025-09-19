@@ -84,7 +84,7 @@ const CaseStudyComponent = ({ service }) => {
       description: "ShootOrder's paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.",
       results: 'Overall Score 4.0',
       color: 'from-blue-600 to-blue-700',
-      pdfUrl: '/pdfs/case-studies/by-service/PPC_3.pdf',
+      pdfUrl: '/pdfs/case-studies/by-service/PPC_IPI_India.pdf',
       client: 'Wellness Plus Solutions',
       industry: 'Health & Wellness',
       duration: 'Jan. 2022 - Ongoing',

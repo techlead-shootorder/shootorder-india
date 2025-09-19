@@ -11,7 +11,7 @@ export default function ServicePartnerSection() {
   const duplicatedLogos = [...partnerLogos, ...partnerLogos];
 
   return (
-    <div className="relative !max-w-7xl mx-auto py-16 overflow-hidden">
+    <div className="relative !max-w-7xl mx-auto py-8 sm:py-16 overflow-hidden">
       <h2 className="text-3xl font-bold text-center mb-6">Why Trust Us</h2>
 
       <div className="slider-container">

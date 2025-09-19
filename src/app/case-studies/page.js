@@ -108,7 +108,7 @@ const CaseStudiesPage = () => {
       description: 'With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn’t need a big budget. ',
       results: '250% conversion rate improvement',
       color: 'from-blue-600 to-blue-700',
-      pdfUrl: '/pdfs/case-studies/by-service/PPC_IPI India Pvt. Ltd.pdf'
+      pdfUrl: '/pdfs/case-studies/by-service/PPC_IPI_India.pdf'
     },
     {
       id: 'smm',
