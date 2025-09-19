@@ -89,7 +89,7 @@ const contactLinks = [
 const quickLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Terms & Conditions", href: "/tos" },
-  { name: "Blogs", href: "/blogs" },
+  { name: "Blogs", href: "https://shootorder.com/blog" },
 ];
 
 const socialLinks = [
@@ -368,6 +368,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
+                          target={link.name == 'Blogs' ? '_blank' : ''}
                           className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
                         >
                           {link.name}

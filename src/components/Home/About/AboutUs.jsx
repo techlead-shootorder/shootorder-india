@@ -53,17 +53,17 @@ export default function AboutUs() {
               </p> */}
 
               <p className="leading-relaxed mb-2">
-                Teaming with Maganti IT isn’t just a strategic move, it’s a powerful step forward.
+                Founded in 2013, ShootOrder initially began as an App development company. However, digital marketing has always been an integral part of its operations. As more requests for digital marketing started pouring in our CEO, Rajat Jain saw the opportunity and made digital marketing as the face of the company.  
               </p>
               <p className="leading-relaxed mb-2">
-                Together, we bring deep digital expertise and a shared commitment to delivering faster, smarter, and more impactful results.
+                Today, ShootOrder is among the top 3% of digital marketing agencies in India, proudly recognized as a Google Premier Partner. With a skilled team of dynamic and talented 50+ digital marketers (we believe in quality over quantity) and a drive for perfection, we've consistently delivered top results, introduced new market trends, and brought more business to our clients. 
               </p>
-              <p className="leading-relaxed mb-2">
+              {/* <p className="leading-relaxed mb-2">
                 With Maganti IT’s stronghold in tech and our pulse on performance marketing, we’re helping businesses scale with clarity and confidence.
               </p>
               <p className="leading-relaxed mb-2">
                 This collaboration is all about raising the standard and we’re here to lead that charge.
-              </p>
+              </p> */}
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-6">
