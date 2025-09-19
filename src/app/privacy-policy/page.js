@@ -67,7 +67,7 @@ const page = () => {
               <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
                 <li>To our authorised officers and our agents for the purpose of administering our network or for billing or credit collection purposes</li>
                 <li>Under compulsion of law, for example if a warrant or court order is received</li>
-                <li>To lessen or prevent a serious and imminent threat to an individual's life or health</li>
+                <li>To lessen or prevent a serious and imminent threat to an individual&apos;s life or health</li>
                 <li>To you or with your consent;</li>
                 <li>For any other purpose authorised by the National Privacy Principles set out in the Privacy Act of 1988</li>
               </ul>
@@ -155,7 +155,7 @@ const page = () => {
               <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
                 <li>When required by law</li>
                 <li>With your consent</li>
-                <li>To provide services you've requested</li>
+                <li>To provide services you&apos;ve requested</li>
               </ul>
             </section>
 
