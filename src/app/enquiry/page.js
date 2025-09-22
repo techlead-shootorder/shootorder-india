@@ -1,6 +1,7 @@
 "use client";
 
 import ClutchWidget from "@/components/Home/CompanyInfo/ClutchWidget";
+import PipeDriveForm from "@/components/Home/PipeDrive/PipeDriveForm";
 import ContactForm from "@/components/Home/TalentForm/TalentForm";
 import {
   Mail,
@@ -84,52 +85,52 @@ export default function EnquiryPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/* Hero Banner with Background Image and Form */}
-      <div className="relative min-h-screen flex items-center">
+      <div className="relative min-h-screen flex items-center mt-10">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')",
-          }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[#fff3f3]"
+          // style={{
+          //   backgroundImage:
+          //     "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')",
+          // }}
         >
-          <div className="absolute inset-0 bg-black/70"></div>
+          {/* <div className="absolute inset-0 bg-black/70"></div> */}
         </div>
 
         <div className="relative z-10 w-full !max-w-7xl mx-auto px-4 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="text-white space-y-8">
+            <div className="text-white space-y-8 mb-10">
               <div>
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#172657]">
                   Let&apos;s Start Your
                   <span className="block bg-gradient-to-r from-[#9a0c28] to-[#c4102e] bg-clip-text text-transparent">
                     Success Story
                   </span>
                 </h1>
-                <p className="text-xl text-gray-200 mb-8 leading-relaxed max-w-lg">
+                <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
                   Ready to transform your business? Get in touch with our
                   experts and discover how we can help you achieve your goals.
                 </p>
               </div>
 
               {/* Features */}
-              <div className="space-y-4">
+              <div className="space-y-4 flex">
                 {features.map((feature, index) => (
                   <div
                     key={index}
-                    className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+                    className="flex flex-col items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
                   >
                     {/* <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg flex items-center justify-center text-black"> */}
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-[#9a0c28] to-[#c4102e] rounded-lg flex items-center justify-center text-black">
+                    <div className="flex-shrink-0 mb-2 w-12 h-12 bg-gradient-to-r from-[#9a0c28] to-[#c4102e] rounded-lg flex items-center justify-center text-white">
 
                       {feature.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg">{feature.title}</h3>
-                      <p className="text-gray-300 text-sm">
+                      <h3 className="font-semibold text-lg text-center text-[#172657]">{feature.title}</h3>
+                      <p className="text-gray-600 text-sm text-center">
                         {feature.description}
                       </p>
                     </div>
@@ -140,7 +141,9 @@ export default function EnquiryPage() {
 
             {/* Right Form */}
             <div className="lg:ml-8">
-              <ContactForm colorClass="text-white" />
+              {/* <ContactForm colorClass="text-white" /> */}
+              <PipeDriveForm />
+              
             </div>
           </div>
         </div>
