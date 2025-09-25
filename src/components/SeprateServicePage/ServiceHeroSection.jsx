@@ -43,36 +43,37 @@ const ServiceHeroSection = ({ data }) => {
 
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-             {data.subheading}
+              {data.subheading}
             </p>
 
-            {/* Partners Image */}
-            <div className="py-4 flex items-center gap-2">
-              <Image
-                src="/images/logo/meta.png"
-                alt="Meta Partner"
-                width={100}
-                height={30}
-                className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]  sm:!h-[90px]"
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/images/logo/google.png"
-                alt="Google Partner"
-                width={90}
-                height={40}
-                className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/images/logo/hubspot.png"
-                alt="HubSpot Partner"
-                width={100}
-                height={40}
-                className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
-                style={{ objectFit: "contain" }}
-              />
-              {/* <Image
+            <div className='mb-10 sm:mb-0 sm:flex sm:flex-row sm:items-center sm:gap-16'>
+              {/* Partners Image */}
+              <div className="py-4 flex items-center gap-2">
+                <Image
+                  src="/images/logo/meta.png"
+                  alt="Meta Partner"
+                  width={100}
+                  height={30}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]  sm:!h-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/images/logo/google.png"
+                  alt="Google Partner"
+                  width={90}
+                  height={40}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/images/logo/hubspot.png"
+                  alt="HubSpot Partner"
+                  width={100}
+                  height={40}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                {/* <Image
                 src="/images/clients/f1.jpg"
                 alt="bmw"
                 width={150}
@@ -80,25 +81,26 @@ const ServiceHeroSection = ({ data }) => {
                 className="h-16 w-auto object-contain"
               /> */}
 
-              {/* <Image
+                {/* <Image
                 src="/images/services/service-partners-image.webp"
                 alt="Partners - Google Partner, Shopify Partners, Meta Business Partners, Klaviyo Partner"
                 width={500}
                 height={80}
                 className="h-16 w-auto object-contain"
               /> */}
-            </div>
+              </div>
 
-            {/* CTA Button */}
-            <button
-              className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
-              onClick={openPopup}
-            >
-              Contact Us
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+              {/* CTA Button */}
+              <button
+                className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
+                onClick={openPopup}
+              >
+                Contact Us
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Right Side - Hero Image */}

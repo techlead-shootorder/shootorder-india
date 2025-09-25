@@ -224,11 +224,11 @@ const companyCategories = [
         href: "/careers/",
         description: "Explore exciting career opportunities",
       },
-      {
-        name: "Training Programs",
-        href: "/training/",
-        description: "Develop your skills with us",
-      },
+      // {
+      //   name: "Training Programs",
+      //   href: "/training/",
+      //   description: "Develop your skills with us",
+      // },
     ],
   },
 ];
