@@ -2,100 +2,124 @@ import React from "react";
 import Image from "next/image";
 import { FaProjectDiagram, FaClock, FaTasks, FaUserCheck } from "react-icons/fa";
 
-
-
 const StatisticsService = () => {
-  // Initialize AOS in the component
- 
-
   return (
     <section
       id="statistics"
-      className="relative z-10 text-black flex items-center py-5"
-     
+      className="relative z-10 bg-gray-50 py-20"
     >
-      {/* Optimized Image */}
-      {/* <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/banner-image/faint-orange-background.jpeg"
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          priority
-        />
-      </div> */}
+      <div className="!max-w-7xl mx-auto px-6">
+        {/* Clean header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            We understand your needs and{" "}
+            <span className="text-[#cc1036]">deliver what works</span> for you.
+          </h2>
+          <div className="w-20 h-1 bg-[#cc1036] mx-auto rounded-full mt-6"></div>
+        </div>
 
-      <div className="relative z-10 max-w-[1170px] mx-auto px-6 py-12 space-y-12">
-        <h2 className="text-3xl text-center text-black font-bold">
-          We understand your needs and <br /> deliver what works for you.
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        {/* Clean statistics grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Projects Delivered */}
-          <div data-aos="fade-up" data-aos-delay="100">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-12 h-12 rounded-full flex justify-center items-center">
-                <FaProjectDiagram size={30} />
+          <div className="group">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              {/* Simple icon with accent */}
+              <div className="mb-6 text-center">
+                <div className="w-14 h-14 bg-[#cc1036]/10 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-[#cc1036]/15 transition-colors duration-300">
+                  <FaProjectDiagram size={24} className="text-[#cc1036]" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Projects Delivered
+                </h3>
               </div>
-              <h3 className="text-lg font-semibold">Projects Delivered</h3>
-            </div>
-            <div className="border-b border-gray-400 mb-6"></div>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold text-black">250+</h3>
-              <p className="text-sm mt-2 text-black">
-                Successfully delivered high-quality projects.
-              </p>
+              
+              {/* Minimal divider */}
+              <div className="h-px bg-gray-200 mb-6"></div>
+              
+              {/* Clean statistics */}
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-gray-900 mb-3">
+                  250<span className="text-[#cc1036]">+</span>
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Successfully delivered high-quality projects.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Years Of Expertise */}
-          <div data-aos="fade-up" data-aos-delay="300">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-12 h-12 rounded-full flex justify-center items-center">
-                <FaClock size={30} />
+          <div className="group">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-6 text-center">
+                <div className="w-14 h-14 bg-[#cc1036]/10 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-[#cc1036]/15 transition-colors duration-300">
+                  <FaClock size={24} className="text-[#cc1036]" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Years Of Expertise
+                </h3>
               </div>
-              <h3 className="text-lg font-semibold">Years Of Expertise</h3>
-            </div>
-            <div className="border-b border-gray-400 mb-6"></div>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold text-black">11+</h3>
-              <p className="text-sm mt-2 text-black">
-                Bringing over a decade of experience.
-              </p>
+              
+              <div className="h-px bg-gray-200 mb-6"></div>
+              
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-gray-900 mb-3">
+                  11<span className="text-[#cc1036]">+</span>
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Bringing over a decade of experience.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Ongoing Projects */}
-          <div data-aos="fade-up" data-aos-delay="500">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-12 h-12 rounded-full flex justify-center items-center">
-                <FaTasks size={30} />
+          <div className="group">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-6 text-center">
+                <div className="w-14 h-14 bg-[#cc1036]/10 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-[#cc1036]/15 transition-colors duration-300">
+                  <FaTasks size={24} className="text-[#cc1036]" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Ongoing Projects
+                </h3>
               </div>
-              <h3 className="text-lg font-semibold">Ongoing Projects</h3>
-            </div>
-            <div className="border-b border-gray-400 mb-6"></div>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold text-black">50+</h3>
-              <p className="text-sm mt-2 text-black">
-                Continuously delivering excellence.
-              </p>
+              
+              <div className="h-px bg-gray-200 mb-6"></div>
+              
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-gray-900 mb-3">
+                  50<span className="text-[#cc1036]">+</span>
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Continuously delivering excellence.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Client Retention Rate */}
-          <div data-aos="fade-up" data-aos-delay="700">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-12 h-12 rounded-full flex justify-center items-center">
-                <FaUserCheck size={30} />
+          <div className="group">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-6 text-center">
+                <div className="w-14 h-14 bg-[#cc1036]/10 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-[#cc1036]/15 transition-colors duration-300">
+                  <FaUserCheck size={24} className="text-[#cc1036]" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Client Retention Rate
+                </h3>
               </div>
-              <h3 className="text-lg font-semibold">Client Retention Rate</h3>
-            </div>
-            <div className="border-b border-gray-400 mb-6"></div>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold text-black">92%</h3>
-              <p className="text-sm mt-2 text-black">
-                Ensuring client satisfaction and loyalty.
-              </p>
+              
+              <div className="h-px bg-gray-200 mb-6"></div>
+              
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-gray-900 mb-3">
+                  92<span className="text-[#cc1036]">%</span>
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Ensuring client satisfaction and loyalty.
+                </p>
+              </div>
             </div>
           </div>
         </div>
