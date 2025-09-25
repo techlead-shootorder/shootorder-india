@@ -1,10 +1,15 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronLeft, TrendingUp, Award, Eye, Download } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const StaticCaseStudiesComponent = () => {
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
+
+  const router = useRouter();
 
   const caseStudies = {
     seo: [
@@ -175,7 +180,7 @@ const StaticCaseStudiesComponent = () => {
   };
 
   const handleCaseStudyClick = (studySlug) => {
-    // router.push(`/case-studies/${studySlug}`);
+    router.push(`/case-studies/${studySlug}`);
     console.log('Navigate to:', studySlug);
   };
 
