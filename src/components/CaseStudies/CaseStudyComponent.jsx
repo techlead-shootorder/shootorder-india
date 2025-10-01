@@ -208,7 +208,7 @@ const CaseStudyComponent = ({ service }) => {
             {study.title}
           </h3>
 
-          <div className='grid grid-cols-2 text-gray-600 mb-6'>
+          <div className='grid grid-cols-2 text-gray-800 mb-6'>
             <div className='flex flex-col items-center'>
               <h2 className='text-3xl'>+232%</h2>
               <p>Online Traffic</p>
@@ -225,10 +225,10 @@ const CaseStudyComponent = ({ service }) => {
         </div>
 
         <div className="space-y-3 mt-auto">
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <TrendingUp className="w-4 h-4 text-[#9a0c28]" />
             <span className="text-sm font-medium text-gray-800">{study.results}</span>
-          </div>
+          </div> */}
 
           <div className="flex space-x-2">
             <div className="inline-flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium flex-1 text-center justify-center">
@@ -236,7 +236,7 @@ const CaseStudyComponent = ({ service }) => {
               <span>View Study</span>
             </div>
 
-            {study.pdfUrl && (
+            {/* {study.pdfUrl && (
               <button
                 onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
                 className="inline-flex items-center space-x-2 bg-[#9a0c28] hover:bg-[#7a0a20] px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium text-white"
@@ -245,7 +245,7 @@ const CaseStudyComponent = ({ service }) => {
                 <Download className="w-4 h-4" />
                 <span className="hidden sm:inline">PDF</span>
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </div>
