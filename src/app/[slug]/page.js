@@ -9,6 +9,8 @@ import StatisticsService from '@/components/NewServiceComponent/StatisticsServic
 // import ClientsService from '@/components/NewServiceComponent/ClientsService'
 import OurPartners from '@/components/Home/Partners/OurPartners';
 import DescriptionService from '@/components/NewServiceComponent/DescriptionService'
+import ReviewsService from '@/components/NewServiceComponent/ReviewsService'
+
 import ProcessCovered from '@/components/Services/ProcessCovered';
 import Faqs from '@/components/NewServiceComponent/Faq'
 import CaseStudyComponent from '@/components/CaseStudies/CaseStudyComponent'
@@ -72,11 +74,12 @@ export default async function ServicePage({ params }) {
                 serviceSlug={params.slug}
             />
 
-            {/* <OurPartners /> */}
-            <ServicePartnerSection />
+           
+           <StatisticsService />
 
+            {/* <OurPartners /> */}
             <div className="bg-gray-50">
-                <StatisticsService />
+                 <ServicePartnerSection />
                 {/* <ClientsService/> */}
             </div>
 
@@ -85,6 +88,8 @@ export default async function ServicePage({ params }) {
             <div className="bg-gray-50">
                 <ProcessCovered services={service} />
             </div>
+
+            <ReviewsService/>
 
             <Faqs services={service} />
 

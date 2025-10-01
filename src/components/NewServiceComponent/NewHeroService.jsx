@@ -83,9 +83,19 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
                    alt="HubSpot Partner"
                    width={100}
                    height={40}
-                   className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                   className="hover:scale-105 transition-transform w-[80px] sm:w-[90px] mr-4"
                    style={{ objectFit: "contain" }}
                  />
+                  {/* CTA Button */}
+               <button
+                 className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
+                 onClick={openPopup}
+               >
+                 Contact Us
+                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                 </svg>
+               </button>
                  {/* <Image
                    src="/images/clients/f1.jpg"
                    alt="bmw"
@@ -103,16 +113,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
                  /> */}
                </div>
    
-               {/* CTA Button */}
-               <button
-                 className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
-                 onClick={openPopup}
-               >
-                 Contact Us
-                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                 </svg>
-               </button>
+              
              </div>
    
              {/* Right Side - Hero Image */}

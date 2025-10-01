@@ -51,7 +51,7 @@ const CaseStudyComponent = ({ service }) => {
     {
       id: 'google-ads',
       slug: 'ppc-edtech-company',
-     title: 'Creative Content That Clicks: Social Success for an EHR Platform',
+      title: 'Creative Content That Clicks: Social Success for an EHR Platform',
       image: '/images/CaseStudies/PPC/ipi.png',
       description: "With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn't need a big budget. ",
       results: 'Overall Score 5.0',
@@ -121,7 +121,7 @@ const CaseStudyComponent = ({ service }) => {
     {
       id: 'social-media-marketing',
       slug: 'smm-it-services',
-     title: 'Creative Content That Clicks: Social Success for an EHR Platform',
+      title: 'Creative Content That Clicks: Social Success for an EHR Platform',
       image: '/images/CaseStudies/SMM/orchasp.png',
       description: "With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp's healthcare tech across Facebook, Instagram, and LinkedIn. ",
       results: 'Overall Score 4.0',
@@ -147,7 +147,7 @@ const CaseStudyComponent = ({ service }) => {
     // router.push(`/${service}/case-studies/${studySlug}`);
 
     router.push(`/case-studies/${studySlug}`);
-    
+
   };
 
   const handleDownloadPDF = async (pdfUrl, title, event) => {
@@ -183,10 +183,10 @@ const CaseStudyComponent = ({ service }) => {
             e.target.parentElement.classList.add('bg-gradient-to-br', 'from-gray-100', 'to-gray-200');
           }}
         />
-        
+
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        
+
         {/* Award icon overlay */}
         <div className="absolute top-4 right-4">
           <Award className="w-6 h-6 text-white drop-shadow-lg opacity-80" />
@@ -204,13 +204,24 @@ const CaseStudyComponent = ({ service }) => {
             <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
           </div>
 
-          <h3 className="text-xl font-bold mb-3 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
+          <h3 className="text-xl font-bold mb-6 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
             {study.title}
           </h3>
 
-          <p className="text-gray-700 mb-4 text-sm leading-relaxed line-clamp-3">
+          <div className='grid grid-cols-2 text-gray-600 mb-6'>
+            <div className='flex flex-col items-center'>
+              <h2 className='text-3xl'>+232%</h2>
+              <p>Online Traffic</p>
+            </div>
+            <div className='flex flex-col items-center'>
+              <h2 className='text-3xl'>+75.5%</h2>
+              <p>Organic Leads</p>
+            </div>
+          </div>
+
+          {/* <p className="text-gray-700 mb-4 text-sm leading-relaxed line-clamp-3">
             {study.description}
-          </p>
+          </p> */}
         </div>
 
         <div className="space-y-3 mt-auto">
