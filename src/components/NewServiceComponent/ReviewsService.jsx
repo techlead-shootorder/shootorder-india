@@ -79,11 +79,11 @@ const ReviewsService = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-20 px-4">
+    <section className=" py-20 px-4">
       <div className="!max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-center font-bold text-3xl mb-4">
             Our Achievements
           </h2>
           <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">

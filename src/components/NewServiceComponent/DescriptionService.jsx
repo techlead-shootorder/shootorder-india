@@ -55,8 +55,17 @@ const DescriptionService = ({ service }) => {
   const content = serviceContent[service] || defaultContent;
 
   return (
-    <div className="services-details-area py-20 text-black"> 
-      <div className="container mx-auto !max-w-7xl px-4">
+    <div className="services-details-area py-20 text-white relative "
+      style={{
+        backgroundImage: `url(${service?.imageUrl})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+
+      <div className="absolute inset-0 bg-black z-0" style={{opacity: 0.4}}></div>
+
+      <div className="container mx-auto !max-w-7xl px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Text Section */}
           <div className="lg:w-1/2 services-details">
@@ -64,14 +73,15 @@ const DescriptionService = ({ service }) => {
               <h3 className="text-[25px] font-bold mb-4">
                 {service?.heading}
               </h3>
-              <div className="leading-relaxed">           
+              <div className="leading-relaxed">
                 {service?.description}
               </div>
             </div>
           </div>
+          
           {/* Image Section */}
           <div className="lg:w-1/2 w-full">
-            <div className="services-details-image w-full animate__animated animate__fadeInUp">
+            {/* <div className="services-details-image w-full animate__animated animate__fadeInUp">
               <div className="relative w-full h-96 lg:h-[400px]">
                 <Image
                   src={service?.imageUrl}
@@ -80,8 +90,11 @@ const DescriptionService = ({ service }) => {
                   className="rounded-md object-cover"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
+
+          
+
         </div>
       </div>
     </div>
