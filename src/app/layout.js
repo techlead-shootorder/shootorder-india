@@ -7,15 +7,14 @@ import Script from 'next/script';
 const ptSans = PT_Sans({
   variable: "--font-pt-sans",
   subsets: ["latin"],
-  weight: ["400", "700"], // optional: include weights you need
+  weight: ["400", "700"],
   display: "swap",
+  preload: true, // Preload the font
 });
 
 export const metadata = {
-  title:
-    "Top 3% Digital Marketing Agency in USA, #1 in Connecticut  - ShootOrder®",
-  description:
-    "ShootOrder is one of the globally awarded digital marketing agency , USA. We are amongst the top ranked digital marketing companies with 300+ clients across the globe driving best results in digital marketing services like SEO, PPC, Content Marketing & Social Media.",
+  title: "Top 3% Digital Marketing Agency in USA, #1 in Connecticut - ShootOrder®",
+  description: "ShootOrder is one of the globally awarded digital marketing agency, USA. We are amongst the top ranked digital marketing companies with 300+ clients across the globe driving best results in digital marketing services like SEO, PPC, Content Marketing & Social Media.",
   icons: {
     icon: "/images/favicon.ico",
     shortcut: "/images/favicon.ico",
@@ -25,43 +24,55 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     {/* GTM Script inside <head> */}
-     <head>
-      <Script id="gtm-head" strategy="beforeInteractive">
-        {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-W4DMQQQ6');
-        `}
-      </Script>
+      <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://leadbooster-chat.pipedrive.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://leadbooster-chat.pipedrive.com" />
+
+        {/* GTM Script - Load early but non-blocking */}
+        <Script id="gtm-head" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-W4DMQQQ6');
+          `}
+        </Script>
       </head>
 
-      <body className={`${ptSans.variable} font-sans antialiased `}>
-        {/* GTM noscript immediately after <body> */}
+      <body className={`${ptSans.variable} font-sans antialiased`}>
+        {/* GTM noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-W4DMQQQ6"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
 
         <Header />
-        {children}
-        <div className="absolute inset-0 -z-10">
-          {/* Background elements for parallax */}
-          <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 bg-gradient-to-tr from-indigo-500/10 to-transparent rounded-full blur-3xl"></div>
+        
+        <main>
+          {children}
+        </main>
+
+        {/* Background decoration - simplified */}
+        <div className="fixed inset-0 -z-10 pointer-events-none">
+          <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 bg-gradient-to-tr from-indigo-500/10 to-transparent rounded-full blur-3xl" />
         </div>
+
         <Footer />
-        {/* Updated Pipedrive LeadBooster Script */}
-        <Script id="pipedrive-leadbooster-config" strategy="beforeInteractive">
+
+        {/* Pipedrive LeadBooster - Load after page is interactive */}
+        <Script id="pipedrive-leadbooster-config" strategy="lazyOnload">
           {`
             window.pipedriveLeadboosterConfig = {
               base: 'leadbooster-chat.pipedrive.com',
-              companyId: 14111626,
+              companyId: 14154511626,
               playbookUuid: 'a1c1352f-7b6c-4f7a-9065-1f7ecde7c714',
               version: 2
             };
@@ -86,7 +97,7 @@ export default function RootLayout({ children }) {
 
         <Script
           src="https://leadbooster-chat.pipedrive.com/assets/loader.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           async
         />
       </body>
