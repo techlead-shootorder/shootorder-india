@@ -15,7 +15,7 @@ const StatisticsService = () => {
             We understand your needs and{" "}
             <span className="text-[#cc1036]">deliver what works</span> for you.
           </h2>
-          <div className="w-20 h-1 bg-[#cc1036] mx-auto rounded-full mt-6"></div>
+          {/* <div className="aw-20 h-1 bg-[#cc1036] mx-auto rounded-full mt-6"></div> */}
         </div>
 
         {/* Equal-height statistics grid */}
