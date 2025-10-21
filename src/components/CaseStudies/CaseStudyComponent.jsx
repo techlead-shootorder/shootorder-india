@@ -14,6 +14,7 @@ const CaseStudyComponent = ({ service }) => {
       image: '/images/CaseStudies/SEO/country oven.png',
       description: 'With targeted SEO efforts, CountryOven witnessed sustained traffic growth and 100% keyword visibility in 12 months.',
       results: 'Overall Score 4.0',
+      logoUrl: '/images/logo/country-oven-logo.png',
       pdfUrl: '/pdfs/case-studies/seo/SEO_1.pdf',
       client: 'CountryOven.com',
       industry: 'Bakery & E-commerce',
@@ -27,6 +28,7 @@ const CaseStudyComponent = ({ service }) => {
       image: '/images/CaseStudies/SEO/carawander.png',
       description: 'With consistent SEO efforts, ShootOrder helped Carawander boost web-driven sales and profits by over 40% since 2021.',
       results: 'Overall Score 5.0',
+      logoUrl: '/images/logo/caravander-logo.png',
       color: 'from-slate-700 to-slate-800',
       pdfUrl: '/pdfs/case-studies/seo/SEO_2.pdf',
       client: 'Caravan Adventures Ltd',
@@ -41,6 +43,7 @@ const CaseStudyComponent = ({ service }) => {
       image: '/images/CaseStudies/SEO/travtips.png',
       description: 'Targeted SEO strategies helped a Dubai-based travel company boost lead generation and grow its business. ',
       results: 'Overall Score 4.0',
+      logoUrl: '/images/logo/travtips-logo.png',
       color: 'from-slate-700 to-slate-800',
       pdfUrl: '/pdfs/case-studies/seo/SEO_3.pdf',
       client: 'Global Travel Solutions',
@@ -172,7 +175,7 @@ const CaseStudyComponent = ({ service }) => {
       onClick={() => handleCaseStudyClick(study.slug)}
     >
       {/* Image Section */}
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-46 overflow-hidden">
         <img
           src={study.image}
           alt={study.title}
@@ -183,6 +186,10 @@ const CaseStudyComponent = ({ service }) => {
             e.target.parentElement.classList.add('bg-gradient-to-br', 'from-gray-100', 'to-gray-200');
           }}
         />
+        {/* top logo */}
+        <div className='absolute top-0 left-1/2 -translate-x-1/2 '>
+          <img src={study?.logoUrl} className='object-cover rounded-md w-[120px] h-[50px]' alt="TravTips" />
+        </div>
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -196,25 +203,25 @@ const CaseStudyComponent = ({ service }) => {
       {/* Content Section */}
       <div className="relative flex flex-col p-6 text-black bg-white">
         <div className="flex-grow">
-          <div className="flex items-center justify-between mb-4">
+          {/* <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 rounded-full bg-[#9a0c28]"></div>
               <span className="text-sm text-gray-600 font-medium">{study.industry}</span>
             </div>
             <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
-          </div>
+          </div> */}
 
-          <h3 className="text-xl font-bold mb-6 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
+          {/* <h3 className="text-xl font-bold mb-6 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
             {study.title}
-          </h3>
+          </h3> */}
 
           <div className='grid grid-cols-2 text-gray-800 mb-6'>
             <div className='flex flex-col items-center'>
-              <h2 className='text-3xl'>+232%</h2>
+              <h2 className='text-3xl font-semibold'>+232%</h2>
               <p>Online Traffic</p>
             </div>
             <div className='flex flex-col items-center'>
-              <h2 className='text-3xl'>+75.5%</h2>
+              <h2 className='text-3xl font-semibold'>+75.5%</h2>
               <p>Organic Leads</p>
             </div>
           </div>
@@ -230,10 +237,10 @@ const CaseStudyComponent = ({ service }) => {
             <span className="text-sm font-medium text-gray-800">{study.results}</span>
           </div> */}
 
-          <div className="flex space-x-2">
-            <div className="inline-flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium flex-1 text-center justify-center">
-              <Eye className="w-4 h-4" />
-              <span>View Study</span>
+          <div className="flex justify-center space-x-2">
+            <div className="inline-flex items-center space-x-2  border border-gray-400 text-gray-600 hover:bg-gray-100 px-6 py-2 rounded-full transition-all duration-300 text-lg font-medium text-center justify-center">
+              {/* <Eye className="w-4 h-4" /> */}
+              <span >View Study</span>
             </div>
 
             {/* {study.pdfUrl && (
@@ -254,9 +261,9 @@ const CaseStudyComponent = ({ service }) => {
 
   return (
     <div className="">
-      <div className="!max-w-7xl mx-auto px-4 pt-16 pb-20">
+      <div className="!max-w-7xl mx-auto px-4 sm:px-20 pt-16 pb-20">
         <h1 className='text-center font-bold text-3xl mb-10 text-black'>Case Studies</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {relevantStudies.map((study, index) => (
             <CaseStudyCard key={study.slug} study={study} index={index} />
           ))}
