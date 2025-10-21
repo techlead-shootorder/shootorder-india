@@ -121,7 +121,7 @@ export default async function ServicePage({ params }) {
                                         className="group bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-[#9a0c28]/30 hover:shadow-lg transition-all duration-300"
                                     >
                                         <div className="flex items-center mb-3">
-                                            <span className="text-2xl mr-3">{category.heroContent.icon}</span>
+                                            <span className="text-2xl">{category.heroContent.icon}</span>
                                             <h3 className="font-semibold text-gray-900 group-hover:text-[#9a0c28] transition-colors capitalize">
                                                 {relatedServiceSlug.replace(/-/g, " ")}
                                             </h3>
