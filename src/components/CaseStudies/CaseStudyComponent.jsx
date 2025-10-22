@@ -171,15 +171,15 @@ const CaseStudyComponent = ({ service }) => {
 
   const CaseStudyCard = ({ study, index }) => (
     <div key={index}
-      className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer bg-white border border-gray-100"
+      className="group relative rounded-2xl shadow-lg hover:shadow-xl  cursor-pointer bg-white border border-gray-100"
       onClick={() => handleCaseStudyClick(study.slug)}
     >
       {/* Image Section */}
-      <div className="relative h-46 overflow-hidden">
+      <div className="relative h-46 ">
         <img
           src={study.image}
           alt={study.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full rounded-t-2xl object-cover  "
           onError={(e) => {
             // Fallback to a gradient background if image fails to load
             e.target.style.display = 'none';
@@ -187,7 +187,7 @@ const CaseStudyComponent = ({ service }) => {
           }}
         />
         {/* top logo */}
-        <div className='absolute top-0 left-1/2 -translate-x-1/2 '>
+        <div className='absolute -top-6 left-1/2 -translate-x-1/2 '>
           <img src={study?.logoUrl} className='object-cover rounded-md w-[120px] h-[50px]' alt="TravTips" />
         </div>
 
