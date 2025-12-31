@@ -9,7 +9,6 @@ const nextConfig = {
     unoptimized: true
   },
   
-  
   // Base path if deploying to subdirectory (remove if deploying to root domain)
   // basePath: '/your-subdirectory',
   
@@ -24,15 +23,16 @@ const nextConfig = {
     // Remove if you're not using app directory
     appDir: false
   },
-   generateBuildId: async () => {
+  generateBuildId: async () => {
     return 'static-build'
   },
-  // Custom webpack config if needed
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Add any custom webpack configurations here
-    return config;
-  },
-  
+  // Remove custom webpack config for Turbopack compatibility
+  // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  //   // Add any custom webpack configurations here
+  //   return config;
+  // },
+  // Add empty Turbopack config to silence warning and enable default behavior
+  turbopack: {},
   // Environment variables that should be available in the browser
   env: {
     SITE_URL: process.env.SITE_URL || 'https://shootorder.us',
