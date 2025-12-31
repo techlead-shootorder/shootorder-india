@@ -2,20 +2,31 @@ import React, { useEffect, useRef, useState } from "react";
 
 const stats = [
   { value: 12, suffix: "+", label: "12+ Years of Expertise" },
-  { value: 3, suffix: "%", label: "Among the top 3% Performance Marketing Agencies in India (Ranked by Google)" },
-  { value: "</>", label: "Experts in Web Solutions", isIcon: true },
+  {
+    value: 3,
+    suffix: "%",
+    label:
+      "Among the top 3% Performance Marketing Agencies in India (Ranked by Google)",
+  },
+  { value: "300+", label: "Experts in Web Solutions", isIcon: true },
   { value: 50, suffix: "+", label: "Ongoing Projects" },
   { value: 60, suffix: "+", label: "60+ Strong Team" },
   { value: 95, suffix: "%", label: "95% Client Retention Rate" },
   { value: "#", label: "Diverse Industry Portfolio", isIcon: true },
-  { value: ";)", label: "Innovation & Creativity: Developed proprietary marketing automation tools" },
+  {
+    value: ";)",
+    label:
+      "Innovation & Creativity: Developed proprietary marketing automation tools",
+  },
   { value: "₹", label: "Cost-Effective Solutions", isIcon: true },
 ];
 
 export default function WhyPartnerWithUs() {
   const sectionRef = useRef(null);
   const [hasAnimated, setHasAnimated] = useState(false);
-  const [counters, setCounters] = useState(stats.map((s) => (typeof s.value === 'number' ? 0 : s.value)));
+  const [counters, setCounters] = useState(
+    stats.map((s) => (typeof s.value === "number" ? 0 : s.value))
+  );
 
   useEffect(() => {
     const handleScroll = (entries) => {
@@ -34,7 +45,7 @@ export default function WhyPartnerWithUs() {
     if (!hasAnimated) return;
     // Animate only number stats
     stats.forEach((stat, idx) => {
-      if (typeof stat.value === 'number') {
+      if (typeof stat.value === "number") {
         let start = 0;
         const end = stat.value;
         const duration = 1200;
@@ -72,14 +83,17 @@ export default function WhyPartnerWithUs() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-8">
           {stats.map((stat, idx) => (
-            <div key={idx} className="flex flex-col items-center justify-center text-center h-full">
+            <div
+              key={idx}
+              className="flex flex-col items-center justify-center text-center h-full"
+            >
               <span
                 className="text-primary font-extrabold text-4xl md:text-5xl mb-2"
                 style={{ minWidth: 64 }}
               >
-                {stat.isIcon || typeof stat.value !== 'number'
+                {stat.isIcon || typeof stat.value !== "number"
                   ? stat.value
-                  : `${counters[idx]}${stat.suffix || ''}`}
+                  : `${counters[idx]}${stat.suffix || ""}`}
               </span>
               <span className="text-gray-800 text-lg font-medium leading-snug max-w-xs">
                 {stat.label}

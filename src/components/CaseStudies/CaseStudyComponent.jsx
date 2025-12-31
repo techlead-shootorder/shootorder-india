@@ -77,6 +77,7 @@ const CaseStudyComponent = ({ service }) => {
       description:
         "By streamlining AD campaigns, ShootOrder helped Oasis Fertility cut cost-per-lead and boost returns—delivering consistent, cost-effective performance. ",
       results: "Overall Score 4.5",
+      logoUrl: "/images/logo/oasis-logo.webp",
       color: "from-blue-600 to-blue-700",
       pdfUrl: "/pdfs/case-studies/google-ads/PPC_2.pdf",
       client: "Advanced Fertility Center",
@@ -235,9 +236,9 @@ const CaseStudyComponent = ({ service }) => {
 
           <h3 className="text-xl font-bold mb-6 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
             {study.title}
-          </h3> 
+          </h3>
 
-         {/*<div className="grid grid-cols-2 text-gray-800 mb-6">
+          {/*<div className="grid grid-cols-2 text-gray-800 mb-6">
             <div className="flex flex-col items-center">
               <h2 className="text-3xl font-semibold">+232%</h2>
               <p>Online Traffic</p>

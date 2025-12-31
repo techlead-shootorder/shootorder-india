@@ -17,7 +17,7 @@ const serviceCategories = [
     title: "Digital Marketing",
     color: "bg-blue-50 border-blue-200 text-blue-700",
     hoverColor: "hover:bg-blue-100",
-    href: "/services/digital-marketing",
+    // href: "/services/digital-marketing",
     columns: [
       {
         heading: "Owned Media",
@@ -197,11 +197,11 @@ const companyCategories = [
         href: "/about/clients/",
         description: "Success stories from happy clients",
       },
-      {
-        name: "Case Studies",
-        href: "/case-studies/",
-        description: "Detailed project breakdowns and results",
-      },
+      // {
+      //   name: "Case Studies",
+      //   href: "/case-studies/",
+      //   description: "Detailed project breakdowns and results",
+      // },
     ],
   },
   {

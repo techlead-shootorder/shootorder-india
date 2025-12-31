@@ -101,9 +101,9 @@ export default async function ServicePage({ params }) {
 
             <Faqs services={service} />
 
-            <div className="bg-gray-50">
+            {/*<div className="bg-gray-50">
                 <CaseStudyComponent service={slug} />
-            </div>
+            </div>*/}
 
             {/* Optional: Add related services section based on category */}
             {category && (
