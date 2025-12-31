@@ -49,7 +49,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
           {/* Left Content */}
           <div className="space-y-8">
             {/* Main Heading */}
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-950 leading-tight font-poppins">
               {heading || heroContent.title}
             </h1>
 
