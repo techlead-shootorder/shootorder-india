@@ -264,7 +264,7 @@ export default function Home() {
         <WhyPartnerWithUs />
 
         {/* Our Achievements Section - Lazy loaded */}
-        <div data-section="achievements">
+        <div data-section="achievements" className="background-gray-50">
           <Suspense fallback={<SectionLoader />}>
             <ReviewsService />
           </Suspense>
