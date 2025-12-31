@@ -24,7 +24,8 @@ export default function ServicePartnerSection() {
                   alt={`Partner ${(index % partnerLogos.length) + 1}`}
                   width={180}
                   height={150}
-                  className="logo-image "
+                  className="logo-image"
+                  style={{ borderRadius: '10px' }}
                 />
               </div>
             </div>
@@ -85,6 +86,7 @@ export default function ServicePartnerSection() {
           object-fit: contain;
           filter: grayscale(100%) brightness(0.8);
           transition: filter 0.3s ease;
+          border-radius: 8px;
         }
 
         .logo-container:hover .logo-image {

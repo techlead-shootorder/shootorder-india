@@ -2,13 +2,17 @@ import Image from "next/image";
 
 // Dynamic content based on service slug
 const serviceAboutData = {
+  "seo": {
+    heading: "SEO Optimization",
+    content: "Dominate search results with our comprehensive SEO strategies. We optimize every aspect of your website to improve visibility, drive organic traffic, and help your business rank higher on search engines. From keyword research to technical SEO, we ensure your content reaches the right audience at the right time."
+  },
   "digital-marketing": {
     heading: "Digital Marketing Excellence",
-    content: "We don’t just run ads, we create conversations. Our digital marketing approach balances creativity with performance to help your brand stand out where it matters most. From SEO to social campaigns, we design strategies that enhance visibility, attract the right audience, and convert clicks into loyal customers."
+    content: "We don't just run ads, we create conversations. Our digital marketing approach balances creativity with performance to help your brand stand out where it matters most. From SEO to social campaigns, we design strategies that enhance visibility, attract the right audience, and convert clicks into loyal customers."
   },
   "branding": {
     heading: "Brand Identity & Strategy",
-    content: "Your brand is more than a logo; it’s the story that people remember. We craft brand identities that spark recognition and build trust. From design to messaging, we shape experiences that connect with your audience on an emotional level and keep your business unforgettable. "
+    content: "Your brand is more than a logo; it's the story that people remember. We craft brand identities that spark recognition and build trust. From design to messaging, we shape experiences that connect with your audience on an emotional level and keep your business unforgettable. "
   },
   "growth-hacking": {
     heading: "Growth Hacking Innovation",

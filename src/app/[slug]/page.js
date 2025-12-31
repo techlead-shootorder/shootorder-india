@@ -26,7 +26,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-    const service = await getServiceBySlug(params.slug);
+    const { slug } = await params;
+    const service = await getServiceBySlug(slug);
 
     if (!service) {
         return {
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }) {
     }
 
     // Get category information for better SEO
-    const category = getCategoryByService(params.slug);
+    const category = getCategoryByService(slug);
     const categoryName = category ? ` - ${category.name}` : '';
 
     return {
@@ -48,14 +49,15 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ServicePage({ params }) {
-    const service = await getServiceBySlug(params.slug);
+    const { slug } = await params;
+    const service = await getServiceBySlug(slug);
 
     if (!service) {
         notFound();
     }
 
     // Get category information to enhance the page
-    const category = getCategoryByService(params.slug);
+    const category = getCategoryByService(slug);
 
     return (
         <div>
@@ -64,30 +66,30 @@ export default async function ServicePage({ params }) {
                 heading={service.heading}
                 subheading={service.subheading}
                 imageUrl={service.imageUrl}
-                serviceSlug={params.slug}  // Add this prop
+                serviceSlug={slug}  // Add this prop
             /> */}
 
             <NewHeroService
                 heading={service.heading}
                 subheading={service.subheading}
-                imageUrl={service.imageUrl}
-                serviceSlug={params.slug}
+                imageUrl={service.imageUrl} 
+                serviceSlug={slug}
             />
+ <div className="bg-gray-50">
+                <ProcessCovered services={service} />
+            </div>
+             <StatisticsService />
 
-           
-           <StatisticsService />
-
+         
             {/* <OurPartners /> */}
             <div className="bg-gray-50">
                  <ServicePartnerSection />
                 {/* <ClientsService/> */}
             </div>
 
-            <DescriptionService service={service} />
+            {/* <DescriptionService service={service} /> */}
 
-            <div className="bg-gray-50">
-                <ProcessCovered services={service} />
-            </div>
+           
 
             <ReviewsService/>
 

@@ -3,8 +3,12 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <section className="py-4 sm:py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-12 gap-12 items-center">
+          {/* Empty column to align with logo position */}
+          <div className="col-span-1"></div>
+          
+          <div className="col-span-10 grid md:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
           <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
@@ -25,11 +29,11 @@ export default function AboutUs() {
           {/* Content Section */}
           <div className="space-y-8">
             <div className="space-y-3">
-              <h4 className="text-[#9a0c28] font-medium uppercase tracking-wider">
+              {/* <h4 className="text-[#9a0c28] font-medium uppercase tracking-wider">
                 About Us
-              </h4>
+              </h4> */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                ShootOrder - Digital Marketing Agency
+                Our Story
               </h2>
             </div>
 
@@ -81,6 +85,7 @@ export default function AboutUs() {
                 <p className="text-gray-800 font-medium">Major Locations</p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

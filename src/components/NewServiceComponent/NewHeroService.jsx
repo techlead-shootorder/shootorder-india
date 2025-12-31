@@ -50,14 +50,12 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
           <div className="space-y-8">
             {/* Main Heading */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
-              {heroContent.h1},<br />
-              {heroContent.h2},<br />
-              {heroContent.h3} <span className="text-[#9a0c28]">{heroContent.redText}</span>
+              {heading || heroContent.title}
             </h1>
 
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-              {heroContent.subheading}
+              {subheading || heroContent.subtitle}
             </p>
 
             {/* Partners Image */}
@@ -110,7 +108,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
           {/* Right Side - Hero Image */}
           <div className="relative">
             <Image
-              src={heroContent.banner_image}
+              src={imageUrl || "/images/services/default-service.webp"}
               alt="Content creation showcase with various brand examples"
               width={600}
               height={600}

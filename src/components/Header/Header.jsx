@@ -28,11 +28,6 @@ const serviceCategories = [
             description: "Dominate organic search results",
           },
           {
-            name: "Blog Management",
-            href: "/blog-management",
-            description: "Content that converts and engages",
-          },
-          {
             name: "Website Development",
             href: "/web-design",
             description: "High-performance, responsive websites",
@@ -40,11 +35,6 @@ const serviceCategories = [
           {
             name: "Social Media Marketing",
             href: "/social-media-marketing",
-            description: "Build your social media presence",
-          },
-          {
-            name: "GBP Management",
-            href: "/gbp-management",
             description: "Build your social media presence",
           },
         ],

@@ -1,33 +1,25 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowRight, Target, Users, Heart, BarChart3 } from "lucide-react";
+import { ArrowRight, Target, Users, Heart, BarChart3, Search, Megaphone, Globe, UserCheck, Palette, Eye, MessageSquare, Package, Zap, Mouse, Star, Database, Brain } from "lucide-react";
 import Image from "next/image";
 
 const PLACEHOLDER_IMAGE = "https://placehold.co/400x400/e2e8f0/475569?text=Service";
 
-// Define background colors for each service category
-const serviceColors = {
-  "Digital Marketing": [
-    "bg-gradient-to-br from-blue-500 to-blue-600", // SEO & Content
-    "bg-gradient-to-br from-green-500 to-green-600", // Paid Advertising
-    "bg-gradient-to-br from-purple-500 to-purple-600", // Digital PR
-    "bg-gradient-to-br from-pink-500 to-pink-600", // Influencer Marketing
-  ],
-  Branding: [
-    "bg-gradient-to-br from-orange-500 to-orange-600", // Identity Development
-    "bg-gradient-to-br from-red-500 to-red-600", // Brand Audit
-    "bg-gradient-to-br from-indigo-500 to-indigo-600", // Brand Messaging
-    "bg-gradient-to-br from-teal-500 to-teal-600", // Package & Design
-  ],
-  "Growth Hacking": [
-    "bg-gradient-to-br from-cyan-500 to-cyan-600", // Landing Pages
-    "bg-gradient-to-br from-emerald-500 to-emerald-600", // On-site Engagement
-    "bg-gradient-to-br from-violet-500 to-violet-600", // Online Reputation Management
-  ],
-  "Marketing Automation": [
-    "bg-gradient-to-br from-slate-500 to-slate-600", // Data Analytics & Dashboard
-    "bg-gradient-to-br from-rose-500 to-rose-600", // Smart Analytics
-  ],
+// Define icons for each service
+const serviceIcons = {
+  "SEO & Content": Search,
+  "Paid Advertising": Megaphone,
+  "Digital PR": Globe,
+  "Influencer Marketing": UserCheck,
+  "Identity Development": Palette,
+  "Brand Audit": Eye,
+  "Brand Messaging": MessageSquare,
+  "Package & Design": Package,
+  "Landing Pages": Zap,
+  "On-site Engagement": Mouse,
+  "Online Reputation Managment": Star,
+  "Data Analytics & Dashboard": Database,
+  "Smart Analytics": Brain,
 };
 
 const servicesData = {
@@ -209,26 +201,17 @@ export default function CombinedServiceFlow() {
                   className="group bg-white border border-gray-200 rounded-xl p-4 md:p-5 hover:shadow-lg hover:border-red-200 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex flex-col md:flex-row md:items-start gap-3">
-                    {/* Image container - Full width on mobile with dynamic colors */}
-                    <div className="flex-shrink-0 w-full md:w-28">
-                      <div className={`h-[96px] w-full rounded-lg overflow-hidden ${serviceColors[activeTab][idx]} flex items-center justify-center shadow-md`}>
-                        {/* <img
-                          src={item.image || PLACEHOLDER_IMAGE}
-                          alt={item.title}
-                          className="w-full h-full object-cover"
-                          onError={handleImageError}
-                          loading="lazy"
-                        /> */}
-
-                        <p className="text-white text-[16px] p-2 text-center font-medium drop-shadow-sm">{item?.title}</p>
-                      </div>
-                    </div>
                     
                     {/* Content - Full width on mobile */}
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-bold text-base md:text-sm text-gray-900 mb-2 group-hover:text-[#9a0c28] transition-colors">
-                        {item.title}
-                      </h4>
+                      <div className="flex items-center gap-2 mb-2">
+                        {serviceIcons[item.title] && React.createElement(serviceIcons[item.title], {
+                          className: "w-4 h-4 text-[#9a0c28] flex-shrink-0"
+                        })}
+                        <h4 className="font-bold text-base md:text-sm text-gray-900 group-hover:text-[#9a0c28] transition-colors">
+                          {item.title}
+                        </h4>
+                      </div>
                       <p className="text-gray-600 text-sm md:text-xs leading-relaxed mb-3 line-clamp-2">
                         {item.desc}
                       </p>

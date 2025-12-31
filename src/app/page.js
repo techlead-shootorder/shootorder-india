@@ -6,7 +6,7 @@ import useSmoothScroll from "@/utils/smooth-scroll";
 import "keen-slider/keen-slider.min.css";
 
 // Critical components - loaded immediately
-import Banner from "@/components/Home/Banner/Banner";
+import NewBanner from "@/components/Home/Banner/NewBanner";
 
 // Lazy load components with preload hints
 const AnimatedIntro = lazy(() => import("@/components/Home/Intro/AnimatedIntro"));
@@ -14,6 +14,7 @@ const AboutUs = lazy(() => import("@/components/Home/About/AboutUs"));
 const ServiceTabs = lazy(() => import("../components/Home/ServiceTabs/ServiceTabs"));
 const CompanyInfo = lazy(() => import("@/components/Home/CompanyInfo/CompanyInfo"));
 const ServicePartnerSection = lazy(() => import("@/components/SeprateServicePage/ServicePartnerSection"));
+const ReviewsService = lazy(() => import("@/components/NewServiceComponent/ReviewsService"));
 const ClutchWidget = lazy(() => import("@/components/Home/CompanyInfo/ClutchWidget"));
 const PipeDriveForm = lazy(() => import("@/components/Home/PipeDrive/PipeDriveForm"));
 const ImageSection = lazy(() => import("@/components/Home/PipeDrive/ImageSection"));
@@ -212,11 +213,11 @@ export default function Home() {
       {/* Critical above-the-fold content - No loader delay */}
       <div className="banner-section relative overflow-hidden max-w-7xl mx-auto">
         <div className="banner-background w-full">
-          <Banner />
+          <NewBanner />
         </div>
       </div>
 
-      <div className="mx-auto">
+      {/* <div className="mx-auto">
         <div
           className="w-full"
           style={{
@@ -224,29 +225,26 @@ export default function Home() {
             objectFit: "cover",
           }}
         >
-          {/* Intro Section - Loads immediately */}
+           Intro Section - Loads immediately 
           <div data-section="intro">
             <Suspense fallback={<SkeletonLoader />}>
               <AnimatedIntro />
             </Suspense>
-          </div>
+          </div> */}
 
           {/* About Section - Loads immediately */}
           <div data-section="about">
             <Suspense fallback={<SkeletonLoader />}>
-              <div className="!max-w-7xl mx-auto">
-                <AboutUs />
-              </div>
+              <AboutUs />
             </Suspense>
           </div>
-        </div>
 
-        {/* Company Section */}
-        <div className="animate-section !max-w-7xl !mx-auto" id="company-section">
-          <div className="parallax-bg absolute inset-0 -z-10 w-full">
-            <div className="absolute top-1/4 left-1/4 w-1/4 h-1/4 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-full blur-3xl" />
+          {/* Company Section - Loads immediately */}
+          <div className="animate-section !max-w-7xl !mx-auto" id="company-section">
+            <div className="parallax-bg absolute inset-0 -z-10 w-full">
+              <div className="absolute top-1/4 left-1/4 w-1/4 h-1/4 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-full blur-3xl" />
+            </div>
           </div>
-        </div>
 
         {/* Service Tabs Section - Lazy loaded */}
         <section className="!bg-gray-50">
@@ -260,6 +258,13 @@ export default function Home() {
             )}
           </div>
         </section>
+
+        {/* Our Achievements Section - Lazy loaded */}
+        <div data-section="achievements">
+          <Suspense fallback={<SectionLoader />}>
+            <ReviewsService />
+          </Suspense>
+        </div>
 
         {/* Partners Section - Lazy loaded */}
         <div data-section="partners" className="!max-w-7xl mx-auto">
@@ -311,7 +316,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </div>
     </div>
   );
 }
