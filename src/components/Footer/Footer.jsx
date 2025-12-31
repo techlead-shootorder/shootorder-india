@@ -43,7 +43,6 @@ const brandingServices = {
     { name: "Messaging & Tone", href: "/branding/messaging" },
     { name: "Package & Design", href: "/branding/design" },
     { name: "Brand Campaigns", href: "/branding/campaigns" },
-
   ],
 };
 
@@ -76,8 +75,8 @@ const services = [
   { name: "Digital Marketing", href: "/services/digital-marketing" },
   { name: "Branding", href: "/services/branding" },
   { name: "Growth Hacking", href: "/services/growth-hacking" },
-  { name: "Marketing Automation", href: "/services/marketing-automation" }
-]
+  { name: "Marketing Automation", href: "/services/marketing-automation" },
+];
 
 const contactLinks = [
   { name: "Contact Us", href: "/contact-us/" },
@@ -93,10 +92,22 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { name: "Facebook", icon: FaFacebook, href: "https://www.facebook.com/shootorder" },
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    href: "https://www.facebook.com/shootorder",
+  },
   { name: "Twitter", icon: FaXTwitter, href: "https://x.com/shootorder" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/shootorder/#" },
-  { name: "LinkedIn", icon: FaLinkedin, href: "https://www.linkedin.com/company/shootorder/" },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/shootorder/#",
+  },
+  {
+    name: "LinkedIn",
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/company/shootorder/",
+  },
 ];
 
 const Footer = () => {
@@ -108,13 +119,13 @@ const Footer = () => {
             {/* Left Section - Company Info */}
             <div className="lg:col-span-4">
               <div className="mb-8">
-                <Image
+                {/* <Image
                   src="/images/logo/shootorder-logo.svg"
                   alt="ShootOrder"
                   width={200}
                   height={60}
                   className="mb-6"
-                />
+                /> */}
                 <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                   Your trusted partner for comprehensive digital marketing,
                   branding, and growth solutions.
@@ -144,12 +155,9 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-16 h-16 text-[#9a0c28] mt-1" />
                   <address className="not-italic text-gray-600">
-                    Ivent It Solutions Pvt. Ltd. (ShootOrder)
-                    Krishe Sapphire
-                    MSR Block, 1st Floor, SY No. 88,
-                    HITEC City main road, Madhapur
-                    Hyderabad, Telangana
-                    500081
+                    Ivent It Solutions Pvt. Ltd. (ShootOrder) Krishe Sapphire
+                    MSR Block, 1st Floor, SY No. 88, HITEC City main road,
+                    Madhapur Hyderabad, Telangana 500081
                   </address>
                 </div>
               </div>
@@ -300,7 +308,6 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
-
                 </div>
 
                 {/* Column - Company */}
@@ -357,7 +364,6 @@ const Footer = () => {
                   </ul> */}
                 </div>
 
-
                 {/* Column - Quick Links */}
                 <div className="col-span-2 md:col-span-1">
                   <h3 className="text-lg font-semibold mb-6 text-gray-900">
@@ -368,7 +374,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          target={link.name == 'Blogs' ? '_blank' : ''}
+                          target={link.name == "Blogs" ? "_blank" : ""}
                           className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
                         >
                           {link.name}
@@ -378,7 +384,6 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-
 
               <div className="mt-4 sm:mt-[20px]">
                 {/* Partner Logos */}
@@ -419,7 +424,8 @@ const Footer = () => {
         <div className="container mx-auto px-4" style={{ maxWidth: "1280px" }}>
           <div className="py-6 text-center">
             <p className="text-gray-600 text-sm">
-              &copy; {new Date().getFullYear()} All Rights Reserved - Ivent It Solutions Pvt Ltd
+              &copy; {new Date().getFullYear()} All Rights Reserved - Ivent It
+              Solutions Pvt Ltd
             </p>
           </div>
         </div>

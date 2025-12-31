@@ -12,13 +12,13 @@ const stats = [
   { value: 50, suffix: "+", label: "Ongoing Projects" },
   { value: 60, suffix: "+", label: "60+ Strong Team" },
   { value: 95, suffix: "%", label: "95% Client Retention Rate" },
-  { value: "#", label: "Diverse Industry Portfolio", isIcon: true },
-  {
-    value: ";)",
-    label:
-      "Innovation & Creativity: Developed proprietary marketing automation tools",
-  },
-  { value: "₹", label: "Cost-Effective Solutions", isIcon: true },
+  // { value: "#", label: "Diverse Industry Portfolio", isIcon: true },
+  // {
+  //   value: ";)",
+  //   label:
+  //     "Innovation & Creativity: Developed proprietary marketing automation tools",
+  // },
+  // { value: "₹", label: "Cost-Effective Solutions", isIcon: true },
 ];
 
 export default function WhyPartnerWithUs() {

@@ -6,7 +6,7 @@
     "slug": "seo",
     "title": "SEO",
     "description": "If you’re not on Page 1, you’re invisible; that's why our SEO experts make your brand unmissable. We optimize your site for both people and search engines, turning it into a traffic magnet and building real brand value across the internet.",
-    "imageUrl": "/images/services/SEO/seo-banner.webp",
+    "imageUrl": "/images/services/SEO/WebsiteImages_1_SEO.png",
     "bottomheading": "Our SEO Services",
     "features": [
       {
@@ -103,7 +103,7 @@
     "title": "Performance Marketing",
     "slug": "google-ads",
     "description": "Introducing our award-winning PPC & Performance Marketing services\nWe handle your performance marketing requirements as if they were our own. With over 50 performance marketing specialists, our paid ads services are growth-driven. Our account strategists bring in a deep understanding of business, with their precise targeting and effective messaging, this combination makes us the best in the market.",
-    "imageUrl": "/images/services/google-ads/google-ads-banner.webp",
+    "imageUrl": "/images/services/google-ads/",
     "bottomheading": "Google Ads",
     "features": [
       {
@@ -607,8 +607,8 @@
     "content": ""
   },
   {
-    "heading": "Online Reputation Management",
-    "subheading": "ORM",
+    "heading": "Shaping Perceptions. Building reputations.",
+    "subheading": "With a proactive approach to shaping online conversations, we craft initiatives that protect and enhance your brand image.",
     "bottomsubheading": "70% of consumers trust online reviews and ratings, making Online Reputation Management (ORM) crucial for businesses. Take control of your online reputation with ShootOrder, the trusted ORM company. Safeguard your brand, manage reviews, and build trust with our comprehensive reputation management solutions. Elevate your online presence and cultivate a positive image in the digital landscape.",
     "title": "ORM",
     "slug": "orm",
@@ -845,8 +845,8 @@
     "content": ""
   },
   {
-    "heading": "Onsite Engagement Solutions",
-    "subheading": "Onsite Engagement Solutions",
+    "heading": "Immersive. Imaginative. Impacting.",
+    "subheading": "From concept to execution, we deliver activations that captivate and connect.",
     "bottomsubheading": "Turn in-person interactions into memorable brand experiences. We design and execute engaging onsite activations that captivate your audience, build brand recall, and drive meaningful connections.",
     "title": "Onsite Engagement Solutions",
     "slug": "on-site-engagement",
@@ -894,8 +894,8 @@
     "content": ""
   },
   {
-    "heading": "Data Analytics & Dashboard Solutions ",
-    "subheading": "Data Analytics & Dashboard Solutions",
+    "heading": "Astute Analyses. Actionable Insights.",
+    "subheading": "We turn complex data into smart dashboards and analytics that power informed, faster, and smarter marketing moves.",
     "bottomsubheading": "Transform raw data into actionable insights. We help businesses make smarter, faster decisions with customized analytics solutions and interactive dashboards that provide clarity and real-time performance tracking. ",
     "title": "Data Analytics & Dashboard Solutions",
     "slug": "analytics-dashboards",
@@ -943,8 +943,8 @@
     "content": ""
   },
   {
-    "heading": "Smart Analytics Solutions ",
-    "subheading": "Smart Analytics Solutions",
+    "heading": "Smarter Decisions. Powered by AI",
+    "subheading": "We leverage the power of AI-driven insights to transform data into actionable decisions and measurable business outcomes",
     "bottomsubheading": "Unlock the true potential of your data with intelligent analytics. We empower businesses to make proactive, data-driven decisions through AI-powered insights, predictive modeling, and automated reporting that simplify complexity and drive growth.",
     "title": "Smart Analytics Solutions",
     "slug": "smart-analytics",
@@ -1072,8 +1072,8 @@
     "content": ""
   },
   {
-    "heading": "Landing Pages That Convert",
-    "subheading": "Landing Pages That Convert ",
+    "heading": "Designing Impact, Driving Action, Delivering Growth.",
+    "subheading": "We craft conversion-focused landing pages to drive meaningful on-site engagement, and fuel business results.",
     "bottomsubheading": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
     "slug": "landing-pages",
     "title": "Landing Pages That Convert ",
@@ -1170,8 +1170,8 @@
     "content": ""
   },
   {
-    "heading": "Branding - Identity Development Agency",
-    "subheading": "Brand Identity Development",
+    "heading": " Building identities that last.",
+    "subheading": "From strategy to design, tone of voice to messaging, we build end-to-end brand dentities that shape perception, foster trust, and stand the test of time. ",
     "bottomsubheading": "Your brand identity isn't just a logo; it's the personality, visuals, and voice that define how your audience connects with you. We build cohesive brand identities that leave lasting impressions and drive recognition.",
     "title": "Brand Identity Development",
     "slug": "identity",
@@ -1213,8 +1213,8 @@
     "content": ""
   },
   {
-    "heading": "Brand Auditing Agency",
-    "subheading": "Brand Audit Services",
+    "heading": "Know. Refine. Enhance.",
+    "subheading": "A comprehensive review of your brand ecosystem to understand & enhance your brand’s relevance, consistency, and market presence.",
     "bottomsubheading": "Our brand audit dives deep into how your brand is perceived, experienced, and communicated across visuals, messaging, and customer touchpoints. We help you spot inconsistencies, discover opportunities, and realign your brand for better performance.",
     "title": "Brand Audit Services",
     "slug": "audit",
@@ -1305,8 +1305,8 @@
     "content": ""
   },
   {
-    "heading": "Packaging and Design",
-    "subheading": "Packaging & Design Services",
+    "heading": " Designed to Delight. Packaged to Attract.",
+    "subheading": "Packaging designed to align with your brand strategy and influence buying decisions",
     "bottomsubheading": "Your product's package design is the first impression that shapes perception, sparks curiosity, and drives buying decisions. We create designs that are not just visually appealing but strategically aligned with your brand identity.",
     "title": "Packaging & Design Services",
     "slug": "design",
@@ -1348,8 +1348,8 @@
     "content": ""
   },
   {
-    "heading": "Brand Campaign Services",
-    "subheading": "Brand Campaign Services",
+    "heading": "Make Your Mark. Move Your Brand.",
+    "subheading": "We deliver creative campaigns that spark attention and set your brand in motion.",
     "bottomsubheading": "Launch your brand with strategic campaigns that create buzz, build awareness, and drive conversions. From concept to execution, we design multi-channel campaigns that amplify your brand presence and deliver measurable results.",
     "title": "Brand Campaign Services",
     "slug": "campaigns",
