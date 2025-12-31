@@ -27,7 +27,7 @@ const ServiceHero = () => {
     setIsPopupOpen(false);
   };
   return (
-    <section className="bg-[#fff3f3] py-16 px-4 lg:px-8 mt-20">
+    <section className="bg-[#ffffff] py-16 px-4 lg:px-8 mt-20">
       <div className="!max-w-7xl mx-auto">
 
         <div className="grid lg:grid-cols-2 sm:gap-20 items-center">
