@@ -1,11 +1,13 @@
 [
   {
     "heading": "SEO Optimization",
-    "subheading": "If you’re not on Page 1, you’re invisible; that's why our SEO experts make your brand unmissable. We optimize your site for both people and search engines, turning it into a traffic magnet and building real brand value across the internet.",
+    "subheading": "SEO",
+    "bottomsubheading": "If you’re not on Page 1, you’re invisible; that's why our SEO experts make your brand unmissable. We optimize your site for both people and search engines, turning it into a traffic magnet and building real brand value across the internet.",
     "slug": "seo",
     "title": "SEO",
     "description": "If you’re not on Page 1, you’re invisible; that's why our SEO experts make your brand unmissable. We optimize your site for both people and search engines, turning it into a traffic magnet and building real brand value across the internet.",
     "imageUrl": "/images/services/SEO/seo-banner.webp",
+    "bottomheading": "SEO Optimization bottom",
     "features": [
       {
         "imageUrl": "/images/services/SEO/Keywords Optimization.webp",
@@ -96,11 +98,13 @@
   },
   {
     "heading": "Google Ads",
-    "subheading": "From Google Search to YouTube, Meta, and beyond, paid ads are where attention meets action. We craft performance-driven campaigns that turn ad spend into measurable results.",
+    "subheading": "Performance Marketing",
+    "bottomsubheading": "From Google Search to YouTube, Meta, and beyond, paid ads are where attention meets action. We craft performance-driven campaigns that turn ad spend into measurable results.",
     "title": "Performance Marketing",
     "slug": "google-ads",
     "description": "Introducing our award-winning PPC & Performance Marketing services\nWe handle your performance marketing requirements as if they were our own. With over 50 performance marketing specialists, our paid ads services are growth-driven. Our account strategists bring in a deep understanding of business, with their precise targeting and effective messaging, this combination makes us the best in the market.",
     "imageUrl": "/images/services/google-ads/google-ads-banner.webp",
+    "bottomheading": "Google Ads",
     "features": [
       {
         "imageUrl": "/images/services/google-ads/Strategic Media Planning & Channel Selection.webp",
@@ -185,11 +189,13 @@
   },
   {
     "heading": "Social Media Marketing",
-    "subheading": "Beyond likes and follows, our social media marketing strategies spark real engagement and brand loyalty. From scroll-stopping content to data-driven campaigns, we craft experiences that connect, convert, and keep your audience coming back for more.",
+    "subheading": "Social Media Marketing",
+    "bottomsubheading": "Beyond likes and follows, our social media marketing strategies spark real engagement and brand loyalty. From scroll-stopping content to data-driven campaigns, we craft experiences that connect, convert, and keep your audience coming back for more.",
     "title": "Social Media Marketing",
     "slug": "social-media-marketing",
     "description": "Beyond likes and follows, our social media marketing strategies spark real engagement and brand loyalty. From scroll-stopping content to data-driven campaigns, we craft experiences that connect, convert, and keep your audience coming back for more.",
     "imageUrl": "/images/services/SMM/smm-banner.webp",
+    "bottomheading": "Social Media Marketing",
     "features": [
       {
         "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/social-media-strategy.jpg",
@@ -292,11 +298,13 @@
   },
   {
     "heading": "Blog Marketing Agency",
-    "subheading": "Blogs generate 67% more leads for businesses compared to those without a blog. Enhance your online presence and engage your audience with ShootOrder's expert Blog Management & Marketing services. Our skilled team curates compelling content, optimizes SEO, and implements effective promotion strategies to drive traffic, boost conversions, and establish your brand as an industry authority. Maximize the impact of your blog with ShootOrder's comprehensive management and marketing solutions.",
+    "subheading": "Blog Management",
+    "bottomsubheading": "Blogs generate 67% more leads for businesses compared to those without a blog. Enhance your online presence and engage your audience with ShootOrder's expert Blog Management & Marketing services. Our skilled team curates compelling content, optimizes SEO, and implements effective promotion strategies to drive traffic, boost conversions, and establish your brand as an industry authority. Maximize the impact of your blog with ShootOrder's comprehensive management and marketing solutions.",
     "title": "Blog Management",
     "slug": "blog-management",
     "description": "Blogs generate 67% more leads for businesses compared to those without a blog. Enhance your online presence and engage your audience with ShootOrder's expert Blog Management & Marketing services. Our skilled team curates compelling content, optimizes SEO, and implements effective promotion strategies to drive traffic, boost conversions, and establish your brand as an industry authority. Maximize the impact of your blog with ShootOrder's comprehensive management and marketing solutions.",
     "imageUrl": "/images/services/blog-managment/blog-managment-banner.webp",
+    "bottomheading": "Blog Marketing Agency",
     "features": [
       {
         "imageUrl": "/images/services/blog-managment/Strategy Development.webp",
@@ -381,11 +389,13 @@
   },
   {
     "heading": "Website & Landing Page Design",
-    "subheading": "47% of users expect a webpage to load in 2 seconds or less, and 40% will abandon a website if it takes more than 3 seconds to load. A website is a medium through which SMB's can build their online reputation and use them as a plaform for customer to interact with them. Websites also serves as a medium through which viewers can access information regarding the company.",
+    "subheading": "Web Design",
+    "bottomsubheading": "47% of users expect a webpage to load in 2 seconds or less, and 40% will abandon a website if it takes more than 3 seconds to load. A website is a medium through which SMB's can build their online reputation and use them as a plaform for customer to interact with them. Websites also serves as a medium through which viewers can access information regarding the company.",
     "title": "Web Design",
     "slug": "web-design",
     "description": "47% of users expect a webpage to load in 2 seconds or less, and 40% will abandon a website if it takes more than 3 seconds to load. A website is a medium through which SMB's can build their online reputation and use them as a plaform for customer to interact with them. Websites also serves as a medium through which viewers can access information regarding the company.",
     "imageUrl": "/images/services/website-development/website-development-banner.webp",
+    "bottomheading": "Website & Landing Page Design",
     "features": [
       {
         "imageUrl": "/images/services/website-development/Responsive Web Design.webp",
@@ -458,11 +468,13 @@
   },
   {
     "heading": "Influencer Marketing Agency",
-    "subheading": "Influencer campaigns generate $5.20 in earned media value for every dollar spent. Elevate your brand's visibility and reach with ShootOrder, a trusted influencer marketing company. Our expert team connects you with influential personalities in your industry, driving authentic engagement and maximizing your brand's exposure. Leverage the power of influencer partnerships and enhance your online presence today.",
+    "subheading": "Influencers Marketing",
+    "bottomsubheading": "Influencer campaigns generate $5.20 in earned media value for every dollar spent. Elevate your brand's visibility and reach with ShootOrder, a trusted influencer marketing company. Our expert team connects you with influential personalities in your industry, driving authentic engagement and maximizing your brand's exposure. Leverage the power of influencer partnerships and enhance your online presence today.",
     "title": "Influencers Marketing",
     "slug": "influencers-marketing",
     "description": "Influencer campaigns generate $5.20 in earned media value for every dollar spent. Elevate your brand's visibility and reach with ShootOrder, a trusted influencer marketing company. Our expert team connects you with influential personalities in your industry, driving authentic engagement and maximizing your brand's exposure. Leverage the power of influencer partnerships and enhance your online presence today.",
     "imageUrl": "/images/services/influencer-marketing/influencer-marketing-banner.webp",
+    "bottomheading": "Influencer Marketing Agency",
     "features": [
       {
         "imageUrl": "/images/services/influencer-marketing/Strategy Development.webp",
@@ -547,11 +559,13 @@
   },
   {
     "heading": "Best Email Marketing Company",
-    "subheading": "92% of adult internet users use emails as their communication media. ShootOrder is the leading email marketing company in India, with our managed email marketing services we offer industries best conversion rates through email campaigns.",
+    "subheading": "Email Marketing",
+    "bottomsubheading": "92% of adult internet users use emails as their communication media. ShootOrder is the leading email marketing company in India, with our managed email marketing services we offer industries best conversion rates through email campaigns.",
     "title": "Email Marketing",
     "slug": "email-marketing",
     "description": "92% of adult internet users use emails as their communication media. ShootOrder is the leading email marketing company in India, with our managed email marketing services we offer industries best conversion rates through email campaigns.",
     "imageUrl": "/images/services/email-marketing-bg.jpg",
+    "bottomheading": "Best Email Marketing Company",
     "features": [
       {
         "imageUrl": "/images/services/email-marketing/understanding-and-strategy.jpg",
@@ -594,11 +608,13 @@
   },
   {
     "heading": "Online Reputation Management",
-    "subheading": "70% of consumers trust online reviews and ratings, making Online Reputation Management (ORM) crucial for businesses. Take control of your online reputation with ShootOrder, the trusted ORM company. Safeguard your brand, manage reviews, and build trust with our comprehensive reputation management solutions. Elevate your online presence and cultivate a positive image in the digital landscape.",
+    "subheading": "ORM",
+    "bottomsubheading": "70% of consumers trust online reviews and ratings, making Online Reputation Management (ORM) crucial for businesses. Take control of your online reputation with ShootOrder, the trusted ORM company. Safeguard your brand, manage reviews, and build trust with our comprehensive reputation management solutions. Elevate your online presence and cultivate a positive image in the digital landscape.",
     "title": "ORM",
     "slug": "orm",
     "description": "70% of consumers trust online reviews and ratings, making Online Reputation Management (ORM) crucial for businesses. Take control of your online reputation with ShootOrder, the trusted ORM company. Safeguard your brand, manage reviews, and build trust with our comprehensive reputation management solutions. Elevate your online presence and cultivate a positive image in the digital landscape.",
     "imageUrl": "/images/services/ORM/ORM-banner.webp",
+    "bottomheading": "Online Reputation Management",
     "features": [
       {
         "imageUrl": "/images/services/ORM/Reputation Monitoring and Analysis.webp",
@@ -641,11 +657,13 @@
   },
   {
     "heading": "Marketing Automation",
-    "subheading": "Marketing automation can drive a 14.5% increase in sales productivity Unlock the power of automation and elevate your marketing efforts with ShootOrder, the trusted marketing automation company. Streamline your campaigns, drive targeted engagement, and maximize ROI with our comprehensive suite of automated solutions. Experience unparalleled efficiency and results today.",
+    "subheading": "Marketing Automation",
+    "bottomsubheading": "Marketing automation can drive a 14.5% increase in sales productivity Unlock the power of automation and elevate your marketing efforts with ShootOrder, the trusted marketing automation company. Streamline your campaigns, drive targeted engagement, and maximize ROI with our comprehensive suite of automated solutions. Experience unparalleled efficiency and results today.",
     "title": "Marketing Automation",
     "slug": "marketing-automation",
     "description": "Marketing automation can drive a 14.5% increase in sales productivity Unlock the power of automation and elevate your marketing efforts with ShootOrder, the trusted marketing automation company. Streamline your campaigns, drive targeted engagement, and maximize ROI with our comprehensive suite of automated solutions. Experience unparalleled efficiency and results today.",
     "imageUrl": "/images/services/email-marketing-bg.jpg",
+    "bottomheading": "Marketing Automation",
     "features": [
       {
         "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/understanding.jpg",
@@ -688,11 +706,13 @@
   },
   {
     "heading": "Analytics",
-    "subheading": "Blogs generate 67% more leads for businesses compared to those without a blog. Harness the power of data with ShootOrder, a leading web analytics company. Gain valuable insights, optimize performance, and drive data-informed decisions with our advanced analytics solutions. Elevate your digital strategy and maximize your online success.",
+    "subheading": "Analytics",
+    "bottomsubheading": "Blogs generate 67% more leads for businesses compared to those without a blog. Harness the power of data with ShootOrder, a leading web analytics company. Gain valuable insights, optimize performance, and drive data-informed decisions with our advanced analytics solutions. Elevate your digital strategy and maximize your online success.",
     "title": "Analytics",
     "slug": "analytics",
     "description": "Blogs generate 67% more leads for businesses compared to those without a blog. Harness the power of data with ShootOrder, a leading web analytics company. Gain valuable insights, optimize performance, and drive data-informed decisions with our advanced analytics solutions. Elevate your digital strategy and maximize your online success.",
     "imageUrl": "/images/services/analytics.jpg",
+    "bottomheading": "Analytics",
     "features": [
       {
         "imageUrl": "https://www.ShootOrder.com/templates/shoot/img/b-strategy.png",
@@ -735,11 +755,13 @@
   },
   {
     "heading": "Digital PR",
-    "subheading": "Every click should count; our performance marketing strategies are built to drive measurable results. From laser-targeted ads to conversion-optimized campaigns, we transform your marketing spend into scalable growth and ROI that's measurable.",
+    "subheading": "Digital PR",
+    "bottomsubheading": "Every click should count; our performance marketing strategies are built to drive measurable results. From laser-targeted ads to conversion-optimized campaigns, we transform your marketing spend into scalable growth and ROI that's measurable.",
     "title": "Digital PR",
     "slug": "digital-pr",
     "description": "Every click should count; our performance marketing strategies are built to drive measurable results. From laser-targeted ads to conversion-optimized campaigns, we transform your marketing spend into scalable growth and ROI that's measurable.",
     "imageUrl": "/images/services/digital-pr/digital-pr-banner.webp",
+    "bottomheading": "Digital PR",
     "features": [
       {
         "imageUrl": "/images/services/digital-pr/Crisis Management & Reputation Repair.webp",
@@ -824,11 +846,13 @@
   },
   {
     "heading": "Onsite Engagement Solutions",
-    "subheading": "Turn in-person interactions into memorable brand experiences. We design and execute engaging onsite activations that captivate your audience, build brand recall, and drive meaningful connections.",
+    "subheading": "Onsite Engagement Solutions",
+    "bottomsubheading": "Turn in-person interactions into memorable brand experiences. We design and execute engaging onsite activations that captivate your audience, build brand recall, and drive meaningful connections.",
     "title": "Onsite Engagement Solutions",
     "slug": "on-site-engagement",
     "description": "Turn in-person interactions into memorable brand experiences. We design and execute engaging onsite activations that captivate your audience, build brand recall, and drive meaningful connections.",
     "imageUrl": "/images/services/onsite-engagment/onsite-engagement-banner.webp",
+    "bottomheading": "Onsite Engagement Solutions",
     "features": [
       {
         "imageUrl": "/images/services/onsite-engagment/Onsite Engagement Strategy & Planning.webp",
@@ -871,11 +895,13 @@
   },
   {
     "heading": "Data Analytics & Dashboard Solutions ",
-    "subheading": "Transform raw data into actionable insights. We help businesses make smarter, faster decisions with customized analytics solutions and interactive dashboards that provide clarity and real-time performance tracking. ",
+    "subheading": "Data Analytics & Dashboard Solutions",
+    "bottomsubheading": "Transform raw data into actionable insights. We help businesses make smarter, faster decisions with customized analytics solutions and interactive dashboards that provide clarity and real-time performance tracking. ",
     "title": "Data Analytics & Dashboard Solutions",
     "slug": "analytics-dashboards",
     "description": "Transform raw data into actionable insights. We help businesses make smarter, faster decisions with customized analytics solutions and interactive dashboards that provide clarity and real-time performance tracking.",
     "imageUrl": "/images/services/data-analytics-and-dashboard/data-analytics-banner.webp",
+    "bottomheading": "Data Analytics & Dashboard Solutions",
     "features": [
       {
         "imageUrl": "/images/services/data-analytics-and-dashboard/KPI Definition & Data Strategy.webp",
@@ -918,11 +944,13 @@
   },
   {
     "heading": "Smart Analytics Solutions ",
-    "subheading": "Unlock the true potential of your data with intelligent analytics. We empower businesses to make proactive, data-driven decisions through AI-powered insights, predictive modeling, and automated reporting that simplify complexity and drive growth.",
+    "subheading": "Smart Analytics Solutions",
+    "bottomsubheading": "Unlock the true potential of your data with intelligent analytics. We empower businesses to make proactive, data-driven decisions through AI-powered insights, predictive modeling, and automated reporting that simplify complexity and drive growth.",
     "title": "Smart Analytics Solutions",
     "slug": "smart-analytics",
     "description": "Unlock the true potential of your data with intelligent analytics. We empower businesses to make proactive, data-driven decisions through AI-powered insights, predictive modeling, and automated reporting that simplify complexity and drive growth.",
     "imageUrl": "/images/services/smart-analytics/smart-analytics-banner.webp",
+    "bottomheading": "Smart Analytics Solutions",
     "features": [
       {
         "imageUrl": "/images/services/smart-analytics/Smart Data Strategy & Goal Alignment.webp",
@@ -965,11 +993,13 @@
   },
   {
     "heading": "Digital Marketing Training",
-    "subheading": "With the advent of mobile technology & internet, we have entered into the era of digitization. We search, talk, learn, watch, sleep & eat on internet these days. As there is a huge amount of people like us reliable on internet, it gives an opportunity for businessmen to market their products and increase their revenue. This is where people like us “Digital Marketing Experts” or “SEO Experts” or “Online Marketing Specialists” come into picture.",
+    "subheading": "Digital Marketing Tranining",
+    "bottomsubheading": "With the advent of mobile technology & internet, we have entered into the era of digitization. We search, talk, learn, watch, sleep & eat on internet these days. As there is a huge amount of people like us reliable on internet, it gives an opportunity for businessmen to market their products and increase their revenue. This is where people like us “Digital Marketing Experts” or “SEO Experts” or “Online Marketing Specialists” come into picture.",
     "slug": "training",
     "title": "Digital Marketing Tranining",
     "description": "With the advent of mobile technology & internet, we have entered into the era of digitization. We search, talk, learn, watch, sleep & eat on internet these days. As there is a huge amount of people like us reliable on internet, it gives an opportunity for businessmen to market their products and increase their revenue. This is where people like us “Digital Marketing Experts” or “SEO Experts” or “Online Marketing Specialists” come into picture.",
     "imageUrl": "/images/services/performance-marketing.webp",
+    "bottomheading": "Digital Marketing Training",
     "features": [
       {
         "imageUrl": "/images/services/smart-analytics/Smart Data Strategy & Goal Alignment.webp",
@@ -994,11 +1024,13 @@
   },
   {
     "heading": "Google Business Profile Management That Drives Local Visibility",
-    "subheading": "Your Google Business Profile is the digital storefront of your brand. We help you optimize and manage it to boost visibility, attract local customers, and convert searches into real business opportunities.",
+    "subheading": "Google Business Profile Management That Drives Local Visibility",
+    "bottomsubheading": "Your Google Business Profile is the digital storefront of your brand. We help you optimize and manage it to boost visibility, attract local customers, and convert searches into real business opportunities.",
     "slug": "gbp-management",
     "title": "Google Business Profile Management That Drives Local Visibility",
     "description": "Your Google Business Profile is the digital storefront of your brand. We help you optimize and manage it to boost visibility, attract local customers, and convert searches into real business opportunities.",
     "imageUrl": "/images/services/performance-marketing.webp",
+    "bottomheading": "Google Business Profile Management That Drives Local Visibility",
     "features": [
       {
         "imageUrl": "/images/services/GBP/Profile Setup & Optimization.webp",
@@ -1041,11 +1073,13 @@
   },
   {
     "heading": "Landing Pages That Convert",
-    "subheading": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
+    "subheading": "Landing Pages That Convert ",
+    "bottomsubheading": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
     "slug": "landing-pages",
     "title": "Landing Pages That Convert ",
     "description": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
     "imageUrl": "/images/services/landing-pages/landing-pages-banner.webp",
+    "bottomheading": "Landing Pages That Convert",
     "features": [
       {
         "imageUrl": "/images/services/landing-pages/Landing Page Strategy & Wireframing.webp",
@@ -1088,11 +1122,13 @@
   },
   {
     "heading": "Meta Ads Agency",
-    "subheading": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
+    "subheading": "Meta Ads Agency",
+    "bottomsubheading": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
     "slug": "meta-ads",
     "title": "Meta Ads Agency",
     "description": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
     "imageUrl": "/images/services/meta-ads/meta-ads-banner.webp",
+    "bottomheading": "Meta Ads Agency",
     "features": [
       {
         "imageUrl": "/images/services/meta-ads/Meta Ads Strategy & Planning.webp",
@@ -1135,11 +1171,13 @@
   },
   {
     "heading": "Branding - Identity Development Agency",
-    "subheading": "Your brand identity isn't just a logo; it's the personality, visuals, and voice that define how your audience connects with you. We build cohesive brand identities that leave lasting impressions and drive recognition.",
+    "subheading": "Brand Identity Development",
+    "bottomsubheading": "Your brand identity isn't just a logo; it's the personality, visuals, and voice that define how your audience connects with you. We build cohesive brand identities that leave lasting impressions and drive recognition.",
     "title": "Brand Identity Development",
     "slug": "identity",
     "description": "Brand identity is the visual and conceptual foundation of your business. It encompasses everything from your logo and color palette to your brand voice and personality. A strong brand identity helps you stand out in the market and creates lasting connections with your customers.",
     "imageUrl": "/images/services/identity-development/identity-development-banner.webp",
+    "bottomheading": "Branding - Identity Development Agency",
     "features": [
       {
         "imageUrl": "/images/services/identity-development/Visual Identity System.webp",
@@ -1176,11 +1214,13 @@
   },
   {
     "heading": "Brand Auditing Agency",
-    "subheading": "Our brand audit dives deep into how your brand is perceived, experienced, and communicated across visuals, messaging, and customer touchpoints. We help you spot inconsistencies, discover opportunities, and realign your brand for better performance.",
+    "subheading": "Brand Audit Services",
+    "bottomsubheading": "Our brand audit dives deep into how your brand is perceived, experienced, and communicated across visuals, messaging, and customer touchpoints. We help you spot inconsistencies, discover opportunities, and realign your brand for better performance.",
     "title": "Brand Audit Services",
     "slug": "audit",
     "description": "A brand audit is a thorough examination of your brand's current state, including its strengths, weaknesses, and opportunities for improvement. This analysis helps identify gaps and provides actionable insights to enhance your brand strategy.",
     "imageUrl": "/images/services/brand-audit/brand-audit-banner.webp",
+    "bottomheading": "Brand Auditing Agency",
     "features": [
       {
         "imageUrl": "/images/services/brand-audit/Visual Consistency Review.webp",
@@ -1223,11 +1263,13 @@
   },
   {
     "heading": "Brand Messaging and Tone of Voice",
-    "subheading": "Your brand's voice is how it connects, inspires, and builds trust. We help define and craft messaging that speaks directly to your audience, with a tone that feels true to your brand.",
+    "subheading": "Brand Messaging & Tone of Voice",
+    "bottomsubheading": "Your brand's voice is how it connects, inspires, and builds trust. We help define and craft messaging that speaks directly to your audience, with a tone that feels true to your brand.",
     "title": "Brand Messaging & Tone of Voice",
     "slug": "messaging",
     "description": "Brand messaging is the art of communicating your value proposition in a way that resonates with your target audience. It includes your brand story, key messages, and tone of voice that consistently represent your brand across all channels.",
     "imageUrl": "/images/services/brand-messaging-tone-of-voice/brand-messaging-banner.webp",
+    "bottomheading": "Brand Messaging and Tone of Voice",
     "features": [
       {
         "imageUrl": "/images/services/brand-messaging-tone-of-voice/Brand Messaging Framework.webp",
@@ -1264,11 +1306,13 @@
   },
   {
     "heading": "Packaging and Design",
-    "subheading": "Your product's package design is the first impression that shapes perception, sparks curiosity, and drives buying decisions. We create designs that are not just visually appealing but strategically aligned with your brand identity.",
+    "subheading": "Packaging & Design Services",
+    "bottomsubheading": "Your product's package design is the first impression that shapes perception, sparks curiosity, and drives buying decisions. We create designs that are not just visually appealing but strategically aligned with your brand identity.",
     "title": "Packaging & Design Services",
     "slug": "design",
     "description": "Brand design encompasses all visual elements that represent your brand, from digital assets to print materials. Our design services ensure consistency and professionalism across every customer touchpoint.",
     "imageUrl": "/images/services/package-design/package-and-design-banner.webp",
+    "bottomheading": "Packaging and Design",
     "features": [
       {
         "imageUrl": "/images/services/package-design/Packaging Strategy & Concept Development.webp",
@@ -1305,11 +1349,13 @@
   },
   {
     "heading": "Brand Campaign Services",
-    "subheading": "Launch your brand with strategic campaigns that create buzz, build awareness, and drive conversions. From concept to execution, we design multi-channel campaigns that amplify your brand presence and deliver measurable results.",
+    "subheading": "Brand Campaign Services",
+    "bottomsubheading": "Launch your brand with strategic campaigns that create buzz, build awareness, and drive conversions. From concept to execution, we design multi-channel campaigns that amplify your brand presence and deliver measurable results.",
     "title": "Brand Campaign Services",
     "slug": "campaigns",
     "description": "Brand campaigns are strategic marketing initiatives designed to promote your brand, increase awareness, and drive specific business outcomes. We create cohesive campaigns that work across multiple channels and touchpoints.",
     "imageUrl": "/images/services/brand-launch/brand-launch-banner.webp",
+    "bottomheading": "Brand Campaign Services",
     "features": [
       {
         "imageUrl": "/images/services/brand-launch/Brand Launch Strategy.webp",

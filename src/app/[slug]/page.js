@@ -11,7 +11,7 @@ import OurPartners from '@/components/Home/Partners/OurPartners';
 import DescriptionService from '@/components/NewServiceComponent/DescriptionService'
 import ReviewsService from '@/components/NewServiceComponent/ReviewsService'
 
-import ProcessCovered from '@/components/Services/ProcessCovered';
+import ProcessTimeline from '@/components/Services/ProcessTimeline';
 import Faqs from '@/components/NewServiceComponent/Faq'
 import CaseStudyComponent from '@/components/CaseStudies/CaseStudyComponent'
 import ServicePartnerSection from "@/components/SeprateServicePage/ServicePartnerSection";
@@ -49,7 +49,9 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ServicePage({ params }) {
-    const { slug } = await params;
+    // Await params if it is a Promise (Next.js app router)
+    const awaitedParams = typeof params.then === 'function' ? await params : params;
+    const slug = awaitedParams.slug;
     const service = await getServiceBySlug(slug);
 
     if (!service) {
@@ -75,10 +77,14 @@ export default async function ServicePage({ params }) {
                 imageUrl={service.imageUrl} 
                 serviceSlug={slug}
             />
- <div className="bg-gray-50">
-                <ProcessCovered services={service} />
+            <div className="bg-gray-50">
+                <ProcessTimeline 
+                    features={service.features} 
+                    bottomheading={service.bottomheading}
+                    subheading={service.bottomsubheading}
+                />
             </div>
-             <StatisticsService />
+            <StatisticsService />
 
          
             {/* <OurPartners /> */}
@@ -96,7 +102,7 @@ export default async function ServicePage({ params }) {
             <Faqs services={service} />
 
             <div className="bg-gray-50">
-                <CaseStudyComponent service={params.slug} />
+                <CaseStudyComponent service={slug} />
             </div>
 
             {/* Optional: Add related services section based on category */}
@@ -114,7 +120,7 @@ export default async function ServicePage({ params }) {
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {category.services
-                                .filter((serviceSlug) => serviceSlug !== params.slug)
+                                .filter((serviceSlug) => serviceSlug !== slug)
                                 .slice(0, 6)
                                 .map((relatedServiceSlug) => (
                                     <a
