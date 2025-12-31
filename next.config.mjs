@@ -19,10 +19,7 @@ const nextConfig = {
   trailingSlash: true,
   
   // Disable server-side features for static export
-  experimental: {
-    // Remove if you're not using app directory
-    appDir: false
-  },
+  // experimental: {},
   generateBuildId: async () => {
     return 'static-build'
   },
