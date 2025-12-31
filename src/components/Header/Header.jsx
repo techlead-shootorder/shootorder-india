@@ -458,10 +458,11 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-lg"
           : "bg-white shadow-sm"
-        }`}
+      }`}
     >
       <div className="!max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-20">
         {/* Logo */}
@@ -502,10 +503,11 @@ export default function Header() {
                   {link.name}
                   {link.hasMegaMenu && (
                     <FaChevronDown
-                      className={`text-xs transition-transform duration-200 ${megaMenuOpen && activeMegaMenu === link.menuType
+                      className={`text-xs transition-transform duration-200 ${
+                        megaMenuOpen && activeMegaMenu === link.menuType
                           ? "rotate-180"
                           : ""
-                        }`}
+                      }`}
                     />
                   )}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#9a0c28] transition-all duration-300 group-hover:w-full"></span>
@@ -558,22 +560,25 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-[100] lg:hidden transition-all duration-300 ${menuOpen ? "visible opacity-100" : "invisible opacity-0"
-          }`}
+        className={`fixed inset-0 z-[100] lg:hidden transition-all duration-300 ${
+          menuOpen ? "visible opacity-100" : "invisible opacity-0"
+        }`}
         ref={menuRef}
       >
         {/* Backdrop */}
         <div
-          className={`fixed inset-0 bg-black/30 backdrop-blur-sm transition-opacity duration-300 ${menuOpen ? "opacity-100" : "opacity-0"
-            }`}
+          className={`fixed inset-0 bg-black/30 backdrop-blur-sm transition-opacity duration-300 ${
+            menuOpen ? "opacity-100" : "opacity-0"
+          }`}
           onClick={() => setMenuOpen(false)}
           aria-hidden="true"
         />
 
         {/* Menu Content */}
         <div
-          className={`fixed  right-0 z-50 w-[85%] max-w-sm bg-white shadow-xl transform transition-all duration-300 ease-out h-224 ${menuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
+          className={`fixed  right-0 z-50 w-[85%] max-w-sm bg-white shadow-xl transform transition-all duration-300 ease-out h-224 ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
           role="dialog"
           aria-modal="true"
           aria-label="Main Menu"
@@ -613,10 +618,11 @@ export default function Header() {
                       {link.name}
                       {link.hasMegaMenu && (
                         <FaChevronDown
-                          className={`text-[#9a0c28] text-xs transition-transform duration-200 ${expandedCategories[link.menuType]
+                          className={`text-[#9a0c28] text-xs transition-transform duration-200 ${
+                            expandedCategories[link.menuType]
                               ? "rotate-180"
                               : ""
-                            }`}
+                          }`}
                         />
                       )}
                     </div>
@@ -640,10 +646,11 @@ export default function Header() {
                               <h3 className="font-semibold text-sm text-gray-900 flex items-center justify-between">
                                 {category.title}
                                 <FaChevronDown
-                                  className={`text-xs transform transition-transform duration-200 text-current ${expandedCategories[category.title]
+                                  className={`text-xs transform transition-transform duration-200 text-current ${
+                                    expandedCategories[category.title]
                                       ? "rotate-180"
                                       : ""
-                                    }`}
+                                  }`}
                                 />
                               </h3>
                             </button>
@@ -771,48 +778,46 @@ export default function Header() {
               <div className="w-80 bg-gray-50 border-r border-gray-200 p-6">
                 <div className="space-y-2">
                   {getCurrentMegaMenuData().map((category, index) => (
-                   
                     <button
                       key={category.title}
-                      className={`w-full text-left p-4 rounded-xl transition-all duration-200 border-2 ${activeTab === index
+                      className={`w-full text-left p-4 rounded-xl transition-all duration-200 border-2 ${
+                        activeTab === index
                           ? `${category.color} border-current shadow-sm`
                           : "bg-white border-gray-100 hover:bg-gray-50 hover:border-gray-200"
-                        }`}
+                      }`}
                       onClick={() => setActiveTab(index)}
                       onMouseEnter={() => setActiveTab(index)}
                     >
-                       <a href={category?.href}>
-                      <div className="flex items-center gap-3">
-                        {category.icon && (
-                          <span className="text-2xl">{category.icon}</span>
-                        )}
-                        <div>
-                          <h3
-                            className={`font-semibold text-base ${activeTab === index
-                                ? "text-current"
-                                : "text-gray-900"
+                      <a href={category?.href}>
+                        <div className="flex items-center gap-3">
+                          {category.icon && (
+                            <span className="text-2xl">{category.icon}</span>
+                          )}
+                          <div>
+                            <h3
+                              className={`font-semibold text-base ${
+                                activeTab === index
+                                  ? "text-current"
+                                  : "text-gray-900"
                               }`}
-                          >
-                            {category.title}
-                          </h3>
-                          {/* Only show service count for services menu */}
-                          {activeMegaMenu === "services" && (
-                           
+                            >
+                              {category.title}
+                            </h3>
+                            {/* Only show service count for services menu */}
+                            {activeMegaMenu === "services" && (
                               <p className="text-xs text-gray-500 mt-1">
                                 {category.columns
                                   ? category.columns.reduce(
-                                    (total, col) => total + col.links.length,
-                                    0
-                                  )
+                                      (total, col) => total + col.links.length,
+                                      0
+                                    )
                                   : category.links.length}{" "}
                                 services
                               </p>
-                            
-
-                          )}
+                            )}
+                          </div>
                         </div>
-                      </div>
-                     </a>
+                      </a>
                     </button>
                   ))}
                 </div>
@@ -847,76 +852,76 @@ export default function Header() {
                     <div className="grid grid-cols-3 gap-8">
                       {getCurrentMegaMenuData()[activeTab].columns
                         ? // Digital Marketing with proper column headers
-                        getCurrentMegaMenuData()[activeTab].columns.map(
-                          (column, columnIndex) => (
-                            <div key={columnIndex} className="space-y-6">
-                              {/* Column Header - Better styling */}
-                              <div className="border-b border-gray-200 pb-3">
-                                <h3 className="font-bold text-lg text-gray-900 tracking-tight">
-                                  {column.heading}
-                                </h3>
-                              </div>
+                          getCurrentMegaMenuData()[activeTab].columns.map(
+                            (column, columnIndex) => (
+                              <div key={columnIndex} className="space-y-6">
+                                {/* Column Header - Better styling */}
+                                <div className="border-b border-gray-200 pb-3">
+                                  <h3 className="font-bold text-lg text-gray-900 tracking-tight">
+                                    {column.heading}
+                                  </h3>
+                                </div>
 
-                              {/* Column Links */}
-                              <div className="space-y-4">
-                                {column.links.map((link, linkIndex) => (
-                                  <a
-                                    key={link.name}
-                                    href={link.href || "#"}
-                                    className="block group hover:bg-gradient-to-r hover:from-gray-50 hover:to-transparent rounded-xl p-4 transition-all duration-300 hover:shadow-sm border border-transparent hover:border-gray-100"
-                                    onClick={handleLinkClick}
-                                  >
-                                    <div className="space-y-2">
-                                      <div className="flex items-start justify-between">
+                                {/* Column Links */}
+                                <div className="space-y-4">
+                                  {column.links.map((link, linkIndex) => (
+                                    <a
+                                      key={link.name}
+                                      href={link.href || "#"}
+                                      className="block group hover:bg-gradient-to-r hover:from-gray-50 hover:to-transparent rounded-xl p-4 transition-all duration-300 hover:shadow-sm border border-transparent hover:border-gray-100"
+                                      onClick={handleLinkClick}
+                                    >
+                                      <div className="space-y-2">
+                                        <div className="flex items-start justify-between">
+                                          <h4 className="text-gray-900 font-semibold group-hover:text-[#9a0c28] transition-colors duration-200">
+                                            {link.name}
+                                          </h4>
+                                          <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#9a0c28] transition-all duration-200 transform group-hover:translate-x-1" />
+                                        </div>
+                                        <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-200">
+                                          {link.description}
+                                        </p>
+                                      </div>
+                                    </a>
+                                  ))}
+                                </div>
+                              </div>
+                            )
+                          )
+                        : // Other categories with regular grid layout
+                          chunksOf3(
+                            getCurrentMegaMenuData()[activeTab].links
+                          ).map((chunk, chunkIndex) => (
+                            <div key={chunkIndex} className="space-y-4">
+                              {chunk.map((link, linkIndex) => (
+                                <a
+                                  key={link.name}
+                                  href={link.href || "#"}
+                                  className="block group hover:bg-gradient-to-r hover:from-gray-50 hover:to-transparent rounded-xl p-4 transition-all duration-300 hover:shadow-sm border border-transparent hover:border-gray-100"
+                                  onClick={handleLinkClick}
+                                >
+                                  <div className="space-y-2">
+                                    <div className="flex items-start justify-between">
+                                      <div className="flex items-center gap-3">
+                                        {link.icon && (
+                                          <span className="text-xl">
+                                            {link.icon}
+                                          </span>
+                                        )}
                                         <h4 className="text-gray-900 font-semibold group-hover:text-[#9a0c28] transition-colors duration-200">
                                           {link.name}
                                         </h4>
-                                        <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#9a0c28] transition-all duration-200 transform group-hover:translate-x-1" />
                                       </div>
-                                      <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-200">
-                                        {link.description}
-                                      </p>
+                                      <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#9a0c28] transition-all duration-200 transform group-hover:translate-x-1" />
                                     </div>
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-                          )
-                        )
-                        : // Other categories with regular grid layout
-                        chunksOf3(
-                          getCurrentMegaMenuData()[activeTab].links
-                        ).map((chunk, chunkIndex) => (
-                          <div key={chunkIndex} className="space-y-4">
-                            {chunk.map((link, linkIndex) => (
-                              <a
-                                key={link.name}
-                                href={link.href || "#"}
-                                className="block group hover:bg-gradient-to-r hover:from-gray-50 hover:to-transparent rounded-xl p-4 transition-all duration-300 hover:shadow-sm border border-transparent hover:border-gray-100"
-                                onClick={handleLinkClick}
-                              >
-                                <div className="space-y-2">
-                                  <div className="flex items-start justify-between">
-                                    <div className="flex items-center gap-3">
-                                      {link.icon && (
-                                        <span className="text-xl">
-                                          {link.icon}
-                                        </span>
-                                      )}
-                                      <h4 className="text-gray-900 font-semibold group-hover:text-[#9a0c28] transition-colors duration-200">
-                                        {link.name}
-                                      </h4>
-                                    </div>
-                                    <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#9a0c28] transition-all duration-200 transform group-hover:translate-x-1" />
+                                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-200">
+                                      {link.description}
+                                    </p>
                                   </div>
-                                  <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-200">
-                                    {link.description}
-                                  </p>
-                                </div>
-                              </a>
-                            ))}
-                          </div>
-                        ))}
+                                </a>
+                              ))}
+                            </div>
+                          ))}
                     </div>
                   </div>
                 )}

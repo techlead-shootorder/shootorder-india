@@ -52,7 +52,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-950 leading-tight font-poppins">
               {heading || heroContent.title}
             </h1>
-
+            <div className="w-24 h-1 bg-[#9a0c28] rounded-full"></div>
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
               {subheading || heroContent.subtitle}
