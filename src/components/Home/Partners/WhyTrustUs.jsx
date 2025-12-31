@@ -34,7 +34,7 @@ export default function WhyTrustUs() {
 
   return (
     <div className="relative !max-w-7xl mx-auto py-16">
-      <h2 className="text-3xl font-bold text-center mb-6">Why Trust Us</h2>
+      <h2 className="text-3xl font-bold text-center mb-6">Varied Clientele. Versatile Expertise.</h2>
 
       {/* Left Arrow */}
       <button

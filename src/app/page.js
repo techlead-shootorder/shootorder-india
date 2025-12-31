@@ -7,6 +7,7 @@ import "keen-slider/keen-slider.min.css";
 
 // Critical components - loaded immediately
 import NewBanner from "@/components/Home/Banner/NewBanner";
+import WhyPartnerWithUs from "@/components/WhyPartnerWithUs";
 
 // Lazy load components with preload hints
 const AnimatedIntro = lazy(() => import("@/components/Home/Intro/AnimatedIntro"));
@@ -258,6 +259,9 @@ export default function Home() {
             )}
           </div>
         </section>
+
+        {/* Why Partner With Us Section */}
+        <WhyPartnerWithUs />
 
         {/* Our Achievements Section - Lazy loaded */}
         <div data-section="achievements">
