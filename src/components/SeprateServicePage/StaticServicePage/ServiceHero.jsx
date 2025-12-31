@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import PopupModal from "@/components/Modal/PopupModal";
 
-const ServiceHero = () => {
+const ServiceHero = () => {  
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -14,7 +14,7 @@ const ServiceHero = () => {
     ripple.className = 'absolute animate-ripple rounded-full bg-gray-200';
     ripple.style.left = `${e.clientX - rect.left}px`;
     ripple.style.top = `${e.clientY - rect.top}px`;
-    e.target.appendChild(ripple);
+    e.target.appendChild(ripple); 
 
     // Remove ripple after animation
     setTimeout(() => ripple.remove(), 1000);
