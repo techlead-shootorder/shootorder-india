@@ -14,11 +14,11 @@ export default function ProcessTimeline({ features, bottomheading, subheading = 
   return (
     <section className="py-16 px-4 bg-white">
       <div className="!max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-900 font-poppins">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-900">
           {bottomheading}
         </h2>
         {subheading && (
-          <p className="text-lg text-center text-gray-600 mb-10 font-poppins">{subheading}</p>
+          <p className="text-lg text-center text-gray-600 mb-10">{subheading}</p>
         )}
         <div className="relative flex flex-col items-center">
           {/* Vertical timeline line */}
@@ -34,7 +34,7 @@ export default function ProcessTimeline({ features, bottomheading, subheading = 
                       <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10">
                         <IconComponent size={32} className="text-primary" />
                       </span>
-                      <h3 className={`font-bold text-primary text-xl mb-2 ${isLeft ? 'text-right' : 'text-left'} font-poppins`}>{step.heading}</h3>
+                      <h3 className={`font-bold text-primary text-xl mb-2 ${isLeft ? 'text-right' : 'text-left'}`}>{step.heading}</h3>
                     </div>
                     <p className={`text-gray-700 leading-relaxed text-base mb-2 ${isLeft ? 'text-right' : 'text-left'}`}>{step.content}</p>
                   </div>
