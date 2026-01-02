@@ -1,20 +1,19 @@
-'use client';
-import Image from 'next/image';
-import { useState } from 'react';
+"use client";
+import Image from "next/image";
+import { useState } from "react";
 import PopupModal from "@/components/Modal/PopupModal";
 
-const ServiceHero = () => {  
-
+const ServiceHero = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const openPopup = (e) => {
     // Create ripple effect
-    const ripple = document.createElement('div');
+    const ripple = document.createElement("div");
     const rect = e.target.getBoundingClientRect();
-    ripple.className = 'absolute animate-ripple rounded-full bg-gray-200';
+    ripple.className = "absolute animate-ripple rounded-full bg-gray-200";
     ripple.style.left = `${e.clientX - rect.left}px`;
     ripple.style.top = `${e.clientY - rect.top}px`;
-    e.target.appendChild(ripple); 
+    e.target.appendChild(ripple);
 
     // Remove ripple after animation
     setTimeout(() => ripple.remove(), 1000);
@@ -29,21 +28,22 @@ const ServiceHero = () => {
   return (
     <section className="bg-[#ffffff] py-16 px-4 lg:px-8 mt-20">
       <div className="!max-w-7xl mx-auto">
-
         <div className="grid lg:grid-cols-2 sm:gap-20 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             {/* Main Heading */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
-              Amplifying brands,<br />
-              driving engagement,<br />
-              and creating <span className="text-[#9a0c28]">impact</span>
+              Amplifying brands,
+              <br />
+              driving engagement,
+              <br />
+              and creating <span className="text-[#cd1f38]">impact</span>
             </h1>
 
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-              We are a content-focused social media agency specializing in original,
-              high-engagement content for brands on Meta and LinkedIn.
+              We are a content-focused social media agency specializing in
+              original, high-engagement content for brands on Meta and LinkedIn.
             </p>
 
             {/* Partners Image */}
@@ -83,13 +83,23 @@ const ServiceHero = () => {
             </div>
 
             {/* CTA Button */}
-            <button 
-            className="bg-[#9a0c28] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
-            onClick={openPopup}
+            <button
+              className="bg-[#cd1f38] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
+              onClick={openPopup}
             >
               Contact Us
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           </div>
@@ -105,9 +115,7 @@ const ServiceHero = () => {
               priority
             />
           </div>
-
         </div>
-
       </div>
       <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
     </section>

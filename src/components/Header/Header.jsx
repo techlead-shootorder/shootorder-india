@@ -484,7 +484,7 @@ export default function Header() {
                 <a
                   href={link.href}
                   target="_blank"
-                  className="text-gray-700 hover:text-[#9a0c28] transition-all duration-200 flex items-center gap-2 font-medium py-2 relative group"
+                  className="text-gray-700 hover:text-[#cd1f38] transition-all duration-200 flex items-center gap-2 font-medium py-2 relative group"
                   ref={(el) => {
                     if (el) {
                       navItemRefs.current[link.name] = el;
@@ -510,7 +510,7 @@ export default function Header() {
                       }`}
                     />
                   )}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#9a0c28] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#cd1f38] transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </div>
             ))}
@@ -521,10 +521,10 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-6">
           <a
             href="tel:+916303921512"
-            className="flex items-center gap-2 text-gray-700 hover:text-[#9a0c28] transition-all duration-200 font-medium group"
+            className="flex items-center gap-2 text-gray-700 hover:text-[#cd1f38] transition-all duration-200 font-medium group"
           >
-            <div className="p-2 rounded-full bg-[#9a0c28]/10 group-hover:bg-[#9a0c28] transition-all duration-200">
-              <FaPhoneAlt className="text-[#9a0c28] group-hover:text-white text-sm" />
+            <div className="p-2 rounded-full bg-[#cd1f38]/10 group-hover:bg-[#cd1f38] transition-all duration-200">
+              <FaPhoneAlt className="text-[#cd1f38] group-hover:text-white text-sm" />
             </div>
             <span className="group-hover:scale-105 transition-transform">
               +91-630-392-1512
@@ -532,12 +532,12 @@ export default function Header() {
           </a>
 
           <a href="/contact-us/">
-            <button className="bg-[#9a0c28] hover:bg-[#c4102e] text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-200 relative overflow-hidden group">
+            <button className="bg-[#cd1f38] hover:bg-[#c4102e] text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-200 relative overflow-hidden group">
               <span className="relative z-10 flex items-center gap-2 cursor-pointer">
                 Connect
                 <FaArrowRight className="text-xs transition-transform group-hover:translate-x-1" />
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#9a0c28] to-[#c4102e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#cd1f38] to-[#c4102e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </a>
         </div>
@@ -611,14 +611,14 @@ export default function Header() {
                 >
                   {/* Main Menu Item */}
                   <button
-                    className="w-full text-left py-3 px-4 text-gray-700 hover:text-[#9a0c28] hover:bg-gray-50 rounded-lg font-medium transition-all duration-200"
+                    className="w-full text-left py-3 px-4 text-gray-700 hover:text-[#cd1f38] hover:bg-gray-50 rounded-lg font-medium transition-all duration-200"
                     onClick={(e) => handleMobileMenuClick(e, link)}
                   >
                     <div className="flex items-center justify-between">
                       {link.name}
                       {link.hasMegaMenu && (
                         <FaChevronDown
-                          className={`text-[#9a0c28] text-xs transition-transform duration-200 ${
+                          className={`text-[#cd1f38] text-xs transition-transform duration-200 ${
                             expandedCategories[link.menuType]
                               ? "rotate-180"
                               : ""
@@ -676,7 +676,7 @@ export default function Header() {
                                                 <a
                                                   key={`mobile-col-${link.name}-${linkIndex}`}
                                                   href={link.href || "#"}
-                                                  className="block text-gray-600 text-sm hover:text-[#9a0c28] py-2 px-3 hover:bg-gray-50 rounded-md transition-all duration-200 group"
+                                                  className="block text-gray-600 text-sm hover:text-[#cd1f38] py-2 px-3 hover:bg-gray-50 rounded-md transition-all duration-200 group"
                                                   onClick={handleLinkClick}
                                                 >
                                                   <span className="flex items-center">
@@ -703,7 +703,7 @@ export default function Header() {
                                       <a
                                         key={`mobile-${link.name}-${linkIndex}`}
                                         href={link.href || "#"}
-                                        className="block text-gray-600 text-sm hover:text-[#9a0c28] py-2 px-3 hover:bg-gray-50 rounded-md transition-all duration-200 group"
+                                        className="block text-gray-600 text-sm hover:text-[#cd1f38] py-2 px-3 hover:bg-gray-50 rounded-md transition-all duration-200 group"
                                         onClick={handleLinkClick}
                                       >
                                         <span className="flex items-center gap-2">
@@ -739,17 +739,17 @@ export default function Header() {
             <div className="mt-auto p-4 border-t space-y-3">
               <a
                 href="tel:1-855-217-4637"
-                className="flex items-center gap-3 py-3 px-4 text-gray-700 hover:text-[#9a0c28] hover:bg-gray-50 rounded-lg transition-all duration-200"
+                className="flex items-center gap-3 py-3 px-4 text-gray-700 hover:text-[#cd1f38] hover:bg-gray-50 rounded-lg transition-all duration-200"
               >
-                <div className="p-2 rounded-full bg-[#9a0c28]/10">
-                  <FaPhoneAlt className="text-[#9a0c28] text-sm" />
+                <div className="p-2 rounded-full bg-[#cd1f38]/10">
+                  <FaPhoneAlt className="text-[#cd1f38] text-sm" />
                 </div>
                 <span className="font-medium">+1-855-217-4637</span>
               </a>
 
               <a href="/contact-us/" className="block">
                 <button
-                  className="w-full bg-[#9a0c28] text-white py-3 rounded-lg font-semibold"
+                  className="w-full bg-[#cd1f38] text-white py-3 rounded-lg font-semibold"
                   onClick={handleLinkClick}
                 >
                   <span className="flex items-center justify-center gap-2 cursor-pointer">
@@ -873,10 +873,10 @@ export default function Header() {
                                     >
                                       <div className="space-y-2">
                                         <div className="flex items-start justify-between">
-                                          <h4 className="text-gray-900 font-semibold group-hover:text-[#9a0c28] transition-colors duration-200">
+                                          <h4 className="text-gray-900 font-semibold group-hover:text-[#cd1f38] transition-colors duration-200">
                                             {link.name}
                                           </h4>
-                                          <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#9a0c28] transition-all duration-200 transform group-hover:translate-x-1" />
+                                          <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#cd1f38] transition-all duration-200 transform group-hover:translate-x-1" />
                                         </div>
                                         <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-200">
                                           {link.description}
@@ -908,11 +908,11 @@ export default function Header() {
                                             {link.icon}
                                           </span>
                                         )}
-                                        <h4 className="text-gray-900 font-semibold group-hover:text-[#9a0c28] transition-colors duration-200">
+                                        <h4 className="text-gray-900 font-semibold group-hover:text-[#cd1f38] transition-colors duration-200">
                                           {link.name}
                                         </h4>
                                       </div>
-                                      <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#9a0c28] transition-all duration-200 transform group-hover:translate-x-1" />
+                                      <FaArrowRight className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:text-[#cd1f38] transition-all duration-200 transform group-hover:translate-x-1" />
                                     </div>
                                     <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-200">
                                       {link.description}

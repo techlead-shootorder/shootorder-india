@@ -26,7 +26,7 @@ const buttonVariants = cva(
         black: "bg-black text-white hover:bg-gray-900",
 
         // New brand variant
-        brand: "bg-[#9a0c28] text-white hover:bg-[#7a0920]",
+        brand: "bg-[#cd1f38] text-white hover:bg-[#7a0920]",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

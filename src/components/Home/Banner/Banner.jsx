@@ -28,11 +28,10 @@ export default function Banner() {
     };
 
     checkMobile();
-    window.addEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
 
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
-
 
   // Fixed useEffect with proper cleanup and mobile-specific animations
   useEffect(() => {
@@ -198,7 +197,6 @@ export default function Banner() {
         });
       }
 
-
       // Create mouse move handler function that we can properly remove (desktop only)
       mouseMoveHandler = (e) => {
         bubbles.forEach((bubble) => {
@@ -280,7 +278,9 @@ export default function Banner() {
 
         const touchHandler = () => {
           if (valueElement && !hasTriggeredCounter) {
-            const finalValue = parseInt(valueElement.getAttribute("data-value"));
+            const finalValue = parseInt(
+              valueElement.getAttribute("data-value")
+            );
             const suffix = valueElement.getAttribute("data-suffix") || "+";
             gsap.set(valueElement, { textContent: "0" });
             gsap.to(valueElement, {
@@ -290,7 +290,8 @@ export default function Banner() {
               snap: { textContent: 1 },
               onUpdate: function () {
                 valueElement.textContent =
-                  Math.round(gsap.getProperty(valueElement, "textContent")) + suffix;
+                  Math.round(gsap.getProperty(valueElement, "textContent")) +
+                  suffix;
               },
             });
 
@@ -387,7 +388,7 @@ export default function Banner() {
       }
 
       // Kill all ScrollTriggers
-      scrollTriggers.forEach(trigger => {
+      scrollTriggers.forEach((trigger) => {
         if (trigger) {
           trigger.kill();
         }
@@ -402,7 +403,7 @@ export default function Banner() {
         mobileStats,
         headingRef.current,
         descriptionRef.current,
-        buttonRef.current
+        buttonRef.current,
       ]);
 
       // Remove event listeners properly
@@ -436,9 +437,9 @@ export default function Banner() {
 
   const openPopup = (e) => {
     // Create ripple effect
-    const ripple = document.createElement('div');
+    const ripple = document.createElement("div");
     const rect = e.target.getBoundingClientRect();
-    ripple.className = 'absolute animate-ripple rounded-full bg-gray-200';
+    ripple.className = "absolute animate-ripple rounded-full bg-gray-200";
     ripple.style.left = `${e.clientX - rect.left}px`;
     ripple.style.top = `${e.clientY - rect.top}px`;
     e.target.appendChild(ripple);
@@ -456,201 +457,214 @@ export default function Banner() {
 
   return (
     <>
-    <section
-      ref={bannerRef}
-      className="w-full bg-white relative overflow-hidden max-w-full my-6"
-      style={{
-        minHeight: '100vh',
-        height: '100vh'
-      }}
-    >
-      {/* Background Image with Parallax Effect */}
-      <div
-        className="banner-background-image absolute inset-0 w-full h-full"
+      <section
+        ref={bannerRef}
+        className="w-full bg-white relative overflow-hidden max-w-full my-6"
         style={{
-          backgroundImage: "url('/images/background/home-bg2.webp')",
-          backgroundSize: isMobile ? "inherit" : "cover", // Changed to cover for mobile
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: isMobile ? "scroll" : "scroll", // Changed to scroll for mobile performance
+          minHeight: "100vh",
+          height: "100vh",
         }}
-      ></div>
+      >
+        {/* Background Image with Parallax Effect */}
+        <div
+          className="banner-background-image absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: "url('/images/background/home-bg2.webp')",
+            backgroundSize: isMobile ? "inherit" : "cover", // Changed to cover for mobile
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: isMobile ? "scroll" : "scroll", // Changed to scroll for mobile performance
+          }}
+        ></div>
 
-      {/* Gradient Overlay - Enhanced for mobile */}
-      {/* <div className="banner-overlay absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70"></div> */}
+        {/* Gradient Overlay - Enhanced for mobile */}
+        {/* <div className="banner-overlay absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70"></div> */}
 
-      {/* Main Content Container */}
-      <div className="max-w-7xl mx-auto relative z-10 h-full flex flex-col justify-center items-center px-4">
-        <div className="banner-content text-center w-full flex flex-col justify-center items-center h-full space-y-4 md:space-y-6">
-          {/* Google Partner Logo */}
-          <div className="flex-shrink-0">
-            <Image
-              width={isMobile ? 150 : 240}
-              height={isMobile ? 100 : 100}
-              className="mx-auto w-40 h-40 sm:w-16 sm:h-16 md:w-[240px] md:h-auto object-contain"
-              src="/images/logo/Google Premier Partner.webp"
-              alt="Google Premier Partner"
-            />
-          </div>
+        {/* Main Content Container */}
+        <div className="max-w-7xl mx-auto relative z-10 h-full flex flex-col justify-center items-center px-4">
+          <div className="banner-content text-center w-full flex flex-col justify-center items-center h-full space-y-4 md:space-y-6">
+            {/* Google Partner Logo */}
+            <div className="flex-shrink-0">
+              <Image
+                width={isMobile ? 150 : 240}
+                height={isMobile ? 100 : 100}
+                className="mx-auto w-40 h-40 sm:w-16 sm:h-16 md:w-[240px] md:h-auto object-contain"
+                src="/images/logo/Google Premier Partner.webp"
+                alt="Google Premier Partner"
+              />
+            </div>
 
-          {/* Badge Text */}
-          <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 backdrop-blur-sm text-white border border-white/20 flex-shrink-0">
-            <p>In Top 3% Digital Marketing Agency</p>
-          </div>
+            {/* Badge Text */}
+            <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 backdrop-blur-sm text-white border border-white/20 flex-shrink-0">
+              <p>In Top 3% Digital Marketing Agency</p>
+            </div>
 
-          {/* Main heading with responsive sizes */}
-          <h1
-            ref={headingRef}
-            className="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-bold leading-tight text-white px-2 flex-shrink-0"
-          >
-            Awarded #1
-            Digital Marketing Agency
-          </h1>
-
-          {/* Description with responsive sizing */}
-          <p
-            ref={descriptionRef}
-            className="!max-w-xl mx-auto text-white/90 text-xs sm:text-sm md:text-lg px-4 sm:px-0 leading-relaxed flex-shrink-0"
-          >
-            Marketing isn&apos;t Magic, There is a Science to it. <br/>
-            Elevate your brand with strategic <b>SEO, Paid Media, Content, and Social expertise.</b>
-          </p>
-
-          <div ref={buttonRef} className="flex-shrink-0">
-            <Button
-              className="group relative overflow-hidden !bg-white !text-black font-semibold px-5 py-3 md:px-8 md:py-6 text-sm md:text-lg rounded-full shadow-lg transition-all duration-300 hover:shadow-xl active:scale-95"
-              onClick={openPopup}
-              onMouseEnter={(e) => {
-                if (!isMobile) {
-                  e.target.style.transform = 'translateY(-2px)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!isMobile) {
-                  e.target.style.transform = 'translateY(0)';
-                }
-              }}
+            {/* Main heading with responsive sizes */}
+            <h1
+              ref={headingRef}
+              className="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-bold leading-tight text-white px-2 flex-shrink-0"
             >
-              <span className="relative z-10 flex items-center gap-2 cursor-pointer">
-                Enquire Now
-                <svg
-                  className="w-3 h-3 md:w-4 md:h-4 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </span>
-            </Button>
+              Awarded #1 Digital Marketing Agency
+            </h1>
 
+            {/* Description with responsive sizing */}
+            <p
+              ref={descriptionRef}
+              className="!max-w-xl mx-auto text-white/90 text-xs sm:text-sm md:text-lg px-4 sm:px-0 leading-relaxed flex-shrink-0"
+            >
+              Marketing isn&apos;t Magic, There is a Science to it. <br />
+              Elevate your brand with strategic{" "}
+              <b>SEO, Paid Media, Content, and Social expertise.</b>
+            </p>
 
+            <div ref={buttonRef} className="flex-shrink-0">
+              <Button
+                className="group relative overflow-hidden !bg-white !text-black font-semibold px-5 py-3 md:px-8 md:py-6 text-sm md:text-lg rounded-full shadow-lg transition-all duration-300 hover:shadow-xl active:scale-95"
+                onClick={openPopup}
+                onMouseEnter={(e) => {
+                  if (!isMobile) {
+                    e.target.style.transform = "translateY(-2px)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isMobile) {
+                    e.target.style.transform = "translateY(0)";
+                  }
+                }}
+              >
+                <span className="relative z-10 flex items-center gap-2 cursor-pointer">
+                  Enquire Now
+                  <svg
+                    className="w-3 h-3 md:w-4 md:h-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Floating Stat Bubbles - Desktop Only */}
-      <div className="hidden lg:block absolute inset-0 pointer-events-auto max-w-full">
-        <div
-          className="stat-bubble absolute top-1/4 left-[15%] bg-white/10 backdrop-blur-lg text-center px-6 py-4 rounded-xl border border-white/30 shadow-xl cursor-pointer"
-          ref={(el) => (statBubblesRef.current[0] = el)}
-        >
+        {/* Floating Stat Bubbles - Desktop Only */}
+        <div className="hidden lg:block absolute inset-0 pointer-events-auto max-w-full">
           <div
-            className="text-2xl font-bold text-white stat-value"
-            data-value="50"
-            data-suffix="+"
+            className="stat-bubble absolute top-1/4 left-[15%] bg-white/10 backdrop-blur-lg text-center px-6 py-4 rounded-xl border border-white/30 shadow-xl cursor-pointer"
+            ref={(el) => (statBubblesRef.current[0] = el)}
           >
-            50+
-          </div>
-          <div className="text-sm text-white/90">Retainerships</div>
-        </div>
-
-        <div
-          className="stat-bubble absolute top-1/5 right-[15%] bg-white/10 backdrop-blur-lg text-center px-6 py-4 rounded-xl border border-white/30 shadow-xl cursor-pointer"
-          ref={(el) => (statBubblesRef.current[1] = el)}
-        >
-          <div
-            className="text-2xl font-bold text-white stat-value"
-            data-value="12"
-            data-suffix="+"
-          >
-            12+
-          </div>
-          <div className="text-sm text-white/90">Years of Experience</div>
-        </div>
-
-        <div
-          className="stat-bubble absolute bottom-1/4 right-[20%] bg-white/10 backdrop-blur-lg text-center px-6 py-4 rounded-xl border border-white/30 shadow-xl cursor-pointer"
-          ref={(el) => (statBubblesRef.current[2] = el)}
-        >
-          <div
-            className="text-2xl font-bold text-white stat-value"
-            data-value="92"
-            data-suffix="%"
-          >
-            92%
-          </div>
-          <div className="text-sm text-white/90">Client Retention</div>
-        </div>
-      </div>
-
-      {/* Down Arrow Indicator */}
-      <div className="hidden md:block absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 text-white">
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="animate-bounce md:w-6 md:h-6"
-        >
-          <path d="M12 5v14M19 12l-7 7-7-7" />
-        </svg>
-      </div>
-
-      {/* Mobile Stats - Fixed positioning and improved responsiveness */}
-      <div className="block lg:hidden absolute bottom-2 inset-x-0 px-3 w-full">
-        <div className="grid grid-cols-3 gap-2 max-w-xs mx-auto">
-          <div className="mobile-stat bg-[#9a0c28]/90 backdrop-blur-sm p-2 rounded-lg flex flex-col items-center justify-center min-h-[70px]">
-            <FiBriefcase className="text-sm text-white mb-1" />
-            <div className="text-sm font-semibold text-white mobile-value" data-value="50" data-suffix="+">
+            <div
+              className="text-2xl font-bold text-white stat-value"
+              data-value="50"
+              data-suffix="+"
+            >
               50+
             </div>
-            <div className="text-[8px] text-white/80 text-center leading-tight">Retainerships</div>
+            <div className="text-sm text-white/90">Retainerships</div>
           </div>
 
-          <div className="mobile-stat bg-[#9a0c28]/90 backdrop-blur-sm p-2 rounded-lg flex flex-col items-center justify-center min-h-[70px]">
-            <FiClock className="text-sm text-white mb-1" />
-            <div className="text-sm font-semibold text-white mobile-value" data-value="12" data-suffix="+">
+          <div
+            className="stat-bubble absolute top-1/5 right-[15%] bg-white/10 backdrop-blur-lg text-center px-6 py-4 rounded-xl border border-white/30 shadow-xl cursor-pointer"
+            ref={(el) => (statBubblesRef.current[1] = el)}
+          >
+            <div
+              className="text-2xl font-bold text-white stat-value"
+              data-value="12"
+              data-suffix="+"
+            >
               12+
             </div>
-            <div className="text-[8px] text-white/80 text-center leading-tight">Experience</div>
+            <div className="text-sm text-white/90">Years of Experience</div>
           </div>
 
-          <div className="mobile-stat bg-[#9a0c28]/90 backdrop-blur-sm p-2 rounded-lg flex flex-col items-center justify-center min-h-[70px]">
-            <FiUsers className="text-sm text-white mb-1" />
-            <div className="text-sm font-semibold text-white mobile-value" data-value="92" data-suffix="%">
+          <div
+            className="stat-bubble absolute bottom-1/4 right-[20%] bg-white/10 backdrop-blur-lg text-center px-6 py-4 rounded-xl border border-white/30 shadow-xl cursor-pointer"
+            ref={(el) => (statBubblesRef.current[2] = el)}
+          >
+            <div
+              className="text-2xl font-bold text-white stat-value"
+              data-value="92"
+              data-suffix="%"
+            >
               92%
             </div>
-            <div className="text-[8px] text-white/80 text-center leading-tight">Retention</div>
+            <div className="text-sm text-white/90">Client Retention</div>
           </div>
         </div>
-      </div>
 
-      
-   
-    </section>
+        {/* Down Arrow Indicator */}
+        <div className="hidden md:block absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 text-white">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="animate-bounce md:w-6 md:h-6"
+          >
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+          </svg>
+        </div>
 
-    {/* Popup Modal */}
-    <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
-  </>
+        {/* Mobile Stats - Fixed positioning and improved responsiveness */}
+        <div className="block lg:hidden absolute bottom-2 inset-x-0 px-3 w-full">
+          <div className="grid grid-cols-3 gap-2 max-w-xs mx-auto">
+            <div className="mobile-stat bg-[#cd1f38]/90 backdrop-blur-sm p-2 rounded-lg flex flex-col items-center justify-center min-h-[70px]">
+              <FiBriefcase className="text-sm text-white mb-1" />
+              <div
+                className="text-sm font-semibold text-white mobile-value"
+                data-value="50"
+                data-suffix="+"
+              >
+                50+
+              </div>
+              <div className="text-[8px] text-white/80 text-center leading-tight">
+                Retainerships
+              </div>
+            </div>
+
+            <div className="mobile-stat bg-[#cd1f38]/90 backdrop-blur-sm p-2 rounded-lg flex flex-col items-center justify-center min-h-[70px]">
+              <FiClock className="text-sm text-white mb-1" />
+              <div
+                className="text-sm font-semibold text-white mobile-value"
+                data-value="12"
+                data-suffix="+"
+              >
+                12+
+              </div>
+              <div className="text-[8px] text-white/80 text-center leading-tight">
+                Experience
+              </div>
+            </div>
+
+            <div className="mobile-stat bg-[#cd1f38]/90 backdrop-blur-sm p-2 rounded-lg flex flex-col items-center justify-center min-h-[70px]">
+              <FiUsers className="text-sm text-white mb-1" />
+              <div
+                className="text-sm font-semibold text-white mobile-value"
+                data-value="92"
+                data-suffix="%"
+              >
+                92%
+              </div>
+              <div className="text-[8px] text-white/80 text-center leading-tight">
+                Retention
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popup Modal */}
+      <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
+    </>
   );
 }

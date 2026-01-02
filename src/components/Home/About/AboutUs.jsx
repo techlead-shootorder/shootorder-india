@@ -12,7 +12,7 @@ export default function AboutUs() {
             {/* Image Section */}
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/SO Banner 1024 by 1024.webp"
+                src="/images/WebsiteImages_1_Our_Story_Image.png"
                 alt="ShootOrder Office"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -29,7 +29,7 @@ export default function AboutUs() {
             {/* Content Section */}
             <div className="space-y-8">
               <div className="space-y-3">
-                {/* <h4 className="text-[#9a0c28] font-medium uppercase tracking-wider">
+                {/* <h4 className="text-[#cd1f38] font-medium uppercase tracking-wider">
                 About Us
               </h4> */}
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -83,20 +83,24 @@ export default function AboutUs() {
 
               <div className="grid grid-cols-3 gap-8 pt-6">
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
-                  <h3 className="text-3xl font-bold text-[#9a0c28]">#</h3>
-                  <p className="text-gray-800 font-medium">Diverse Industry Portfolio</p>
+                  <h3 className="text-3xl font-bold text-[#cd1f38]">#</h3>
+                  <p className="text-gray-800 font-medium">
+                    Diverse Industry Portfolio
+                  </p>
                 </div>
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
-                  <h3 className="text-3xl font-bold text-[#9a0c28]">;)</h3>
+                  <h3 className="text-3xl font-bold text-[#cd1f38]">;)</h3>
                   <p className="text-gray-800 font-medium">
-                    Innovation <br/>& Creativity
+                    Innovation <br />& Creativity
                   </p>
                   {/* <p>Developed proprietary marketing automation tools</p> */}
                 </div>
 
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
-                  <h3 className="text-3xl font-bold text-[#9a0c28]">₹</h3>
-                  <p className="text-gray-800 font-medium">Cost-Effective Solutions</p>
+                  <h3 className="text-3xl font-bold text-[#cd1f38]">₹</h3>
+                  <p className="text-gray-800 font-medium">
+                    Cost-Effective Solutions
+                  </p>
                 </div>
               </div>
             </div>

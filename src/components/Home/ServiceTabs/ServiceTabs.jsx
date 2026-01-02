@@ -1,9 +1,29 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowRight, Target, Users, Heart, BarChart3, Search, Megaphone, Globe, UserCheck, Palette, Eye, MessageSquare, Package, Zap, Mouse, Star, Database, Brain } from "lucide-react";
+import {
+  ArrowRight,
+  Target,
+  Users,
+  Heart,
+  BarChart3,
+  Search,
+  Megaphone,
+  Globe,
+  UserCheck,
+  Palette,
+  Eye,
+  MessageSquare,
+  Package,
+  Zap,
+  Mouse,
+  Star,
+  Database,
+  Brain,
+} from "lucide-react";
 import Image from "next/image";
 
-const PLACEHOLDER_IMAGE = "https://placehold.co/400x400/e2e8f0/475569?text=Service";
+const PLACEHOLDER_IMAGE =
+  "https://placehold.co/400x400/e2e8f0/475569?text=Service";
 
 // Define icons for each service
 const serviceIcons = {
@@ -23,7 +43,7 @@ const serviceIcons = {
 };
 
 const servicesData = {
-    "Digital Marketing": [
+  "Digital Marketing": [
     {
       title: "SEO & Content",
       desc: "Drive organic growth through strategic SEO and content marketing.",
@@ -140,7 +160,12 @@ const tabIcons = {
 };
 
 export default function CombinedServiceFlow() {
-  const categories = ["Digital Marketing", "Branding", "Growth Hacking", "Marketing Automation"];
+  const categories = [
+    "Digital Marketing",
+    "Branding",
+    "Growth Hacking",
+    "Marketing Automation",
+  ];
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   const handleImageError = (e) => {
@@ -166,7 +191,7 @@ export default function CombinedServiceFlow() {
               onClick={() => setActiveTab(tab)}
               className={`px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-medium transition-all whitespace-nowrap flex-shrink-0 ${
                 activeTab === tab
-                  ? "bg-[#9a0c28] text-white shadow-lg"
+                  ? "bg-[#cd1f38] text-white shadow-lg"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
             >
@@ -191,24 +216,36 @@ export default function CombinedServiceFlow() {
           </div>
 
           {/* Right Column - Improved Mobile Service Cards */}
-          <div className={`${activeTab === "Digital Marketing" ? "lg:col-span-7" : "lg:col-span-12"}`}>
-            <div className={`grid grid-cols-1 gap-4 ${
-              activeTab === "Digital Marketing" ? "xl:grid-cols-2" : activeTab === "Marketing Automation" ? "md:grid-cols-2 xl:grid-cols-2" : "xl:grid-cols-4"
-            }`}>
+          <div
+            className={`${
+              activeTab === "Digital Marketing"
+                ? "lg:col-span-7"
+                : "lg:col-span-12"
+            }`}
+          >
+            <div
+              className={`grid grid-cols-1 gap-4 ${
+                activeTab === "Digital Marketing"
+                  ? "xl:grid-cols-2"
+                  : activeTab === "Marketing Automation"
+                  ? "md:grid-cols-2 xl:grid-cols-2"
+                  : "xl:grid-cols-4"
+              }`}
+            >
               {servicesData[activeTab].map((item, idx) => (
                 <div
                   key={idx}
                   className="group bg-white border border-gray-200 rounded-xl p-4 md:p-5 hover:shadow-lg hover:border-red-200 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex flex-col md:flex-row md:items-start gap-3">
-                    
                     {/* Content - Full width on mobile */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-2">
-                        {serviceIcons[item.title] && React.createElement(serviceIcons[item.title], {
-                          className: "w-4 h-4 text-[#9a0c28] flex-shrink-0"
-                        })}
-                        <h4 className="font-bold text-base md:text-sm text-gray-900 group-hover:text-[#9a0c28] transition-colors">
+                        {serviceIcons[item.title] &&
+                          React.createElement(serviceIcons[item.title], {
+                            className: "w-4 h-4 text-[#cd1f38] flex-shrink-0",
+                          })}
+                        <h4 className="font-bold text-base md:text-sm text-gray-900 group-hover:text-[#cd1f38] transition-colors">
                           {item.title}
                         </h4>
                       </div>
@@ -229,7 +266,7 @@ export default function CombinedServiceFlow() {
                         href={item.href}
                         target={item.external ? "_blank" : "_self"}
                         rel={item.external ? "noopener noreferrer" : ""}
-                        className="inline-flex items-center text-[#9a0c28] hover:text-[#7a0920] font-semibold text-sm md:text-xs group-hover:underline transition-all py-1"
+                        className="inline-flex items-center text-[#cd1f38] hover:text-[#7a0920] font-semibold text-sm md:text-xs group-hover:underline transition-all py-1"
                       >
                         Learn More
                         <ArrowRight className="w-4 h-4 md:w-3 md:h-3 ml-1 transform group-hover:translate-x-1 transition-transform" />
@@ -244,7 +281,7 @@ export default function CombinedServiceFlow() {
 
         {/* Mobile-Optimized CTA */}
         {/* <div className="text-center mt-8 md:mt-12">
-          <button className="w-full md:w-auto bg-[#9a0c28] hover:bg-[#7a0920] text-white px-6 py-3.5 md:py-3 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-base md:text-lg">
+          <button className="w-full md:w-auto bg-[#cd1f38] hover:bg-[#7a0920] text-white px-6 py-3.5 md:py-3 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-base md:text-lg">
             Explore All Services
           </button>
         </div> */}

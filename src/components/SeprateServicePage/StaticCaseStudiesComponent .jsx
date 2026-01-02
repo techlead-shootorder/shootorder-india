@@ -1,11 +1,16 @@
-'use client'
-import React, { useState, useEffect } from 'react';
-import { ChevronRight, ChevronLeft, TrendingUp, Award, Eye, Download } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+"use client";
+import React, { useState, useEffect } from "react";
+import {
+  ChevronRight,
+  ChevronLeft,
+  TrendingUp,
+  Award,
+  Eye,
+  Download,
+} from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const StaticCaseStudiesComponent = () => {
-
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
 
@@ -14,134 +19,146 @@ const StaticCaseStudiesComponent = () => {
   const caseStudies = {
     seo: [
       {
-        id: 'seo',
-        slug: 'seo-cake-company',
-        title: 'Baking Up Success: How SEO Helped CountryOven Climb the Ranks',
-        image: '/images/CaseStudies/SEO/country oven.png',
-        description: 'With targeted SEO efforts, CountryOven witnessed sustained traffic growth and 100% keyword visibility in 12 months.',
-        results: 'Overall Score 4.0',
-        pdfUrl: '/pdfs/case-studies/seo/SEO_1.pdf',
-        client: 'CountryOven.com',
-        industry: 'Bakery & E-commerce',
-        duration: 'Feb. 2015 - Ongoing',
-        investment: '$5,000 to $10,000 per month'
+        id: "seo",
+        slug: "seo-cake-company",
+        title: "Baking Up Success: How SEO Helped CountryOven Climb the Ranks",
+        image: "/images/CaseStudies/SEO/country oven.png",
+        description:
+          "With targeted SEO efforts, CountryOven witnessed sustained traffic growth and 100% keyword visibility in 12 months.",
+        results: "Overall Score 4.0",
+        pdfUrl: "/pdfs/case-studies/seo/SEO_1.pdf",
+        client: "CountryOven.com",
+        industry: "Bakery & E-commerce",
+        duration: "Feb. 2015 - Ongoing",
+        investment: "$5,000 to $10,000 per month",
       },
       {
-        id: 'seo',
-        slug: 'seo-caravan-rental',
+        id: "seo",
+        slug: "seo-caravan-rental",
         title: "On the Road to Success: How SEO Fueled Carawander's Journey",
-        image: '/images/CaseStudies/SEO/carawander.png',
-        description: 'With consistent SEO efforts, ShootOrder helped Carawander boost web-driven sales and profits by over 40% since 2021.',
-        results: 'Overall Score 5.0',
-        pdfUrl: '/pdfs/case-studies/seo/SEO_2.pdf',
-        client: 'Caravan Adventures Ltd',
-        industry: 'Travel & Tourism',
-        duration: 'Jan. 2020 - Ongoing',
-        investment: '$10,000 to $25,000 per month'
+        image: "/images/CaseStudies/SEO/carawander.png",
+        description:
+          "With consistent SEO efforts, ShootOrder helped Carawander boost web-driven sales and profits by over 40% since 2021.",
+        results: "Overall Score 5.0",
+        pdfUrl: "/pdfs/case-studies/seo/SEO_2.pdf",
+        client: "Caravan Adventures Ltd",
+        industry: "Travel & Tourism",
+        duration: "Jan. 2020 - Ongoing",
+        investment: "$10,000 to $25,000 per month",
       },
       {
-        id: 'seo',
-        slug: 'seo-travel-company',
+        id: "seo",
+        slug: "seo-travel-company",
         title: "Driven by Search: How SEO Accelerated a Travel Brand's Growth",
-        image: '/images/CaseStudies/SEO/travtips.png',
-        description: 'Targeted SEO strategies helped a Dubai-based travel company boost lead generation and grow its business.',
-        results: 'Overall Score 4.0',
-        pdfUrl: '/pdfs/case-studies/seo/SEO_3.pdf',
-        client: 'Global Travel Solutions',
-        industry: 'Travel & Tourism',
-        duration: 'Mar. 2019 - Dec. 2022',
-        investment: '$15,000 to $30,000 per month'
-      }
+        image: "/images/CaseStudies/SEO/travtips.png",
+        description:
+          "Targeted SEO strategies helped a Dubai-based travel company boost lead generation and grow its business.",
+        results: "Overall Score 4.0",
+        pdfUrl: "/pdfs/case-studies/seo/SEO_3.pdf",
+        client: "Global Travel Solutions",
+        industry: "Travel & Tourism",
+        duration: "Mar. 2019 - Dec. 2022",
+        investment: "$15,000 to $30,000 per month",
+      },
     ],
     googleAds: [
       {
-        id: 'google-ads',
-        slug: 'ppc-edtech-company',
-        title: 'Creative Content That Clicks: Social Success for an EHR Platform',
-        image: '/images/CaseStudies/PPC/ipi.png',
-        description: "With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn't need a big budget.",
-        results: 'Overall Score 5.0',
-        pdfUrl: '/pdfs/case-studies/google-ads/PPC_1.pdf',
-        client: 'IPI India Pvt. Ltd',
-        industry: 'Education Technology',
-        duration: 'Aug. 2020 - Mar. 2023',
-        investment: '$25,000 to $50,000 per month'
+        id: "google-ads",
+        slug: "ppc-edtech-company",
+        title:
+          "Creative Content That Clicks: Social Success for an EHR Platform",
+        image: "/images/CaseStudies/PPC/ipi.png",
+        description:
+          "With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn't need a big budget.",
+        results: "Overall Score 5.0",
+        pdfUrl: "/pdfs/case-studies/google-ads/PPC_1.pdf",
+        client: "IPI India Pvt. Ltd",
+        industry: "Education Technology",
+        duration: "Aug. 2020 - Mar. 2023",
+        investment: "$25,000 to $50,000 per month",
       },
       {
-        id: 'google-ads',
-        slug: 'ppc-fertility-provider',
-        title: 'How ShootOrder Boosted ROI for Oasis Fertility',
-        image: '/images/CaseStudies/PPC/oasis.png',
-        description: 'By streamlining AD campaigns, ShootOrder helped Oasis Fertility cut cost-per-lead and boost returns—delivering consistent, cost-effective performance.',
-        results: 'Overall Score 4.5',
-        pdfUrl: '/pdfs/case-studies/google-ads/PPC_2.pdf',
-        client: 'Advanced Fertility Center',
-        industry: 'Healthcare',
-        duration: 'Jun. 2021 - Ongoing',
-        investment: '$8,000 to $15,000 per month'
+        id: "google-ads",
+        slug: "ppc-fertility-provider",
+        title: "How ShootOrder Boosted ROI for Oasis Fertility",
+        image: "/images/CaseStudies/PPC/oasis.png",
+        description:
+          "By streamlining AD campaigns, ShootOrder helped Oasis Fertility cut cost-per-lead and boost returns—delivering consistent, cost-effective performance.",
+        results: "Overall Score 4.5",
+        pdfUrl: "/pdfs/case-studies/google-ads/PPC_2.pdf",
+        client: "Advanced Fertility Center",
+        industry: "Healthcare",
+        duration: "Jun. 2021 - Ongoing",
+        investment: "$8,000 to $15,000 per month",
       },
       {
-        id: 'google-ads',
-        slug: 'ppc-health-wellness',
-        title: 'Powering IPI Growth with Precision PPC',
-        image: '/images/CaseStudies/PPC/alpa kids.png',
-        description: "ShootOrder's paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.",
-        results: 'Overall Score 4.0',
-        pdfUrl: '/pdfs/case-studies/by-service/PPC_IPI_India.pdf',
-        client: 'Wellness Plus Solutions',
-        industry: 'Health & Wellness',
-        duration: 'Jan. 2022 - Ongoing',
-        investment: '$12,000 to $20,000 per month'
-      }
+        id: "google-ads",
+        slug: "ppc-health-wellness",
+        title: "Powering IPI Growth with Precision PPC",
+        image: "/images/CaseStudies/PPC/alpa kids.png",
+        description:
+          "ShootOrder's paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.",
+        results: "Overall Score 4.0",
+        pdfUrl: "/pdfs/case-studies/by-service/PPC_IPI_India.pdf",
+        client: "Wellness Plus Solutions",
+        industry: "Health & Wellness",
+        duration: "Jan. 2022 - Ongoing",
+        investment: "$12,000 to $20,000 per month",
+      },
     ],
     socialMedia: [
       {
-        id: 'social-media-marketing',
-        slug: 'smm-luxury-car-brand',
-        title: 'How Strategic Social Media Marketing Fueled a Luxury Car Brand',
-        image: '/images/CaseStudies/SMM/bmw - Luxury Car Brand.png',
-        description: 'With tailored campaigns and consistent engagement, ShootOrder elevated digital visibility and lead generation across key social platforms.',
-        results: 'Overall Score 4.5',
-        pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_1.pdf',
-        client: 'Elite Motors Group',
-        industry: 'Automotive - Luxury',
-        duration: 'Sep. 2020 - Ongoing',
-        investment: '$20,000 to $35,000 per month'
+        id: "social-media-marketing",
+        slug: "smm-luxury-car-brand",
+        title: "How Strategic Social Media Marketing Fueled a Luxury Car Brand",
+        image: "/images/CaseStudies/SMM/bmw - Luxury Car Brand.png",
+        description:
+          "With tailored campaigns and consistent engagement, ShootOrder elevated digital visibility and lead generation across key social platforms.",
+        results: "Overall Score 4.5",
+        pdfUrl: "/pdfs/case-studies/social-media-marketing/SMM_1.pdf",
+        client: "Elite Motors Group",
+        industry: "Automotive - Luxury",
+        duration: "Sep. 2020 - Ongoing",
+        investment: "$20,000 to $35,000 per month",
       },
       {
-        id: 'social-media-marketing',
-        slug: 'smm-auto-dealership',
-        title: 'Driving Digital: How ShootOrder Steered Online Growth for an Auto Brand',
-        image: '/images/CaseStudies/SMM/auto dealership.png',
-        description: 'By managing SEO, PPC, and Google assets, ShootOrder helped generate 20% of all vehicle bookings through digital platforms.',
-        results: 'Overall Score 5.0',
-        pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_2.pdf',
-        client: 'Metro Auto Sales',
-        industry: 'Automotive',
-        duration: 'May 2021 - Ongoing',
-        investment: '$15,000 to $25,000 per month'
+        id: "social-media-marketing",
+        slug: "smm-auto-dealership",
+        title:
+          "Driving Digital: How ShootOrder Steered Online Growth for an Auto Brand",
+        image: "/images/CaseStudies/SMM/auto dealership.png",
+        description:
+          "By managing SEO, PPC, and Google assets, ShootOrder helped generate 20% of all vehicle bookings through digital platforms.",
+        results: "Overall Score 5.0",
+        pdfUrl: "/pdfs/case-studies/social-media-marketing/SMM_2.pdf",
+        client: "Metro Auto Sales",
+        industry: "Automotive",
+        duration: "May 2021 - Ongoing",
+        investment: "$15,000 to $25,000 per month",
       },
       {
-        id: 'social-media-marketing',
-        slug: 'smm-it-services',
-        title: 'Creative Content That Clicks: Social Success for an EHR Platform',
-        image: '/images/CaseStudies/SMM/orchasp.png',
-        description: "With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp's healthcare tech across Facebook, Instagram, and LinkedIn.",
-        results: 'Overall Score 4.0',
-        pdfUrl: '/pdfs/case-studies/social-media-marketing/SMM_3.pdf',
-        client: 'TechFlow Solutions',
-        industry: 'Information Technology',
-        duration: 'Nov. 2021 - Ongoing',
-        investment: '$8,000 to $18,000 per month'
-      }
-    ]
+        id: "social-media-marketing",
+        slug: "smm-it-services",
+        title:
+          "Creative Content That Clicks: Social Success for an EHR Platform",
+        image: "/images/CaseStudies/SMM/orchasp.png",
+        description:
+          "With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp's healthcare tech across Facebook, Instagram, and LinkedIn.",
+        results: "Overall Score 4.0",
+        pdfUrl: "/pdfs/case-studies/social-media-marketing/SMM_3.pdf",
+        client: "TechFlow Solutions",
+        industry: "Information Technology",
+        duration: "Nov. 2021 - Ongoing",
+        investment: "$8,000 to $18,000 per month",
+      },
+    ],
   };
 
   // Combine all case studies into one array
   const allCaseStudies = [
     ...caseStudies.seo,
     ...caseStudies.googleAds,
-    ...caseStudies.socialMedia
+    ...caseStudies.socialMedia,
   ];
 
   // Handle responsive items per page
@@ -155,8 +172,8 @@ const StaticCaseStudiesComponent = () => {
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Reset currentIndex when itemsPerPage changes
@@ -181,22 +198,24 @@ const StaticCaseStudiesComponent = () => {
 
   const handleCaseStudyClick = (studySlug) => {
     router.push(`/case-studies/${studySlug}`);
-    console.log('Navigate to:', studySlug);
+    console.log("Navigate to:", studySlug);
   };
 
   const handleDownloadPDF = async (pdfUrl, title, event) => {
     event.stopPropagation();
 
     try {
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = pdfUrl;
-      link.download = `${title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-case-study.pdf`;
+      link.download = `${title
+        .replace(/[^a-z0-9]/gi, "-")
+        .toLowerCase()}-case-study.pdf`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     } catch (error) {
-      console.error('Error downloading PDF:', error);
-      alert('Error downloading PDF. Please try again.');
+      console.error("Error downloading PDF:", error);
+      alert("Error downloading PDF. Please try again.");
     }
   };
 
@@ -213,13 +232,17 @@ const StaticCaseStudiesComponent = () => {
           alt={study.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           onError={(e) => {
-            e.target.style.display = 'none';
-            e.target.parentElement.classList.add('bg-gradient-to-br', 'from-gray-100', 'to-gray-200');
+            e.target.style.display = "none";
+            e.target.parentElement.classList.add(
+              "bg-gradient-to-br",
+              "from-gray-100",
+              "to-gray-200"
+            );
           }}
         />
-        
+
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        
+
         <div className="absolute top-4 right-4">
           <Award className="w-6 h-6 text-white drop-shadow-lg opacity-80" />
         </div>
@@ -230,13 +253,15 @@ const StaticCaseStudiesComponent = () => {
         <div className="flex-grow">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 rounded-full bg-[#9a0c28]"></div>
-              <span className="text-sm text-gray-600 font-medium">{study.industry}</span>
+              <div className="w-2 h-2 rounded-full bg-[#cd1f38]"></div>
+              <span className="text-sm text-gray-600 font-medium">
+                {study.industry}
+              </span>
             </div>
             <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
           </div>
 
-          <h3 className="text-xl font-bold mb-3 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
+          <h3 className="text-xl font-bold mb-3 group-hover:text-[#cd1f38] transition-colors duration-300 leading-tight">
             {study.title}
           </h3>
 
@@ -247,8 +272,10 @@ const StaticCaseStudiesComponent = () => {
 
         <div className="space-y-3 mt-auto">
           <div className="flex items-center space-x-2">
-            <TrendingUp className="w-4 h-4 text-[#9a0c28]" />
-            <span className="text-sm font-medium text-gray-800">{study.results}</span>
+            <TrendingUp className="w-4 h-4 text-[#cd1f38]" />
+            <span className="text-sm font-medium text-gray-800">
+              {study.results}
+            </span>
           </div>
 
           <div className="flex space-x-2">
@@ -260,7 +287,7 @@ const StaticCaseStudiesComponent = () => {
             {study.pdfUrl && (
               <button
                 onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
-                className="inline-flex items-center space-x-2 bg-[#9a0c28] hover:bg-[#7a0a20] px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium text-white"
+                className="inline-flex items-center space-x-2 bg-[#cd1f38] hover:bg-[#7a0a20] px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium text-white"
                 title={`Download ${study.title} Case Study PDF`}
               >
                 <Download className="w-4 h-4" />
@@ -278,9 +305,12 @@ const StaticCaseStudiesComponent = () => {
       <div className="!max-w-7xl mx-auto px-4 pt-16 pb-20">
         {/* Main Title */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl font-bold text-black mb-4">Our Case Studies</h1>
+          <h1 className="text-3xl font-bold text-black mb-4">
+            Our Case Studies
+          </h1>
           <p className="text-gray-600 text-xl max-w-4xl mx-auto">
-            Discover how we've helped businesses across industries achieve remarkable growth through strategic digital marketing solutions.
+            Discover how we've helped businesses across industries achieve
+            remarkable growth through strategic digital marketing solutions.
           </p>
         </div>
 
@@ -313,23 +343,27 @@ const StaticCaseStudiesComponent = () => {
             >
               {Array.from({ length: totalPages }).map((_, pageIndex) => {
                 const startIndex = pageIndex * itemsPerPage;
-                const pageItems = allCaseStudies.slice(startIndex, startIndex + itemsPerPage);
-                
+                const pageItems = allCaseStudies.slice(
+                  startIndex,
+                  startIndex + itemsPerPage
+                );
+
                 return (
                   <div
                     key={pageIndex}
                     className={`flex w-full flex-shrink-0 ${
-                      itemsPerPage === 1 ? '' : 'gap-8'
+                      itemsPerPage === 1 ? "" : "gap-8"
                     }`}
                   >
                     {pageItems.map((study, index) => (
                       <div
                         key={`${pageIndex}-${index}`}
-                        className={`${
-                          itemsPerPage === 1 ? 'w-full' : 'w-1/3'
-                        }`}
+                        className={`${itemsPerPage === 1 ? "w-full" : "w-1/3"}`}
                       >
-                        <CaseStudyCard study={study} index={`${pageIndex}-${index}`} />
+                        <CaseStudyCard
+                          study={study}
+                          index={`${pageIndex}-${index}`}
+                        />
                       </div>
                     ))}
                   </div>
@@ -346,8 +380,8 @@ const StaticCaseStudiesComponent = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   currentIndex === index
-                    ? 'bg-[#9a0c28] scale-110'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? "bg-[#cd1f38] scale-110"
+                    : "bg-gray-300 hover:bg-gray-400"
                 }`}
               />
             ))}

@@ -52,7 +52,8 @@ export default function EnquiryPage() {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Address",
-      value: "Ivent It Solutions Pvt. Ltd. (ShootOrder) Krishe Sapphire MSR Block, 1st Floor, SY No. 88, HITEC City main road, Madhapur Hyderabad, Telangana 500081",
+      value:
+        "Ivent It Solutions Pvt. Ltd. (ShootOrder) Krishe Sapphire MSR Block, 1st Floor, SY No. 88, HITEC City main road, Madhapur Hyderabad, Telangana 500081",
       link: "#",
     },
     {
@@ -106,7 +107,7 @@ export default function EnquiryPage() {
               <div>
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#172657]">
                   Let&apos;s Start Your
-                  <span className="block bg-gradient-to-r from-[#9a0c28] to-[#c4102e] bg-clip-text text-transparent">
+                  <span className="block bg-gradient-to-r from-[#cd1f38] to-[#c4102e] bg-clip-text text-transparent">
                     Success Story
                   </span>
                 </h1>
@@ -124,12 +125,13 @@ export default function EnquiryPage() {
                     className="flex flex-col items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
                   >
                     {/* <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg flex items-center justify-center text-black"> */}
-                    <div className="flex-shrink-0 mb-2 w-12 h-12 bg-gradient-to-r from-[#9a0c28] to-[#c4102e] rounded-lg flex items-center justify-center text-white">
-
+                    <div className="flex-shrink-0 mb-2 w-12 h-12 bg-gradient-to-r from-[#cd1f38] to-[#c4102e] rounded-lg flex items-center justify-center text-white">
                       {feature.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-center text-[#172657]">{feature.title}</h3>
+                      <h3 className="font-semibold text-lg text-center text-[#172657]">
+                        {feature.title}
+                      </h3>
                       <p className="text-gray-600 text-sm text-center">
                         {feature.description}
                       </p>
@@ -143,7 +145,6 @@ export default function EnquiryPage() {
             <div className="lg:ml-8">
               {/* <ContactForm colorClass="text-white" /> */}
               <PipeDriveForm />
-              
             </div>
           </div>
         </div>
@@ -170,14 +171,14 @@ export default function EnquiryPage() {
                 className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
                 <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-[#9a0c28] to-[#b91c47] rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-[#cd1f38] to-[#b91c47] rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                     {info.icon}
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-2">
                       {info.label}
                     </h3>
-                    <p className="text-gray-600 group-hover:text-[#9a0c28] transition-colors duration-300">
+                    <p className="text-gray-600 group-hover:text-[#cd1f38] transition-colors duration-300">
                       {info.value}
                     </p>
                   </div>
@@ -207,7 +208,7 @@ export default function EnquiryPage() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-gradient-to-r from-[#9a0c28] to-[#b91c47] text-white px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center space-x-2">
+            <button className="bg-gradient-to-r from-[#cd1f38] to-[#b91c47] text-white px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center space-x-2">
               <MessageCircle className="w-5 h-5" />
               <span>Start a Conversation</span>
               <ArrowRight className="w-5 h-5" />

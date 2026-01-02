@@ -55,7 +55,7 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 left-10 w-20 h-20 bg-[#9a0c28]/20 rounded-full blur-xl"
+          className="absolute top-20 left-10 w-20 h-20 bg-[#cd1f38]/20 rounded-full blur-xl"
           animate={{
             y: [0, 50, 0],
             scale: [1, 1.2, 1],
@@ -119,7 +119,7 @@ const BannerForServices = ({ imageUrl, subheading, heading }) => {
               whileTap={{ scale: 0.95 }}
               // onClick={() => modalRef.current?.open()}
               onClick={openPopup}
-              className="bg-[#9a0c28] cursor-pointer text-white px-8 py-4 rounded-full font-medium hover:bg-[#7a0920] transition-colors shadow-lg inline-flex items-center justify-center gap-2 group"
+              className="bg-[#cd1f38] cursor-pointer text-white px-8 py-4 rounded-full font-medium hover:bg-[#7a0920] transition-colors shadow-lg inline-flex items-center justify-center gap-2 group"
             >
               Get Started Now
               <motion.span

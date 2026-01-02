@@ -123,7 +123,7 @@ function Testimonials() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => instanceRef.current?.prev()}
-          className="bg-[#9a0c28] text-white rounded-full p-3 shadow hover:bg-[#7a0920] transition-colors"
+          className="bg-[#cd1f38] text-white rounded-full p-3 shadow hover:bg-[#7a0920] transition-colors"
         >
           <FaChevronLeft />
         </motion.button>
@@ -131,7 +131,7 @@ function Testimonials() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => instanceRef.current?.next()}
-          className="bg-[#9a0c28] text-white rounded-full p-3 shadow hover:bg-[#7a0920] transition-colors"
+          className="bg-[#cd1f38] text-white rounded-full p-3 shadow hover:bg-[#7a0920] transition-colors"
         >
           <FaChevronRight />
         </motion.button>

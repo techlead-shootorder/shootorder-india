@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 12, suffix: "+", label: "12+ Years of Expertise" },
+  { value: 12, suffix: "+", label: "Years of Expertise" },
   {
     value: 3,
     suffix: "%",
@@ -10,8 +10,8 @@ const stats = [
   },
   { value: "300+", label: "Experts in Web Solutions", isIcon: true },
   { value: 50, suffix: "+", label: "Ongoing Projects" },
-  { value: 60, suffix: "+", label: "60+ Strong Team" },
-  { value: 95, suffix: "%", label: "95% Client Retention Rate" },
+  { value: 60, suffix: "+", label: "Strong Team" },
+  { value: 95, suffix: "%", label: "Client Retention Rate" },
   // { value: "#", label: "Diverse Industry Portfolio", isIcon: true },
   // {
   //   value: ";)",
@@ -88,7 +88,7 @@ export default function WhyPartnerWithUs() {
               className="flex flex-col items-center justify-center text-center h-full"
             >
               <span
-                className="text-primary font-extrabold text-4xl md:text-5xl mb-2"
+                className="text-primary font-bold text-4xl md:text-5xl mb-2"
                 style={{ minWidth: 64 }}
               >
                 {stat.isIcon || typeof stat.value !== "number"

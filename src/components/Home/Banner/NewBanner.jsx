@@ -28,9 +28,9 @@ export default function NewBanner() {
     };
 
     checkMobile();
-    window.addEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
 
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   useEffect(() => {
@@ -186,8 +186,8 @@ export default function NewBanner() {
     // Cleanup function
     return () => {
       if (tl) tl.kill();
-      
-      scrollTriggers.forEach(trigger => {
+
+      scrollTriggers.forEach((trigger) => {
         if (trigger) trigger.kill();
       });
 
@@ -197,7 +197,7 @@ export default function NewBanner() {
         headingRef.current,
         descriptionRef.current,
         buttonRef.current,
-        stats
+        stats,
       ]);
 
       if (splitTextInstance) {
@@ -211,9 +211,9 @@ export default function NewBanner() {
   }, [pathname, isMobile]);
 
   const openPopup = (e) => {
-    const ripple = document.createElement('div');
+    const ripple = document.createElement("div");
     const rect = e.target.getBoundingClientRect();
-    ripple.className = 'absolute animate-ripple rounded-full bg-gray-200';
+    ripple.className = "absolute animate-ripple rounded-full bg-gray-200";
     ripple.style.left = `${e.clientX - rect.left}px`;
     ripple.style.top = `${e.clientY - rect.top}px`;
     e.target.appendChild(ripple);
@@ -235,16 +235,19 @@ export default function NewBanner() {
           backgroundImage: "url(/images/background/Shootorder_Herobanner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center top 20%",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6 w-full">
           <div className="grid grid-cols-12 gap-12 items-center w-full">
             {/* Empty column to align with logo position */}
             <div className="col-span-1"></div>
-            
+
             {/* Content column */}
-            <div ref={contentRef} className="col-span-9 space-y-6 lg:space-y-8 text-left">
+            <div
+              ref={contentRef}
+              className="col-span-9 space-y-6 lg:space-y-8 text-left"
+            >
               {/* Badge */}
               {/* <div className="inline-flex items-center px-3 py-2 rounded-full text-xs lg:text-sm font-medium bg-gradient-to-r from-blue-600/10 to-purple-600/10 text-blue-700 border border-blue-200/50 backdrop-blur-sm">
                 <span className="w-2 h-2 bg-blue-600 rounded-full mr-2 animate-pulse flex-shrink-0"></span>
@@ -256,29 +259,22 @@ export default function NewBanner() {
                 ref={headingRef}
                 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] text-gray-900 tracking-tight"
               >
-                Awarded{" "}
-                <span style={{color: '#9a0c28'}}>
-                  #1
-                </span>
+                Awarded <span style={{ color: "#cd1f38" }}>#1</span>
                 <br />
-                <span style={{color: '#9a0c28'}}>
-                  Digital Marketing
-                </span>
+                <span style={{ color: "#cd1f38" }}>Digital Marketing</span>
                 <br />
                 Agency
               </h1>
-              
+
               {/* Decorative Line */}
-              <div className="w-24 h-1 bg-[#9a0c28] rounded-full"></div>
+              <div className="w-24 h-1 bg-[#cd1f38] rounded-full"></div>
 
               {/* Description */}
               <p
                 ref={descriptionRef}
                 className="text-gray-600 text-lg lg:text-xl leading-relaxed max-w-2xl"
               >
-              
-                Elevate your brand with strategic{" "}
-                <br />
+                Elevate your brand with strategic <br />
                 <span className="font-semibold text-gray-900">
                   SEO, Paid Media, Content, and Social
                 </span>{" "}
@@ -289,9 +285,13 @@ export default function NewBanner() {
               <div ref={buttonRef}>
                 <Button
                   className="group relative overflow-hidden text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 hover:shadow-xl active:scale-95"
-                  style={{backgroundColor: '#9a0c28 !important'}}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#7a0a20'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#9a0c28'}
+                  style={{ backgroundColor: "#cd1f38 !important" }}
+                  onMouseEnter={(e) =>
+                    (e.target.style.backgroundColor = "#cd1f38")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.target.style.backgroundColor = "#cd1f38")
+                  }
                   onClick={openPopup}
                 >
                   <span className="relative z-10 flex items-center gap-2">
@@ -314,18 +314,26 @@ export default function NewBanner() {
               </div>
 
               {/* Stats */}
-              
             </div>
-
           </div>
         </div>
-        
+
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="flex flex-col items-center text-white">
             <span className="text-sm font-medium mb-2">Scroll Down</span>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
             </svg>
           </div>
         </div>

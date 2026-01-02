@@ -24,13 +24,10 @@ const FeatureBox = ({ icon, title, description, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ scale: 1.02 }}
-      className="flex items-start gap-4 p-6 rounded-xl hover:shadow-lg transition-all bg-white border border-gray-100 hover:border-[#9a0c28]/20"
+      className="flex items-start gap-4 p-6 rounded-xl hover:shadow-lg transition-all bg-white border border-gray-100 hover:border-[#cd1f38]/20"
     >
-      <div className="bg-[#9a0c28]/10 p-3 rounded-full hover:bg-[#9a0c28]/20 transition-colors flex-shrink-0">
-        <motion.div
-          whileHover={{ rotate: 360 }}
-          transition={{ duration: 0.5 }}
-        >
+      <div className="bg-[#cd1f38]/10 p-3 rounded-full hover:bg-[#cd1f38]/20 transition-colors flex-shrink-0">
+        <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }}>
           {icon}
         </motion.div>
       </div>
@@ -45,49 +42,49 @@ const FeatureBox = ({ icon, title, description, index }) => {
 const WhyChooseSection = () => {
   const features = [
     {
-      icon: <BadgeCheck className="h-8 w-8 text-[#9a0c28]" />,
+      icon: <BadgeCheck className="h-8 w-8 text-[#cd1f38]" />,
       title: "Experience Managers",
       description:
         "Every manager on ShootOrder's team is a Google-certified manager; our experience will not let you down!",
     },
     {
-      icon: <Users className="h-8 w-8 text-[#9a0c28]" />,
+      icon: <Users className="h-8 w-8 text-[#cd1f38]" />,
       title: "Dedicated Team",
       description:
         "Our team is dedicated to one mission: delivering consistent business results that keep you happy and thriving.",
     },
     // {
-    //   icon: <Star className="h-8 w-8 text-[#9a0c28]" />,
+    //   icon: <Star className="h-8 w-8 text-[#cd1f38]" />,
     //   title: "We are creative!",
     //   description:
     //     "No need to outsource creatives, we’re a full-service agency crafting bold, original ideas with in-house expertise.",
     // },
     // {
-    //   icon: <Wrench className="h-8 w-8 text-[#9a0c28]" />,
+    //   icon: <Wrench className="h-8 w-8 text-[#cd1f38]" />,
     //   title: "We will fix your website!",
     //   description:
     //     "A buggy site kills results. We optimize your website first, because great digital marketing starts with a solid website.",
     // },
     {
-      icon: <Zap className="h-8 w-8 text-[#9a0c28]" />,
+      icon: <Zap className="h-8 w-8 text-[#cd1f38]" />,
       title: "Quick Results",
       description:
         "No need to wait months for positive ROI, we drive ROI fast with smart performance-led strategies.",
     },
     {
-      icon: <Headphones className="h-8 w-8 text-[#9a0c28]" />,
+      icon: <Headphones className="h-8 w-8 text-[#cd1f38]" />,
       title: "24/7 Support",
       description:
         "Our client servicing team is always available at your service with industries best turnaround time.",
     },
     {
-      icon: <FileSignature className="h-8 w-8 text-[#9a0c28]" />,
+      icon: <FileSignature className="h-8 w-8 text-[#cd1f38]" />,
       title: "No Lock-In Contracts",
       description:
         "We’re NDA-ready for full confidentiality and don’t worry, no long-term contracts required. Flexibility and trust come first.",
     },
     {
-      icon: <HeartHandshake className="h-8 w-8 text-[#9a0c28]" />,
+      icon: <HeartHandshake className="h-8 w-8 text-[#cd1f38]" />,
       title: "Complete Satisfaction",
       description:
         "We value your time and money, client satisfaction drives our work and builds lasting relationships.",
@@ -95,7 +92,7 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <div className="w-full bg-[#9a0c28]  py-20 px-4 md:px-8">
+    <div className="w-full bg-[#cd1f38]  py-20 px-4 md:px-8">
       <motion.div
         className="!max-w-6xl mx-auto"
         initial={{ opacity: 0 }}

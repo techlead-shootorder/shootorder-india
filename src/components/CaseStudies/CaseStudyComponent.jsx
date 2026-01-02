@@ -228,13 +228,13 @@ const CaseStudyComponent = ({ service }) => {
         <div className="flex-grow">
           {/* <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 rounded-full bg-[#9a0c28]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#cd1f38]"></div>
               <span className="text-sm text-gray-600 font-medium">{study.industry}</span>
             </div>
             <ChevronRight className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
           </div> */}
 
-          <h3 className="text-xl font-bold mb-6 group-hover:text-[#9a0c28] transition-colors duration-300 leading-tight">
+          <h3 className="text-xl font-bold mb-6 group-hover:text-[#cd1f38] transition-colors duration-300 leading-tight">
             {study.title}
           </h3>
 
@@ -256,7 +256,7 @@ const CaseStudyComponent = ({ service }) => {
 
         <div className="space-y-3 mt-auto">
           {/* <div className="flex items-center space-x-2">
-            <TrendingUp className="w-4 h-4 text-[#9a0c28]" />
+            <TrendingUp className="w-4 h-4 text-[#cd1f38]" />
             <span className="text-sm font-medium text-gray-800">{study.results}</span>
           </div> */}
 
@@ -269,7 +269,7 @@ const CaseStudyComponent = ({ service }) => {
             {/* {study.pdfUrl && (
               <button
                 onClick={(e) => handleDownloadPDF(study.pdfUrl, study.title, e)}
-                className="inline-flex items-center space-x-2 bg-[#9a0c28] hover:bg-[#7a0a20] px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium text-white"
+                className="inline-flex items-center space-x-2 bg-[#cd1f38] hover:bg-[#7a0a20] px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium text-white"
                 title={`Download ${study.title} Case Study PDF`}
               >
                 <Download className="w-4 h-4" />

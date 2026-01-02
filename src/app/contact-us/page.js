@@ -1,8 +1,7 @@
-'use client'
+"use client";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-
 
 import {
   FaPhoneAlt,
@@ -42,7 +41,7 @@ export default function ContactUs() {
       <div className="!max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-6 my-12 rounded-3xl border p-4 md:p-4">
           {/* Left Section - Info */}
-          <div className="bg-[#9a0c28] rounded-3xl p-6 md:p-10">
+          <div className="bg-[#cd1f38] rounded-3xl p-6 md:p-10">
             <h3 className="font-semibold text-white text-lg mb-2">
               Contact Information
             </h3>
@@ -58,12 +57,9 @@ export default function ContactUs() {
               </p>
               <p className="flex items-start gap-2">
                 <HiOutlineLocationMarker className="mt-1" />
-                Ivent It Solutions Pvt. Ltd. (ShootOrder)
-                Krishe Sapphire
-                MSR Block, 1st Floor, SY No. 88,
-                HITEC City main road, Madhapur
-                Hyderabad, Telangana
-                500081
+                Ivent It Solutions Pvt. Ltd. (ShootOrder) Krishe Sapphire MSR
+                Block, 1st Floor, SY No. 88, HITEC City main road, Madhapur
+                Hyderabad, Telangana 500081
               </p>
             </div>
 
@@ -95,9 +91,6 @@ export default function ContactUs() {
 
             <PipeDriveForm />
           </div>
-
-
-
         </div>
       </div>
     </div>

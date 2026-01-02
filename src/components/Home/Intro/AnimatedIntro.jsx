@@ -54,7 +54,7 @@ export default function AnimatedIntro() {
       wordSpan.style.marginRight = "0.25em";
 
       if (["Premier", "Google", "Ads", "India."].includes(word)) {
-        wordSpan.style.color = "#9a0c28";
+        wordSpan.style.color = "#cd1f38";
       }
 
       word.split("").forEach((char) => {
@@ -107,13 +107,15 @@ export default function AnimatedIntro() {
     const text =
       "A Google Ads Premier Partner delivering 360° digital marketing solutions across the Globe.";
     return text.split(" ").map((word, index) => {
-      const isHighlighted = ["Premier", "Google", "Ads", "India."].includes(word);
+      const isHighlighted = ["Premier", "Google", "Ads", "India."].includes(
+        word
+      );
       return (
         <span
           key={index}
           className={`inline-block mr-1 transition-all duration-500 transform ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          } ${isHighlighted ? "text-[#9a0c28]" : "text-black"}`}
+          } ${isHighlighted ? "text-[#cd1f38]" : "text-black"}`}
           style={{ transitionDelay: `${index * 50}ms` }}
         >
           {word}

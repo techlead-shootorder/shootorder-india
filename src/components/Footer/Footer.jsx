@@ -135,25 +135,25 @@ const Footer = () => {
               {/* Contact Information */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-[#9a0c28]" />
+                  <Phone className="w-5 h-5 text-[#cd1f38]" />
                   <a
                     href="tel:+916303921512"
-                    className="text-gray-700 hover:text-[#9a0c28] transition-colors"
+                    className="text-gray-700 hover:text-[#cd1f38] transition-colors"
                   >
                     +91-630-392-1512
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-[#9a0c28]" />
+                  <Mail className="w-5 h-5 text-[#cd1f38]" />
                   <a
                     href="mailto:info@shootorder.com"
-                    className="text-gray-700 hover:text-[#9a0c28] transition-colors"
+                    className="text-gray-700 hover:text-[#cd1f38] transition-colors"
                   >
                     info@shootorder.com
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-16 h-16 text-[#9a0c28] mt-1" />
+                  <MapPin className="w-16 h-16 text-[#cd1f38] mt-1" />
                   <address className="not-italic text-gray-600">
                     Ivent It Solutions Pvt. Ltd. (ShootOrder) Krishe Sapphire
                     MSR Block, 1st Floor, SY No. 88, HITEC City main road,
@@ -168,7 +168,7 @@ const Footer = () => {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="p-2 border border-gray-300 rounded-lg text-gray-600 hover:text-[#9a0c28] hover:border-[#9a0c28] transition-all duration-200"
+                    className="p-2 border border-gray-300 rounded-lg text-gray-600 hover:text-[#cd1f38] hover:border-[#cd1f38] transition-all duration-200"
                     aria-label={social.name}
                   >
                     <social.icon className="w-5 h-5" />
@@ -225,7 +225,7 @@ const Footer = () => {
                             <li key={link.name}>
                               <Link
                                 href={link.href}
-                                className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                                className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                               >
                                 {link.name}
                               </Link>
@@ -247,7 +247,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -263,7 +263,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -282,7 +282,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -301,7 +301,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -320,7 +320,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -339,7 +339,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -355,7 +355,7 @@ const Footer = () => {
                       <li key={link.name}>
                         <Link
                           href={link.href}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>
@@ -375,7 +375,7 @@ const Footer = () => {
                         <Link
                           href={link.href}
                           target={link.name == "Blogs" ? "_blank" : ""}
-                          className="text-gray-600 hover:text-[#9a0c28] transition-colors text-sm"
+                          className="text-gray-600 hover:text-[#cd1f38] transition-colors text-sm"
                         >
                           {link.name}
                         </Link>

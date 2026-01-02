@@ -1,15 +1,14 @@
-import { PT_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Script from 'next/script';
 
-const ptSans = PT_Sans({
-  variable: "--font-pt-sans",
+const ptSans = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
-  preload: true, // Preload the font
+  variable: "--font-poppins",
 });
 
 export const metadata = {

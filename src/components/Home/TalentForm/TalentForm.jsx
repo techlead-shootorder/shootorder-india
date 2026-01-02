@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
-export default function ContactForm({colorClass}) {
+export default function ContactForm({ colorClass }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -99,8 +99,16 @@ export default function ContactForm({colorClass}) {
   return (
     <div className="py-16">
       <div className="w-full !max-w-4xl mx-auto px-4 text-center">
-        <h2 className={`text-3xl font-semibold mb-2 ${colorClass? 'text-white':'text-black'}`}>Contact Us</h2>
-        <p className={`text-lg mb-8 ${colorClass? 'text-white':'text-black'}`}>
+        <h2
+          className={`text-3xl font-semibold mb-2 ${
+            colorClass ? "text-white" : "text-black"
+          }`}
+        >
+          Contact Us
+        </h2>
+        <p
+          className={`text-lg mb-8 ${colorClass ? "text-white" : "text-black"}`}
+        >
           Fill in the form below to get in touch with our representative.
         </p>
 
@@ -117,7 +125,9 @@ export default function ContactForm({colorClass}) {
                 }`}
               />
               {errors.name && (
-                <p className="text-[#F94839] text-sm text-left">{errors.name}</p>
+                <p className="text-[#F94839] text-sm text-left">
+                  {errors.name}
+                </p>
               )}
             </div>
 
@@ -158,7 +168,9 @@ export default function ContactForm({colorClass}) {
                 }`}
               />
               {errors.phone && (
-                <p className="text-[#F94839] text-sm text-left">{errors.phone}</p>
+                <p className="text-[#F94839] text-sm text-left">
+                  {errors.phone}
+                </p>
               )}
             </div>
 
@@ -191,7 +203,7 @@ export default function ContactForm({colorClass}) {
                 >
                   <SelectValue placeholder="Regarding?*" />
                 </SelectTrigger>
-                <SelectContent >
+                <SelectContent>
                   <SelectItem value="general-inquiry">
                     General Inquiry
                   </SelectItem>
@@ -221,7 +233,10 @@ export default function ContactForm({colorClass}) {
           </div>
 
           <div className="flex justify-center">
-            <Button type="submit" className="rounded-full px-8 py-2 bg-gradient-to-r from-[#9a0c28] to-[#c4102e]">
+            <Button
+              type="submit"
+              className="rounded-full px-8 py-2 bg-gradient-to-r from-[#cd1f38] to-[#c4102e]"
+            >
               Submit
             </Button>
           </div>

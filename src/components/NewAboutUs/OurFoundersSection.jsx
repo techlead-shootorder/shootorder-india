@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const OurFoundersSection = () => {
   return (
@@ -7,7 +7,7 @@ const OurFoundersSection = () => {
         {/* Top heading */}
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-gray-800 mb-8">
-           Our Founder
+            Our Founder
           </h2>
         </div>
 
@@ -16,9 +16,9 @@ const OurFoundersSection = () => {
           {/* Left side - Image */}
           <div className="flex justify-center lg:justify-end relative">
             <div className="relative w-80 h-80 sm:w-96 sm:h-96">
-              <img 
-                src="/images/about-us/Rajat.webp" 
-                alt="Digital Marketing Team" 
+              <img
+                src="/images/Rajat_384x384.webp"
+                alt="Digital Marketing Team"
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
@@ -29,10 +29,15 @@ const OurFoundersSection = () => {
             <h3 className="text-3xl md:text-4xl lg:text-4xl font-semibold text-gray-700 mb-6">
               Rajat Jain
             </h3>
-            
+
             <div className="space-y-6">
               <p className="text-base sm:text-lg md:text-lg text-gray-700 leading-relaxed font-light">
-                Rajat Jain, founder of ShootOrder, takes a unique approach to digital marketing. Instead of relying only on intuition or traditional methods, he focuses on data-driven strategies to help brands grow. From startups to well-known names, he has guided successful campaigns, launched new initiatives, and optimized existing marketing efforts with his expertise. 
+                Rajat Jain, founder of ShootOrder, takes a unique approach to
+                digital marketing. Instead of relying only on intuition or
+                traditional methods, he focuses on data-driven strategies to
+                help brands grow. From startups to well-known names, he has
+                guided successful campaigns, launched new initiatives, and
+                optimized existing marketing efforts with his expertise.
               </p>
             </div>
 
@@ -40,7 +45,7 @@ const OurFoundersSection = () => {
             {/* <div className="pt-4 flex justify-center">
                 <div className='relative'>
                 <div className='absolute top-[9px] left-[4px] h-8 w-28 bg-yellow-400 rounded-full -z-4'></div>
-              <button className="text-white bg-[#9a0c28] font-medium py-1 px-4 rounded-full text-lg transition-all">
+              <button className="text-white bg-[#cd1f38] font-medium py-1 px-4 rounded-full text-lg transition-all">
                 Let's Talk
               </button>
               </div>
