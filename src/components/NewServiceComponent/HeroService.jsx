@@ -8,8 +8,8 @@ const HeroService = ({ imageUrl, subheading, heading }) => {
       <Image
         src={imageUrl}
         alt="Banner background"
-        layout="fill"
-        objectFit="cover"
+        fill // Replacing deprecated layout="fill" with fill
+        style={{ objectFit: "cover" }} // Using style prop for objectFit
         priority
       />
       {/* <div className="overlay absolute inset-0 bg-black opacity-40"></div> */}

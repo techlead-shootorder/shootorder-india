@@ -1389,5 +1389,85 @@
       }
     ],
     "content": ""
+  },
+  {
+    "heading": "Elevate Your Brand Identity",
+    "subheading": "We create compelling brand strategies, logos, and visual identities that resonate with your audience.",
+    "bottomsubheading": "Your brand is your story. Let us help you tell it in a way that captivates and inspires.",
+    "slug": "branding",
+    "title": "Branding Services",
+    "description": "We specialize in crafting unique brand identities that leave a lasting impression. From logo design to comprehensive brand strategies, we ensure your brand stands out.",
+    "imageUrl": "/images/services/branding/branding-overview.png",
+    "bottomheading": "Our Branding Services",
+    "features": [
+      {
+        "imageUrl": "/images/services/branding/logo-design.webp",
+        "heading": "Logo Design",
+        "content": "Custom logo designs that reflect your brand's essence and make a memorable impact.",
+        "icon": "Brush"
+      },
+      {
+        "imageUrl": "/images/services/branding/brand-strategy.webp",
+        "heading": "Brand Strategy",
+        "content": "Comprehensive strategies to position your brand effectively in the market.",
+        "icon": "Target"
+      },
+      {
+        "imageUrl": "/images/services/branding/visual-identity.webp",
+        "heading": "Visual Identity",
+        "content": "Creating cohesive visual elements that define your brand's look and feel.",
+        "icon": "Palette"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why is branding important?",
+        "answer": "Branding helps establish a unique identity, build trust, and create a strong connection with your audience."
+      },
+      {
+        "question": "What does a branding package include?",
+        "answer": "Our branding package includes logo design, brand strategy, visual identity, and more tailored to your needs."
+      }
+    ]
+  },
+  {
+    "heading": "Transform Your Digital Presence",
+    "subheading": "We provide comprehensive digital marketing solutions to help your business thrive online.",
+    "bottomsubheading": "From SEO to social media, our digital marketing services are designed to drive results.",
+    "slug": "digital-marketing",
+    "title": "Digital Marketing Services",
+    "description": "Our digital marketing services include SEO, PPC, social media marketing, and more to help your business grow online.",
+    "imageUrl": "/images/services/digital-marketing/digital-marketing-hero.png",
+    "bottomheading": "Our Digital Marketing Services",
+    "features": [
+      {
+        "imageUrl": "/images/services/digital-marketing/seo.webp",
+        "heading": "Search Engine Optimization",
+        "content": "Optimize your website to rank higher on search engines and attract more visitors.",
+        "icon": "Search"
+      },
+      {
+        "imageUrl": "/images/services/digital-marketing/ppc.webp",
+        "heading": "Pay-Per-Click Advertising",
+        "content": "Drive targeted traffic to your website with our PPC advertising services.",
+        "icon": "MousePointer"
+      },
+      {
+        "imageUrl": "/images/services/digital-marketing/social-media.webp",
+        "heading": "Social Media Marketing",
+        "content": "Engage with your audience and grow your brand on social media platforms.",
+        "icon": "Users"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is digital marketing?",
+        "answer": "Digital marketing involves promoting your business online through various channels like search engines, social media, and email."
+      },
+      {
+        "question": "Why is digital marketing important?",
+        "answer": "Digital marketing helps you reach a larger audience, generate leads, and increase sales in the digital space."
+      }
+    ]
   }
 ]

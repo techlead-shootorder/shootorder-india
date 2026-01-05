@@ -52,10 +52,8 @@ const ServiceAboutSection = ({ data }) => {
               <Image
                 src="/images/our-story.webp"
                 alt={`${data?.title || 'Our'} Services`}
-                layout="responsive"
                 className="rounded-md"
-                width={549}
-                height={411}
+                fill // Using fill for responsive layout
               />
             </div>
           </div>
