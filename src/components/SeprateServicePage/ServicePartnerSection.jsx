@@ -4,7 +4,16 @@ import Image from "next/image";
 
 export default function ServicePartnerSection() {
   const partnerLogos = [
-    "a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1", "i1", "j1",
+    "a1",
+    "b1",
+    "c1",
+    "d1",
+    "e1",
+    "f1",
+    "g1",
+    "h1",
+    "i1",
+    "j1",
   ].map((name) => `/images/clients/${name}.jpg`);
 
   // Duplicate the logos to create seamless loop
@@ -12,7 +21,9 @@ export default function ServicePartnerSection() {
 
   return (
     <div className="relative !max-w-7xl mx-auto py-8 sm:py-16 overflow-hidden">
-      <h2 className="text-3xl font-bold text-center mb-6">Varied Clientele. Versatile Expertise.</h2>
+      <h2 className="text-3xl font-bold text-center mb-6">
+        Varied Clientele. Versatile Expertise.
+      </h2>
 
       <div className="slider-container">
         <div className="slider-track">
@@ -25,7 +36,7 @@ export default function ServicePartnerSection() {
                   width={180}
                   height={150}
                   className="logo-image"
-                  style={{ borderRadius: '10px' }}
+                  style={{ borderRadius: "10px" }}
                 />
               </div>
             </div>
@@ -108,7 +119,7 @@ export default function ServicePartnerSection() {
             animation-duration: 10s;
             width: calc(160px * ${duplicatedLogos.length});
           }
-          
+
           .slide {
             flex: 0 0 160px;
           }
@@ -119,7 +130,7 @@ export default function ServicePartnerSection() {
             animation-duration: 10s;
             width: calc(140px * ${duplicatedLogos.length});
           }
-          
+
           .slide {
             flex: 0 0 140px;
           }
