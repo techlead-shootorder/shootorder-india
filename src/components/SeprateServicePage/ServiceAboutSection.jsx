@@ -46,17 +46,7 @@ const ServiceAboutSection = ({ data }) => {
               </div>
             </div>
           </div>
-          {/* Image Section */}
-          <div className="lg:w-1/2 w-full">
-            <div className="services-details-image w-full animate__animated animate__fadeInUp">
-              <Image
-                src="/images/our-story.webp"
-                alt={`${data?.title || 'Our'} Services`}
-                className="rounded-md"
-                fill // Using fill for responsive layout
-              />
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
