@@ -34,8 +34,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Page({ params }) {
-  const { slug } = params;
+export default async function Page({ params }) {
+  const { slug } = await params; // Await the params to resolve the Promise
   const data = servicesJsonData.find((service) => service.slug === slug);
 
   // Use Next.js notFound() for proper 404 handling
@@ -46,19 +46,14 @@ export default function Page({ params }) {
   return (
     <div>
       <ServiceHeroSection data={data} />
-
       <ServicePartnerSection />
-
       <div className="bg-gray-50">
         <ServiceAboutSection data={data} />
       </div>
-
       <ServiceCategoriesSection data={data} />
-
       <div className="bg-gray-50">
         <TestimonialsSection />
       </div>
-
       <StaticCaseStudiesComponent />
     </div>
   );
