@@ -28,8 +28,9 @@ export async function generateMetadata({ params }) {
 
 // Generate static params for all services (optional, for static generation)
 export async function generateStaticParams() {
-  return servicesJsonData.map((service) => ({
-    slug: service.slug,
+  const services = require('@/../data/services.json'); // Import services.json
+  return services.map((service) => ({
+    slug: service.slug, // Return each slug
   }));
 }
 
