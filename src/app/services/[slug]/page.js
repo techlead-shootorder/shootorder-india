@@ -34,15 +34,9 @@ export async function generateStaticParams() {
   }));
 }
 
-<<<<<<< Updated upstream
-export default async function Page({ params }) {
-  const { slug } = await params; // Await the params to resolve the Promise
-  const data = servicesJsonData.find(service => service.slug === slug);
-=======
 export default function Page({ params }) {
   const { slug } = params;
   const data = servicesJsonData.find((service) => service.slug === slug);
->>>>>>> Stashed changes
 
   // Use Next.js notFound() for proper 404 handling
   if (!data) {
@@ -52,16 +46,6 @@ export default function Page({ params }) {
   return (
     <div>
       <ServiceHeroSection data={data} />
-<<<<<<< Updated upstream
-      <ServicePartnerSection />
-      <div className='bg-gray-50'>
-        <ServiceAboutSection data={data} />
-      </div>
-      <ServiceCategoriesSection data={data} />
-      <div className='bg-gray-50'>
-        <TestimonialsSection />
-      </div>
-=======
 
       <ServicePartnerSection />
 
@@ -75,7 +59,6 @@ export default function Page({ params }) {
         <TestimonialsSection />
       </div>
 
->>>>>>> Stashed changes
       <StaticCaseStudiesComponent />
     </div>
   );
