@@ -57,20 +57,20 @@ const CareerPage = () => {
           <div className="bg-white">
             <div className="mb-16 py-12 !max-w-7xl m-auto ">
               <h1 className="text-3xl font-bold text-gray-900 mb-6">
-                Become an Intelligent Digital Marketer
+                Best Opportunities. Best Place.
               </h1>
               <div className="space-y-4 text-md text-gray-600 leading-relaxed">
                 <p>
-                  Are you looking for a digital marketing job to shape up your
-                  professional career and at the same time excited to handle
-                  interesting challenges? You are at the very right place!
+                  We offer an environment where one can Learn, Grow and Excel in
+                  the field of Digital Marketing across specialities
                 </p>
                 <p>
-                  We offer lifetime career opportunities for all those aspirants
-                  who are looking to build their career in the field of Digital
+                  We offer best career opportunities for all those aspirants who
+                  are looking to shape their career in the field of Digital
                   Marketing, SEO, Social Media Marketing, PPC, Content Writing,
                   Web Development, Graphic Designing. We treat employees as our
-                  biggest assets and this is one of our company&apos;s philosophy.
+                  biggest assets and provide an excellent environment that
+                  ensures personal & professional growth.
                 </p>
                 <p>
                   Employees are our best asset. Create a culture where everyone
