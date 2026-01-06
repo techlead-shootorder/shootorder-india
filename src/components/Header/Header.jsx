@@ -17,7 +17,7 @@ const serviceCategories = [
     title: "Digital Marketing",
     color: "bg-blue-50 border-blue-200 text-blue-700",
     hoverColor: "hover:bg-blue-100",
-    // href: "/services/digital-marketing",
+    href: "/services/digital-marketing",
     columns: [
       {
         heading: "Owned Media",
@@ -114,13 +114,13 @@ const serviceCategories = [
         href: "/audit",
         description: "Evaluate your brand's performance and positioning",
       },
+      // {
+      //   name: "Brand Messaging & Tone of Voice",
+      //   href: "/messaging",
+      //   description: "Develop your authentic brand voice",
+      // },
       {
-        name: "Brand Messaging & Tone of Voice",
-        href: "/messaging",
-        description: "Develop your authentic brand voice",
-      },
-      {
-        name: "Package & Design",
+        name: "Packaging & Design",
         href: "/design",
         description: "Stunning visual brand assets and materials",
       },
@@ -187,11 +187,11 @@ const companyCategories = [
         href: "/about-us",
         description: "Learn about our story and mission",
       },
-      {
-        name: "Work Flow",
-        href: "/about/work-flow/",
-        description: "Our proven process and methodology",
-      },
+      // {
+      //   name: "Work Flow",
+      //   href: "/about/work-flow/",
+      //   description: "Our proven process and methodology",
+      // },
       {
         name: "Clients & Testimonials",
         href: "/about/clients/",

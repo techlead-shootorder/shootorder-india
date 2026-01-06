@@ -474,7 +474,7 @@
     "slug": "influencers-marketing",
     "description": "Influencer campaigns generate $5.20 in earned media value for every dollar spent. Elevate your brand's visibility and reach with ShootOrder, a trusted influencer marketing company. Our expert team connects you with influential personalities in your industry, driving authentic engagement and maximizing your brand's exposure. Leverage the power of influencer partnerships and enhance your online presence today.",
     "imageUrl": "/images/services/influencer-marketing/WebsiteImages_1_Influencer_Marketing.png",
-    "bottomheading": "Influencer Marketing Agency",
+    "bottomheading": "Influencer Marketing",
     "features": [
       {
         "imageUrl": "/images/services/influencer-marketing/Strategy Development.webp",
@@ -662,7 +662,7 @@
     "title": "Marketing Automation",
     "slug": "marketing-automation",
     "description": "Marketing automation can drive a 14.5% increase in sales productivity Unlock the power of automation and elevate your marketing efforts with ShootOrder, the trusted marketing automation company. Streamline your campaigns, drive targeted engagement, and maximize ROI with our comprehensive suite of automated solutions. Experience unparalleled efficiency and results today.",
-    "imageUrl": "/images/services/email-marketing-bg.jpg",
+    "imageUrl": "/images/services/email-marketing/a-b-testing.jpg",
     "bottomheading": "Marketing Automation",
     "features": [
       {
@@ -1128,7 +1128,7 @@
     "title": "Meta Ads",
     "description": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
     "imageUrl": "/images/services/meta-ads/WebsiteImages_1_Meta_Ads.png",
-    "bottomheading": "Meta Ads Agency",
+    "bottomheading": "Meta Ads",
     "features": [
       {
         "imageUrl": "/images/services/meta-ads/Meta Ads Strategy & Planning.webp",
@@ -1177,7 +1177,7 @@
     "slug": "identity",
     "description": "Brand identity is the visual and conceptual foundation of your business. It encompasses everything from your logo and color palette to your brand voice and personality. A strong brand identity helps you stand out in the market and creates lasting connections with your customers.",
     "imageUrl": "/images/services/identity-development/WebsiteImages_1_Brand_Identity_Development.png",
-    "bottomheading": "Branding - Identity Development Agency",
+    "bottomheading": "Brand Identity Development",
     "features": [
       {
         "imageUrl": "/images/services/identity-development/Visual Identity System.webp",
@@ -1220,7 +1220,7 @@
     "slug": "audit",
     "description": "A brand audit is a thorough examination of your brand's current state, including its strengths, weaknesses, and opportunities for improvement. This analysis helps identify gaps and provides actionable insights to enhance your brand strategy.",
     "imageUrl": "/images/services/brand-audit/WebsiteImages_1_Brand_Audit.png",
-    "bottomheading": "Brand Auditing Agency",
+    "bottomheading": "Brand Auditing",
     "features": [
       {
         "imageUrl": "/images/services/brand-audit/Visual Consistency Review.webp",
@@ -1355,7 +1355,7 @@
     "slug": "campaigns",
     "description": "Brand campaigns are strategic marketing initiatives designed to promote your brand, increase awareness, and drive specific business outcomes. We create cohesive campaigns that work across multiple channels and touchpoints.",
     "imageUrl": "/images/services/brand-launch/WebsiteImages_1_Brand_Launch_Campaign.png",
-    "bottomheading": "Brand Campaign Services",
+    "bottomheading": "Brand Launch & Campaign Services",
     "features": [
       {
         "imageUrl": "/images/services/brand-launch/Brand Launch Strategy.webp",

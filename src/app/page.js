@@ -10,15 +10,31 @@ import NewBanner from "@/components/Home/Banner/NewBanner";
 import WhyPartnerWithUs from "@/components/WhyPartnerWithUs";
 
 // Lazy load components with preload hints
-const AnimatedIntro = lazy(() => import("@/components/Home/Intro/AnimatedIntro"));
+const AnimatedIntro = lazy(() =>
+  import("@/components/Home/Intro/AnimatedIntro")
+);
 const AboutUs = lazy(() => import("@/components/Home/About/AboutUs"));
-const ServiceTabs = lazy(() => import("../components/Home/ServiceTabs/ServiceTabs"));
-const CompanyInfo = lazy(() => import("@/components/Home/CompanyInfo/CompanyInfo"));
-const ServicePartnerSection = lazy(() => import("@/components/SeprateServicePage/ServicePartnerSection"));
-const ReviewsService = lazy(() => import("@/components/NewServiceComponent/ReviewsService"));
-const ClutchWidget = lazy(() => import("@/components/Home/CompanyInfo/ClutchWidget"));
-const PipeDriveForm = lazy(() => import("@/components/Home/PipeDrive/PipeDriveForm"));
-const ImageSection = lazy(() => import("@/components/Home/PipeDrive/ImageSection"));
+const ServiceTabs = lazy(() =>
+  import("../components/Home/ServiceTabs/ServiceTabs")
+);
+const CompanyInfo = lazy(() =>
+  import("@/components/Home/CompanyInfo/CompanyInfo")
+);
+const ServicePartnerSection = lazy(() =>
+  import("@/components/SeprateServicePage/ServicePartnerSection")
+);
+const ReviewsService = lazy(() =>
+  import("@/components/NewServiceComponent/ReviewsService")
+);
+const ClutchWidget = lazy(() =>
+  import("@/components/Home/CompanyInfo/ClutchWidget")
+);
+const PipeDriveForm = lazy(() =>
+  import("@/components/Home/PipeDrive/PipeDriveForm")
+);
+const ImageSection = lazy(() =>
+  import("@/components/Home/PipeDrive/ImageSection")
+);
 
 // Optimized skeleton loaders
 const SkeletonLoader = () => (
@@ -46,9 +62,9 @@ export default function Home() {
     about: false,
     services: false,
     partners: false,
-    forms: false
+    forms: false,
   });
-  
+
   const scrollTriggersRef = useRef([]);
   const observerRef = useRef(null);
 
@@ -59,12 +75,12 @@ export default function Home() {
   useEffect(() => {
     // Set loaded immediately on mount
     setIsLoaded(true);
-    
+
     // Load above-the-fold content immediately
-    setVisibleSections(prev => ({
+    setVisibleSections((prev) => ({
       ...prev,
       intro: true,
-      about: true
+      about: true,
     }));
 
     // Register ScrollTrigger
@@ -84,19 +100,19 @@ export default function Home() {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '300px', // Increased to load earlier
-      threshold: 0.01 // Lower threshold for faster loading
+      rootMargin: "300px", // Increased to load earlier
+      threshold: 0.01, // Lower threshold for faster loading
     };
 
     observerRef.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const sectionName = entry.target.getAttribute('data-section');
-          
+          const sectionName = entry.target.getAttribute("data-section");
+
           if (sectionName && !visibleSections[sectionName]) {
-            setVisibleSections(prev => ({
+            setVisibleSections((prev) => ({
               ...prev,
-              [sectionName]: true
+              [sectionName]: true,
             }));
           }
         }
@@ -104,8 +120,8 @@ export default function Home() {
     }, observerOptions);
 
     // Observe section markers
-    const sectionMarkers = document.querySelectorAll('[data-section]');
-    sectionMarkers.forEach(marker => {
+    const sectionMarkers = document.querySelectorAll("[data-section]");
+    sectionMarkers.forEach((marker) => {
       observerRef.current?.observe(marker);
     });
 
@@ -124,7 +140,7 @@ export default function Home() {
 
       gsap.killTweensOf("*");
       ScrollTrigger.getAll().forEach((trigger) => trigger?.kill?.());
-      
+
       if (typeof window !== "undefined") {
         ScrollTrigger.refresh();
       }
@@ -195,7 +211,13 @@ export default function Home() {
           animation: gsap.fromTo(
             tabs,
             { scale: 0.9, opacity: 0 },
-            { scale: 1, opacity: 1, duration: 0.6, stagger: 0.1, ease: "power2.out" }
+            {
+              scale: 1,
+              opacity: 1,
+              duration: 0.6,
+              stagger: 0.1,
+              ease: "power2.out",
+            }
           ),
           trigger: "#service-tabs-section",
           start: "top bottom-=100",
@@ -203,7 +225,6 @@ export default function Home() {
         });
         scrollTriggersRef.current.push(tabsTrigger);
       }
-
     } catch (error) {
       console.error("Error in setupSectionAnimations:", error);
     }
@@ -233,93 +254,101 @@ export default function Home() {
             </Suspense>
           </div> */}
 
-          {/* About Section - Loads immediately */}
-          <div data-section="about">
-            <Suspense fallback={<SkeletonLoader />}>
-              <AboutUs />
-            </Suspense>
-          </div>
+      {/* About Section - Loads immediately */}
+      <div data-section="about">
+        <Suspense fallback={<SkeletonLoader />}>
+          <AboutUs />
+        </Suspense>
+      </div>
 
-          {/* Company Section - Loads immediately */}
-          <div className="animate-section !max-w-7xl !mx-auto" id="company-section">
-            <div className="parallax-bg absolute inset-0 -z-10 w-full">
-              <div className="absolute top-1/4 left-1/4 w-1/4 h-1/4 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-full blur-3xl" />
-            </div>
-          </div>
-
-        {/* Service Tabs Section - Lazy loaded */}
-        <section className="!bg-gray-50">
-          <div data-section="services" className="animate-section" id="service-tabs-section">
-            {visibleSections.services ? (
-              <Suspense fallback={<SectionLoader />}>
-                <ServiceTabs />
-              </Suspense>
-            ) : (
-              <SectionLoader />
-            )}
-          </div>
-        </section>
-
-        {/* Why Partner With Us Section */}
-        <WhyPartnerWithUs />
-
-        {/* Our Achievements Section - Lazy loaded */}
-        <div data-section="achievements" className="background-gray-50">
-          <Suspense fallback={<SectionLoader />}>
-            <ReviewsService />
-          </Suspense>
+      {/* Company Section - Loads immediately */}
+      <div className="animate-section !max-w-7xl !mx-auto" id="company-section">
+        <div className="parallax-bg absolute inset-0 -z-10 w-full">
+          <div className="absolute top-1/4 left-1/4 w-1/4 h-1/4 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-full blur-3xl" />
         </div>
+      </div>
 
-        {/* Partners Section - Lazy loaded */}
-        <div data-section="partners" className="!max-w-7xl mx-auto">
-          {visibleSections.partners ? (
-            <Suspense fallback={<MinimalLoader />}>
-              <ServicePartnerSection />
+      {/* Service Tabs Section - Lazy loaded */}
+      <section className="!bg-gray-50">
+        <div
+          data-section="services"
+          className="animate-section"
+          id="service-tabs-section"
+        >
+          {visibleSections.services ? (
+            <Suspense fallback={<SectionLoader />}>
+              <ServiceTabs />
             </Suspense>
           ) : (
-            <MinimalLoader />
+            <SectionLoader />
           )}
         </div>
+      </section>
 
-        {/* Clutch Widget - Lazy loaded */}
-        <div className="bg-gray-50">
+      {/* Why Partner With Us Section */}
+      <WhyPartnerWithUs />
+
+      {/* Our Achievements Section - Lazy loaded */}
+      <div data-section="achievements" className="background-gray-50">
+        <Suspense fallback={<SectionLoader />}>
+          <ReviewsService />
+        </Suspense>
+      </div>
+
+      {/* Partners Section - Lazy loaded */}
+      <div data-section="partners" className="!max-w-7xl mx-auto">
+        {visibleSections.partners ? (
           <Suspense fallback={<MinimalLoader />}>
-            <ClutchWidget />
+            <ServicePartnerSection />
           </Suspense>
-        </div>
+        ) : (
+          <MinimalLoader />
+        )}
+      </div>
 
-        {/* Form section - Lazy loaded */}
-        <section className="py-10">
-          <div data-section="forms" className="animate-section !max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="talent-form-section">
-            <div className="parallax-bg absolute inset-0 -z-10 w-full">
-              <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 bg-gradient-to-tr from-indigo-500/10 to-transparent rounded-full blur-3xl" />
+      {/* Clutch Widget - Lazy loaded */}
+      <div className="bg-gray-50">
+        <Suspense fallback={<MinimalLoader />}>
+          <ClutchWidget />
+        </Suspense>
+      </div>
+
+      {/* Form section - Lazy loaded */}
+      <section className="py-10">
+        <div
+          data-section="forms"
+          className="animate-section !max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          id="talent-form-section"
+        >
+          <div className="parallax-bg absolute inset-0 -z-10 w-full">
+            <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 bg-gradient-to-tr from-indigo-500/10 to-transparent rounded-full blur-3xl" />
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="w-full h-full lg:w-1/2 order-1 lg:order-1">
+              {visibleSections.forms ? (
+                <Suspense fallback={<SkeletonLoader />}>
+                  <ImageSection />
+                </Suspense>
+              ) : (
+                <SkeletonLoader />
+              )}
             </div>
 
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="w-full h-full lg:w-1/2 order-1 lg:order-1">
+            <div className="w-full lg:w-1/2 order-2 lg:order-2">
+              <div className="bg-white sm:p-8 rounded-lg shadow-lg">
                 {visibleSections.forms ? (
                   <Suspense fallback={<SkeletonLoader />}>
-                    <ImageSection />
+                    <PipeDriveForm />
                   </Suspense>
                 ) : (
                   <SkeletonLoader />
                 )}
               </div>
-
-              <div className="w-full lg:w-1/2 order-2 lg:order-2">
-                <div className="bg-white sm:p-8 rounded-lg shadow-lg">
-                  {visibleSections.forms ? (
-                    <Suspense fallback={<SkeletonLoader />}>
-                      <PipeDriveForm />
-                    </Suspense>
-                  ) : (
-                    <SkeletonLoader />
-                  )}
-                </div>
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   );
 }

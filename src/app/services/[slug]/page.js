@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 
 // Generate static params for all services (optional, for static generation)
 export async function generateStaticParams() {
-  const services = require('@/../data/services.json'); // Import services.json
+  const services = require("@/../data/services.json"); // Import services.json
   return services.map((service) => ({
     slug: service.slug, // Return each slug
   }));
@@ -48,12 +48,10 @@ export default async function Page({ params }) {
       <ServiceHeroSection data={data} />
       <ServicePartnerSection />
       <div className="bg-gray-50">
-        <ServiceAboutSection data={data} />
+        {/* <ServiceAboutSection data={data} /> */}
       </div>
       <ServiceCategoriesSection data={data} />
-      <div className="bg-gray-50">
-        <TestimonialsSection />
-      </div>
+      <div className="bg-gray-50">{/* <TestimonialsSection /> */}</div>
       <StaticCaseStudiesComponent />
     </div>
   );

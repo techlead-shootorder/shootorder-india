@@ -1,4 +1,3 @@
-
 import FormulaSection from "@/components/about-us/FormulaSection";
 import HomeBanner from "@/components/about-us/HomeBanner";
 // import TestimonialSection from "@/components/about-us/TestimonialSection";
@@ -17,23 +16,24 @@ import TeamShowcase from "@/components/NewAboutUs/TeamShowCase";
 import TestimonialsSection from "@/components/NewAboutUs/TestimonialsSection";
 import ContactFormSection from "@/components/NewAboutUs/ContactSection";
 import ServicePartnerSection from "@/components/SeprateServicePage/ServicePartnerSection";
-
-
+import ClutchWidget from "@/components/Home/CompanyInfo/ClutchWidget";
 function page() {
   return (
     <>
       {/* <HomeBanner /> */}
-      <AboutUsHero/>
-      <WhoWeAre/>
-      <OurCultureSection/>
-      <OurFoundersSection/>
+      <AboutUsHero />
+      <WhoWeAre />
+      <OurCultureSection />
+      <OurFoundersSection />
       {/* <TeamSliderSection/> */}
       {/* <TeamShowcase/> */}
-      <TestimonialsSection/>
-      {/* <PartnerCarousel/> */}
-      <ServicePartnerSection/>
-      <ContactFormSection/>
       
+      {/* <TestimonialsSection /> */}
+      {/* <PartnerCarousel/> */}
+      <ServicePartnerSection />
+      <ClutchWidget />
+      <ContactFormSection />
+
       {/* Old About us component */}
       {/* <AboutDescription/> */}
       {/* <TestimonialSection /> */}
