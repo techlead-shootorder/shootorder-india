@@ -306,11 +306,10 @@ const StaticCaseStudiesComponent = () => {
         {/* Main Title */}
         <div className="text-center mb-16">
           <h1 className="text-3xl font-bold text-black mb-4">
-            Our Case Studies
+            Our Sagas of Success.
           </h1>
           <p className="text-gray-600 text-xl max-w-4xl mx-auto">
-            Discover how we've helped businesses across industries achieve
-            remarkable growth through strategic digital marketing solutions.
+            Come, discover how we've transformed businesses across industries with innovative digital solutions.
           </p>
         </div>
 
