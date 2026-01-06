@@ -179,6 +179,8 @@ const serviceCategories = [
 const companyCategories = [
   {
     title: "Company Profile",
+    description:
+      "A brief insight into our journey, our founder, and the culture that shapes us",
     color: "bg-indigo-50 border-indigo-200 text-indigo-700",
     hoverColor: "hover:bg-indigo-100",
     links: [
@@ -840,11 +842,11 @@ export default function Header() {
                         </h2>
                       </div>
                       <p className="text-gray-600">
-                        Explore our comprehensive{" "}
-                        {getCurrentMegaMenuData()[
+                        {" "}
+                        {getCurrentMegaMenuData()[activeTab].description}{" "}
+                        {/* {getCurrentMegaMenuData()[
                           activeTab
-                        ].title.toLowerCase()}{" "}
-                        solutions
+                        ].title.toLowerCase()}{" "} */}
                       </p>
                     </div>
 

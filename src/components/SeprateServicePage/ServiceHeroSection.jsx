@@ -167,9 +167,9 @@ const ServiceHeroSection = ({ data }) => {
         </div>
 
         {/* About Content Section */}
-        <div className="mt-16 pt-16 border-t border-gray-200">
+        {/* <div className="mt-16 pt-16 border-t border-gray-200">
           <div className="flex flex-col lg:flex-row items-center">
-            {/* Text Section */}
+           
             <div className="lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
               <h3 className="text-3xl font-bold mb-6 text-blue-950">
                 {aboutContent.heading}
@@ -178,7 +178,7 @@ const ServiceHeroSection = ({ data }) => {
                 {aboutContent.content}
               </p>
             </div>
-            {/* Image Section */}
+            
             <div className="lg:w-1/2">
               <Image
                 src="/images/our-story.webp"
@@ -189,7 +189,7 @@ const ServiceHeroSection = ({ data }) => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Popup Modal */}
       <PopupModal isOpen={isPopupOpen} onClose={closePopup} />

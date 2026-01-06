@@ -46,11 +46,12 @@ export default async function Page({ params }) {
   return (
     <div>
       <ServiceHeroSection data={data} />
+      <ServiceCategoriesSection data={data} />
       <ServicePartnerSection />
       <div className="bg-gray-50">
         {/* <ServiceAboutSection data={data} /> */}
       </div>
-      <ServiceCategoriesSection data={data} />
+      
       <div className="bg-gray-50">{/* <TestimonialsSection /> */}</div>
       <StaticCaseStudiesComponent />
     </div>
