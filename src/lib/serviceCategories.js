@@ -9,7 +9,7 @@ export const SERVICE_CATEGORIES = {
       "blog-management",
       "social-media-marketing",
       "web-design",
-      "gbp-management",
+      // "gbp-management",
       "google-ads",
       "meta-ads",
       "digital-pr",

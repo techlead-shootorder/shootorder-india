@@ -67,7 +67,7 @@ const StaticCaseStudiesComponent = () => {
         slug: "ppc-edtech-company",
         title:
           "Creative Content That Clicks: Social Success for an EHR Platform",
-        image: "/images/CaseStudies/PPC/IPI-india.webp",
+        image: "/images/CaseStudies/PPC/Alpa-kids.webp",
         description:
           "With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn't need a big budget.",
         results: "Overall Score 5.0",
@@ -95,7 +95,7 @@ const StaticCaseStudiesComponent = () => {
         id: "google-ads",
         slug: "ppc-health-wellness",
         title: "Powering IPI Growth with Precision PPC",
-        image: "/images/CaseStudies/PPC/Alpa-kids.webp",
+        image: "/images/CaseStudies/PPC/IPI-india.webp",
         description:
           "ShootOrder's paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.",
         results: "Overall Score 4.0",
