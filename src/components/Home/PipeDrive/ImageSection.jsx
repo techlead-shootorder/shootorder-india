@@ -13,12 +13,12 @@ const ImageSection = () => {
                 className="object-cover  hover:scale-105 transition-transform duration-700"
                 priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
                 <div className="absolute bottom-6 left-6 text-white">
                     <p className="text-sm font-medium">Headquarters</p>
                     <p className="text-lg font-bold">Hyderabad, India</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 
