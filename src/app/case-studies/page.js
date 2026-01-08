@@ -10,12 +10,33 @@ import {
   Download,
   ArrowLeft,
 } from "lucide-react";
+import PopupModal from "@/components/Modal/PopupModal";
+import Image from "next/image";
 
 const CaseStudiesPage = () => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState("industry");
   const [selectedService, setSelectedService] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const openPopup = (e) => {
+    // Create ripple effect
+    const ripple = document.createElement("div");
+    const rect = e.target.getBoundingClientRect();
+    ripple.className = "absolute animate-ripple rounded-full bg-gray-200";
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+    e.target.appendChild(ripple);
 
+    // Remove ripple after animation
+    setTimeout(() => ripple.remove(), 1000);
+
+    // Open popup with slight delay for visual feedback
+    setTimeout(() => setIsPopupOpen(true), 200);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
   const industryStudies = [
     {
       id: "healthcare",
@@ -448,42 +469,81 @@ const CaseStudiesPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-slate-50">
-      {/* Hero Section */}
-      <div
-        className="relative text-white mt-20"
-        style={{
-          backgroundImage: "url('/images/CaseStudies/Case study banner.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-[#cd1f38]/20 to-[#b91c47]/20"></div> */}
+      <div className="bg-[#ffffff] py-16 px-4 lg:px-8 mt-20">
+        <div className="!max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 sm:gap-20 items-center">
+            <div className="space-y-8">
+              {/* Main Heading */}
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
+                Our Sagas of <span className="text-[#cd1f38]">Success.</span>
+              </h1>
 
-        <div className="relative !max-w-7xl mx-auto px-4 py-32">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-red-200 bg-clip-text text-transparent">
-              Our Success Stories
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Discover How We&apos;ve Transformed Businesses Across Industries
-              With Innovative Digital Solutions
-            </p>
-            <div className="flex items-center justify-center space-x-8 text-gray-300">
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <Users className="w-6 h-6 text-white" />
-                <span className="text-lg">50+ Retainership</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <Award className="w-6 h-6 text-white" />
-                <span className="text-lg">92% Client Retention Rate</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <TrendingUp className="w-6 h-6 text-white" />
-                <span className="text-lg">12+ Years of Experience</span>
+              {/* Subtext */}
+              <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
+                Come, discover how we've transformed businesses across
+                industries with innovative digital solutions
+              </p>
+
+              {/* Partners Image */}
+              <div className="py-4 flex items-center gap-2">
+                <Image
+                  src="/images/logo/meta.png"
+                  alt="Meta Partner"
+                  width={100}
+                  height={30}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]  sm:!h-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/images/logo/google.png"
+                  alt="Google Partner"
+                  width={90}
+                  height={40}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/images/logo/hubspot.png"
+                  alt="HubSpot Partner"
+                  width={100}
+                  height={40}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <button
+                  className="bg-[#cd1f38] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
+                  onClick={openPopup}
+                >
+                  Contact Us
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
+            {/*Right side content*/}
+            <div className="relative">
+              <Image
+                src="/images/CaseStudies/Case_Studies_page_img.webp"
+                alt="Content creation showcase with various brand examples"
+                width={600}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+                priority
+              />
+            </div>
           </div>
+          <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
         </div>
       </div>
 
