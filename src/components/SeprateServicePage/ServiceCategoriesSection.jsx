@@ -30,12 +30,12 @@ const ServiceCategoriesSection = ({ data }) => {
         slug: "/seo",
         icon: Search,
       },
-      {
-        title: "Blog Management",
-        description: "Content that converts and engages",
-        slug: "/blog-management",
-        icon: Edit,
-      },
+      // {
+      //   title: "Blog Management",
+      //   description: "Content that converts and engages",
+      //   slug: "/blog-management",
+      //   icon: Edit,
+      // },
       {
         title: "Website Development",
         description: "High-performance, responsive websites",
@@ -48,12 +48,12 @@ const ServiceCategoriesSection = ({ data }) => {
         slug: "/social-media-marketing",
         icon: Share2,
       },
-      {
-        title: "GBP Management",
-        description: "Build your social media presence",
-        slug: "/gbp-management",
-        icon: Target,
-      },
+      // {
+      //   title: "GBP Management",
+      //   description: "Build your social media presence",
+      //   slug: "/gbp-management",
+      //   icon: Target,
+      // },
     ],
     paid: [
       {
@@ -93,14 +93,14 @@ const ServiceCategoriesSection = ({ data }) => {
       icon: Palette,
     },
     {
-      title: "Package & Design",
+      title: "Packaging & Design",
       description: "Stunning visual brand assets and materials",
       slug: "/design",
       icon: PenTool,
     },
     {
       title: "Brand Audit",
-      description: "Evaluate your brand's performance and positioning",
+      description: "Evaluate your brand's performance & positioning",
       slug: "/audit",
       icon: Award,
     },
@@ -110,12 +110,12 @@ const ServiceCategoriesSection = ({ data }) => {
       slug: "/campaigns",
       icon: TrendingUp,
     },
-    {
-      title: "Brand Messaging & Tone of Voice",
-      description: "Develop your authentic brand voice",
-      slug: "/messaging",
-      icon: MessageSquare,
-    },
+    // {
+    //   title: "Brand Messaging & Tone of Voice",
+    //   description: "Develop your authentic brand voice",
+    //   slug: "/messaging",
+    //   icon: MessageSquare,
+    // },
   ];
 
   const growthHackingServices = [

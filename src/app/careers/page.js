@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import PopupModal from "@/components/Modal/PopupModal";
 
 const CareerPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All positions");
-
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const jobCategories = [
     { name: "All positions", count: 17 },
     { name: "Design", count: 1 },
@@ -32,7 +33,25 @@ const CareerPage = () => {
       category: "Marketing",
     },
   ];
+  const openPopup = (e) => {
+    // Create ripple effect
+    const ripple = document.createElement("div");
+    const rect = e.target.getBoundingClientRect();
+    ripple.className = "absolute animate-ripple rounded-full bg-gray-200";
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+    e.target.appendChild(ripple);
 
+    // Remove ripple after animation
+    setTimeout(() => ripple.remove(), 1000);
+
+    // Open popup with slight delay for visual feedback
+    setTimeout(() => setIsPopupOpen(true), 200);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
   const filteredJobs =
     selectedCategory === "All positions"
       ? jobListings
@@ -41,7 +60,7 @@ const CareerPage = () => {
   return (
     <div className="min-h-screen ">
       {/* Banner Section with Image */}
-      <div className="relative h-128 bg-gray-50">
+      {/* <div className="relative h-128 bg-gray-50">
         <Image
           src="/images/background/careers/bg.jpg"
           alt="Career Banner"
@@ -49,39 +68,99 @@ const CareerPage = () => {
           className="object-cover"
           priority
         />
-      </div>
+      </div> */}
       {/* Main Content */}
-      <div className="!bg-gray-100">
-        <div className=" mx-auto ">
+      <div className="bg-[#ffffff] py-16 px-4 lg:px-8 mt-20">
+        <div className="!max-w-7xl mx-auto">
           {/* Introduction Section */}
-          <div className="bg-white">
-            <div className="mb-16 py-12 !max-w-7xl m-auto ">
-              <h1 className="text-3xl font-bold text-gray-900 mb-6">
-                Best Opportunities. Best Place.
+          <div className="grid lg:grid-cols-2 sm:gap-20 items-center">
+            {/* Left Content */}
+            <div className="space-y-8">
+              {/* Main Heading */}
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
+                Best Opportunities.
+                <br />
+                Best <span className="text-[#cd1f38]">Place.</span>
               </h1>
-              <div className="space-y-4 text-md text-gray-600 leading-relaxed">
-                <p>
-                  We offer an environment where one can Learn, Grow and Excel in
-                  the field of Digital Marketing across specialities
-                </p>
-                <p>
-                  We offer best career opportunities for all those aspirants who
-                  are looking to shape their career in the field of Digital
-                  Marketing, SEO, Social Media Marketing, PPC, Content Writing,
-                  Web Development, Graphic Designing. We treat employees as our
-                  biggest assets and provide an excellent environment that
-                  ensures personal & professional growth.
-                </p>
-                <p>
-                  Employees are our best asset. Create a culture where everyone
-                  would love to work.
-                  <br />
-                  <strong>Director</strong>
-                </p>
+
+              {/* Subtext */}
+              <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
+                We offer best career opportunities for all those aspirants who
+                are looking to shape their career in the field of Digital
+                Marketing, SEO, Social Media Marketing, PPC, Content Writing,
+                Web Development, Graphic Designing.
+              </p>
+
+              {/* Partners Image */}
+              <div className="py-4 flex items-center gap-2">
+                <Image
+                  src="/images/logo/meta.png"
+                  alt="Meta Partner"
+                  width={100}
+                  height={30}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[100px]  sm:!h-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/images/logo/google.png"
+                  alt="Google Partner"
+                  width={90}
+                  height={40}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/images/logo/hubspot.png"
+                  alt="HubSpot Partner"
+                  width={100}
+                  height={40}
+                  className="hover:scale-105 transition-transform w-[80px] sm:w-[90px]"
+                  style={{ objectFit: "contain" }}
+                />
+
+                {/* <Image
+                         src="/images/services/service-partners-image.webp"
+                         alt="Partners - Google Partner, Shopify Partners, Meta Business Partners, Klaviyo Partner"
+                         width={500}
+                         height={80}
+                         className="h-16 w-auto object-contain"
+                       /> */}
+
+                <button
+                  className="bg-[#cd1f38] text-white px-4 py-3 rounded-lg font-medium hover:bg-navy-800 transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer"
+                  onClick={openPopup}
+                >
+                  Contact Us
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
-          </div>
 
+            {/* Right Side - Hero Image */}
+            <div className="relative">
+              <Image
+                src="/images/background/careers/careers-right-image.webp"
+                alt="Content creation showcase with various brand examples"
+                width={600}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+                priority
+              />
+            </div>
+          </div>
+          <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
           {/* Open Positions Section */}
           <div className="!max-w-7xl mx-auto pb-12">
             <div className="text-center mb-12 ">

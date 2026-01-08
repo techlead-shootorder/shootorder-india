@@ -6,10 +6,8 @@ export const SERVICE_CATEGORIES = {
     description: "Boost your online presence and reach your target audience",
     services: [
       "seo",
-      "blog-management",
       "social-media-marketing",
       "web-design",
-      // "gbp-management",
       "google-ads",
       "meta-ads",
       "digital-pr",
