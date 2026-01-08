@@ -51,7 +51,7 @@ export default async function Page({ params }) {
       <div className="bg-gray-50">
         {/* <ServiceAboutSection data={data} /> */}
       </div>
-      
+
       <div className="bg-gray-50">{/* <TestimonialsSection /> */}</div>
       <StaticCaseStudiesComponent />
     </div>

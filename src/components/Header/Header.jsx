@@ -189,21 +189,16 @@ const companyCategories = [
         href: "/about-us",
         description: "Learn about our story and mission",
       },
-      // {
-      //   name: "Work Flow",
-      //   href: "/about/work-flow/",
-      //   description: "Our proven process and methodology",
-      // },
+      {
+        name: "Work Flow",
+        href: "/about/work-flow/",
+        description: "Our proven process and methodology",
+      },
       {
         name: "Clients & Testimonials",
         href: "/about/clients/",
         description: "Success stories from happy clients",
-      },
-      // {
-      //   name: "Case Studies",
-      //   href: "/case-studies/",
-      //   description: "Detailed project breakdowns and results",
-      // },
+      }
     ],
   },
   {

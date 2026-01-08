@@ -254,7 +254,7 @@ const ServiceCategoriesSection = ({ data }) => {
       case "growth-hacking":
         return (
           <CategorySection
-            title="Growth Hacking"
+            title="Growth Hacking Solutions"
             subtitle="Explore our comprehensive growth hacking solutions"
             className="bg-white"
           >

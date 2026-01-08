@@ -1470,5 +1470,45 @@
       }
     ]
   },
+  {
+    "heading": "Designing Impact, Driving Action, Delivering Growth",
+    "subheading": "We craft conversion-focused landing pages, meaningful on-site engagement, and strong reputation management strategies to fuel business results.",
+    "bottomsubheading": "ShootOrder's Growth Hacking team specializes in rapid, scalable growth strategies that maximize results with minimal resources. We combine creative marketing techniques,data analytics, and innovative experimentation to identify the most effective growth channels for your business. Our growth hackers use a systematic approach to test, measure, and optimize every aspect of your customer acquisition funnel. From viral marketing campaigns to conversion rate optimization, unique onsite engagement activities to reinforcing reputations, we help both startups and established businesses achieve explosive growth through unconventional yet highly effective methods.",
+    "slug": "growth-hacking",
+    "title": "Growth Hacking Solutions",
+    "description": "Our digital marketing services include SEO, PPC, social media marketing, and more to help your business grow online.",
+    "imageUrl": "/images/services/growth-hacking/Growth_Hacking_New.webp",
+    "bottomheading": "Our Digital Marketing Services",
+    "features": [
+      {
+        "imageUrl": "/images/services/digital-marketing/seo.webp",
+        "heading": "Search Engine Optimization",
+        "content": "Optimize your website to rank higher on search engines and attract more visitors.",
+        "icon": "Search"
+      },
+      {
+        "imageUrl": "/images/services/digital-marketing/ppc.webp",
+        "heading": "Pay-Per-Click Advertising",
+        "content": "Drive targeted traffic to your website with our PPC advertising services.",
+        "icon": "MousePointer"
+      },
+      {
+        "imageUrl": "/images/services/digital-marketing/social-media.webp",
+        "heading": "Social Media Marketing",
+        "content": "Engage with your audience and grow your brand on social media platforms.",
+        "icon": "Users"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is digital marketing?",
+        "answer": "Digital marketing involves promoting your business online through various channels like search engines, social media, and email."
+      },
+      {
+        "question": "Why is digital marketing important?",
+        "answer": "Digital marketing helps you reach a larger audience, generate leads, and increase sales in the digital space."
+      }
+    ]
+  }
   
 ]
