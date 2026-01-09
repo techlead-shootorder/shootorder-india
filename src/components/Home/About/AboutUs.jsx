@@ -83,13 +83,21 @@ export default function AboutUs() {
 
               <div className="grid grid-cols-3 gap-8 pt-6">
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
-                  <h3 className="text-3xl font-bold text-[#cd1f38]">#</h3>
+                  <img
+                    src="/images/about-icon1.webp"
+                    alt="Diverse Industry"
+                    className="w-12 h-12 mx-auto mb-2"
+                  />
                   <p className="text-gray-800 font-medium">
                     Diverse Industry Portfolio
                   </p>
                 </div>
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
-                  <h3 className="text-3xl font-bold text-[#cd1f38]">;)</h3>
+                  <img
+                    src="/images/about-icon-2.webp"
+                    alt="Diverse Industry"
+                    className="w-12 h-12 mx-auto mb-2"
+                  />
                   <p className="text-gray-800 font-medium">
                     Innovation <br />& Creativity
                   </p>
@@ -97,7 +105,11 @@ export default function AboutUs() {
                 </div>
 
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
-                  <h3 className="text-3xl font-bold text-[#cd1f38]">₹</h3>
+                  <img
+                    src="/images/about-icon-3.webp"
+                    alt="Diverse Industry"
+                    className="w-12 h-12 mx-auto mb-2"
+                  />
                   <p className="text-gray-800 font-medium">
                     Cost-Effective Solutions
                   </p>
