@@ -108,7 +108,7 @@ export default async function ServicePage({ params }) {
           <div className="!max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-[#cd1f38] mb-4">
-                Other {category.name} Services
+                Other {category.name} Solutions
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 {category.description}

@@ -1078,7 +1078,7 @@
     "slug": "landing-pages",
     "title": "Landing Pages That Convert ",
     "description": "Your landing page is where curiosity turns into action. We design high-converting landing pages that engage visitors, guide them seamlessly through your offer, and drive real business results. ",
-    "imageUrl": "/images/services/landing-pages/WebsiteImages_1_Landing_Pages.png",
+    "imageUrl": "/images/services/landing-pages/Landing_Page_Image.webp",
     "bottomheading": "Landing Pages That Convert",
     "features": [
       {
@@ -1122,7 +1122,7 @@
   },
   {
     "heading": "Meta Approach. Mega Results.",
-    "subheading": "Handled by 50+ performance experts, our paid media strategies combine ownership, precision targeting, and powerful messaging to deliver measurable results",
+    "subheading": "We create and manage high-performing Meta ad campaigns (Facebook + Instagram) using precise audience targeting, compelling creatives, and continuous optimisation to maximise reach, engagement, and conversions.",
     "bottomsubheading": "Meta Ads reach over 3.8 billion people monthly across Facebook and Instagram. Tap into that power with our expert-led campaigns that drive real results.",
     "slug": "meta-ads",
     "title": "Meta Ads",
@@ -1165,6 +1165,48 @@
         "heading": "Reporting & Analytics ",
         "content": "Delivering insightful performance reports including KPIs like CTR, ROAS, CPL, and strategic recommendations for scaling.",
         "icon": "BarChart3"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is Performance Marketing?",
+        "answer": "Performance Marketing is a results-driven digital marketing approach where you pay only for specific actions such as clicks, leads, or conversions."
+      },
+      {
+        "question": "How is Performance Marketing different from traditional advertising?",
+        "answer": "Unlike traditional ads, Performance Marketing is measurable, targeted, and ROI-focused, ensuring you only pay for tangible outcomes."
+      },
+      {
+        "question": "What platforms do you run Performance Marketing campaigns on?",
+        "answer": "We manage campaigns on Google Ads, Meta (Facebook & Instagram), LinkedIn, YouTube, and other ad networks depending on your business goals."
+      },
+      {
+        "question": "Can Performance Marketing work for small businesses?",
+        "answer": "Yes, Performance Marketing is scalable and works well for businesses of all sizes, as budgets can be adjusted to fit specific goals."
+      },
+      {
+        "question": "How do you track the success of campaigns?",
+        "answer": "We track KPIs such as clicks, impressions, cost per lead, return on ad spend (ROAS), and conversions to measure campaign effectiveness."
+      },
+      {
+        "question": "Do you guarantee results with Performance Marketing?",
+        "answer": "While no agency can guarantee exact results, we optimize campaigns with data-driven strategies to maximize ROI and achieve your goals."
+      },
+      {
+        "question": "What industries benefit most from Performance Marketing?",
+        "answer": "E-commerce, SaaS, healthcare, real estate, education, and service-based industries benefit greatly from performance-driven campaigns."
+      },
+      {
+        "question": "How much budget do I need for Performance Marketing?",
+        "answer": "The budget depends on your business goals, industry competition, and target audience. We help you allocate the right budget for maximum results."
+      },
+      {
+        "question": "Do you provide reports on campaign performance?",
+        "answer": "Yes, we provide detailed reports and insights on campaign performance, including traffic, leads, sales, and overall ROI."
+      },
+      {
+        "question": "How fast can I see results from Performance Marketing?",
+        "answer": "Results can be seen within days or weeks depending on campaign setup, industry, and optimization. Paid ads usually deliver quick outcomes."
       }
     ],
     "content": ""
@@ -1391,7 +1433,7 @@
     "content": ""
   },
   {
-    "heading": "Be Seen.  Be Remembered. Be Preferred.",
+    "heading": "Be Seen, Remembered, Preferred.",
     "subheading": "Explore our 360° branding solutions designed to keep your brand in top gear.",
     "bottomsubheading": "Your brand is your story. Let us help you tell it in a way that captivates and inspires.",
     "slug": "branding",
@@ -1471,7 +1513,7 @@
     ]
   },
   {
-    "heading": "Designing Impact, Driving Action, Delivering Growth",
+    "heading": "Designing Impact, Driving Action, Delivering Growth.",
     "subheading": "We craft conversion-focused landing pages, meaningful on-site engagement, and strong reputation management strategies to fuel business results.",
     "bottomsubheading": "ShootOrder's Growth Hacking team specializes in rapid, scalable growth strategies that maximize results with minimal resources. We combine creative marketing techniques,data analytics, and innovative experimentation to identify the most effective growth channels for your business. Our growth hackers use a systematic approach to test, measure, and optimize every aspect of your customer acquisition funnel. From viral marketing campaigns to conversion rate optimization, unique onsite engagement activities to reinforcing reputations, we help both startups and established businesses achieve explosive growth through unconventional yet highly effective methods.",
     "slug": "growth-hacking",

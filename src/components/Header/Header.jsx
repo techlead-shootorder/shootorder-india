@@ -189,11 +189,11 @@ const companyCategories = [
         href: "/about-us",
         description: "Learn about our story and mission",
       },
-      {
-        name: "Work Flow",
-        href: "/about/work-flow/",
-        description: "Our proven process and methodology",
-      },
+      // {
+      //   name: "Work Flow",
+      //   href: "/about/work-flow/",
+      //   description: "Our proven process and methodology",
+      // },
       {
         name: "Clients & Testimonials",
         href: "/about/clients/",

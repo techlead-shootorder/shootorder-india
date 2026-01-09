@@ -39,8 +39,8 @@ export const SERVICE_CATEGORIES = {
     },
   },
   "growth-hacking": {
-    name: "Mobile Development",
-    description: "Create engaging mobile apps for iOS and Android",
+    name: "Growth Hacking",
+    description: "Explore our comprehensive growth hacking solutions.",
     services: ["landing-pages", "on-site-engagement", "orm"],
     heroContent: {
       h1: " Designing Impact",
@@ -53,8 +53,8 @@ export const SERVICE_CATEGORIES = {
     },
   },
   "marketing-automation": {
-    name: "Design & Branding",
-    description: "Create compelling visual identities and user experiences",
+    name: "Marketing Automation",
+    description: "",
     services: ["analytics-dashboards", "smart-analytics"],
     heroContent: {
       h1: " Data that Speaks",

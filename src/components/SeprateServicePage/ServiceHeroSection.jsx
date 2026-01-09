@@ -80,6 +80,7 @@ const ServiceHeroSection = ({ data }) => {
                 </>
               )}
             </h1>
+            <div className="w-24 h-1 bg-[#cd1f38] rounded-full"></div>
 
             {/* Subtext */}
             <p className="text-lg lg:text-xl text-gray-600 max-w-lg">

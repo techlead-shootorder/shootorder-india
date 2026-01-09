@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import PopupModal from "@/components/Modal/PopupModal";
+import LifeGallerySlider from "@/components/GallerySection";
 
 const CareerPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All positions");
@@ -78,17 +79,16 @@ const CareerPage = () => {
             <div className="space-y-8">
               {/* Main Heading */}
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-950 leading-tight">
-                Best Opportunities.
+                More than work.
                 <br />
-                Best <span className="text-[#cd1f38]">Place.</span>
+                <span className="text-[#cd1f38]">A Celebration.</span>
               </h1>
-
+              {/*decorative Line */}
+              <div className="w-24 h-1 bg-[#cd1f38] rounded-full"></div>
               {/* Subtext */}
               <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-                We offer best career opportunities for all those aspirants who
-                are looking to shape their career in the field of Digital
-                Marketing, SEO, Social Media Marketing, PPC, Content Writing,
-                Web Development, Graphic Designing.
+                A place where work is all about celebrating challenges,
+                rejoicing ideas and cherishing camaraderie.
               </p>
 
               {/* Partners Image */}
@@ -151,7 +151,7 @@ const CareerPage = () => {
             {/* Right Side - Hero Image */}
             <div className="relative">
               <Image
-                src="/images/background/careers/careers-right-image.webp"
+                src="/images/background/careers/lifeatshootorder.webp"
                 alt="Content creation showcase with various brand examples"
                 width={600}
                 height={600}
@@ -161,11 +161,51 @@ const CareerPage = () => {
             </div>
           </div>
           <PopupModal isOpen={isPopupOpen} onClose={closePopup} />
-          {/* Open Positions Section */}
-          <div className="!max-w-7xl mx-auto pb-12">
+         
+          <div className="services-details-area py-10 text-black">
+            <div className="container mx-auto !max-w-7xl px-4">
+              <div className="flex flex-col lg:flex-row items-start gap-12">
+                {/* Left Text Section */}
+                <div className="lg:w-1/2 services-details">
+                  <div className="services-details-desc">
+                    <h3 className="text-[25px] font-bold mb-4">
+                      Life At ShootOrder
+                    </h3>
+
+                    <div className="leading-relaxed">
+                      <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
+                        We believe great ideas come from happy teams. With
+                        fun-filled days, festive moments, and an open-door
+                        leadership style, our workplace is built on
+                        collaboration and creativity. Here, your ideas are
+                        heard, encouraged, and shaped with guidance from senior
+                        mentors who invest in your growth. You’ll never feel
+                        like just another employee but part of a team that has
+                        your back.
+                      </p>
+
+                      <p className="text-lg lg:text-xl text-gray-600 max-w-lg mt-4">
+                        We offer best career opportunities for all those
+                        aspirants who are looking to shape their career in the
+                        field of Digital Marketing, SEO, Social Media Marketing,
+                        PPC, Content Writing, Web Development, Graphic
+                        Designing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Slider Section */}
+                <div className="lg:w-1/2 w-full">
+                  <LifeGallerySlider />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="!max-w-7xl mx-auto pb-12 mt-2">
             <div className="text-center mb-12 ">
               <h2 className="text-3xl font-medium text-gray-900">
-                Open positions now!
+                Explore Exciting Career Opportunities
               </h2>
             </div>
 

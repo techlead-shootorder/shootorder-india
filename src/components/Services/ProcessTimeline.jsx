@@ -30,9 +30,10 @@ export default function ProcessTimeline({
         <div className="relative flex flex-col items-center">
           {/* Vertical timeline line */}
           <div
-            className="absolute left-1/2 -translate-x-1/2 w-1 bg-gray-200 h-full z-0"
+            className="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 bg-gray-200 h-full z-0"
             style={{ top: 40, bottom: 40 }}
           />
+
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-8 relative z-10">
             {features.map((step, idx) => {
               const IconComponent = getIconComponent(step.icon);
