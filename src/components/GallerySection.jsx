@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images = [
+  { id: 10, src: "/images/Gallery-images/SO-11.webp", alt: "Office Life 11" },
   { id: 1, src: "/images/Gallery-images/SO-1.webp", alt: "Office Life 1" },
   { id: 2, src: "/images/Gallery-images/SO-2.webp", alt: "Office Life 2" },
   { id: 3, src: "/images/Gallery-images/SO-3.webp", alt: "Office Life 3" },
@@ -14,7 +15,7 @@ const images = [
   { id: 8, src: "/images/Gallery-images/SO-8.webp", alt: "Office Life 8" },
   { id: 9, src: "/images/Gallery-images/SO-9.webp", alt: "Office Life 9" },
   { id: 10, src: "/images/Gallery-images/SO-10.webp", alt: "Office Life 10" },
-  { id: 10, src: "/images/Gallery-images/SO-11.webp", alt: "Office Life 11" },
+  
   { id: 11, src: "/images/Gallery-images/life-1.webp", alt: "Office Life 1" },
   { id: 12, src: "/images/Gallery-images/life-2.webp", alt: "Office Life 2" },
   { id: 13, src: "/images/Gallery-images/life-3.webp", alt: "Office Life 3" },
