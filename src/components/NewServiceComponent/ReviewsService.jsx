@@ -5,7 +5,7 @@ const ReviewsService = () => {
     {
       platform: 'Clutch',
       logo: (
-        <div className="text-5xl font-bold text-gray-800 mb-4">
+        <div className="text-5xl font-bold text-gray-800 mb-2">
           Clutch
         </div>
       ),
@@ -15,7 +15,7 @@ const ReviewsService = () => {
     {
       platform: 'GLASSDOOR',
       logo: (
-        <div className="text-4xl font-bold text-green-600 mb-4">
+        <div className="text-4xl font-bold text-green-600 mb-2">
           'GLASSDOOR'
         </div>
       ),
@@ -25,7 +25,7 @@ const ReviewsService = () => {
     {
       platform: 'GoodFirms',
       logo: (
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-2">
           <div className="w-10 h-10 bg-blue-500 rounded flex items-center justify-center">
             <span className="text-white text-xl font-bold">F</span>
           </div>
@@ -38,7 +38,7 @@ const ReviewsService = () => {
     {
       platform: 'Google',
       logo: (
-        <div className="text-5xl font-bold mb-4">
+        <div className="text-5xl font-bold mb-2">
           <span className="text-blue-500">G</span>
           <span className="text-red-500">o</span>
           <span className="text-yellow-500">o</span>
@@ -96,12 +96,14 @@ const ReviewsService = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="bg-blue-50 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow"
+              className="bg-grey-300 rounded-3xl p-8 flex flex-col items-center text-center shadow-lg hover:shadow-md transition-shadow"
             >
               {/* Logo */}
-              <div className="mb-4">
+              <div className="mb-2">
                 {achievement.logo}
               </div>
+              {/*decorative line*/}
+              <div className="w-24 h-1 bg-[#cd1f38] rounded-full mb-4"></div>
 
               {/* Stars and Rating */}
               <div className="flex items-center gap-2 mb-6">
