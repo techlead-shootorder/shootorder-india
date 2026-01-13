@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import Script from 'next/script';
+import Script from "next/script";
 
 const ptSans = Poppins({
   subsets: ["latin"],
@@ -12,8 +12,10 @@ const ptSans = Poppins({
 });
 
 export const metadata = {
-  title: "Top 3% Digital Marketing Agency in USA, #1 in Connecticut - ShootOrder®",
-  description: "ShootOrder is one of the globally awarded digital marketing agency, USA. We are amongst the top ranked digital marketing companies with 300+ clients across the globe driving best results in digital marketing services like SEO, PPC, Content Marketing & Social Media.",
+  title:
+    "Grow with the Top 3% Digital Marketing Agencies in India | #1 in Hyderabad – ShootOrder®",
+  description:
+    "ShootOrder® is an award-winning digital marketing agency based in Hyderabad, India, recognized among the top 3% of agencies globally. Trusted by 300+ clients worldwide, we help brands achieve measurable growth through performance-driven SEO, PPC, content marketing, and social media marketing solutions. Grow your brand with strategies that deliver real results.",
   icons: {
     icon: "/images/favicon.ico",
     shortcut: "/images/favicon.ico",
@@ -28,7 +30,10 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://leadbooster-chat.pipedrive.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://leadbooster-chat.pipedrive.com" />
+        <link
+          rel="dns-prefetch"
+          href="https://leadbooster-chat.pipedrive.com"
+        />
 
         {/* GTM Script - Load early but non-blocking */}
         <Script id="gtm-head" strategy="afterInteractive">
@@ -54,10 +59,8 @@ export default function RootLayout({ children }) {
         </noscript>
 
         <Header />
-        
-        <main>
-          {children}
-        </main>
+
+        <main>{children}</main>
 
         {/* Background decoration - simplified */}
         <div className="fixed inset-0 -z-10 pointer-events-none">
