@@ -10,7 +10,7 @@ const OurCultureSection = () => {
             {/* Left Image - THEN */}
             <div className="relative group h-64 sm:h-80 md:h-96 overflow-hidden">
               <img
-                src="/images/about-us/then.png"
+                src="/~shootordernew/images/about-us/then.png"
                 alt="Then - Team photo"
                 className="w-full h-full object-cover transition-all duration-500"
               />
@@ -25,7 +25,7 @@ const OurCultureSection = () => {
             {/* Right Image - NOW */}
             <div className="relative group h-64 sm:h-80 md:h-96 overflow-hidden">
               <img
-                src="/images/about-us/now.jpeg"
+                src="/~shootordernew/images/about-us/now.jpeg"
                 alt="Now - Team celebration photo"
                 className="w-full h-full object-cover transition-all duration-500"
               />

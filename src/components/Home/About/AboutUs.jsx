@@ -12,7 +12,7 @@ export default function AboutUs() {
             {/* Image Section */}
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/WebsiteImages_1_Our_Story_Image.png"
+                src="/~shootordernew/images/WebsiteImages_1_Our_Story_Image.png"
                 alt="ShootOrder Office"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -84,7 +84,7 @@ export default function AboutUs() {
               <div className="grid grid-cols-3 gap-8 pt-6">
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
                   <img
-                    src="/images/about-icon1.webp"
+                    src="/~shootordernew/images/about-icon1.webp"
                     alt="Diverse Industry"
                     className="w-12 h-12 mx-auto mb-2"
                   />
@@ -94,7 +94,7 @@ export default function AboutUs() {
                 </div>
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
                   <img
-                    src="/images/about-icon-2.webp"
+                    src="/~shootordernew/images/about-icon-2.webp"
                     alt="Diverse Industry"
                     className="w-12 h-12 mx-auto mb-2"
                   />
@@ -106,7 +106,7 @@ export default function AboutUs() {
 
                 <div className="space-y-2 border-1 border-gray-300 p-3 rounded-xl text-center">
                   <img
-                    src="/images/about-icon-3.webp"
+                    src="/~shootordernew/images/about-icon-3.webp"
                     alt="Diverse Industry"
                     className="w-12 h-12 mx-auto mb-2"
                   />

@@ -21,7 +21,7 @@ export const SERVICE_CATEGORIES = {
       subheading:
         "We are a performance-driven digital marketing agency specializing in SEO, Paid Ads, and Data-led strategies that turn clicks into loyal customers.",
       banner_image:
-        "/images/services/digital-marketing/digital-marketing-hero.png",
+        "/~shootordernew/images/services/digital-marketing/digital-marketing-hero.png",
     },
   },
   branding: {
@@ -35,7 +35,7 @@ export const SERVICE_CATEGORIES = {
       redText: "Legacy",
       subheading:
         "We are a strategy-led branding agency crafting unique identities, brand stories, and experiences that make businesses unforgettable.",
-      banner_image: "/images/services/branding/branding-hero.png",
+      banner_image: "/~shootordernew/images/services/branding/branding-hero.png",
     },
   },
   "growth-hacking": {
@@ -49,7 +49,7 @@ export const SERVICE_CATEGORIES = {
       redText: "Growth",
       subheading:
         " We craft conversion-focused landing pages, meaningful on-site engagement, and strong reputation management strategies to fuel business results. ",
-      banner_image: "/images/services/growth-hacking/growth-hacking-hero.png",
+      banner_image: "/~shootordernew/images/services/growth-hacking/growth-hacking-hero.png",
     },
   },
   "marketing-automation": {
@@ -64,7 +64,7 @@ export const SERVICE_CATEGORIES = {
       subheading:
         "We turn complex data into smart dashboards and analytics that power informed, faster, and smarter marketing moves.",
       banner_image:
-        "/images/services/marketing-automation/marketing-automation-hero.png",
+        "/~shootordernew/images/services/marketing-automation/marketing-automation-hero.png",
     },
   },
 };

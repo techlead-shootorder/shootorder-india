@@ -47,28 +47,28 @@ const servicesData = {
     {
       title: "SEO & Content",
       desc: "Drive organic growth through strategic SEO and content marketing.",
-      image: "/images/so-homepage-services/seo.png",
+      image: "/~shootordernew/images/so-homepage-services/seo.png",
       tags: ["SEO", "Content", "Organic"],
       href: "/seo",
     },
     {
       title: "Paid Advertising",
       desc: "Targeted campaigns across Google and Meta platforms.",
-      image: "/images/so-homepage-services/Performance-Marketing.png",
+      image: "/~shootordernew/images/so-homepage-services/Performance-Marketing.png",
       tags: ["PPC", "Social", "Ads"],
       href: "/google-ads",
     },
     {
       title: "Digital PR",
       desc: "Build authority and reach through strategic digital PR.",
-      image: "/images/so-homepage-services/digital-pr.jpg",
+      image: "/~shootordernew/images/so-homepage-services/digital-pr.jpg",
       tags: ["PR", "Authority", "Reach"],
       href: "/digital-pr",
     },
     {
       title: "Influencer Marketing",
       desc: "Leverage influencer partnerships for authentic brand growth.",
-      image: "/images/so-homepage-services/Influencer-Marketing.png",
+      image: "/~shootordernew/images/so-homepage-services/Influencer-Marketing.png",
       tags: ["Influencers", "Social", "Growth"],
       href: "/influencers-marketing",
     },
@@ -77,28 +77,28 @@ const servicesData = {
     {
       title: "Identity Development",
       desc: "Create a distinctive brand identity that sets you apart from competitors.",
-      image: "/images/so-homepage-services/identity-development.jpg",
+      image: "/~shootordernew/images/so-homepage-services/identity-development.jpg",
       tags: ["Brand", "Identity", "Design"],
       href: "/identity",
     },
     {
       title: "Brand Audit",
       desc: "Comprehensive analysis of your brand's current position and performance.",
-      image: "/images/so-homepage-services/brand-audit.jpg",
+      image: "/~shootordernew/images/so-homepage-services/brand-audit.jpg",
       tags: ["Analysis", "Strategy", "Growth"],
       href: "/audit",
     },
     {
       title: "Brand Messaging",
       desc: "Develop a compelling voice that resonates with your audience.",
-      image: "/images/so-homepage-services/brand-messaging.jpg",
+      image: "/~shootordernew/images/so-homepage-services/brand-messaging.jpg",
       tags: ["Voice", "Message", "Communication"],
       href: "/messaging",
     },
     {
       title: "Package & Design",
       desc: "Create visually stunning brand assets that capture attention.",
-      image: "/images/so-homepage-services/package-and-design.jpg",
+      image: "/~shootordernew/images/so-homepage-services/package-and-design.jpg",
       tags: ["Design", "Visual", "Assets"],
       href: "/design",
     },
@@ -108,21 +108,21 @@ const servicesData = {
     {
       title: "Landing Pages",
       desc: "High converting landing pages that converts quality leads",
-      image: "/images/so-homepage-services/growth-hacking.jpg",
+      image: "/~shootordernew/images/so-homepage-services/growth-hacking.jpg",
       tags: ["Growth", "Strategy", "Innovation"],
       href: "/landing-pages",
     },
     {
       title: "On-site Engagement",
       desc: "Turn in-person interactions into memorable brand experiences. ",
-      image: "/images/so-homepage-services/marketing-automation.jpg",
+      image: "/~shootordernew/images/so-homepage-services/marketing-automation.jpg",
       tags: ["Automation", "Efficiency", "Scale"],
       href: "/on-site-engagement",
     },
     {
       title: "Online Reputation Managment",
       desc: "Manage and enhance your online reputation.",
-      image: "/images/so-homepage-services/orm.jpg",
+      image: "/~shootordernew/images/so-homepage-services/orm.jpg",
       tags: ["Reputation", "Management", "Brand"],
       href: "/orm",
     },
@@ -207,7 +207,7 @@ export default function CombinedServiceFlow() {
             {activeTab === "Digital Marketing" ? (
               <div className="h-full flex items-stretch">
                 <img
-                  src="/images/services/service-flow2.webp"
+                  src="/~shootordernew/images/services/service-flow2.webp"
                   alt="Service Flow"
                   className="w-full h-full object-cover rounded-lg"
                 />

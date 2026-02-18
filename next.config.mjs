@@ -1,54 +1,21 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export
   output: 'export',
-  
-  // Disable image optimization for static export
+
+  SITE_URL: 'http://188.166.235.142/~shootordernew',
+  assetPrefix: 'http://188.166.235.142/~shootordernew',
+
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  
-  // Base path if deploying to subdirectory (remove if deploying to root domain)
-  // basePath: '/your-subdirectory',
-  
-  // Asset prefix for CDN (optional)
-  // assetPrefix: 'https://your-cdn-domain.com',
-  
-  // Trailing slash configuration
+
   trailingSlash: true,
-  
-  // Disable server-side features for static export
-  // experimental: {},
-  generateBuildId: async () => {
-    return 'static-build'
-  },
-  // Remove custom webpack config for Turbopack compatibility
-  // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-  //   // Add any custom webpack configurations here
-  //   return config;
-  // },
-  // Add empty Turbopack config to silence warning and enable default behavior
-  turbopack: {},
-  // Environment variables that should be available in the browser
+
+  generateBuildId: async () => 'static-build',
+
   env: {
-    SITE_URL: process.env.SITE_URL || 'https://shootorder.us',
+    SITE_URL: 'http://188.166.235.142/~shootordernew',
   },
 };
 
 export default nextConfig;
-
-// package.json scripts section
-/*
-{
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "static": "next build && next export && node generate-sitemap.js",
-    "deploy": "npm run static && echo 'Upload the out/ folder to your cPanel'",
-    "lint": "next lint"
-  }
-}
-*/

@@ -5,7 +5,7 @@ export default function OffshoreHero() {
     heading: "Pick Your Talent, Pay What Fits ",
     subheading:
       "India’s talent pool is diverse, and so are your hiring needs. Instead of one-size-fits-all rates, we offer role-based personas tailored to your goals. Just pick the right fit, and we’ll match you with top talent. ",
-    imageUrl: "/images/about-us/shootorder-bg-seo-company-hyderabad-1.jpg",
+    imageUrl: "/~shootordernew/images/about-us/shootorder-bg-seo-company-hyderabad-1.jpg",
   };
   return (
     // <section className="bg-[#cd1f38] py-16 text-center px-4 mt-12">

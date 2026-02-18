@@ -27,7 +27,7 @@
 ### Global Updates
 
 - Added favicon implementation
-  - Location: `/public/images/favicon.ico`
+  - Location: `/public/~shootordernew/images/favicon.ico`
   - Updated metadata configuration
 - Fixed various responsive design issues
   - Improved mobile layout spacing

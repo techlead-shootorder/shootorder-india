@@ -14,7 +14,7 @@ export default function ServicePartnerSection() {
     "h1",
     "i1",
     "j1",
-  ].map((name) => `/images/clients/${name}.jpg`);
+  ].map((name) => `/~shootordernew/images/clients/${name}.jpg`);
 
   // Duplicate the logos to create seamless loop
   const duplicatedLogos = [...partnerLogos, ...partnerLogos];

@@ -7,56 +7,56 @@ const TeamSliderSection = () => {
       id: 1,
       name: "Parmeet Gill",
       position: "Director Operations",
-      image: "/images/team/parmeet.jpg",
+      image: "/~shootordernew/images/team/parmeet.jpg",
       bgColor: "bg-black"
     },
     {
       id: 2,
       name: "Rajul Jain",
       position: "Associate Director- Operations",
-      image: "/images/team/rajul.jpg",
+      image: "/~shootordernew/images/team/rajul.jpg",
       bgColor: "bg-gray-300"
     },
     {
       id: 3,
       name: "Ajay Nandikanti",
       position: "Lead UX/UI Designer",
-      image: "/images/team/ajay.jpg",
+      image: "/~shootordernew/images/team/ajay.jpg",
       bgColor: "bg-black"
     },
     {
       id: 4,
       name: "Shreya Annam",
       position: "Sr. Graphic Designer",
-      image: "/images/team/shreya.jpg",
+      image: "/~shootordernew/images/team/shreya.jpg",
       bgColor: "bg-black"
     },
     {
       id: 5,
       name: "Anusha",
       position: "Sr. Software Quality Analyst",
-      image: "/images/team/anusha.jpg",
+      image: "/~shootordernew/images/team/anusha.jpg",
       bgColor: "bg-gray-300"
     },
     {
       id: 6,
       name: "Madhav",
       position: "Manager",
-      image: "/images/team/madhav.jpg",
+      image: "/~shootordernew/images/team/madhav.jpg",
       bgColor: "bg-black"
     },
     {
       id: 7,
       name: "John Doe",
       position: "Marketing Specialist",
-      image: "/images/team/john.jpg",
+      image: "/~shootordernew/images/team/john.jpg",
       bgColor: "bg-gray-300"
     },
     {
       id: 8,
       name: "Jane Smith",
       position: "Content Strategist",
-      image: "/images/team/jane.jpg",
+      image: "/~shootordernew/images/team/jane.jpg",
       bgColor: "bg-black"
     }
   ];

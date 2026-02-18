@@ -120,7 +120,7 @@ const Footer = () => {
             <div className="lg:col-span-4">
               <div className="mb-8">
                 {/* <Image
-                  src="/images/logo/shootorder-logo.svg"
+                  src="/~shootordernew/images/logo/shootorder-logo.svg"
                   alt="ShootOrder"
                   width={200}
                   height={60}
@@ -179,7 +179,7 @@ const Footer = () => {
               {/* Partner Logos */}
               {/* <div className="flex items-center gap-6 flex-wrap">
                 <Image
-                  src="/images/logo/meta.png"
+                  src="/~shootordernew/images/logo/meta.png"
                   alt="Meta Partner"
                   width={100}
                   height={30}
@@ -187,7 +187,7 @@ const Footer = () => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/google.png"
+                  src="/~shootordernew/images/logo/google.png"
                   alt="Google Partner"
                   width={90}
                   height={40}
@@ -195,7 +195,7 @@ const Footer = () => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/hubspot.png"
+                  src="/~shootordernew/images/logo/hubspot.png"
                   alt="HubSpot Partner"
                   width={100}
                   height={40}
@@ -389,7 +389,7 @@ const Footer = () => {
                 {/* Partner Logos */}
                 <div className="flex items-center sm:justify-end gap-2 sm:gap-6 flex-wrap sm:mr-16">
                   <Image
-                    src="/images/logo/meta.png"
+                    src="/~shootordernew/images/logo/meta.png"
                     alt="Meta Partner"
                     width={100}
                     height={30}
@@ -397,7 +397,7 @@ const Footer = () => {
                     style={{ objectFit: "contain" }}
                   />
                   <Image
-                    src="/images/logo/google.png"
+                    src="/~shootordernew/images/logo/google.png"
                     alt="Google Partner"
                     width={90}
                     height={40}
@@ -405,7 +405,7 @@ const Footer = () => {
                     style={{ objectFit: "contain" }}
                   />
                   <Image
-                    src="/images/logo/hubspot.png"
+                    src="/~shootordernew/images/logo/hubspot.png"
                     alt="HubSpot Partner"
                     width={100}
                     height={40}

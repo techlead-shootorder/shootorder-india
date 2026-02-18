@@ -22,7 +22,7 @@ const StaticCaseStudiesComponent = () => {
         id: "seo",
         slug: "seo-cake-company",
         title: "Baking Up Success: How SEO Helped CountryOven Climb the Ranks",
-        image: "/images/CaseStudies/SEO/country-oven.webp",
+        image: "/~shootordernew/images/CaseStudies/SEO/country-oven.webp",
         description:
           "With targeted SEO efforts, CountryOven witnessed sustained traffic growth and 100% keyword visibility in 12 months.",
         results: "Overall Score 4.0",
@@ -36,7 +36,7 @@ const StaticCaseStudiesComponent = () => {
         id: "seo",
         slug: "seo-caravan-rental",
         title: "On the Road to Success: How SEO Fueled Carawander's Journey",
-        image: "/images/CaseStudies/SEO/carawander.webp",
+        image: "/~shootordernew/images/CaseStudies/SEO/carawander.webp",
         description:
           "With consistent SEO efforts, ShootOrder helped Carawander boost web-driven sales and profits by over 40% since 2021.",
         results: "Overall Score 5.0",
@@ -50,7 +50,7 @@ const StaticCaseStudiesComponent = () => {
         id: "seo",
         slug: "seo-travel-company",
         title: "Driven by Search: How SEO Accelerated a Travel Brand's Growth",
-        image: "/images/CaseStudies/SEO/travtips.webp",
+        image: "/~shootordernew/images/CaseStudies/SEO/travtips.webp",
         description:
           "Targeted SEO strategies helped a Dubai-based travel company boost lead generation and grow its business.",
         results: "Overall Score 4.0",
@@ -67,7 +67,7 @@ const StaticCaseStudiesComponent = () => {
         slug: "ppc-edtech-company",
         title:
           "Creative Content That Clicks: Social Success for an EHR Platform",
-        image: "/images/CaseStudies/PPC/Alpa-kids.webp",
+        image: "/~shootordernew/images/CaseStudies/PPC/Alpa-kids.webp",
         description:
           "With sharp Facebook and Google Ads tailored for India, ShootOrder helped ALPA Kids achieve 400K+ app downloads—proving big impact doesn't need a big budget.",
         results: "Overall Score 5.0",
@@ -81,7 +81,7 @@ const StaticCaseStudiesComponent = () => {
         id: "google-ads",
         slug: "ppc-fertility-provider",
         title: "How ShootOrder Boosted ROI for Oasis Fertility",
-        image: "/images/CaseStudies/PPC/Oasis.webp",
+        image: "/~shootordernew/images/CaseStudies/PPC/Oasis.webp",
         description:
           "By streamlining AD campaigns, ShootOrder helped Oasis Fertility cut cost-per-lead and boost returns—delivering consistent, cost-effective performance.",
         results: "Overall Score 4.5",
@@ -95,7 +95,7 @@ const StaticCaseStudiesComponent = () => {
         id: "google-ads",
         slug: "ppc-health-wellness",
         title: "Powering IPI Growth with Precision PPC",
-        image: "/images/CaseStudies/PPC/IPI-india.webp",
+        image: "/~shootordernew/images/CaseStudies/PPC/IPI-india.webp",
         description:
           "ShootOrder's paid ad strategy helped IPI India scale online orders from $100 to $1,000/month while optimizing every rupee spent.",
         results: "Overall Score 4.0",
@@ -111,7 +111,7 @@ const StaticCaseStudiesComponent = () => {
         id: "social-media-marketing",
         slug: "smm-luxury-car-brand",
         title: "How Strategic Social Media Marketing Fueled a Luxury Car Brand",
-        image: "/images/CaseStudies/SMM/BMW.webp",
+        image: "/~shootordernew/images/CaseStudies/SMM/BMW.webp",
         description:
           "With tailored campaigns and consistent engagement, ShootOrder elevated digital visibility and lead generation across key social platforms.",
         results: "Overall Score 4.5",
@@ -126,7 +126,7 @@ const StaticCaseStudiesComponent = () => {
         slug: "smm-auto-dealership",
         title:
           "Driving Digital: How ShootOrder Steered Online Growth for an Auto Brand",
-        image: "/images/CaseStudies/SMM/Auto-dealership.webp",
+        image: "/~shootordernew/images/CaseStudies/SMM/Auto-dealership.webp",
         description:
           "By managing SEO, PPC, and Google assets, ShootOrder helped generate 20% of all vehicle bookings through digital platforms.",
         results: "Overall Score 5.0",
@@ -141,7 +141,7 @@ const StaticCaseStudiesComponent = () => {
         slug: "smm-it-services",
         title:
           "Creative Content That Clicks: Social Success for an EHR Platform",
-        image: "/images/CaseStudies/SMM/Orchasp.webp",
+        image: "/~shootordernew/images/CaseStudies/SMM/Orchasp.webp",
         description:
           "With standout visuals and consistent social media campaigns, ShootOrder amplified visibility for Orchasp's healthcare tech across Facebook, Instagram, and LinkedIn.",
         results: "Overall Score 4.0",

@@ -38,7 +38,7 @@ const FeatureField = memo(({
           type="text"
           value={feature.imageUrl}
           onChange={(e) => onFeatureChange(index, 'imageUrl', e.target.value)}
-          placeholder="/images/features/icon.svg"
+          placeholder="/~shootordernew/images/features/icon.svg"
           autoComplete="off"
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
         />
@@ -334,7 +334,7 @@ export default function NewServicePage() {
               name="imageUrl"
               value={formData.imageUrl}
               onChange={handleFieldChange('imageUrl')}
-              placeholder="/images/services/your-image.jpg"
+              placeholder="/~shootordernew/images/services/your-image.jpg"
               autoComplete="off"
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
             />

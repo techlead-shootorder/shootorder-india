@@ -17,7 +17,7 @@ const WhoWeAre = () => {
           <div className="flex justify-center lg:justify-end relative">
             <div className="relative w-80 h-80 sm:w-96 sm:h-96">
               <img
-                src="/images/about-us/shootorder-logo.svg"
+                src="/~shootordernew/images/about-us/shootorder-logo.svg"
                 alt="Digital Marketing Team"
                 className="w-full h-full object-contain rounded-lg"
               />

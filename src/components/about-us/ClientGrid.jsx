@@ -10,13 +10,13 @@ function ClientGrid({ children }) {
   // Partner logos (14)
   const partnerLogos = Array.from(
     { length: 14 },
-    (_, i) => `/images/logo/${i + 1}.jpg`
+    (_, i) => `/~shootordernew/images/logo/${i + 1}.jpg`
   );
 
   // Trust logos (10): a1.jpg to j1.jpg
   const trustLogos = [
     "a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1", "i1", "j1"
-  ].map((name) => `/images/clients/${name}.jpg`);
+  ].map((name) => `/~shootordernew/images/clients/${name}.jpg`);
 
   useEffect(() => {
     const handleLoad = () => {

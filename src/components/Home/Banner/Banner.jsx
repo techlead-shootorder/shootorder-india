@@ -469,7 +469,7 @@ export default function Banner() {
         <div
           className="banner-background-image absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: "url('/images/background/home-bg2.webp')",
+            backgroundImage: "url('/~shootordernew/images/background/home-bg2.webp')",
             backgroundSize: isMobile ? "inherit" : "cover", // Changed to cover for mobile
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
@@ -489,7 +489,7 @@ export default function Banner() {
                 width={isMobile ? 150 : 240}
                 height={isMobile ? 100 : 100}
                 className="mx-auto w-40 h-40 sm:w-16 sm:h-16 md:w-[240px] md:h-auto object-contain"
-                src="/images/logo/Google Premier Partner.webp"
+                src="/~shootordernew/images/logo/Google Premier Partner.webp"
                 alt="Google Premier Partner"
               />
             </div>

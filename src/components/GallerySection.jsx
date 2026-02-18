@@ -4,28 +4,28 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images = [
-  { id: 10, src: "/images/Gallery-images/SO-11.webp", alt: "Office Life 11" },
-  { id: 1, src: "/images/Gallery-images/SO-1.webp", alt: "Office Life 1" },
-  { id: 2, src: "/images/Gallery-images/SO-2.webp", alt: "Office Life 2" },
-  { id: 3, src: "/images/Gallery-images/SO-3.webp", alt: "Office Life 3" },
-  { id: 4, src: "/images/Gallery-images/SO-4.webp", alt: "Office Life 4" },
-  { id: 5, src: "/images/Gallery-images/SO-5.webp", alt: "Office Life 5" },
-  { id: 6, src: "/images/Gallery-images/SO-6.webp", alt: "Office Life 6" },
-  { id: 7, src: "/images/Gallery-images/SO-7.webp", alt: "Office Life 7" },
-  { id: 8, src: "/images/Gallery-images/SO-8.webp", alt: "Office Life 8" },
-  { id: 9, src: "/images/Gallery-images/SO-9.webp", alt: "Office Life 9" },
-  { id: 10, src: "/images/Gallery-images/SO-10.webp", alt: "Office Life 10" },
+  { id: 10, src: "/~shootordernew/images/Gallery-images/SO-11.webp", alt: "Office Life 11" },
+  { id: 1, src: "/~shootordernew/images/Gallery-images/SO-1.webp", alt: "Office Life 1" },
+  { id: 2, src: "/~shootordernew/images/Gallery-images/SO-2.webp", alt: "Office Life 2" },
+  { id: 3, src: "/~shootordernew/images/Gallery-images/SO-3.webp", alt: "Office Life 3" },
+  { id: 4, src: "/~shootordernew/images/Gallery-images/SO-4.webp", alt: "Office Life 4" },
+  { id: 5, src: "/~shootordernew/images/Gallery-images/SO-5.webp", alt: "Office Life 5" },
+  { id: 6, src: "/~shootordernew/images/Gallery-images/SO-6.webp", alt: "Office Life 6" },
+  { id: 7, src: "/~shootordernew/images/Gallery-images/SO-7.webp", alt: "Office Life 7" },
+  { id: 8, src: "/~shootordernew/images/Gallery-images/SO-8.webp", alt: "Office Life 8" },
+  { id: 9, src: "/~shootordernew/images/Gallery-images/SO-9.webp", alt: "Office Life 9" },
+  { id: 10, src: "/~shootordernew/images/Gallery-images/SO-10.webp", alt: "Office Life 10" },
   
-  { id: 11, src: "/images/Gallery-images/life-1.webp", alt: "Office Life 1" },
-  { id: 12, src: "/images/Gallery-images/life-2.webp", alt: "Office Life 2" },
-  { id: 13, src: "/images/Gallery-images/life-3.webp", alt: "Office Life 3" },
-  { id: 14, src: "/images/Gallery-images/life-4.webp", alt: "Office Life 4" },
-  { id: 15, src: "/images/Gallery-images/life-5.webp", alt: "Office Life 5" },
-  { id: 16, src: "/images/Gallery-images/life-6.webp", alt: "Office Life 6" },
-  { id: 17, src: "/images/Gallery-images/life-7.webp", alt: "Office Life 7" },
-  { id: 18, src: "/images/Gallery-images/life-8.webp", alt: "Office Life 8" },
-  { id: 19, src: "/images/Gallery-images/life-9.webp", alt: "Office Life 9" },
-  { id: 20, src: "/images/Gallery-images/life-10.webp", alt: "Office Life 10" }
+  { id: 11, src: "/~shootordernew/images/Gallery-images/life-1.webp", alt: "Office Life 1" },
+  { id: 12, src: "/~shootordernew/images/Gallery-images/life-2.webp", alt: "Office Life 2" },
+  { id: 13, src: "/~shootordernew/images/Gallery-images/life-3.webp", alt: "Office Life 3" },
+  { id: 14, src: "/~shootordernew/images/Gallery-images/life-4.webp", alt: "Office Life 4" },
+  { id: 15, src: "/~shootordernew/images/Gallery-images/life-5.webp", alt: "Office Life 5" },
+  { id: 16, src: "/~shootordernew/images/Gallery-images/life-6.webp", alt: "Office Life 6" },
+  { id: 17, src: "/~shootordernew/images/Gallery-images/life-7.webp", alt: "Office Life 7" },
+  { id: 18, src: "/~shootordernew/images/Gallery-images/life-8.webp", alt: "Office Life 8" },
+  { id: 19, src: "/~shootordernew/images/Gallery-images/life-9.webp", alt: "Office Life 9" },
+  { id: 20, src: "/~shootordernew/images/Gallery-images/life-10.webp", alt: "Office Life 10" }
 ];
 
 export default function LifeGallerySlider() {

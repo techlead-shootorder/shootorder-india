@@ -11,7 +11,7 @@ const ClientReviews = () => {
       review:
         "Cost per lead was reduced and the return on investment was increased because of ShootOrder. Their team was cost-effective and performed well, although they could finish the jobs more within deadlines.",
       rating: 5,
-      image: "/images/clients/kiran-gadela.jpg", // Replace with actual image path
+      image: "/~shootordernew/images/clients/kiran-gadela.jpg", // Replace with actual image path
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const ClientReviews = () => {
       review:
         "Despite the limited budget, ShootOrder has helped the client record 400,000 app downloads in India. They've also delivered several good video ads that the client can use for both their Indian and Estonian apps. Moreover, they facilitate a smooth workflow and hold bi-weekly standup meetings.",
       rating: 5,
-      image: "/images/clients/janek-jaago.png", // Replace with actual image path
+      image: "/~shootordernew/images/clients/janek-jaago.png", // Replace with actual image path
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const ClientReviews = () => {
       review:
         "ShootOrder has been able to provide great results to the client, including an increase in sales and engagement and a decrease in the dropout rate. The team is very communicative, understanding, and flexible, and they excel at meeting deadlines due to their structured approach.",
       rating: 5,
-      image: "/images/clients/arnab-ghosh.jpg", // Replace with actual image path
+      image: "/~shootordernew/images/clients/arnab-ghosh.jpg", // Replace with actual image path
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ const ClientReviews = () => {
       review:
         "The partner's lead generation and business have both grown. What's more, their lead conversion rate has increased as well. ShootOrder delivers effective results and successfully reaches the correct target audience. They produce thorough reports and also provide strategic planning efforts.",
       rating: 5,
-      image: "/images/clients/suraj-mainat.jpg", // Replace with actual image path
+      image: "/~shootordernew/images/clients/suraj-mainat.jpg", // Replace with actual image path
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ const ClientReviews = () => {
       review:
         "ShootOrder exceeded expectations, providing innovative strategies and tips for marketing and lead generation. Their quick responsiveness complemented their communication style. They're knowledgable about the digital space.",
       rating: 5,
-      image: "/images/clients/vinupama.webp", // Replace with actual image path
+      image: "/~shootordernew/images/clients/vinupama.webp", // Replace with actual image path
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ const ClientReviews = () => {
       review:
         "Social media engagement and online-based revenue have increased significantly since ShootOrder came onboard. They provide detail-oriented project management through extensive documentation and use of Google Drive technologies. Customers can expect a cost-conscious partner.",
       rating: 5,
-      image: "/images/clients/nishanth-jain.webp", // Replace with actual image path
+      image: "/~shootordernew/images/clients/nishanth-jain.webp", // Replace with actual image path
     },
     // {
     //   id: 7,

@@ -7,7 +7,7 @@ const AboutDescription = () => {
         {/* Left Image Section */}
         <div className="flex justify-center">
           <img
-            src="/images/shootorder-digital-marketing-agency.jpg"
+            src="/~shootordernew/images/shootorder-digital-marketing-agency.jpg"
             alt="About ShootOrder"
             className="w-full h-auto rounded-xl shadow-md"
           />

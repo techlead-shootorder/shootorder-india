@@ -30,7 +30,7 @@ export default function WhyTrustUs() {
     "h1",
     "i1",
     "j1",
-  ].map((name) => `/images/clients/${name}.jpg`);
+  ].map((name) => `/~shootordernew/images/clients/${name}.jpg`);
 
   return (
     <div className="relative !max-w-7xl mx-auto py-16">

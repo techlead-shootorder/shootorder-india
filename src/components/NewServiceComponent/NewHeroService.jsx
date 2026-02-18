@@ -62,7 +62,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
             <div className="py-4 flex flex-col sm:flex-row justify-between sm:items-center">
               <div className="flex items-center gap-2 mb-4 sm:mb-0">
                 <Image
-                  src="/images/logo/meta.png"
+                  src="/~shootordernew/images/logo/meta.png"
                   alt="Meta Partner"
                   width={100}
                   height={30}
@@ -70,7 +70,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/google.png"
+                  src="/~shootordernew/images/logo/google.png"
                   alt="Google Partner"
                   width={90}
                   height={40}
@@ -78,7 +78,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/hubspot.png"
+                  src="/~shootordernew/images/logo/hubspot.png"
                   alt="HubSpot Partner"
                   width={100}
                   height={40}
@@ -115,7 +115,7 @@ const NewHeroService = ({ heading, subheading, imageUrl, serviceSlug }) => {
           {/* Right Side - Hero Image */}
           <div className="relative">
             <Image
-              src={imageUrl || "/images/services/default-service.webp"}
+              src={imageUrl || "/~shootordernew/images/services/default-service.webp"}
               alt="Content creation showcase with various brand examples"
               width={600}
               height={600}

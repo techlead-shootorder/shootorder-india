@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
             id: 1,
             name: "Mr. Sudhakar Jadhav",
             title: "COO - Oasis Fertility",
-            image: "/images/clients/mr_sudhakar.png",
+            image: "/~shootordernew/images/clients/mr_sudhakar.png",
             videoUrl: "https://www.instagram.com/p/Cg1Cz60hj8r/",
             platform: "instagram"
         },
@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
             id: 2,
             name: "Dr. Charan Kumar",
             title: "Founder & Director, Eledent Hospitals",
-            image: "/images/clients/dr_charan_kumar.png",
+            image: "/~shootordernew/images/clients/dr_charan_kumar.png",
             videoUrl: "https://www.instagram.com/p/CgjtsXwhSPm/",
             platform: "instagram"
         },
@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
             id: 3,
             name: "Ms. Deepa Balasubramanian",
             title: "CEO - Winga",
-            image: "/images/clients/ms_deepa.png",
+            image: "/~shootordernew/images/clients/ms_deepa.png",
             videoUrl: "https://www.instagram.com/p/CgeMp68B8rB/",
             platform: "instagram"
         }

@@ -243,7 +243,7 @@ export default function Home() {
         <div
           className="w-full"
           style={{
-            backgroundImage: "url(/images/background/bg.png)",
+            backgroundImage: "url(/~shootordernew/images/background/bg.png)",
             objectFit: "cover",
           }}
         >

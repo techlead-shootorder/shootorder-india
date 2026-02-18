@@ -9,37 +9,37 @@ const testimonials = [
   {
     name: "Arnab Ghosh",
     role: "Head of Marketing & Co-Founder, Nakshikathaa",
-    image: "/images/logo/avatar.svg",
+    image: "/~shootordernew/images/logo/avatar.svg",
     text: `ShootOrder has been able to provide great results to the client, including an increase in sales and engagement and a decrease in the dropout rate. The team is very communicative, understanding, and flexible, and they excel at meeting deadlines due to their structured approach.`,
   },
   {
     name: "Amit Singh",
     role: "Founder, Travel Company",
-    image: "/images/logo/avatar.svg",
+    image: "/~shootordernew/images/logo/avatar.svg",
     text: `The partner’s lead generation and business have both grown. Their lead conversion rate has increased. ShootOrder delivers effective results and reaches the correct target audience.`,
   },
   {
     name: "Rina Kapoor",
     role: "Managing Director, Auto Dealership",
-    image: "/images/logo/avatar.svg",
+    image: "/~shootordernew/images/logo/avatar.svg",
     text: `With their work attracting 20% of the client’s current customers, ShootOrder has thoroughly satisfied the client. They work independently after initial instructions.`,
   },
   {
     name: "Sunita Rao",
     role: "Marketing Head, Fashion Brand",
-    image: "/images/logo/avatar.svg",
+    image: "/~shootordernew/images/logo/avatar.svg",
     text: `We saw a significant improvement in our digital presence. Their reporting and strategy were on point.`,
   },
   {
     name: "Karan Mehta",
     role: "CEO, StartupX",
-    image: "/images/logo/avatar.svg",
+    image: "/~shootordernew/images/logo/avatar.svg",
     text: `Thanks to ShootOrder, we reduced our CAC and doubled lead flow within 3 months. Highly recommended!`,
   },
   {
     name: "Neha Sharma",
     role: "Founder, Beauty Store",
-    image: "/images/logo/avatar.svg",
+    image: "/~shootordernew/images/logo/avatar.svg",
     text: `Professional, punctual, and proactive. Their team understood our audience well and delivered impactful campaigns.`,
   },
 ];

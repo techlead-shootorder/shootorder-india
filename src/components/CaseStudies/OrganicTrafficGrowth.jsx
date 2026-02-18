@@ -10,7 +10,7 @@ const OrganicTrafficGrowth = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Organic Traffic Growth</h2>
             <div className="flex justify-center">
                 <img
-                    src="/images/CaseStudies/organic-traffic.webp"
+                    src="/~shootordernew/images/CaseStudies/organic-traffic.webp"
                     alt="Organic Traffic"
                     className="max-w-full h-auto rounded-lg shadow-sm"
                 />

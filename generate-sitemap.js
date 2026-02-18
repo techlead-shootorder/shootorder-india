@@ -244,7 +244,7 @@ const generateAdditionalFiles = (outputPath) => {
     theme_color: "#cd1f38",
     icons: [
       {
-        src: "/images/logo/shootorder-logo.svg",
+        src: "/~shootordernew/images/logo/shootorder-logo.svg",
         sizes: "192x192",
         type: "image/svg+xml",
       },

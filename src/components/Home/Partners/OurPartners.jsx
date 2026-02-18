@@ -23,7 +23,7 @@ export default function PartnerCarousel() {
   const excludedIndexes = [1, 2, 5, 8, 10, 11, 14];
   const partnerLogos = Array.from({ length: 14 }, (_, i) => i + 1)
     .filter((num) => !excludedIndexes.includes(num))
-    .map((num) => `/images/logo/${num}.jpg`);
+    .map((num) => `/~shootordernew/images/logo/${num}.jpg`);
 
   return (
     <div className="relative !max-w-7xl mx-auto py-16">

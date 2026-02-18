@@ -17,7 +17,7 @@ const TestimonialSection = () => {
           <div className="flex justify-center lg:justify-start order-1 lg:order-1">
             <div className="w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] rounded-full bg-black shadow-lg overflow-hidden">
               <Image
-                src="/images/about-us/Rajat.webp"
+                src="/~shootordernew/images/about-us/Rajat.webp"
                 alt="Rajat Jain"
                 width={450}
                 height={450}

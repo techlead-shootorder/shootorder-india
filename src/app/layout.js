@@ -15,8 +15,8 @@ export const metadata = {
   title: "Top 3% Digital Marketing Agency in USA, #1 in Connecticut - ShootOrder®",
   description: "ShootOrder is one of the globally awarded digital marketing agency, USA. We are amongst the top ranked digital marketing companies with 300+ clients across the globe driving best results in digital marketing services like SEO, PPC, Content Marketing & Social Media.",
   icons: {
-    icon: "/images/favicon.ico",
-    shortcut: "/images/favicon.ico",
+    icon: "/~shootordernew/images/favicon.ico",
+    shortcut: "/~shootordernew/images/favicon.ico",
   },
 };
 

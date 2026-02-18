@@ -487,7 +487,7 @@ const CaseStudiesPage = () => {
               {/* Partners Image */}
               <div className="py-4 flex items-center gap-2">
                 <Image
-                  src="/images/logo/meta.png"
+                  src="/~shootordernew/images/logo/meta.png"
                   alt="Meta Partner"
                   width={100}
                   height={30}
@@ -495,7 +495,7 @@ const CaseStudiesPage = () => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/google.png"
+                  src="/~shootordernew/images/logo/google.png"
                   alt="Google Partner"
                   width={90}
                   height={40}
@@ -503,7 +503,7 @@ const CaseStudiesPage = () => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/hubspot.png"
+                  src="/~shootordernew/images/logo/hubspot.png"
                   alt="HubSpot Partner"
                   width={100}
                   height={40}
@@ -534,7 +534,7 @@ const CaseStudiesPage = () => {
             {/*Right side content*/}
             <div className="relative">
               <Image
-                src="/images/CaseStudies/Case_Studies_page_img.webp"
+                src="/~shootordernew/images/CaseStudies/Case_Studies_page_img.webp"
                 alt="Content creation showcase with various brand examples"
                 width={600}
                 height={600}

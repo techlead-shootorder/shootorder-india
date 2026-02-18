@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ServiceParnter() {
   const partnerLogos = [
     "a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1", "i1", "j1",
-  ].map((name) => `/images/clients/${name}.jpg`);
+  ].map((name) => `/~shootordernew/images/clients/${name}.jpg`);
 
   // Duplicate the logos to create seamless loop
   const duplicatedLogos = [...partnerLogos, ...partnerLogos];

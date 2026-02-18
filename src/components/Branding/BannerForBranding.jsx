@@ -24,7 +24,7 @@ const BannerForBranding = ({ imageUrl, subheading, heading }) => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(${
-              imageUrl || "/images/services/banners/seo-banner.jpg"
+              imageUrl || "/~shootordernew/images/services/banners/seo-banner.jpg"
             })`,
           }}
         />

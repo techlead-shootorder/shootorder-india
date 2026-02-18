@@ -232,7 +232,7 @@ export default function NewBanner() {
         ref={bannerRef}
         className="w-full relative overflow-hidden min-h-screen flex pt-25"
         style={{
-          backgroundImage: "url(/images/background/Shootorder_Herobanner.jpg)",
+          backgroundImage: "url(/~shootordernew/images/background/Shootorder_Herobanner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center top 20%",
           backgroundRepeat: "no-repeat",

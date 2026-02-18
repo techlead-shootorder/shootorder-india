@@ -11,7 +11,7 @@ const HeroAbout = () => {
         style={{
           backgroundImage: `
             linear-gradient(178deg, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 1) 100%),
-            url('/images/shootorder-hyderabad.jpeg')
+            url('/~shootordernew/images/shootorder-hyderabad.jpeg')
           `
         }}
       >

@@ -9,17 +9,17 @@ import "slick-carousel/slick/slick-theme.css";
 
 // List of image paths relative to the public folder
 const logos = [
-  "/images/clients/a1.jpg",
-  "/images/clients/b1.jpg",
-  "/images/clients/c1.jpg",
-  "/images/clients/d1.jpg",
-  "/images/clients/e1.jpg",
-  "/images/clients/f1.jpg",
-  "/images/clients/g1.jpg",
-  "/images/clients/h1.jpg",
-  "/images/clients/i1.jpg",
-  "/images/clients/j1.jpg",
-  "/images/clients/Travtips.webp",
+  "/~shootordernew/images/clients/a1.jpg",
+  "/~shootordernew/images/clients/b1.jpg",
+  "/~shootordernew/images/clients/c1.jpg",
+  "/~shootordernew/images/clients/d1.jpg",
+  "/~shootordernew/images/clients/e1.jpg",
+  "/~shootordernew/images/clients/f1.jpg",
+  "/~shootordernew/images/clients/g1.jpg",
+  "/~shootordernew/images/clients/h1.jpg",
+  "/~shootordernew/images/clients/i1.jpg",
+  "/~shootordernew/images/clients/j1.jpg",
+  "/~shootordernew/images/clients/Travtips.webp",
 ];
 
 // Custom arrow components - Fixed structure

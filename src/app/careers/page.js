@@ -63,7 +63,7 @@ const CareerPage = () => {
       {/* Banner Section with Image */}
       {/* <div className="relative h-128 bg-gray-50">
         <Image
-          src="/images/background/careers/bg.jpg"
+          src="/~shootordernew/images/background/careers/bg.jpg"
           alt="Career Banner"
           fill
           className="object-cover"
@@ -94,7 +94,7 @@ const CareerPage = () => {
               {/* Partners Image */}
               <div className="py-4 flex items-center gap-2">
                 <Image
-                  src="/images/logo/meta.png"
+                  src="/~shootordernew/images/logo/meta.png"
                   alt="Meta Partner"
                   width={100}
                   height={30}
@@ -102,7 +102,7 @@ const CareerPage = () => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/google.png"
+                  src="/~shootordernew/images/logo/google.png"
                   alt="Google Partner"
                   width={90}
                   height={40}
@@ -110,7 +110,7 @@ const CareerPage = () => {
                   style={{ objectFit: "contain" }}
                 />
                 <Image
-                  src="/images/logo/hubspot.png"
+                  src="/~shootordernew/images/logo/hubspot.png"
                   alt="HubSpot Partner"
                   width={100}
                   height={40}
@@ -119,7 +119,7 @@ const CareerPage = () => {
                 />
 
                 {/* <Image
-                         src="/images/services/service-partners-image.webp"
+                         src="/~shootordernew/images/services/service-partners-image.webp"
                          alt="Partners - Google Partner, Shopify Partners, Meta Business Partners, Klaviyo Partner"
                          width={500}
                          height={80}
@@ -151,7 +151,7 @@ const CareerPage = () => {
             {/* Right Side - Hero Image */}
             <div className="relative">
               <Image
-                src="/images/background/careers/lifeatshootorder.webp"
+                src="/~shootordernew/images/background/careers/lifeatshootorder.webp"
                 alt="Content creation showcase with various brand examples"
                 width={600}
                 height={600}

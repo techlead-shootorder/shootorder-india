@@ -21,37 +21,37 @@ export async function getAllServices() {
         title: "SEO Services",
         heading: "Strategic SEO Solutions",
         subheading: "Drive organic growth with data-driven SEO strategies",
-        imageUrl: "/images/services/seo-banner.jpg",
+        imageUrl: "/~shootordernew/images/services/seo-banner.jpg",
         features: [
           {
             heading: "Technical SEO Optimization",
             content: "Site architecture, crawlability, and core web vitals optimization for better search performance",
-            imageUrl: "/images/services/technical-seo.jpg"
+            imageUrl: "/~shootordernew/images/services/technical-seo.jpg"
           },
           {
             heading: "Meta Tags Optimization",
             content: "Strategic optimization of title tags, meta descriptions, and header tags for improved CTR",
-            imageUrl: "/images/services/meta-tags.jpg"
+            imageUrl: "/~shootordernew/images/services/meta-tags.jpg"
           },
           {
             heading: "Rich Schema Markups",
             content: "Implementation of structured data for enhanced SERP visibility and featured snippets",
-            imageUrl: "/images/services/schema.jpg"
+            imageUrl: "/~shootordernew/images/services/schema.jpg"
           },
           {
             heading: "Content Optimization",
             content: "SEO-friendly content strategy with semantic relevance and user intent matching",
-            imageUrl: "/images/services/content.jpg"
+            imageUrl: "/~shootordernew/images/services/content.jpg"
           },
           {
             heading: "Local SEO",
             content: "Optimize your local presence with Google Business Profile and local citations",
-            imageUrl: "/images/services/local-seo.jpg"
+            imageUrl: "/~shootordernew/images/services/local-seo.jpg"
           },
           {
             heading: "Performance Analytics",
             content: "Comprehensive tracking and analysis of SEO performance metrics",
-            imageUrl: "/images/services/analytics.jpg"
+            imageUrl: "/~shootordernew/images/services/analytics.jpg"
           }
         ]
       }];

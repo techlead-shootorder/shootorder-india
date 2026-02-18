@@ -11,21 +11,21 @@ function HomeBanner() {
         </h2>
         <div className="flex flex-col md:flex-row justify-end items-center gap-6">
           <Image
-            src="/images/logo/meta.png"
+            src="/~shootordernew/images/logo/meta.png"
             alt="Meta Badge"
             width={120}
             height={80}
             className="object-contain"
           />
           <Image
-            src="/images/logo/google-badge.svg"
+            src="/~shootordernew/images/logo/google-badge.svg"
             alt="HubSpot Badge"
             width={120}
             height={80}
             className="object-contain"
           />
           <Image
-            src="/images/logo/partner-badge-color.png"
+            src="/~shootordernew/images/logo/partner-badge-color.png"
             alt="Google Badge"
             width={120}
             height={80}

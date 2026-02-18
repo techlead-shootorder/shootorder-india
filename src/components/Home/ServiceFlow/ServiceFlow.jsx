@@ -31,7 +31,7 @@ export default function ServiceFlow() {
           <div className="w-full lg:w-1/2">
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/images/services/service-flow.png" // Put your dummy image here in /public folder
+                src="/~shootordernew/images/services/service-flow.png" // Put your dummy image here in /public folder
                 alt="Service Flow"
                 width={700}
                 height={500}

@@ -17,24 +17,24 @@ const serviceCategories = [
     title: "Digital Marketing",
     color: "bg-blue-50 border-blue-200 text-blue-700",
     hoverColor: "hover:bg-blue-100",
-    href: "/services/digital-marketing",
+    href: "/~shootordernew/services/digital-marketing",
     columns: [
       {
         heading: "Owned Media",
         links: [
           {
             name: "SEO Optimization",
-            href: "/seo",
+            href: "/~shootordernew/seo",
             description: "Dominate organic search results",
           },
           {
             name: "Website Development",
-            href: "/web-design",
+            href: "/~shootordernew/web-design",
             description: "High-performance, responsive websites",
           },
           {
             name: "Social Media Marketing",
-            href: "/social-media-marketing",
+            href: "/~shootordernew/social-media-marketing",
             description: "Build your social media presence",
           },
         ],
@@ -44,12 +44,12 @@ const serviceCategories = [
         links: [
           {
             name: "Google Ads",
-            href: "/google-ads",
+            href: "/~shootordernew/google-ads",
             description: "PPC campaigns that drive results",
           },
           {
             name: "Meta Ads",
-            href: "/meta-ads",
+            href: "/~shootordernew/meta-ads",
             description: "Effective social media advertising",
           },
         ],
@@ -59,12 +59,12 @@ const serviceCategories = [
         links: [
           {
             name: "Digital PR",
-            href: "/digital-pr",
+            href: "/~shootordernew/digital-pr",
             description: "Build your online presence",
           },
           {
             name: "Influencer Marketing",
-            href: "/influencers-marketing",
+            href: "/~shootordernew/influencers-marketing",
             description: "Connect with relevant influencers",
           },
         ],
@@ -75,7 +75,7 @@ const serviceCategories = [
     title: "Branding",
     color: "bg-purple-50 border-purple-200 text-purple-700",
     hoverColor: "hover:bg-purple-100",
-    href: "/services/branding",
+    href: "/~shootordernew/services/branding",
     // links: [
     //   {
     //     name: "Identity Development",
@@ -106,12 +106,12 @@ const serviceCategories = [
     links: [
       {
         name: "Identity Development",
-        href: "/identity",
+        href: "/~shootordernew/identity",
         description: "Create a unique brand identity that stands out",
       },
       {
         name: "Brand Audit",
-        href: "/audit",
+        href: "/~shootordernew/audit",
         description: "Evaluate your brand's performance and positioning",
       },
       // {
@@ -121,12 +121,12 @@ const serviceCategories = [
       // },
       {
         name: "Packaging & Design",
-        href: "/design",
+        href: "/~shootordernew/design",
         description: "Stunning visual brand assets and materials",
       },
       {
         name: "Brand Launch & Campaigns",
-        href: "/campaigns",
+        href: "/~shootordernew/campaigns",
         description: "Launch your brand with impact",
       },
     ],
@@ -135,22 +135,22 @@ const serviceCategories = [
     title: "Growth Hacking",
     color: "bg-green-50 border-green-200 text-green-700",
     hoverColor: "hover:bg-green-100",
-    href: "/services/growth-hacking",
+    href: "/~shootordernew/services/growth-hacking",
     links: [
       {
         name: "Landing Pages",
-        href: "/landing-pages",
+        href: "/~shootordernew/landing-pages",
         description:
           "High-converting landing pages that generate quality leads",
       },
       {
         name: "On-site Engagement",
-        href: "/on-site-engagement",
+        href: "/~shootordernew/on-site-engagement",
         description: "Optimize user experience and engagement",
       },
       {
         name: "Online Reputation Management (ORM)",
-        href: "/orm",
+        href: "/~shootordernew/orm",
         description: "Protect and enhance your online reputation",
       },
     ],
@@ -159,16 +159,16 @@ const serviceCategories = [
     title: "Marketing Automation",
     color: "bg-orange-50 border-orange-200 text-orange-700",
     hoverColor: "hover:bg-orange-100",
-    href: "/services/marketing-automation",
+    href: "/~shootordernew/services/marketing-automation",
     links: [
       {
         name: "Data Analytics & Dashboards",
-        href: "/analytics-dashboards",
+        href: "/~shootordernew/analytics-dashboards",
         description: "Advanced analytics and comprehensive reporting tools",
       },
       {
         name: "Smart Analytics",
-        href: "/smart-analytics",
+        href: "/~shootordernew/smart-analytics",
         description: "AI-powered insights to stay ahead of competition",
       },
     ],
@@ -186,7 +186,7 @@ const companyCategories = [
     links: [
       {
         name: "About Us",
-        href: "/about-us",
+        href: "/~shootordernew/about-us",
         description: "Learn about our story and mission",
       },
       // {
@@ -196,7 +196,7 @@ const companyCategories = [
       // },
       {
         name: "Clients & Testimonials",
-        href: "/about/clients/",
+        href: "/~shootordernew/about/clients/",
         description: "Success stories from happy clients",
       }
     ],
@@ -208,7 +208,7 @@ const companyCategories = [
     links: [
       {
         name: "Careers",
-        href: "/careers/",
+        href: "/~shootordernew/careers/",
         description: "Explore exciting career opportunities",
       },
       // {
@@ -464,9 +464,9 @@ export default function Header() {
       <div className="!max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="flex items-center gap-12">
-          <a href="/" className="inline-block">
+          <a href="/~shootordernew/" className="inline-block">
             <Image
-              src="/images/logo/shootorder-logo.svg"
+              src="/~shootordernew/images/logo/shootorder-logo.svg"
               alt="Logo"
               height={72}
               width={200}
@@ -585,7 +585,7 @@ export default function Header() {
             <div className="p-4 bg-white border-b flex items-center justify-between">
               <a href="/" className="inline-block">
                 <img
-                  src="/images/logo/shootorder-logo.svg"
+                  src="/~shootordernew/images/logo/shootorder-logo.svg"
                   alt="ShootOrder"
                   className="h-10 w-auto"
                 />
